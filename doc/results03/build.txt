@@ -1,0 +1,218 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [rw1 internal] load build definition from Dockerfile
+#1 transferring dockerfile: 382B done
+#1 DONE 0.0s
+
+#2 [rk3 internal] load build definition from Dockerfile
+#2 transferring dockerfile: 382B done
+#2 DONE 0.0s
+
+#3 [retained-tests internal] load build definition from Dockerfile
+#3 transferring dockerfile: 382B done
+#3 DONE 0.0s
+
+#4 [demo internal] load build definition from Dockerfile
+#4 transferring dockerfile: 382B done
+#4 DONE 0.0s
+
+#5 [rk2 internal] load build definition from Dockerfile
+#5 transferring dockerfile: 382B done
+#5 DONE 0.0s
+
+#6 [rw2 internal] load build definition from Dockerfile
+#6 transferring dockerfile: 382B done
+#6 DONE 0.0s
+
+#7 [rk1 internal] load build definition from Dockerfile
+#7 transferring dockerfile: 382B done
+#7 DONE 0.0s
+
+#8 [rw3 internal] load build definition from Dockerfile
+#8 transferring dockerfile: 382B done
+#8 DONE 0.0s
+
+#9 [experiment internal] load build definition from Dockerfile
+#9 transferring dockerfile: 382B done
+#9 DONE 0.0s
+
+#10 [rw3 internal] load metadata for docker.io/library/python:3.12-slim
+#10 DONE 0.2s
+
+#11 [demo internal] load metadata for docker.io/library/node:22-bookworm-slim
+#11 DONE 0.2s
+
+#12 [rk3 internal] load .dockerignore
+#12 transferring context: 118B done
+#12 DONE 0.0s
+
+#13 [rw2 internal] load .dockerignore
+#13 transferring context: 118B done
+#13 DONE 0.0s
+
+#14 [rw1 internal] load .dockerignore
+#14 transferring context: 118B done
+#14 DONE 0.0s
+
+#15 [rw3 internal] load .dockerignore
+#15 transferring context: 118B done
+#15 DONE 0.0s
+
+#16 [rk2 internal] load .dockerignore
+#16 transferring context: 118B done
+#16 DONE 0.0s
+
+#17 [rw3 verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+#17 DONE 0.0s
+
+#18 [rw3 stage-1 1/6] FROM docker.io/library/python:3.12-slim@sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1
+#18 DONE 0.0s
+
+#19 [rk1 internal] load .dockerignore
+#19 transferring context: 118B done
+#19 DONE 0.0s
+
+#20 [retained-tests internal] load .dockerignore
+#20 transferring context: 118B done
+#20 DONE 0.0s
+
+#21 [experiment internal] load .dockerignore
+#21 transferring context: 118B done
+#21 DONE 0.0s
+
+#22 [demo internal] load .dockerignore
+#22 transferring context: 118B done
+#22 DONE 0.0s
+
+#23 [rw1 internal] load build context
+#23 transferring context: 8.52kB 0.0s done
+#23 DONE 0.0s
+
+#24 [rk3 internal] load build context
+#24 transferring context: 8.52kB 0.0s done
+#24 DONE 0.0s
+
+#25 [rw3 internal] load build context
+#25 transferring context: 8.52kB done
+#25 DONE 0.0s
+
+#26 [rw2 internal] load build context
+#26 transferring context: 8.52kB 0.0s done
+#26 DONE 0.0s
+
+#27 [rk1 internal] load build context
+#27 transferring context: 8.52kB done
+#27 DONE 0.0s
+
+#28 [retained-tests internal] load build context
+#28 transferring context: 8.52kB done
+#28 DONE 0.0s
+
+#29 [demo internal] load build context
+#29 transferring context: 8.52kB done
+#29 DONE 0.0s
+
+#30 [rk2 internal] load build context
+#30 transferring context: 8.52kB 0.0s done
+#30 DONE 0.0s
+
+#31 [experiment internal] load build context
+#31 transferring context: 8.52kB done
+#31 DONE 0.0s
+
+#32 [rw1 stage-1 4/6] COPY requirements.txt .
+#32 CACHED
+
+#33 [rw1 stage-1 2/6] COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+#33 CACHED
+
+#34 [rw1 stage-1 3/6] WORKDIR /otherwise
+#34 CACHED
+
+#35 [experiment stage-1 5/6] RUN pip install --no-cache-dir -r requirements.txt
+#35 CACHED
+
+#36 [rk2 stage-1 6/6] COPY . .
+#36 DONE 0.0s
+
+#37 [experiment] exporting to image
+#37 exporting layers 0.0s done
+#37 writing image sha256:b4564209d79ffe29b626720e48b6ae7339dc0293326d671725bbc49a5b0d6f4c done
+#37 naming to docker.io/library/dead-man-experiment done
+#37 DONE 0.0s
+
+#38 [rw1] exporting to image
+#38 exporting layers done
+#38 writing image sha256:214a050835cce43c8fb073ae5f0ecd3f6381bdc7880bfaf164f82c83b2f050f0 done
+#38 naming to docker.io/library/dead-man-rw1 0.0s done
+#38 DONE 0.0s
+
+#39 [rk2] exporting to image
+#39 exporting layers done
+#39 writing image sha256:b01e3bae630f79b711ba760666c3b7e58c2ba952ab3b51eb7cfd6e4c8586c7c1 done
+#39 naming to docker.io/library/dead-man-rk2 0.0s done
+#39 DONE 0.0s
+
+#40 [retained-tests] exporting to image
+#40 exporting layers done
+#40 writing image sha256:17aabea63c1edfe8b05ab325963b1441eada1f55983db0e7670137696713b3b3 done
+#40 naming to docker.io/library/dead-man-retained-tests 0.0s done
+#40 DONE 0.1s
+
+#41 [rk3] exporting to image
+#41 exporting layers done
+#41 writing image sha256:011051147419f08ddfb48690621f66330ae700e560f576e30b718e5e8543afca done
+#41 naming to docker.io/library/dead-man-rk3 0.0s done
+#41 DONE 0.1s
+
+#42 [demo] exporting to image
+#42 exporting layers done
+#42 writing image sha256:a39a50baf31e1946d83f9cfee8b9dfffb80f9a59741a62bed35e670ce89521aa done
+#42 naming to docker.io/library/dead-man-demo 0.0s done
+#42 DONE 0.1s
+
+#43 [rw3] exporting to image
+#43 exporting layers done
+#43 writing image sha256:e96cf05fa59861eb3c78f1edb70e0b6d163b013514173af85fa762124a91c3d9 done
+#43 naming to docker.io/library/dead-man-rw3 0.0s done
+#43 DONE 0.1s
+
+#44 [rw2] exporting to image
+#44 exporting layers done
+#44 writing image sha256:d3be28ea923d9be353e1b1991a9bb52b7f5a7868d19f68cdaa3d51d43d08a92e done
+#44 naming to docker.io/library/dead-man-rw2 0.0s done
+#44 DONE 0.1s
+
+#45 [rk1] exporting to image
+#45 exporting layers done
+#45 writing image sha256:24ec05d15a0ccf03d6449c048eaba549a918a96dff596cd037abf026d309c2fe 0.1s done
+#45 naming to docker.io/library/dead-man-rk1
+#45 naming to docker.io/library/dead-man-rk1 done
+#45 DONE 0.1s
+
+#46 [rw3] resolving provenance for metadata file
+#46 DONE 0.0s
+
+#47 [rk3] resolving provenance for metadata file
+#47 DONE 0.0s
+
+#48 [rw1] resolving provenance for metadata file
+#48 DONE 0.0s
+
+#49 [experiment] resolving provenance for metadata file
+#49 DONE 0.0s
+
+#50 [rk1] resolving provenance for metadata file
+#50 DONE 0.0s
+
+#51 [retained-tests] resolving provenance for metadata file
+#51 DONE 0.0s
+
+#52 [rk2] resolving provenance for metadata file
+#52 DONE 0.0s
+
+#53 [rw2] resolving provenance for metadata file
+#53 DONE 0.0s
+
+#54 [demo] resolving provenance for metadata file
+#54 DONE 0.0s

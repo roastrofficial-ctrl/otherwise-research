@@ -1,0 +1,165 @@
+x-lab: &lab
+  build: .
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  tmpfs: [/tmp]
+services:
+  experiment:
+    build: .
+    network_mode: none
+  demo:
+    build: .
+    network_mode: none
+    command: [python, -m, App.demo]
+  witness:
+    <<: *lab
+    profiles: [bounded]
+    command: [python, -m, Bounded.service]
+    environment:
+      ROLE: witness
+      CLOCK_MODE: test
+      BOOTSTRAP_TOKEN: ${OTHERWISE_WITNESS_TOKEN:-not-configured}
+    volumes: [witness-state:/state]
+    networks: [custody]
+  custodian1:
+    <<: *lab
+    profiles: [bounded]
+    command: [python, -m, Bounded.service]
+    environment:
+      ROLE: custodian
+      INDEX: '1'
+      BOOTSTRAP_TOKEN: ${OTHERWISE_C1_TOKEN:-not-configured}
+    volumes: [custodian1-state:/state]
+    networks: [custody]
+  custodian2:
+    <<: *lab
+    profiles: [bounded]
+    command: [python, -m, Bounded.service]
+    environment:
+      ROLE: custodian
+      INDEX: '2'
+      BOOTSTRAP_TOKEN: ${OTHERWISE_C2_TOKEN:-not-configured}
+    volumes: [custodian2-state:/state]
+    networks: [custody]
+  custodian3:
+    <<: *lab
+    profiles: [bounded]
+    command: [python, -m, Bounded.service]
+    environment:
+      ROLE: custodian
+      INDEX: '3'
+      BOOTSTRAP_TOKEN: ${OTHERWISE_C3_TOKEN:-not-configured}
+    volumes: [custodian3-state:/state]
+    networks: [custody]
+  operator:
+    <<: *lab
+    profiles: [bounded]
+    command: [python, -m, Bounded.operator]
+    volumes: [operator-state:/operator]
+    networks: [custody]
+  bounded-tests:
+    <<: *lab
+    profiles: [bounded]
+    command: [python, -m, unittest, discover, -s, tests02, -v]
+    environment:
+      OTHERWISE_WITNESS_TOKEN: ${OTHERWISE_WITNESS_TOKEN:-not-configured}
+      OTHERWISE_C1_TOKEN: ${OTHERWISE_C1_TOKEN:-not-configured}
+      OTHERWISE_C2_TOKEN: ${OTHERWISE_C2_TOKEN:-not-configured}
+      OTHERWISE_C3_TOKEN: ${OTHERWISE_C3_TOKEN:-not-configured}
+    networks: [custody]
+  rw1:
+    <<: *lab
+    profiles: [retained]
+    restart: on-failure
+    command: [python, -m, Retained.service]
+    environment:
+      ROLE: witness
+      INDEX: '1'
+      BOOTSTRAP_TOKEN: ${OTHERWISE_03_RW1_TOKEN:-not-configured}
+    volumes: [rw1-state:/state]
+    networks: [custody]
+  rw2:
+    <<: *lab
+    profiles: [retained]
+    restart: on-failure
+    command: [python, -m, Retained.service]
+    environment:
+      ROLE: witness
+      INDEX: '2'
+      BOOTSTRAP_TOKEN: ${OTHERWISE_03_RW2_TOKEN:-not-configured}
+    volumes: [rw2-state:/state]
+    networks: [custody]
+  rw3:
+    <<: *lab
+    profiles: [retained]
+    restart: on-failure
+    command: [python, -m, Retained.service]
+    environment:
+      ROLE: witness
+      INDEX: '3'
+      BOOTSTRAP_TOKEN: ${OTHERWISE_03_RW3_TOKEN:-not-configured}
+    volumes: [rw3-state:/state]
+    networks: [custody]
+  rk1:
+    <<: *lab
+    profiles: [retained]
+    restart: on-failure
+    command: [python, -m, Retained.service]
+    environment:
+      ROLE: custodian
+      INDEX: '1'
+      BOOTSTRAP_TOKEN: ${OTHERWISE_03_RK1_TOKEN:-not-configured}
+    volumes: [rk1-state:/state]
+    networks: [custody]
+  rk2:
+    <<: *lab
+    profiles: [retained]
+    restart: on-failure
+    command: [python, -m, Retained.service]
+    environment:
+      ROLE: custodian
+      INDEX: '2'
+      BOOTSTRAP_TOKEN: ${OTHERWISE_03_RK2_TOKEN:-not-configured}
+    volumes: [rk2-state:/state]
+    networks: [custody]
+  rk3:
+    <<: *lab
+    profiles: [retained]
+    restart: on-failure
+    command: [python, -m, Retained.service]
+    environment:
+      ROLE: custodian
+      INDEX: '3'
+      BOOTSTRAP_TOKEN: ${OTHERWISE_03_RK3_TOKEN:-not-configured}
+    volumes: [rk3-state:/state]
+    networks: [custody]
+  retained-tests:
+    <<: *lab
+    profiles: [retained]
+    command: [python, -m, unittest, discover, -s, tests03, -v]
+    environment:
+      OTHERWISE_03_RW1_TOKEN: ${OTHERWISE_03_RW1_TOKEN:-not-configured}
+      OTHERWISE_03_RW2_TOKEN: ${OTHERWISE_03_RW2_TOKEN:-not-configured}
+      OTHERWISE_03_RW3_TOKEN: ${OTHERWISE_03_RW3_TOKEN:-not-configured}
+      OTHERWISE_03_RK1_TOKEN: ${OTHERWISE_03_RK1_TOKEN:-not-configured}
+      OTHERWISE_03_RK2_TOKEN: ${OTHERWISE_03_RK2_TOKEN:-not-configured}
+      OTHERWISE_03_RK3_TOKEN: ${OTHERWISE_03_RK3_TOKEN:-not-configured}
+    volumes: [retained-client-state:/client-state]
+    networks: [custody]
+networks:
+  custody:
+    internal: true
+volumes:
+  witness-state:
+  custodian1-state:
+  custodian2-state:
+  custodian3-state:
+  operator-state:
+  rw1-state:
+  rw2-state:
+  rw3-state:
+  rk1-state:
+  rk2-state:
+  rk3-state:
+  retained-client-state:

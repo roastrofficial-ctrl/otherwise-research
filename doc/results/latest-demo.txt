@@ -1,0 +1,331 @@
+A {'accepted': True, 'receipt': 4, 'duplicate': False}
+B {'accepted': True, 'receipt': 7, 'duplicate': False}
+C {'accepted': True, 'receipt': 10, 'duplicate': False}
+Independent interpretation: {'contracts': {'A': True, 'B': True, 'C': False}, 'satisfied': True}
+Authorised decision: 249c11b24306704b7d6df6ae1d0a9a3d9f4c94a16ba0ac62f96a3f4dd21a3a14
+Simulated delivery: Your message stays yours. Otherwise...
+Complete audit:
+{
+  "capsule": "demo",
+  "commitment": "ac34256d3a8d43e891908e8dce6769eccace83639f2451482b3a744aa57b80eb",
+  "policy": {
+    "contracts": [
+      {
+        "authority": "d91f3bc0948946058cd3e2452d99a76bdf91e918449292576583dd431adc9335",
+        "challenges": [],
+        "end": 100,
+        "id": "A",
+        "kind": "attestation",
+        "start": 0,
+        "version": 1
+      },
+      {
+        "authority": "fc8f5e5b5e8a1b51a6b5de1031acabdc5a972e24fab841c85fd0ce0c8bb813f6",
+        "challenges": [],
+        "end": 100,
+        "id": "B",
+        "kind": "attestation",
+        "start": 0,
+        "version": 1
+      },
+      {
+        "authority": "aca72ac88ed2705b592a93d7619d19806ab0539a5259172e00a33f60b7405e63",
+        "challenges": [],
+        "end": 100,
+        "id": "C",
+        "kind": "attestation",
+        "start": 0,
+        "version": 1
+      }
+    ],
+    "destination": {
+      "consented": true,
+      "kind": "simulated",
+      "verified": true
+    },
+    "expression": {
+      "args": [
+        "A",
+        "B",
+        "C"
+      ],
+      "k": 2,
+      "op": "THRESHOLD"
+    },
+    "grace": 5,
+    "max_step": 60,
+    "owner": "662410dcec28d37a25d765bf0f06b1825e468cedfb4f932fc48bfd3e1653c679",
+    "version": 1
+  },
+  "events": [
+    {
+      "capsule": "demo",
+      "data": {
+        "commitment": "ac34256d3a8d43e891908e8dce6769eccace83639f2451482b3a744aa57b80eb",
+        "payload": "055f1c5fba7e089d0feba61590fbd3ff"
+      },
+      "kind": "CREATED",
+      "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+      "seq": 1,
+      "time": 0,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "message": {
+          "action": "ARMED",
+          "capsule": "demo",
+          "commitment": "ac34256d3a8d43e891908e8dce6769eccace83639f2451482b3a744aa57b80eb",
+          "v": 1
+        },
+        "signature": "7766001699ac8301bd6abce4002712d0b8321366e12395146d0e69656752c28922e91d45fd1bc76c962e3bc3fe9131715b3cd26aa22c69f444cc605927002e0c"
+      },
+      "kind": "ARMED",
+      "prev": "ad1cf5faa97ef7afd1009466c4ada734857f14477c4d5d1dab9373a1c37abc71",
+      "seq": 2,
+      "time": 0,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "message": {
+          "authority": "d91f3bc0948946058cd3e2452d99a76bdf91e918449292576583dd431adc9335",
+          "capsule": "demo",
+          "claim": true,
+          "commitment": "ac34256d3a8d43e891908e8dce6769eccace83639f2451482b3a744aa57b80eb",
+          "contract": "A",
+          "contract_version": 1,
+          "id": "A-proof",
+          "v": 1,
+          "valid_from": 0,
+          "valid_until": 90
+        },
+        "signature": "169b8344b3cf29d69d8da4345a687ef90cafc34312d9e85c6af069736a69355f176c33532196c222ef92a552eacb36a404d3f6ce8be5e32af09ce3ee2a911107"
+      },
+      "kind": "SUBMITTED",
+      "prev": "26addba986132d8e186a2f61ac8916bd25c149656ea100257a44b86bdc6b8413",
+      "seq": 3,
+      "time": 0,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "message": {
+          "authority": "d91f3bc0948946058cd3e2452d99a76bdf91e918449292576583dd431adc9335",
+          "capsule": "demo",
+          "claim": true,
+          "commitment": "ac34256d3a8d43e891908e8dce6769eccace83639f2451482b3a744aa57b80eb",
+          "contract": "A",
+          "contract_version": 1,
+          "id": "A-proof",
+          "v": 1,
+          "valid_from": 0,
+          "valid_until": 90
+        },
+        "signature": "169b8344b3cf29d69d8da4345a687ef90cafc34312d9e85c6af069736a69355f176c33532196c222ef92a552eacb36a404d3f6ce8be5e32af09ce3ee2a911107"
+      },
+      "kind": "ACCEPTED",
+      "prev": "b3c8d7d7ba96524f10f3d627471c67bbe2b60cb9a485410f3491081e77d74c1c",
+      "seq": 4,
+      "time": 0,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "reason": "evidence accepted"
+      },
+      "kind": "CANDIDATE_RESET",
+      "prev": "61fe8094242d63e720f973d9763a9b5aabf877be6b8ff180e290654cf0174ead",
+      "seq": 5,
+      "time": 0,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "message": {
+          "authority": "fc8f5e5b5e8a1b51a6b5de1031acabdc5a972e24fab841c85fd0ce0c8bb813f6",
+          "capsule": "demo",
+          "claim": true,
+          "commitment": "ac34256d3a8d43e891908e8dce6769eccace83639f2451482b3a744aa57b80eb",
+          "contract": "B",
+          "contract_version": 1,
+          "id": "B-proof",
+          "v": 1,
+          "valid_from": 0,
+          "valid_until": 90
+        },
+        "signature": "621522eb72de10f1e8fe4e2f8711e3ce12f8f4d249eb162891312a7668b931fcf2208fe4844ae3401da0318c6ef570c1c71bfc3283c1fb64e59a1b23402f1b03"
+      },
+      "kind": "SUBMITTED",
+      "prev": "ff606446d1dc31345ea0126d1f9b5226bb6aed86bcbcd19d782a741d9ec72daa",
+      "seq": 6,
+      "time": 0,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "message": {
+          "authority": "fc8f5e5b5e8a1b51a6b5de1031acabdc5a972e24fab841c85fd0ce0c8bb813f6",
+          "capsule": "demo",
+          "claim": true,
+          "commitment": "ac34256d3a8d43e891908e8dce6769eccace83639f2451482b3a744aa57b80eb",
+          "contract": "B",
+          "contract_version": 1,
+          "id": "B-proof",
+          "v": 1,
+          "valid_from": 0,
+          "valid_until": 90
+        },
+        "signature": "621522eb72de10f1e8fe4e2f8711e3ce12f8f4d249eb162891312a7668b931fcf2208fe4844ae3401da0318c6ef570c1c71bfc3283c1fb64e59a1b23402f1b03"
+      },
+      "kind": "ACCEPTED",
+      "prev": "0824c084e03bb3f65bf0317a9d3dddad61da85720a07aceddc838fa5bd1e23c1",
+      "seq": 7,
+      "time": 0,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "reason": "evidence accepted"
+      },
+      "kind": "CANDIDATE_RESET",
+      "prev": "4626fbf11aeb3e41f91c9751bef86c0e74d584301efae1d45ddd0bf5e31e2b28",
+      "seq": 8,
+      "time": 0,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "message": {
+          "authority": "aca72ac88ed2705b592a93d7619d19806ab0539a5259172e00a33f60b7405e63",
+          "capsule": "demo",
+          "claim": false,
+          "commitment": "ac34256d3a8d43e891908e8dce6769eccace83639f2451482b3a744aa57b80eb",
+          "contract": "C",
+          "contract_version": 1,
+          "id": "C-proof",
+          "v": 1,
+          "valid_from": 0,
+          "valid_until": 90
+        },
+        "signature": "9c79519c276bc20ad1f420e69487ade12d08d141433f0e2f416035a67030b84f6d368579f9cd24db419a4fb65ef1f3ee55e4109c80765e832abaef3b4a8a4308"
+      },
+      "kind": "SUBMITTED",
+      "prev": "e27a91b4619d3e926a169a2085a65e0d18d4eb2cf6328f8ebe3f41ccd3086693",
+      "seq": 9,
+      "time": 0,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "message": {
+          "authority": "aca72ac88ed2705b592a93d7619d19806ab0539a5259172e00a33f60b7405e63",
+          "capsule": "demo",
+          "claim": false,
+          "commitment": "ac34256d3a8d43e891908e8dce6769eccace83639f2451482b3a744aa57b80eb",
+          "contract": "C",
+          "contract_version": 1,
+          "id": "C-proof",
+          "v": 1,
+          "valid_from": 0,
+          "valid_until": 90
+        },
+        "signature": "9c79519c276bc20ad1f420e69487ade12d08d141433f0e2f416035a67030b84f6d368579f9cd24db419a4fb65ef1f3ee55e4109c80765e832abaef3b4a8a4308"
+      },
+      "kind": "ACCEPTED",
+      "prev": "8be4e4bdd7877f5ba14b1cde8b6a5e4f456e5a9d554581ec2a6f30b93a69a6e4",
+      "seq": 10,
+      "time": 0,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "reason": "evidence accepted"
+      },
+      "kind": "CANDIDATE_RESET",
+      "prev": "49dd9e1ae82f858870ff4ca03f4658bc4757f8136cea861f3e08bf637d6610bc",
+      "seq": 11,
+      "time": 0,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "grace": 5,
+        "results": {
+          "contracts": {
+            "A": true,
+            "B": true,
+            "C": false
+          },
+          "satisfied": true
+        },
+        "snapshot": "a183b3fe8428a0b4e2c726a9f5f8c377f79f56c37331fa73a021d62324ef16d8"
+      },
+      "kind": "CANDIDATE",
+      "prev": "a183b3fe8428a0b4e2c726a9f5f8c377f79f56c37331fa73a021d62324ef16d8",
+      "seq": 12,
+      "time": 0,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "healthy": true
+      },
+      "kind": "CLOCK",
+      "prev": "e4840dca15a75e3d6682cae2e3eb8b3144b8e78bcd1de2eb19fa012fa76e9564",
+      "seq": 13,
+      "time": 5,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "candidate": 12,
+        "commitment": "ac34256d3a8d43e891908e8dce6769eccace83639f2451482b3a744aa57b80eb",
+        "payload": "055f1c5fba7e089d0feba61590fbd3ff",
+        "results": {
+          "contracts": {
+            "A": true,
+            "B": true,
+            "C": false
+          },
+          "satisfied": true
+        },
+        "snapshot": "67a74ecc855babe9361a69385c0d28f20ee3c86ea2633616fd9e1224b2645f52"
+      },
+      "kind": "AUTHORISED",
+      "prev": "67a74ecc855babe9361a69385c0d28f20ee3c86ea2633616fd9e1224b2645f52",
+      "seq": 14,
+      "time": 5,
+      "v": 1
+    },
+    {
+      "capsule": "demo",
+      "data": {
+        "adapter": "simulated-inbox",
+        "decision": "249c11b24306704b7d6df6ae1d0a9a3d9f4c94a16ba0ac62f96a3f4dd21a3a14",
+        "receipt": "durable inbox insertion; not human receipt"
+      },
+      "kind": "RELEASED",
+      "prev": "249c11b24306704b7d6df6ae1d0a9a3d9f4c94a16ba0ac62f96a3f4dd21a3a14",
+      "seq": 15,
+      "time": 5,
+      "v": 1
+    }
+  ],
+  "head": "bdf56e55692b8fffacc07078729e01aa3c4cee9d44242559c708b7802868f187",
+  "now": 5,
+  "healthy": true
+}

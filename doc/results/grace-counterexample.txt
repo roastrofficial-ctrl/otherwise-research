@@ -1,0 +1,4 @@
+Pre-fix image: A expires at t=2; B becomes satisfied at t=4; worker returns at t=5.
+Required: no authorisation; begin a fresh grace period.
+Observed authorisation: True
+COUNTEREXAMPLE REPRODUCED

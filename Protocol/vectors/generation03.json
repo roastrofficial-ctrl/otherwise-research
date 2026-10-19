@@ -1,0 +1,3729 @@
+{
+  "counterexample": {
+    "absence": {
+      "authorisation": "a1a3ebad8706928e93d7e8056c5e752626674d738b4abdc9c5eee0bce613637d",
+      "finals": [
+        [
+          {
+            "message": {
+              "capsule": "fixed-retained",
+              "challenge": "round-1",
+              "contract": "A",
+              "kind": "FINAL",
+              "lower": 16,
+              "manifest": "a8c4759be8773bdae5a55c58ef8a96046f7b114c8af62afc56f788b0dbf912dc",
+              "not_before": 16,
+              "operation": "71f5eee6a328abcff943aa5d268d4a1024d58aaf9f370c3b779b35c72a668fed",
+              "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+              "proof": null,
+              "seq": 1,
+              "upper": 16,
+              "v": 3,
+              "value": "ABSENT",
+              "witness": 2
+            },
+            "signature": "1d7c8443d35324a537180279ddff20cf97bce30c7be0940471fb047ec60229043e53b75feb2999f07f38503adb0b8c3ad9610a795f2d72a2cba0870e27a9ee0b"
+          },
+          {
+            "message": {
+              "capsule": "fixed-retained",
+              "challenge": "round-1",
+              "contract": "A",
+              "kind": "FINAL",
+              "lower": 16,
+              "manifest": "a8c4759be8773bdae5a55c58ef8a96046f7b114c8af62afc56f788b0dbf912dc",
+              "not_before": 16,
+              "operation": "71f5eee6a328abcff943aa5d268d4a1024d58aaf9f370c3b779b35c72a668fed",
+              "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+              "proof": null,
+              "seq": 1,
+              "upper": 16,
+              "v": 3,
+              "value": "ABSENT",
+              "witness": 3
+            },
+            "signature": "3ba70c23b43e0630c94feb22dc9144a597c130db0ce7efdb324ece27a99ab26895b5019bdabee6d792026c87a151d76d4eee3954e090d31482c170c054266b05"
+          }
+        ]
+      ],
+      "manifest": {
+        "message": {
+          "capsule": "fixed-retained",
+          "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+          "custody": {
+            "k": 2,
+            "keys": {
+              "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+              "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+              "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+            },
+            "n": 3
+          },
+          "epoch": 1,
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          },
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "policy": {
+            "contracts": [
+              {
+                "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "challenges": [
+                  {
+                    "deadline": 10,
+                    "id": "round-1",
+                    "open": 0
+                  }
+                ],
+                "end": 1000,
+                "id": "A",
+                "kind": "absence",
+                "start": 0,
+                "version": 1
+              }
+            ],
+            "destination": {
+              "consented": true,
+              "kind": "simulated",
+              "verified": true
+            },
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+            "version": 1
+          },
+          "quorum": {
+            "absence": 2,
+            "faults": 1,
+            "presence": 2
+          },
+          "slots": [
+            {
+              "challenge": "round-1",
+              "contract": "A",
+              "deadline": 10,
+              "open": 0
+            }
+          ],
+          "v": 3,
+          "witnesses": {
+            "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+            "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+            "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+          }
+        },
+        "signature": "cd6f6c54e365d97e5988f92ef73953afc672567bc231a7041127bd91ad599b4368a0c461049bc5c8f569e5b1ddf4e245b5abfbcbd6e199da6727587b90dea201"
+      },
+      "operation": "71f5eee6a328abcff943aa5d268d4a1024d58aaf9f370c3b779b35c72a668fed",
+      "v": 3
+    },
+    "presence": {
+      "manifest": {
+        "message": {
+          "capsule": "fixed-retained",
+          "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+          "custody": {
+            "k": 2,
+            "keys": {
+              "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+              "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+              "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+            },
+            "n": 3
+          },
+          "epoch": 1,
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          },
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "policy": {
+            "contracts": [
+              {
+                "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "challenges": [
+                  {
+                    "deadline": 10,
+                    "id": "round-1",
+                    "open": 0
+                  }
+                ],
+                "end": 1000,
+                "id": "A",
+                "kind": "absence",
+                "start": 0,
+                "version": 1
+              }
+            ],
+            "destination": {
+              "consented": true,
+              "kind": "simulated",
+              "verified": true
+            },
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+            "version": 1
+          },
+          "quorum": {
+            "absence": 2,
+            "faults": 1,
+            "presence": 2
+          },
+          "slots": [
+            {
+              "challenge": "round-1",
+              "contract": "A",
+              "deadline": 10,
+              "open": 0
+            }
+          ],
+          "v": 3,
+          "witnesses": {
+            "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+            "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+            "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+          }
+        },
+        "signature": "cd6f6c54e365d97e5988f92ef73953afc672567bc231a7041127bd91ad599b4368a0c461049bc5c8f569e5b1ddf4e245b5abfbcbd6e199da6727587b90dea201"
+      },
+      "receipts": [
+        {
+          "message": {
+            "capsule": "fixed-retained",
+            "challenge": "round-1",
+            "contract": "A",
+            "kind": "OBSERVATION",
+            "lower": 5,
+            "manifest": "a8c4759be8773bdae5a55c58ef8a96046f7b114c8af62afc56f788b0dbf912dc",
+            "not_before": 16,
+            "operation": "71f5eee6a328abcff943aa5d268d4a1024d58aaf9f370c3b779b35c72a668fed",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "proof": {
+              "message": {
+                "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "fixed-presence",
+                "manifest": "a8c4759be8773bdae5a55c58ef8a96046f7b114c8af62afc56f788b0dbf912dc",
+                "v": 3,
+                "valid_from": 0,
+                "valid_until": 1000,
+                "value": true
+              },
+              "signature": "c7d5dce8bdd49c5a9eb7c5d0dad7fbd92e74a3bca74bd15dba5d649a99b7833fed089500cf3e500dc90b3c6152afbac60ad87fcc75cea408c64e58064d330304"
+            },
+            "seq": 1,
+            "upper": 5,
+            "v": 3,
+            "value": "PRESENT",
+            "witness": 1
+          },
+          "signature": "899d1ffbf9413a6e9b3600131c621740262610d97942a2eca500e408b2e3eb61153a6167f7e865055efd96c9df5912f9cdb062961496697e23a2179ab9da5201"
+        },
+        {
+          "message": {
+            "capsule": "fixed-retained",
+            "challenge": "round-1",
+            "contract": "A",
+            "kind": "OBSERVATION",
+            "lower": 5,
+            "manifest": "a8c4759be8773bdae5a55c58ef8a96046f7b114c8af62afc56f788b0dbf912dc",
+            "not_before": 16,
+            "operation": "71f5eee6a328abcff943aa5d268d4a1024d58aaf9f370c3b779b35c72a668fed",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "proof": {
+              "message": {
+                "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "fixed-presence",
+                "manifest": "a8c4759be8773bdae5a55c58ef8a96046f7b114c8af62afc56f788b0dbf912dc",
+                "v": 3,
+                "valid_from": 0,
+                "valid_until": 1000,
+                "value": true
+              },
+              "signature": "c7d5dce8bdd49c5a9eb7c5d0dad7fbd92e74a3bca74bd15dba5d649a99b7833fed089500cf3e500dc90b3c6152afbac60ad87fcc75cea408c64e58064d330304"
+            },
+            "seq": 1,
+            "upper": 5,
+            "v": 3,
+            "value": "PRESENT",
+            "witness": 2
+          },
+          "signature": "f8abf9636caa73938c05ab576f2437914213fb907566cd345bd6f3c2e539743d719e4e7757f3fda5e8d7e2794c3a486ffdeaec7a05fbfce2a04e80b3580f380b"
+        }
+      ]
+    }
+  },
+  "test_only_seeds": [
+    "4eb6b58919baabf1e773c48caee9fe37195430f7f8504268ba10f8ea0f6ddb61",
+    "40a5d7fad98b23e4501c50a69cddc4b8780ce2bffc136be6f7452c78e6542bbe",
+    "41cc1276247e3270101ae3f6394676ff57f98708a0428a678f862263d64faabe",
+    "68b7e9d5f2e725e0ed472f8ec82278553eab33a7fa78c0fcc4990d7f5fc09929",
+    "1ae2bbad986c35b0774f697fe66f78572266e3215f27e7c838d0374dbca72f8a",
+    "f5c37f265c5d5989b1b6d0dc9671c922a7d6b0cb7e085bdb0057afcbd8e41454",
+    "65022d0a1785006b8649f942f72f13d0274d938830ee73d11ac980607bca82e7",
+    "c95255ad65ab72b8a7bdbf3f1f8de8ce4e7d22c85b1a047ed46fe6a2eacfce8c",
+    "ee5fb9b7378fbfa1907492799cbcbb232d892a218c48b9e436e8270c537ac7ea",
+    "ef17ceaefc4b5f7951627ccbf7e33e6fa1b2a744ccec446db92ba4dc49e7819a"
+  ],
+  "vectors": [
+    {
+      "expected": {
+        "accepted": true,
+        "challenge": "round-1",
+        "contract": "A",
+        "evidence": "f1a737e674916a3bd5621ef7ba775b65d494ac4095b87ed8eaabcadc1b74f15c",
+        "ok": true
+      },
+      "input": {
+        "kind": "ack",
+        "object": {
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "receipts": [
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 1
+              },
+              "signature": "f938deaa61c7e06a92aa4ef08283d33c341cb3eec6c394c5bd679746e744e5970a5a1d18e3754353a229fe582d9508e04e8e163a0f08e89ccff50d8acf0a700c"
+            },
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 2
+              },
+              "signature": "e1bea76a1d9e4cd7e36d4e685b6fb55779b4f12fdd3d749824e7b4800c03a5c1db402fd312299fbcc14e77a003519f91ee676a51b3ff8d0ef328d4d09afb0d0e"
+            }
+          ]
+        }
+      },
+      "name": "accepted-presence"
+    },
+    {
+      "expected": {
+        "authorised": true,
+        "contracts": {
+          "A": true
+        },
+        "ok": true,
+        "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+        "time": 16
+      },
+      "input": {
+        "kind": "release",
+        "object": {
+          "authorisation": "c6920b35f15e3adc6176c30e45740042ecb81902015638ea6c33c247563fc00f",
+          "finals": [
+            [
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 1
+                },
+                "signature": "cc4410dfa000aaab724eb12117a00f1f0974e427eafa02eb07d4541e7f193a98deb782e05e90c457c3742412d1e868eabfffdfe85054588c18a3b7cc33778e0b"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 2
+                },
+                "signature": "2be8c781e302584fa8cacfc6192e55a7f83574a89d5d3becb307f0c59d88676afc4e05efb699264be0addccdcf595817b840150c2121a769b85e01c20c5f5a01"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 3
+                },
+                "signature": "261ad6850cf931f6030bbdf551fa043e22be455c7616c9a6cd1f4ea05b16f827f302cfe70ad6f266284dd2bae40d1ce74bba34f3893b5eedbfb61e02e416b100"
+              }
+            ]
+          ],
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+          "v": 3
+        }
+      },
+      "name": "closed-absence"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "release",
+        "object": {
+          "authorisation": "c6920b35f15e3adc6176c30e45740042ecb81902015638ea6c33c247563fc00f",
+          "finals": [
+            [
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 1
+                },
+                "signature": "cc4410dfa000aaab724eb12117a00f1f0974e427eafa02eb07d4541e7f193a98deb782e05e90c457c3742412d1e868eabfffdfe85054588c18a3b7cc33778e0b"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 2
+                },
+                "signature": "2be8c781e302584fa8cacfc6192e55a7f83574a89d5d3becb307f0c59d88676afc4e05efb699264be0addccdcf595817b840150c2121a769b85e01c20c5f5a01"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 3
+                },
+                "signature": "261ad6850cf931f6030bbdf551fa043e22be455c7616c9a6cd1f4ea05b16f827f302cfe70ad6f266284dd2bae40d1ce74bba34f3893b5eedbfb61e02e416b100"
+              }
+            ]
+          ],
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+          "v": 3
+        },
+        "retained": [
+          {
+            "manifest": {
+              "message": {
+                "capsule": "fixed-retained",
+                "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+                "custody": {
+                  "k": 2,
+                  "keys": {
+                    "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                    "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                    "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                  },
+                  "n": 3
+                },
+                "epoch": 1,
+                "operation": {
+                  "attempt": "release-1",
+                  "kind": "reconstruct-aes-128-gcm"
+                },
+                "payload": "abababababababababababababababababababababababababababababababab",
+                "policy": {
+                  "contracts": [
+                    {
+                      "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                      "challenges": [
+                        {
+                          "deadline": 10,
+                          "id": "round-1",
+                          "open": 0
+                        }
+                      ],
+                      "end": 1000,
+                      "id": "A",
+                      "kind": "absence",
+                      "start": 0,
+                      "version": 1
+                    }
+                  ],
+                  "destination": {
+                    "consented": true,
+                    "kind": "simulated",
+                    "verified": true
+                  },
+                  "expression": "A",
+                  "grace": 5,
+                  "max_step": 60,
+                  "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                  "version": 1
+                },
+                "quorum": {
+                  "absence": 3,
+                  "faults": 1,
+                  "presence": 2
+                },
+                "slots": [
+                  {
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "deadline": 10,
+                    "open": 0
+                  }
+                ],
+                "v": 3,
+                "witnesses": {
+                  "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                  "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                  "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+                }
+              },
+              "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+            },
+            "receipts": [
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "OBSERVATION",
+                  "lower": 5,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": {
+                    "message": {
+                      "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                      "capsule": "fixed-retained",
+                      "challenge": "round-1",
+                      "contract": "A",
+                      "contract_version": 1,
+                      "id": "fixed-presence",
+                      "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                      "v": 3,
+                      "valid_from": 0,
+                      "valid_until": 1000,
+                      "value": true
+                    },
+                    "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                  },
+                  "seq": 1,
+                  "upper": 5,
+                  "v": 3,
+                  "value": "PRESENT",
+                  "witness": 1
+                },
+                "signature": "f938deaa61c7e06a92aa4ef08283d33c341cb3eec6c394c5bd679746e744e5970a5a1d18e3754353a229fe582d9508e04e8e163a0f08e89ccff50d8acf0a700c"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "OBSERVATION",
+                  "lower": 5,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": {
+                    "message": {
+                      "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                      "capsule": "fixed-retained",
+                      "challenge": "round-1",
+                      "contract": "A",
+                      "contract_version": 1,
+                      "id": "fixed-presence",
+                      "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                      "v": 3,
+                      "valid_from": 0,
+                      "valid_until": 1000,
+                      "value": true
+                    },
+                    "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                  },
+                  "seq": 1,
+                  "upper": 5,
+                  "v": 3,
+                  "value": "PRESENT",
+                  "witness": 2
+                },
+                "signature": "e1bea76a1d9e4cd7e36d4e685b6fb55779b4f12fdd3d749824e7b4800c03a5c1db402fd312299fbcc14e77a003519f91ee676a51b3ff8d0ef328d4d09afb0d0e"
+              }
+            ]
+          }
+        ]
+      },
+      "name": "retained-presence-veto"
+    },
+    {
+      "expected": {
+        "authorised": true,
+        "contracts": {
+          "A": true
+        },
+        "ok": true,
+        "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+        "time": 16
+      },
+      "input": {
+        "kind": "release",
+        "object": {
+          "authorisation": "c6920b35f15e3adc6176c30e45740042ecb81902015638ea6c33c247563fc00f",
+          "finals": [
+            [
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 1
+                },
+                "signature": "cc4410dfa000aaab724eb12117a00f1f0974e427eafa02eb07d4541e7f193a98deb782e05e90c457c3742412d1e868eabfffdfe85054588c18a3b7cc33778e0b"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 2
+                },
+                "signature": "2be8c781e302584fa8cacfc6192e55a7f83574a89d5d3becb307f0c59d88676afc4e05efb699264be0addccdcf595817b840150c2121a769b85e01c20c5f5a01"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 3
+                },
+                "signature": "261ad6850cf931f6030bbdf551fa043e22be455c7616c9a6cd1f4ea05b16f827f302cfe70ad6f266284dd2bae40d1ce74bba34f3893b5eedbfb61e02e416b100"
+              }
+            ]
+          ],
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+          "v": 3
+        }
+      },
+      "name": "fault-budget-exceeded-two-byzantine"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "ack",
+        "object": {
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 2,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "cd6f6c54e365d97e5988f92ef73953afc672567bc231a7041127bd91ad599b4368a0c461049bc5c8f569e5b1ddf4e245b5abfbcbd6e199da6727587b90dea201"
+          },
+          "receipts": [
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "a8c4759be8773bdae5a55c58ef8a96046f7b114c8af62afc56f788b0dbf912dc",
+                "not_before": 16,
+                "operation": "71f5eee6a328abcff943aa5d268d4a1024d58aaf9f370c3b779b35c72a668fed",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "a8c4759be8773bdae5a55c58ef8a96046f7b114c8af62afc56f788b0dbf912dc",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "c7d5dce8bdd49c5a9eb7c5d0dad7fbd92e74a3bca74bd15dba5d649a99b7833fed089500cf3e500dc90b3c6152afbac60ad87fcc75cea408c64e58064d330304"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 1
+              },
+              "signature": "899d1ffbf9413a6e9b3600131c621740262610d97942a2eca500e408b2e3eb61153a6167f7e865055efd96c9df5912f9cdb062961496697e23a2179ab9da5201"
+            },
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "a8c4759be8773bdae5a55c58ef8a96046f7b114c8af62afc56f788b0dbf912dc",
+                "not_before": 16,
+                "operation": "71f5eee6a328abcff943aa5d268d4a1024d58aaf9f370c3b779b35c72a668fed",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "a8c4759be8773bdae5a55c58ef8a96046f7b114c8af62afc56f788b0dbf912dc",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "c7d5dce8bdd49c5a9eb7c5d0dad7fbd92e74a3bca74bd15dba5d649a99b7833fed089500cf3e500dc90b3c6152afbac60ad87fcc75cea408c64e58064d330304"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 2
+              },
+              "signature": "f8abf9636caa73938c05ab576f2437914213fb907566cd345bd6f3c2e539743d719e4e7757f3fda5e8d7e2794c3a486ffdeaec7a05fbfce2a04e80b3580f380b"
+            }
+          ]
+        }
+      },
+      "name": "reject-unsafe-majority-ack"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "release",
+        "object": {
+          "authorisation": "a1a3ebad8706928e93d7e8056c5e752626674d738b4abdc9c5eee0bce613637d",
+          "finals": [
+            [
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "a8c4759be8773bdae5a55c58ef8a96046f7b114c8af62afc56f788b0dbf912dc",
+                  "not_before": 16,
+                  "operation": "71f5eee6a328abcff943aa5d268d4a1024d58aaf9f370c3b779b35c72a668fed",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 2
+                },
+                "signature": "1d7c8443d35324a537180279ddff20cf97bce30c7be0940471fb047ec60229043e53b75feb2999f07f38503adb0b8c3ad9610a795f2d72a2cba0870e27a9ee0b"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "a8c4759be8773bdae5a55c58ef8a96046f7b114c8af62afc56f788b0dbf912dc",
+                  "not_before": 16,
+                  "operation": "71f5eee6a328abcff943aa5d268d4a1024d58aaf9f370c3b779b35c72a668fed",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 3
+                },
+                "signature": "3ba70c23b43e0630c94feb22dc9144a597c130db0ce7efdb324ece27a99ab26895b5019bdabee6d792026c87a151d76d4eee3954e090d31482c170c054266b05"
+              }
+            ]
+          ],
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 2,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "cd6f6c54e365d97e5988f92ef73953afc672567bc231a7041127bd91ad599b4368a0c461049bc5c8f569e5b1ddf4e245b5abfbcbd6e199da6727587b90dea201"
+          },
+          "operation": "71f5eee6a328abcff943aa5d268d4a1024d58aaf9f370c3b779b35c72a668fed",
+          "v": 3
+        }
+      },
+      "name": "reject-unsafe-majority-absence"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "ack",
+        "object": {
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "receipts": [
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 1
+              },
+              "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+            },
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 2
+              },
+              "signature": "e1bea76a1d9e4cd7e36d4e685b6fb55779b4f12fdd3d749824e7b4800c03a5c1db402fd312299fbcc14e77a003519f91ee676a51b3ff8d0ef328d4d09afb0d0e"
+            }
+          ]
+        }
+      },
+      "name": "reject-signature"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "ack",
+        "object": {
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "receipts": [
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 99
+              },
+              "signature": "f938deaa61c7e06a92aa4ef08283d33c341cb3eec6c394c5bd679746e744e5970a5a1d18e3754353a229fe582d9508e04e8e163a0f08e89ccff50d8acf0a700c"
+            },
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 2
+              },
+              "signature": "e1bea76a1d9e4cd7e36d4e685b6fb55779b4f12fdd3d749824e7b4800c03a5c1db402fd312299fbcc14e77a003519f91ee676a51b3ff8d0ef328d4d09afb0d0e"
+            }
+          ]
+        }
+      },
+      "name": "reject-identity"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "ack",
+        "object": {
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "receipts": [
+            {
+              "message": {
+                "capsule": "different",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 1
+              },
+              "signature": "f938deaa61c7e06a92aa4ef08283d33c341cb3eec6c394c5bd679746e744e5970a5a1d18e3754353a229fe582d9508e04e8e163a0f08e89ccff50d8acf0a700c"
+            },
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 2
+              },
+              "signature": "e1bea76a1d9e4cd7e36d4e685b6fb55779b4f12fdd3d749824e7b4800c03a5c1db402fd312299fbcc14e77a003519f91ee676a51b3ff8d0ef328d4d09afb0d0e"
+            }
+          ]
+        }
+      },
+      "name": "reject-cross-capsule"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "ack",
+        "object": {
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "receipts": [
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-2",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 1
+              },
+              "signature": "f938deaa61c7e06a92aa4ef08283d33c341cb3eec6c394c5bd679746e744e5970a5a1d18e3754353a229fe582d9508e04e8e163a0f08e89ccff50d8acf0a700c"
+            },
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 2
+              },
+              "signature": "e1bea76a1d9e4cd7e36d4e685b6fb55779b4f12fdd3d749824e7b4800c03a5c1db402fd312299fbcc14e77a003519f91ee676a51b3ff8d0ef328d4d09afb0d0e"
+            }
+          ]
+        }
+      },
+      "name": "reject-challenge"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "ack",
+        "object": {
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "receipts": [
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 1000,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 1
+              },
+              "signature": "f938deaa61c7e06a92aa4ef08283d33c341cb3eec6c394c5bd679746e744e5970a5a1d18e3754353a229fe582d9508e04e8e163a0f08e89ccff50d8acf0a700c"
+            },
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 2
+              },
+              "signature": "e1bea76a1d9e4cd7e36d4e685b6fb55779b4f12fdd3d749824e7b4800c03a5c1db402fd312299fbcc14e77a003519f91ee676a51b3ff8d0ef328d4d09afb0d0e"
+            }
+          ]
+        }
+      },
+      "name": "reject-expired"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "ack",
+        "object": {
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "receipts": [
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 1
+              },
+              "signature": "f938deaa61c7e06a92aa4ef08283d33c341cb3eec6c394c5bd679746e744e5970a5a1d18e3754353a229fe582d9508e04e8e163a0f08e89ccff50d8acf0a700c"
+            },
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 1
+              },
+              "signature": "f938deaa61c7e06a92aa4ef08283d33c341cb3eec6c394c5bd679746e744e5970a5a1d18e3754353a229fe582d9508e04e8e163a0f08e89ccff50d8acf0a700c"
+            }
+          ]
+        }
+      },
+      "name": "reject-duplicate"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "ack",
+        "object": {
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "receipts": [
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 0,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 1
+              },
+              "signature": "f938deaa61c7e06a92aa4ef08283d33c341cb3eec6c394c5bd679746e744e5970a5a1d18e3754353a229fe582d9508e04e8e163a0f08e89ccff50d8acf0a700c"
+            },
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 2
+              },
+              "signature": "e1bea76a1d9e4cd7e36d4e685b6fb55779b4f12fdd3d749824e7b4800c03a5c1db402fd312299fbcc14e77a003519f91ee676a51b3ff8d0ef328d4d09afb0d0e"
+            }
+          ]
+        }
+      },
+      "name": "reject-rollback"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "release",
+        "object": {
+          "authorisation": "59b1803153c00ffba1c3f66c3848a5e7d85c6e27a05e24efd3cf3dba9d71e44a",
+          "finals": [
+            [
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 1
+                },
+                "signature": "cc4410dfa000aaab724eb12117a00f1f0974e427eafa02eb07d4541e7f193a98deb782e05e90c457c3742412d1e868eabfffdfe85054588c18a3b7cc33778e0b"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 2
+                },
+                "signature": "2be8c781e302584fa8cacfc6192e55a7f83574a89d5d3becb307f0c59d88676afc4e05efb699264be0addccdcf595817b840150c2121a769b85e01c20c5f5a01"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 3
+                },
+                "signature": "261ad6850cf931f6030bbdf551fa043e22be455c7616c9a6cd1f4ea05b16f827f302cfe70ad6f266284dd2bae40d1ce74bba34f3893b5eedbfb61e02e416b100"
+              }
+            ]
+          ],
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "operation": "0000000000000000000000000000000000000000000000000000000000000000",
+          "v": 3
+        }
+      },
+      "name": "reject-operation"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "release",
+        "object": {
+          "authorisation": "0000000000000000000000000000000000000000000000000000000000000000",
+          "finals": [
+            [
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 1
+                },
+                "signature": "cc4410dfa000aaab724eb12117a00f1f0974e427eafa02eb07d4541e7f193a98deb782e05e90c457c3742412d1e868eabfffdfe85054588c18a3b7cc33778e0b"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 2
+                },
+                "signature": "2be8c781e302584fa8cacfc6192e55a7f83574a89d5d3becb307f0c59d88676afc4e05efb699264be0addccdcf595817b840150c2121a769b85e01c20c5f5a01"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 3
+                },
+                "signature": "261ad6850cf931f6030bbdf551fa043e22be455c7616c9a6cd1f4ea05b16f827f302cfe70ad6f266284dd2bae40d1ce74bba34f3893b5eedbfb61e02e416b100"
+              }
+            ]
+          ],
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+          "v": 3
+        }
+      },
+      "name": "reject-authorisation"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "release",
+        "object": {
+          "authorisation": "52672005126454b3f8d158d971c096c803c09561fede9bd772cb5895f9f85f34",
+          "finals": [
+            [
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 1
+                },
+                "signature": "cc4410dfa000aaab724eb12117a00f1f0974e427eafa02eb07d4541e7f193a98deb782e05e90c457c3742412d1e868eabfffdfe85054588c18a3b7cc33778e0b"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 2
+                },
+                "signature": "2be8c781e302584fa8cacfc6192e55a7f83574a89d5d3becb307f0c59d88676afc4e05efb699264be0addccdcf595817b840150c2121a769b85e01c20c5f5a01"
+              }
+            ]
+          ],
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+          "v": 3
+        }
+      },
+      "name": "reject-partial"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "release",
+        "object": {
+          "authorisation": "ea9778817f38b5ba0e6f7b168bf64955bc67d61df411a1a95ba771638a9b19ed",
+          "finals": [
+            [
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 10,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 1
+                },
+                "signature": "cc4410dfa000aaab724eb12117a00f1f0974e427eafa02eb07d4541e7f193a98deb782e05e90c457c3742412d1e868eabfffdfe85054588c18a3b7cc33778e0b"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 2
+                },
+                "signature": "2be8c781e302584fa8cacfc6192e55a7f83574a89d5d3becb307f0c59d88676afc4e05efb699264be0addccdcf595817b840150c2121a769b85e01c20c5f5a01"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 3
+                },
+                "signature": "261ad6850cf931f6030bbdf551fa043e22be455c7616c9a6cd1f4ea05b16f827f302cfe70ad6f266284dd2bae40d1ce74bba34f3893b5eedbfb61e02e416b100"
+              }
+            ]
+          ],
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+          "v": 3
+        }
+      },
+      "name": "reject-early"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "release",
+        "object": {
+          "authorisation": "a88e1ebe177e19f7fd726771796141af38f97501f399684ea226814209cbfb84",
+          "finals": [
+            [
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 1
+                },
+                "signature": "cc4410dfa000aaab724eb12117a00f1f0974e427eafa02eb07d4541e7f193a98deb782e05e90c457c3742412d1e868eabfffdfe85054588c18a3b7cc33778e0b"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 2
+                },
+                "signature": "2be8c781e302584fa8cacfc6192e55a7f83574a89d5d3becb307f0c59d88676afc4e05efb699264be0addccdcf595817b840150c2121a769b85e01c20c5f5a01"
+              },
+              {
+                "message": {
+                  "capsule": "fixed-retained",
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "kind": "FINAL",
+                  "lower": 16,
+                  "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                  "not_before": 16,
+                  "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                  "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "proof": null,
+                  "seq": 1,
+                  "upper": 16,
+                  "v": 3,
+                  "value": "ABSENT",
+                  "witness": 3
+                },
+                "signature": "261ad6850cf931f6030bbdf551fa043e22be455c7616c9a6cd1f4ea05b16f827f302cfe70ad6f266284dd2bae40d1ce74bba34f3893b5eedbfb61e02e416b100"
+              }
+            ]
+          ],
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 2,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+          "v": 3
+        }
+      },
+      "name": "reject-wrong-manifest"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "ack",
+        "object": {
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "receipts": [
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 5,
+                    "value": true
+                  },
+                  "signature": "17d1ba97d642ea6bfb0b3a66290cc6938036abae302fef75e8c4d24999583b2783ec1f7ebd0fc9295b8e879444e40c516ec50f4deecca113e2ff2575e7c98105"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 1
+              },
+              "signature": "c743dbc26e1509cad15588cbd236abb24edca5c0ede72c54c550b0e4898b93be21443f7b587b814f5b41a9b0277722814450b754e88588b7336c724263f09d02"
+            },
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 5,
+                    "value": true
+                  },
+                  "signature": "17d1ba97d642ea6bfb0b3a66290cc6938036abae302fef75e8c4d24999583b2783ec1f7ebd0fc9295b8e879444e40c516ec50f4deecca113e2ff2575e7c98105"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 2
+              },
+              "signature": "f8e71cfefa2f8d47defee5056b3440492d600cad306a8c525d88fdab22f3e9008353b36103c4daf87c7e495eaecc03e60ec5e918b47150aece41b59391912602"
+            }
+          ]
+        }
+      },
+      "name": "reject-validly-signed-expired-proof"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "ack",
+        "object": {
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403",
+            "unsigned_extension": true
+          },
+          "receipts": [
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 1
+              },
+              "signature": "f938deaa61c7e06a92aa4ef08283d33c341cb3eec6c394c5bd679746e744e5970a5a1d18e3754353a229fe582d9508e04e8e163a0f08e89ccff50d8acf0a700c"
+            },
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 2
+              },
+              "signature": "e1bea76a1d9e4cd7e36d4e685b6fb55779b4f12fdd3d749824e7b4800c03a5c1db402fd312299fbcc14e77a003519f91ee676a51b3ff8d0ef328d4d09afb0d0e"
+            }
+          ]
+        }
+      },
+      "name": "reject-unsigned-manifest-extension"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "ack",
+        "object": {
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "receipts": [
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 1
+              },
+              "signature": "f938deaa61c7e06a92aa4ef08283d33c341cb3eec6c394c5bd679746e744e5970a5a1d18e3754353a229fe582d9508e04e8e163a0f08e89ccff50d8acf0a700c",
+              "unsigned_extension": true
+            },
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02"
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 2
+              },
+              "signature": "e1bea76a1d9e4cd7e36d4e685b6fb55779b4f12fdd3d749824e7b4800c03a5c1db402fd312299fbcc14e77a003519f91ee676a51b3ff8d0ef328d4d09afb0d0e"
+            }
+          ]
+        }
+      },
+      "name": "reject-unsigned-record-extension"
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "input": {
+        "kind": "ack",
+        "object": {
+          "manifest": {
+            "message": {
+              "capsule": "fixed-retained",
+              "commitment": "b48ccffde1091459c9fe5a6de956009cedc8f7f8c6b827ac8f8dd2843693a410",
+              "custody": {
+                "k": 2,
+                "keys": {
+                  "1": "e8e1be89bf020ae444a20107fa649e7bccf44ea120f2323308abbbc3dcdafd71",
+                  "2": "8671cb1fe20c23b572dcb5cc5e80f3b2cd6a274f4fd4e92ac730adbbe9e51c1e",
+                  "3": "25c297cdfc46c14db5a29e541318095a456d79a53760ada40aa90f1b01443f2c"
+                },
+                "n": 3
+              },
+              "epoch": 1,
+              "operation": {
+                "attempt": "release-1",
+                "kind": "reconstruct-aes-128-gcm"
+              },
+              "payload": "abababababababababababababababababababababababababababababababab",
+              "policy": {
+                "contracts": [
+                  {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "challenges": [
+                      {
+                        "deadline": 10,
+                        "id": "round-1",
+                        "open": 0
+                      }
+                    ],
+                    "end": 1000,
+                    "id": "A",
+                    "kind": "absence",
+                    "start": 0,
+                    "version": 1
+                  }
+                ],
+                "destination": {
+                  "consented": true,
+                  "kind": "simulated",
+                  "verified": true
+                },
+                "expression": "A",
+                "grace": 5,
+                "max_step": 60,
+                "owner": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                "version": 1
+              },
+              "quorum": {
+                "absence": 3,
+                "faults": 1,
+                "presence": 2
+              },
+              "slots": [
+                {
+                  "challenge": "round-1",
+                  "contract": "A",
+                  "deadline": 10,
+                  "open": 0
+                }
+              ],
+              "v": 3,
+              "witnesses": {
+                "1": "97d797bdd2b15372a410530174e2d5b53d1680d7e41abb5961c9a02cec67264a",
+                "2": "84c6b8199ab0165557874d0afc880acfbfe49a0296751219eb69c4304eee2b11",
+                "3": "ff4030911890ff23f8ee1968e067ee913f43f40c7cbb340247c8fc525e0b4dcb"
+              }
+            },
+            "signature": "61bee787dd988882356599befc60e1133b370aca649ab405edfd74c5eec07398b84ffc8ceadd9c7f6b4cd092608b843f87d3c7a120c3e2a5809180e4a1349403"
+          },
+          "receipts": [
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02",
+                  "unsigned_extension": true
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 1
+              },
+              "signature": "f938deaa61c7e06a92aa4ef08283d33c341cb3eec6c394c5bd679746e744e5970a5a1d18e3754353a229fe582d9508e04e8e163a0f08e89ccff50d8acf0a700c"
+            },
+            {
+              "message": {
+                "capsule": "fixed-retained",
+                "challenge": "round-1",
+                "contract": "A",
+                "kind": "OBSERVATION",
+                "lower": 5,
+                "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                "not_before": 16,
+                "operation": "ee5e41f81b99a1f76cf6e1b667c7338535e36b1a5bfb7fe827f08257d620272d",
+                "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+                "proof": {
+                  "message": {
+                    "authority": "6d70144cd6598bed35e129afb75d95e5827535a4356a8d74e5e4708741131163",
+                    "capsule": "fixed-retained",
+                    "challenge": "round-1",
+                    "contract": "A",
+                    "contract_version": 1,
+                    "id": "fixed-presence",
+                    "manifest": "230ca088075374d5c1e22c8550a3386cb516f50d95c6035b238372f3a401716b",
+                    "v": 3,
+                    "valid_from": 0,
+                    "valid_until": 1000,
+                    "value": true
+                  },
+                  "signature": "95f3a587d31f9a4f70df2d69321745ee174a2d74f501ab1c7008c39ff5d5cbca43f5ea139de437c0551d6d6a2dff8596961ddf69778837b1bc01cf6c792b5d02",
+                  "unsigned_extension": true
+                },
+                "seq": 1,
+                "upper": 5,
+                "v": 3,
+                "value": "PRESENT",
+                "witness": 2
+              },
+              "signature": "e1bea76a1d9e4cd7e36d4e685b6fb55779b4f12fdd3d749824e7b4800c03a5c1db402fd312299fbcc14e77a003519f91ee676a51b3ff8d0ef328d4d09afb0d0e"
+            }
+          ]
+        }
+      },
+      "name": "reject-unsigned-proof-extension"
+    }
+  ],
+  "version": "otherwise-retained-0.3"
+}

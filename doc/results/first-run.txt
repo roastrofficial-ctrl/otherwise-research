@@ -1,0 +1,19 @@
+test_A_last_second_witness (test_experiments.Experiments.test_A_last_second_witness) ... ok
+test_B_competing_executors (test_experiments.Experiments.test_B_competing_executors) ... ok
+test_C_forgotten_receipt (test_experiments.Experiments.test_C_forgotten_receipt) ... ok
+test_D_dead_scheduler (test_experiments.Experiments.test_D_dead_scheduler) ... ok
+test_E_double_release (test_experiments.Experiments.test_E_double_release) ... ok
+test_F_emergency_disarm (test_experiments.Experiments.test_F_emergency_disarm) ... ok
+test_G_broken_clock (test_experiments.Experiments.test_G_broken_clock) ... ok
+test_H_corrupted_history (test_experiments.Experiments.test_H_corrupted_history) ... ok
+test_I_unreachable_creator (test_experiments.Experiments.test_I_unreachable_creator) ... ok
+test_J_independent_interpretation (test_experiments.Experiments.test_J_independent_interpretation) ... ok
+test_K_two_of_three_reordered_duplicates_contradictions (test_experiments.Experiments.test_K_two_of_three_reordered_duplicates_contradictions) ... ok
+test_L_revocation_expiry_stale_and_scope (test_experiments.Experiments.test_L_revocation_expiry_stale_and_scope) ... ok
+test_M_policy_immutability_and_expression_validation (test_experiments.Experiments.test_M_policy_immutability_and_expression_validation) ... ok
+test_N_authenticated_encryption (test_experiments.Experiments.test_N_authenticated_encryption) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 2.487s
+
+OK

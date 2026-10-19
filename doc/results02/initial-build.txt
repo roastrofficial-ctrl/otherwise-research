@@ -1,0 +1,264 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [custodian3 internal] load build definition from Dockerfile
+#1 transferring dockerfile: 382B done
+#1 DONE 0.0s
+
+#2 [custodian2 internal] load build definition from Dockerfile
+#2 transferring dockerfile: 382B done
+#2 DONE 0.0s
+
+#3 [witness internal] load build definition from Dockerfile
+#3 transferring dockerfile: 382B done
+#3 DONE 0.0s
+
+#4 [demo internal] load build definition from Dockerfile
+#4 transferring dockerfile: 382B done
+#4 DONE 0.0s
+
+#5 [custodian1 internal] load build definition from Dockerfile
+#5 transferring dockerfile: 382B done
+#5 DONE 0.0s
+
+#6 [experiment internal] load build definition from Dockerfile
+#6 transferring dockerfile: 382B done
+#6 DONE 0.0s
+
+#7 [bounded-tests internal] load build definition from Dockerfile
+#7 transferring dockerfile: 382B done
+#7 DONE 0.0s
+
+#8 [operator internal] load build definition from Dockerfile
+#8 transferring dockerfile: 382B done
+#8 DONE 0.0s
+
+#9 [operator internal] load metadata for docker.io/library/node:22-bookworm-slim
+#9 ...
+
+#10 [demo internal] load metadata for docker.io/library/python:3.12-slim
+#10 DONE 0.8s
+
+#9 [operator internal] load metadata for docker.io/library/node:22-bookworm-slim
+#9 DONE 1.2s
+
+#11 [experiment internal] load .dockerignore
+#11 transferring context: 104B done
+#11 DONE 0.0s
+
+#12 [witness internal] load .dockerignore
+#12 transferring context: 104B done
+#12 DONE 0.0s
+
+#13 [custodian1 internal] load .dockerignore
+#13 transferring context: 104B done
+#13 DONE 0.0s
+
+#14 [custodian3 internal] load .dockerignore
+#14 transferring context: 104B done
+#14 DONE 0.0s
+
+#15 [demo internal] load .dockerignore
+#15 transferring context: 104B done
+#15 DONE 0.0s
+
+#16 [operator internal] load .dockerignore
+#16 transferring context: 104B done
+#16 DONE 0.0s
+
+#17 [custodian2 internal] load .dockerignore
+#17 transferring context: 104B done
+#17 DONE 0.0s
+
+#18 [bounded-tests stage-1 1/6] FROM docker.io/library/python:3.12-slim@sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1
+#18 CACHED
+
+#19 [bounded-tests internal] load .dockerignore
+#19 transferring context: 104B done
+#19 DONE 0.0s
+
+#20 [experiment internal] load build context
+#20 transferring context: 112.27kB 0.0s done
+#20 DONE 0.0s
+
+#21 [witness internal] load build context
+#21 transferring context: 112.27kB 0.0s done
+#21 DONE 0.0s
+
+#22 [custodian1 internal] load build context
+#22 transferring context: 173.34kB 0.0s done
+#22 DONE 0.0s
+
+#23 [custodian3 internal] load build context
+#23 transferring context: 173.34kB 0.0s done
+#23 DONE 0.1s
+
+#24 [demo internal] load build context
+#24 transferring context: 173.34kB 0.0s done
+#24 DONE 0.1s
+
+#25 [operator internal] load build context
+#25 transferring context: 173.34kB 0.0s done
+#25 DONE 0.1s
+
+#26 [custodian2 internal] load build context
+#26 transferring context: 173.34kB 0.0s done
+#26 DONE 0.1s
+
+#27 [bounded-tests internal] load build context
+#27 transferring context: 173.34kB 0.0s done
+#27 DONE 0.1s
+
+#28 [bounded-tests verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+#28 resolve docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392 done
+#28 sha256:cd2df7ff65c5fce1f8a18ce89e3aac24a80c1db3776d5842a4cf86bc27f300a2 6.79kB / 6.79kB done
+#28 sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6 0B / 28.14MB 0.1s
+#28 sha256:8d752b15e16356e3c5fddfe9c08b5cd27a091835fe465cdef26dd30d3d856171 0B / 3.31kB 0.1s
+#28 sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 0B / 49.96MB 0.1s
+#28 sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392 5.22kB / 5.22kB done
+#28 sha256:b20fe038d9592822dd534600a1ddf467e985178aa3fed60ec441a056c2cc45bd 1.93kB / 1.93kB done
+#28 sha256:cd2df7ff65c5fce1f8a18ce89e3aac24a80c1db3776d5842a4cf86bc27f300a2 6.79kB / 6.79kB done
+#28 sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6 2.10MB / 28.14MB 0.2s
+#28 sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392 5.22kB / 5.22kB done
+#28 sha256:b20fe038d9592822dd534600a1ddf467e985178aa3fed60ec441a056c2cc45bd 1.93kB / 1.93kB done
+#28 sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6 8.39MB / 28.14MB 0.4s
+#28 sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6 10.49MB / 28.14MB 0.5s
+#28 sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6 15.73MB / 28.14MB 0.7s
+#28 sha256:8d752b15e16356e3c5fddfe9c08b5cd27a091835fe465cdef26dd30d3d856171 3.31kB / 3.31kB 0.7s done
+#28 sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 4.19MB / 49.96MB 0.7s
+#28 sha256:aa7268e3e147e6faaf14f99734d2c8565bb9080ec0f292ae2aae65879bfd2727 0B / 1.71MB 0.7s
+#28 sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6 20.97MB / 28.14MB 0.9s
+#28 sha256:8d752b15e16356e3c5fddfe9c08b5cd27a091835fe465cdef26dd30d3d856171 3.31kB / 3.31kB 0.7s done
+#28 sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 7.34MB / 49.96MB 0.9s
+#28 sha256:aa7268e3e147e6faaf14f99734d2c8565bb9080ec0f292ae2aae65879bfd2727 1.05MB / 1.71MB 1.0s
+#28 sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6 25.17MB / 28.14MB 1.1s
+#28 sha256:aa7268e3e147e6faaf14f99734d2c8565bb9080ec0f292ae2aae65879bfd2727 1.71MB / 1.71MB 1.0s done
+#28 sha256:a8e3f40b26e8ab8419b3b90a177118d69162cdcd4799bd0c6bae541309993590 0B / 447B 1.1s
+#28 sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6 27.26MB / 28.14MB 1.2s
+#28 sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 11.53MB / 49.96MB 1.2s
+#28 sha256:aa7268e3e147e6faaf14f99734d2c8565bb9080ec0f292ae2aae65879bfd2727 1.71MB / 1.71MB 1.0s done
+#28 sha256:a8e3f40b26e8ab8419b3b90a177118d69162cdcd4799bd0c6bae541309993590 447B / 447B 1.1s done
+#28 extracting sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6
+#28 sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6 28.14MB / 28.14MB 1.2s done
+#28 sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 15.73MB / 49.96MB 1.4s
+#28 sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 18.87MB / 49.96MB 1.5s
+#28 sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 23.07MB / 49.96MB 1.6s
+#28 sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 26.21MB / 49.96MB 1.7s
+#28 sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 33.55MB / 49.96MB 1.9s
+#28 sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 37.75MB / 49.96MB 2.0s
+#28 extracting sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6 0.7s done
+#28 extracting sha256:8d752b15e16356e3c5fddfe9c08b5cd27a091835fe465cdef26dd30d3d856171 done
+#28 sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 45.09MB / 49.96MB 2.2s
+#28 sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 49.28MB / 49.96MB 2.3s
+#28 sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 49.96MB / 49.96MB 2.3s done
+#28 extracting sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 0.1s
+#28 extracting sha256:a7d3259c055657a65a0815a6a5d07333f0b859c90cb197f4c7853941f77e78f2 0.7s done
+#28 extracting sha256:aa7268e3e147e6faaf14f99734d2c8565bb9080ec0f292ae2aae65879bfd2727 0.0s done
+#28 extracting sha256:a8e3f40b26e8ab8419b3b90a177118d69162cdcd4799bd0c6bae541309993590 done
+#28 DONE 3.1s
+
+#29 [bounded-tests stage-1 2/6] COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+#29 DONE 0.1s
+
+#30 [demo stage-1 3/6] WORKDIR /otherwise
+#30 DONE 0.0s
+
+#31 [experiment stage-1 4/6] COPY requirements.txt .
+#31 DONE 0.0s
+
+#32 [demo stage-1 5/6] RUN pip install --no-cache-dir -r requirements.txt
+#32 0.891 Collecting cryptography==46.0.3 (from -r requirements.txt (line 1))
+#32 0.933   Downloading cryptography-46.0.3-cp311-abi3-manylinux_2_34_aarch64.whl.metadata (5.7 kB)
+#32 0.974 Collecting pycryptodome==3.23.0 (from -r requirements.txt (line 2))
+#32 0.981   Downloading pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+#32 1.023 Collecting cffi>=2.0.0 (from cryptography==46.0.3->-r requirements.txt (line 1))
+#32 1.028   Downloading cffi-2.1.1-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (2.5 kB)
+#32 1.037 Collecting pycparser (from cffi>=2.0.0->cryptography==46.0.3->-r requirements.txt (line 1))
+#32 1.044   Downloading pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+#32 1.053 Downloading cryptography-46.0.3-cp311-abi3-manylinux_2_34_aarch64.whl (4.3 MB)
+#32 1.206    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 30.6 MB/s eta 0:00:00
+#32 1.216 Downloading pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.2 MB)
+#32 1.286    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 31.8 MB/s eta 0:00:00
+#32 1.295 Downloading cffi-2.1.1-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (222 kB)
+#32 1.310 Downloading pycparser-3.11-py3-none-any.whl (51 kB)
+#32 1.333 Installing collected packages: pycryptodome, pycparser, cffi, cryptography
+#32 1.673 Successfully installed cffi-2.1.1 cryptography-46.0.3 pycparser-3.11 pycryptodome-3.23.0
+#32 1.674 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#32 1.721 
+#32 1.721 [notice] A new release of pip is available: 25.0.1 -> 26.2.1
+#32 1.721 [notice] To update, run: pip install --upgrade pip
+#32 DONE 1.8s
+
+#33 [custodian1 stage-1 6/6] COPY . .
+#33 DONE 0.0s
+
+#34 [demo] exporting to image
+#34 exporting layers 0.1s done
+#34 writing image sha256:50f29eca5643f083fe27258fa3a6689282f9cca06051b330c991d86f3b5d900c 0.1s done
+#34 naming to docker.io/library/dead-man-demo 0.0s done
+#34 DONE 0.2s
+
+#35 [witness] exporting to image
+#35 exporting layers 0.1s done
+#35 writing image sha256:02a5fc96e1bc1f63b48ad2e14fbb58bba1ab70cc33f4eb2c464ffc8bd2b6727b done
+#35 naming to docker.io/library/dead-man-witness done
+#35 DONE 0.2s
+
+#36 [custodian1] exporting to image
+#36 exporting layers 0.1s done
+#36 writing image sha256:179ccb62c22987e8d2a5ca8f54692169a3ed26d396bf34c5b102acfb7d0c484c done
+#36 naming to docker.io/library/dead-man-custodian1 done
+#36 DONE 0.2s
+
+#37 [witness] resolving provenance for metadata file
+#37 DONE 0.0s
+
+#38 [custodian1] resolving provenance for metadata file
+#38 DONE 0.0s
+
+#39 [experiment] exporting to image
+#39 exporting layers 0.1s done
+#39 writing image sha256:3b546d3521db6791a6108f3e968382b56041224c1d9f8e5a94476710d44acfe4 0.1s done
+#39 naming to docker.io/library/dead-man-experiment done
+#39 DONE 0.2s
+
+#40 [bounded-tests] exporting to image
+#40 exporting layers 0.1s done
+#40 writing image sha256:9a94546b4f7b81f7e6732ab35547a1e8802f57ccd86952f594a7fc4901fc2d44 0.1s done
+#40 naming to docker.io/library/dead-man-bounded-tests done
+#40 DONE 0.2s
+
+#41 [operator] exporting to image
+#41 exporting layers 0.1s done
+#41 writing image sha256:cad7e61177a875b98b06c5c410235af37712c65311c5e0a6284a5895e7a9fe73 0.1s done
+#41 naming to docker.io/library/dead-man-operator done
+#41 DONE 0.2s
+
+#42 [custodian2] exporting to image
+#42 exporting layers 0.1s done
+#42 writing image sha256:ce76ad3a6c12443640d723697897a79093cb21bce22fa880600d678b546043ad 0.1s done
+#42 naming to docker.io/library/dead-man-custodian2 0.0s done
+#42 DONE 0.2s
+
+#43 [custodian3] exporting to image
+#43 exporting layers 0.1s done
+#43 writing image sha256:17c990d83e9547fc340de2c3d22d92f2981f137a70fd523d6bad305d19162024 0.1s done
+#43 naming to docker.io/library/dead-man-custodian3 0.0s done
+#43 DONE 0.2s
+
+#44 [experiment] resolving provenance for metadata file
+#44 DONE 0.0s
+
+#45 [demo] resolving provenance for metadata file
+#45 DONE 0.0s
+
+#46 [custodian3] resolving provenance for metadata file
+#46 DONE 0.0s
+
+#47 [custodian2] resolving provenance for metadata file
+#47 DONE 0.0s
+
+#48 [bounded-tests] resolving provenance for metadata file
+#48 DONE 0.0s
+
+#49 [operator] resolving provenance for metadata file
+#49 DONE 0.0s

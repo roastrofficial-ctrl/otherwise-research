@@ -1,0 +1,8 @@
+.git
+.DS_Store
+__pycache__
+*.db
+*.key
+doc/results
+doc/results02
+doc/results03

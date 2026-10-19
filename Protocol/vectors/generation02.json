@@ -1,0 +1,3528 @@
+{
+  "protocol": "otherwise-bounded-0.2",
+  "signed_manifest": {
+    "manifest": {
+      "algorithm": "AES-128-GCM",
+      "capsule": "solo",
+      "clock": {
+        "outage": "withhold-and-restart-grace",
+        "profile": "witness-observed-v2"
+      },
+      "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+      "custody": {
+        "k": 2,
+        "keys": {
+          "1": "24c003a710972e84e8307bd42cf101fac02f6bb2d636a18349d70096fd1df39c",
+          "2": "dd9f2d2e2200c8ed99d5a39663423948145aa8f001588b41c970c0d4587306eb",
+          "3": "4cef7eae6a5052ac5d746f2964e6569cd6872a6e4105bfbee33bec382917f4dd"
+        },
+        "n": 3,
+        "scheme": "shamir-pycryptodome-128"
+      },
+      "epoch": 1,
+      "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c",
+      "policy": {
+        "contracts": [
+          {
+            "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+            "challenges": [
+              {
+                "deadline": 10,
+                "id": "one",
+                "open": 0
+              },
+              {
+                "deadline": 20,
+                "id": "two",
+                "open": 11
+              }
+            ],
+            "end": 1000,
+            "id": "A",
+            "kind": "absence",
+            "start": 0,
+            "version": 1
+          }
+        ],
+        "destination": {
+          "consented": true,
+          "kind": "simulated",
+          "verified": true
+        },
+        "expression": "A",
+        "grace": 5,
+        "max_step": 60,
+        "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+        "version": 1
+      },
+      "v": 2,
+      "witness": "d586cb906108cfb3be3b3867d9cb3bdeafa0230b5a25e54d34cef9351b406fb9"
+    },
+    "signature": "3f477f7522650104190ed2c94ddfeadf79d3705c02ff55838d018d0b1d13fdcdaee695d2d0af2418e7b174ddbd8b0d18692d847687c325125822d8a9960dee0a"
+  },
+  "test_only_private_seeds": [
+    "a6aa7674d811edf4899ef432fbcf7ac3ebdc7f35becc35fd155bd33f1390e6d2",
+    "cfc0a52a8382060dc76551d04fa40e16e4ffd23c764bb8a8ec7409d3ef4dc801",
+    "daa6a2758ee312b6b4c362a7586f6a91addcafee1523a0a83a834da0824f4ab0",
+    "a5855ab14ff2ca7a24f8aab6583bda5edb9b18dfad336ed595e304fe01513817",
+    "101205c43abc30161d811d318a76da45885799d3e431edb1773d9884977ba252",
+    "95982258c45b79d4b84b7a5ce25f3fe813467c5ed29a3c24e016c44e7cec2f4d",
+    "61ebb29c38ac524781613c42d4053e1a49f44cb575996722ec8aadeb2859db68",
+    "4f0a439fff67d8aa4082b9099b99b4576b7667c0f55fdd76297f469a25302291"
+  ],
+  "vectors": [
+    {
+      "expected": {
+        "authorised": false,
+        "eligible": false,
+        "ok": true,
+        "results": {
+          "contracts": {
+            "A": false
+          },
+          "satisfied": false
+        }
+      },
+      "name": "solo-inclusive-deadline",
+      "snapshot": {
+        "capsule": "solo",
+        "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+        "events": [
+          {
+            "capsule": "solo",
+            "data": {
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "solo",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "v": 1
+              },
+              "signature": "fbe39e7a61ee5b3d9612e427fd96f22a11ad7718bb4f4954687c62be64b2a1887e03445cf3c9d5e6c64ca2006bb8aeb1983f1d40e5a5fe5fa5ec8f0dc7845e04"
+            },
+            "kind": "ARMED",
+            "prev": "f3ae334d4ab7e0bb08e825b118b192f8204ee7fe91e2bb441021c39e65c7759b",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 10,
+              "id": "one",
+              "open": 0
+            },
+            "kind": "CHALLENGE",
+            "prev": "0ad4ed7d118fa1f2a89c4e2ce090d286cd332ffc96f5cd0c9c09912b7b390d1c",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 20,
+              "id": "two",
+              "open": 11
+            },
+            "kind": "CHALLENGE",
+            "prev": "4332bff82a78489cc43f04cce221c66e225da63882a9cb29da563dab1ca7d137",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "7a0bb87fd36905f9b0cc58d5d00a2430801680fdafd958d0b68881c116aaacf5",
+            "seq": 5,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "SUBMITTED",
+            "prev": "b9355d84f7e928ffca04a46de0b91e797f8503bba82e8bea9b65882c4b5390fa",
+            "seq": 6,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "ACCEPTED",
+            "prev": "b227c1feee10d5231ff3e399b4df9d472d927d157772db4d8f2f5f7971013ebc",
+            "seq": 7,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "ec3ec8baa65285d7ac21e7b9f6075d72ac0b7e2adde4155970e53fe29c929cf1",
+            "seq": 8,
+            "time": 10,
+            "v": 1
+          }
+        ],
+        "head": "3fb1dbe73c3401449f304f5610e74a4b42a27de1886e2ea571c286b8f8ab43a3",
+        "healthy": true,
+        "now": 10,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [
+                {
+                  "deadline": 10,
+                  "id": "one",
+                  "open": 0
+                },
+                {
+                  "deadline": 20,
+                  "id": "two",
+                  "open": 11
+                }
+              ],
+              "end": 1000,
+              "id": "A",
+              "kind": "absence",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": "A",
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    },
+    {
+      "expected": {
+        "authorised": false,
+        "eligible": false,
+        "ok": true,
+        "results": {
+          "contracts": {
+            "A": true
+          },
+          "satisfied": true
+        }
+      },
+      "name": "solo-missed-second-grace",
+      "snapshot": {
+        "capsule": "solo",
+        "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+        "events": [
+          {
+            "capsule": "solo",
+            "data": {
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "solo",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "v": 1
+              },
+              "signature": "fbe39e7a61ee5b3d9612e427fd96f22a11ad7718bb4f4954687c62be64b2a1887e03445cf3c9d5e6c64ca2006bb8aeb1983f1d40e5a5fe5fa5ec8f0dc7845e04"
+            },
+            "kind": "ARMED",
+            "prev": "f3ae334d4ab7e0bb08e825b118b192f8204ee7fe91e2bb441021c39e65c7759b",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 10,
+              "id": "one",
+              "open": 0
+            },
+            "kind": "CHALLENGE",
+            "prev": "0ad4ed7d118fa1f2a89c4e2ce090d286cd332ffc96f5cd0c9c09912b7b390d1c",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 20,
+              "id": "two",
+              "open": 11
+            },
+            "kind": "CHALLENGE",
+            "prev": "4332bff82a78489cc43f04cce221c66e225da63882a9cb29da563dab1ca7d137",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "7a0bb87fd36905f9b0cc58d5d00a2430801680fdafd958d0b68881c116aaacf5",
+            "seq": 5,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "SUBMITTED",
+            "prev": "b9355d84f7e928ffca04a46de0b91e797f8503bba82e8bea9b65882c4b5390fa",
+            "seq": 6,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "ACCEPTED",
+            "prev": "b227c1feee10d5231ff3e399b4df9d472d927d157772db4d8f2f5f7971013ebc",
+            "seq": 7,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "ec3ec8baa65285d7ac21e7b9f6075d72ac0b7e2adde4155970e53fe29c929cf1",
+            "seq": 8,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "3fb1dbe73c3401449f304f5610e74a4b42a27de1886e2ea571c286b8f8ab43a3",
+            "seq": 9,
+            "time": 21,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "grace": 5,
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "2df5bc9b0526cec368e8ebf867ad856d07ad2678c834b54e674d29b3c451454a"
+            },
+            "kind": "CANDIDATE",
+            "prev": "2df5bc9b0526cec368e8ebf867ad856d07ad2678c834b54e674d29b3c451454a",
+            "seq": 10,
+            "time": 21,
+            "v": 1
+          }
+        ],
+        "head": "ed139a20be84636efbc76a500f8f01fbeac56bf6acc15c0445276a6ce5312574",
+        "healthy": true,
+        "now": 21,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [
+                {
+                  "deadline": 10,
+                  "id": "one",
+                  "open": 0
+                },
+                {
+                  "deadline": 20,
+                  "id": "two",
+                  "open": 11
+                }
+              ],
+              "end": 1000,
+              "id": "A",
+              "kind": "absence",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": "A",
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    },
+    {
+      "expected": {
+        "authorised": false,
+        "eligible": true,
+        "ok": true,
+        "results": {
+          "contracts": {
+            "A": true
+          },
+          "satisfied": true
+        }
+      },
+      "name": "solo-grace-boundary",
+      "snapshot": {
+        "capsule": "solo",
+        "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+        "events": [
+          {
+            "capsule": "solo",
+            "data": {
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "solo",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "v": 1
+              },
+              "signature": "fbe39e7a61ee5b3d9612e427fd96f22a11ad7718bb4f4954687c62be64b2a1887e03445cf3c9d5e6c64ca2006bb8aeb1983f1d40e5a5fe5fa5ec8f0dc7845e04"
+            },
+            "kind": "ARMED",
+            "prev": "f3ae334d4ab7e0bb08e825b118b192f8204ee7fe91e2bb441021c39e65c7759b",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 10,
+              "id": "one",
+              "open": 0
+            },
+            "kind": "CHALLENGE",
+            "prev": "0ad4ed7d118fa1f2a89c4e2ce090d286cd332ffc96f5cd0c9c09912b7b390d1c",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 20,
+              "id": "two",
+              "open": 11
+            },
+            "kind": "CHALLENGE",
+            "prev": "4332bff82a78489cc43f04cce221c66e225da63882a9cb29da563dab1ca7d137",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "7a0bb87fd36905f9b0cc58d5d00a2430801680fdafd958d0b68881c116aaacf5",
+            "seq": 5,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "SUBMITTED",
+            "prev": "b9355d84f7e928ffca04a46de0b91e797f8503bba82e8bea9b65882c4b5390fa",
+            "seq": 6,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "ACCEPTED",
+            "prev": "b227c1feee10d5231ff3e399b4df9d472d927d157772db4d8f2f5f7971013ebc",
+            "seq": 7,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "ec3ec8baa65285d7ac21e7b9f6075d72ac0b7e2adde4155970e53fe29c929cf1",
+            "seq": 8,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "3fb1dbe73c3401449f304f5610e74a4b42a27de1886e2ea571c286b8f8ab43a3",
+            "seq": 9,
+            "time": 21,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "grace": 5,
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "2df5bc9b0526cec368e8ebf867ad856d07ad2678c834b54e674d29b3c451454a"
+            },
+            "kind": "CANDIDATE",
+            "prev": "2df5bc9b0526cec368e8ebf867ad856d07ad2678c834b54e674d29b3c451454a",
+            "seq": 10,
+            "time": 21,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "ed139a20be84636efbc76a500f8f01fbeac56bf6acc15c0445276a6ce5312574",
+            "seq": 11,
+            "time": 26,
+            "v": 1
+          }
+        ],
+        "head": "25f361b70db767d6820fb8afdfacd5d1c87b40dab57815bcb2014cfd56767bce",
+        "healthy": true,
+        "now": 26,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [
+                {
+                  "deadline": 10,
+                  "id": "one",
+                  "open": 0
+                },
+                {
+                  "deadline": 20,
+                  "id": "two",
+                  "open": 11
+                }
+              ],
+              "end": 1000,
+              "id": "A",
+              "kind": "absence",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": "A",
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    },
+    {
+      "expected": {
+        "authorised": true,
+        "eligible": true,
+        "ok": true,
+        "results": {
+          "contracts": {
+            "A": true
+          },
+          "satisfied": true
+        }
+      },
+      "name": "solo-authorised",
+      "snapshot": {
+        "capsule": "solo",
+        "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+        "events": [
+          {
+            "capsule": "solo",
+            "data": {
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "solo",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "v": 1
+              },
+              "signature": "fbe39e7a61ee5b3d9612e427fd96f22a11ad7718bb4f4954687c62be64b2a1887e03445cf3c9d5e6c64ca2006bb8aeb1983f1d40e5a5fe5fa5ec8f0dc7845e04"
+            },
+            "kind": "ARMED",
+            "prev": "f3ae334d4ab7e0bb08e825b118b192f8204ee7fe91e2bb441021c39e65c7759b",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 10,
+              "id": "one",
+              "open": 0
+            },
+            "kind": "CHALLENGE",
+            "prev": "0ad4ed7d118fa1f2a89c4e2ce090d286cd332ffc96f5cd0c9c09912b7b390d1c",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 20,
+              "id": "two",
+              "open": 11
+            },
+            "kind": "CHALLENGE",
+            "prev": "4332bff82a78489cc43f04cce221c66e225da63882a9cb29da563dab1ca7d137",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "7a0bb87fd36905f9b0cc58d5d00a2430801680fdafd958d0b68881c116aaacf5",
+            "seq": 5,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "SUBMITTED",
+            "prev": "b9355d84f7e928ffca04a46de0b91e797f8503bba82e8bea9b65882c4b5390fa",
+            "seq": 6,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "ACCEPTED",
+            "prev": "b227c1feee10d5231ff3e399b4df9d472d927d157772db4d8f2f5f7971013ebc",
+            "seq": 7,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "ec3ec8baa65285d7ac21e7b9f6075d72ac0b7e2adde4155970e53fe29c929cf1",
+            "seq": 8,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "3fb1dbe73c3401449f304f5610e74a4b42a27de1886e2ea571c286b8f8ab43a3",
+            "seq": 9,
+            "time": 21,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "grace": 5,
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "2df5bc9b0526cec368e8ebf867ad856d07ad2678c834b54e674d29b3c451454a"
+            },
+            "kind": "CANDIDATE",
+            "prev": "2df5bc9b0526cec368e8ebf867ad856d07ad2678c834b54e674d29b3c451454a",
+            "seq": 10,
+            "time": 21,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "ed139a20be84636efbc76a500f8f01fbeac56bf6acc15c0445276a6ce5312574",
+            "seq": 11,
+            "time": 26,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "candidate": 10,
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c",
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "25f361b70db767d6820fb8afdfacd5d1c87b40dab57815bcb2014cfd56767bce"
+            },
+            "kind": "AUTHORISED",
+            "prev": "25f361b70db767d6820fb8afdfacd5d1c87b40dab57815bcb2014cfd56767bce",
+            "seq": 12,
+            "time": 26,
+            "v": 1
+          }
+        ],
+        "head": "d2c15c14dbee13bf4d19989a43143a79e42846fe732ae40820be945929ac12ab",
+        "healthy": true,
+        "now": 26,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [
+                {
+                  "deadline": 10,
+                  "id": "one",
+                  "open": 0
+                },
+                {
+                  "deadline": 20,
+                  "id": "two",
+                  "open": 11
+                }
+              ],
+              "end": 1000,
+              "id": "A",
+              "kind": "absence",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": "A",
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    },
+    {
+      "expected": {
+        "authorised": false,
+        "eligible": false,
+        "ok": true,
+        "results": {
+          "contracts": {
+            "A": true
+          },
+          "satisfied": true
+        }
+      },
+      "name": "disarm-wins",
+      "snapshot": {
+        "capsule": "disarm",
+        "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+        "events": [
+          {
+            "capsule": "disarm",
+            "data": {
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "disarm",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "disarm",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "v": 1
+              },
+              "signature": "9440ac96dd10f4093d70a78889e485bf6fd0bb5ab63ce63e1dc22709fe4c80adad93f490e9e1fbe4d4995682be59215167ba43e180d6ddbefd17b7f8b2a92e0d"
+            },
+            "kind": "ARMED",
+            "prev": "f682362247f966c82c1960e897b5e19be93a70773cfcb0462cf5f493b728a59b",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "disarm",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 10,
+              "id": "one",
+              "open": 0
+            },
+            "kind": "CHALLENGE",
+            "prev": "6456ac03a8b29b651175255bbbdc568f74577758b1c30bcf1d5dbee8be823cae",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "disarm",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 20,
+              "id": "two",
+              "open": 11
+            },
+            "kind": "CHALLENGE",
+            "prev": "eb5b45a962999d6bacc6e5ed3ac745d5bdbbd3fd024337e1e1255e373d03b0c0",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "disarm",
+            "data": {
+              "message": {
+                "action": "DISARMED",
+                "capsule": "disarm",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "v": 1
+              },
+              "signature": "86f43ba16930dfa1f7410a50a8b9b728a8247f5823ba573266d87f99260a1e69eb8785828b76aa8728447b6a13f3a89acae30b8ba93031281fc780bb5ae68b01"
+            },
+            "kind": "DISARMED",
+            "prev": "1586d58124394ed9e04bc939f65f9e1addced8d91521849225a1d1a4701392f4",
+            "seq": 5,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "disarm",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "2b0bbf9b68d1e4587c575f048cbb2abb6de1d451033e587e4e7d34abfec42437",
+            "seq": 6,
+            "time": 11,
+            "v": 1
+          }
+        ],
+        "head": "16a19da790c7006a934f13d305ecf049ba9b190c80834ddee1fd7ffb2bf32de9",
+        "healthy": true,
+        "now": 11,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [
+                {
+                  "deadline": 10,
+                  "id": "one",
+                  "open": 0
+                },
+                {
+                  "deadline": 20,
+                  "id": "two",
+                  "open": 11
+                }
+              ],
+              "end": 1000,
+              "id": "A",
+              "kind": "absence",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": "A",
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    },
+    {
+      "expected": {
+        "authorised": false,
+        "eligible": false,
+        "ok": true,
+        "results": {
+          "contracts": {
+            "A": true
+          },
+          "satisfied": true
+        }
+      },
+      "name": "outage-withholds",
+      "snapshot": {
+        "capsule": "recovery",
+        "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+        "events": [
+          {
+            "capsule": "recovery",
+            "data": {
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "recovery",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "recovery",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "v": 1
+              },
+              "signature": "77e7deb774068b60877674684817cb00d42064e636e463ffd3acee2df27e6dbff0d542abff2157ad4cc67ce721a10958678792a19ffdda5fff46f219a0c7500d"
+            },
+            "kind": "ARMED",
+            "prev": "271282b032df221bf96e7773c7c856ff5fbde7d34da398f83f340eb9a7197ba5",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "recovery",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 10,
+              "id": "one",
+              "open": 0
+            },
+            "kind": "CHALLENGE",
+            "prev": "6e80ee7d447be74e105d0cd92f56016a40a9a3340da5be382b60da6cdc0324f9",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "recovery",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 20,
+              "id": "two",
+              "open": 11
+            },
+            "kind": "CHALLENGE",
+            "prev": "e55fef15d5a7f9816f51a9107219d8a8a2e18f276c1f4b782b673d8d74f7abc7",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "recovery",
+            "data": {
+              "healthy": false
+            },
+            "kind": "CLOCK",
+            "prev": "283f13a3d68a840424d9fc667be32977831eae1a8c46017c857be99c4a1e6991",
+            "seq": 5,
+            "time": 11,
+            "v": 1
+          }
+        ],
+        "head": "7c16deda2822f04c7785fbdc7561335e0b82bd85cb84b4a376ae0cd60462d615",
+        "healthy": false,
+        "now": 11,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [
+                {
+                  "deadline": 10,
+                  "id": "one",
+                  "open": 0
+                },
+                {
+                  "deadline": 20,
+                  "id": "two",
+                  "open": 11
+                }
+              ],
+              "end": 1000,
+              "id": "A",
+              "kind": "absence",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": "A",
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    },
+    {
+      "expected": {
+        "authorised": true,
+        "eligible": true,
+        "ok": true,
+        "results": {
+          "contracts": {
+            "A": true
+          },
+          "satisfied": true
+        }
+      },
+      "name": "owner-recovery-fresh-grace",
+      "snapshot": {
+        "capsule": "recovery",
+        "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+        "events": [
+          {
+            "capsule": "recovery",
+            "data": {
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "recovery",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "recovery",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "v": 1
+              },
+              "signature": "77e7deb774068b60877674684817cb00d42064e636e463ffd3acee2df27e6dbff0d542abff2157ad4cc67ce721a10958678792a19ffdda5fff46f219a0c7500d"
+            },
+            "kind": "ARMED",
+            "prev": "271282b032df221bf96e7773c7c856ff5fbde7d34da398f83f340eb9a7197ba5",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "recovery",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 10,
+              "id": "one",
+              "open": 0
+            },
+            "kind": "CHALLENGE",
+            "prev": "6e80ee7d447be74e105d0cd92f56016a40a9a3340da5be382b60da6cdc0324f9",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "recovery",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 20,
+              "id": "two",
+              "open": 11
+            },
+            "kind": "CHALLENGE",
+            "prev": "e55fef15d5a7f9816f51a9107219d8a8a2e18f276c1f4b782b673d8d74f7abc7",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "recovery",
+            "data": {
+              "healthy": false
+            },
+            "kind": "CLOCK",
+            "prev": "283f13a3d68a840424d9fc667be32977831eae1a8c46017c857be99c4a1e6991",
+            "seq": 5,
+            "time": 11,
+            "v": 1
+          },
+          {
+            "capsule": "recovery",
+            "data": {
+              "message": {
+                "action": "RECOVERED",
+                "capsule": "recovery",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "head": "7c16deda2822f04c7785fbdc7561335e0b82bd85cb84b4a376ae0cd60462d615",
+                "v": 2
+              },
+              "signature": "1c91f4b02d4701aff5f4c4b2460aa6b7cad57496880230d66cc68dabde3da70be917337afc83802f80c7c997b32b006123d602d40f2bde4bc9b2ecc984fcde09"
+            },
+            "kind": "RECOVERED",
+            "prev": "7c16deda2822f04c7785fbdc7561335e0b82bd85cb84b4a376ae0cd60462d615",
+            "seq": 6,
+            "time": 11,
+            "v": 1
+          },
+          {
+            "capsule": "recovery",
+            "data": {
+              "grace": 5,
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "1db90ec2f3edbdc69a9bbe0fb3c67b5802ccc0d7e6851cd1f794b81d0e1f1329"
+            },
+            "kind": "CANDIDATE",
+            "prev": "1db90ec2f3edbdc69a9bbe0fb3c67b5802ccc0d7e6851cd1f794b81d0e1f1329",
+            "seq": 7,
+            "time": 11,
+            "v": 1
+          },
+          {
+            "capsule": "recovery",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "d5b47ecf1c5ecbb892235a4654905763c8e8ccfebc499c0b4c2785c76b8ae840",
+            "seq": 8,
+            "time": 16,
+            "v": 1
+          },
+          {
+            "capsule": "recovery",
+            "data": {
+              "candidate": 7,
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c",
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "d7ccc923ba44282b73e501ec016ec570047aa02317c329c80d13658197ea3b17"
+            },
+            "kind": "AUTHORISED",
+            "prev": "d7ccc923ba44282b73e501ec016ec570047aa02317c329c80d13658197ea3b17",
+            "seq": 9,
+            "time": 16,
+            "v": 1
+          }
+        ],
+        "head": "a7d32a8b10e9a4274d7845acdcda08426fe727eb276399855c6a5d3f2ea718ea",
+        "healthy": true,
+        "now": 16,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [
+                {
+                  "deadline": 10,
+                  "id": "one",
+                  "open": 0
+                },
+                {
+                  "deadline": 20,
+                  "id": "two",
+                  "open": 11
+                }
+              ],
+              "end": 1000,
+              "id": "A",
+              "kind": "absence",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": "A",
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    },
+    {
+      "expected": {
+        "authorised": true,
+        "eligible": true,
+        "ok": true,
+        "results": {
+          "contracts": {
+            "A": true,
+            "B": true,
+            "C": false
+          },
+          "satisfied": true
+        }
+      },
+      "name": "council-contradiction-and-rejected-proof",
+      "snapshot": {
+        "capsule": "council",
+        "commitment": "e189edebf6c24b4efa7ec1f2ce9e20cd89668cd7f7dafec7039d4e99d22f61dd",
+        "events": [
+          {
+            "capsule": "council",
+            "data": {
+              "commitment": "e189edebf6c24b4efa7ec1f2ce9e20cd89668cd7f7dafec7039d4e99d22f61dd",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "council",
+                "commitment": "e189edebf6c24b4efa7ec1f2ce9e20cd89668cd7f7dafec7039d4e99d22f61dd",
+                "v": 1
+              },
+              "signature": "68218e2ac3b78fb623e7351559f176789eddc52a1c315af2c136606c15022b153ff8703f3da66914f1db025539a52ad36b391fb57617ea49b0ffde1705b9900b"
+            },
+            "kind": "ARMED",
+            "prev": "dc74788188b9cb1e244b9d13d50b07164c2b3822352fec4e14cd8709aef89f53",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "council",
+                "claim": true,
+                "commitment": "e189edebf6c24b4efa7ec1f2ce9e20cd89668cd7f7dafec7039d4e99d22f61dd",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "f5c0c1a16b60d37049fbcfa12f38a43065d2a5e1b30f353047991a68847e3e8cdd4db94687f5370cfcc3659568ffa3b84d767c93a8b4076d8694d0bf49200b06"
+            },
+            "kind": "SUBMITTED",
+            "prev": "775ff56a2aa65b282513584189f7e12eebc82cc5c08d60c0354ef79e027ddc7c",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "council",
+                "claim": true,
+                "commitment": "e189edebf6c24b4efa7ec1f2ce9e20cd89668cd7f7dafec7039d4e99d22f61dd",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "f5c0c1a16b60d37049fbcfa12f38a43065d2a5e1b30f353047991a68847e3e8cdd4db94687f5370cfcc3659568ffa3b84d767c93a8b4076d8694d0bf49200b06"
+            },
+            "kind": "ACCEPTED",
+            "prev": "0c7a124ad7a2c2a8265ab68fa05e18cdc4cca484bd1a74d656ebfa77b2bcafa8",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "487de4bec3e07aae4e8f4e43075b5ab657cb9e4c8aa9429b663697635955dcc4",
+            "seq": 5,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "message": {
+                "authority": "4ce2d804cd8a35c7a66f808cc1daa0ef7ddb03125e147627f5c33469c2b3d66b",
+                "capsule": "council",
+                "claim": true,
+                "commitment": "e189edebf6c24b4efa7ec1f2ce9e20cd89668cd7f7dafec7039d4e99d22f61dd",
+                "contract": "B",
+                "contract_version": 1,
+                "id": "B-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "a53c7913f1f5048be55894777c9cb3496648d12f42f2ccff78cf9c1492d780e69d4c351612cb47ee3eeb42767aa1d93f796c17d03ed9fe9eb2d6a19df403220f"
+            },
+            "kind": "SUBMITTED",
+            "prev": "4f86fe5105b406dbad218f30e7e3725a57f762257d0b748ac9f8cb102c9c761c",
+            "seq": 6,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "message": {
+                "authority": "4ce2d804cd8a35c7a66f808cc1daa0ef7ddb03125e147627f5c33469c2b3d66b",
+                "capsule": "council",
+                "claim": true,
+                "commitment": "e189edebf6c24b4efa7ec1f2ce9e20cd89668cd7f7dafec7039d4e99d22f61dd",
+                "contract": "B",
+                "contract_version": 1,
+                "id": "B-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "a53c7913f1f5048be55894777c9cb3496648d12f42f2ccff78cf9c1492d780e69d4c351612cb47ee3eeb42767aa1d93f796c17d03ed9fe9eb2d6a19df403220f"
+            },
+            "kind": "ACCEPTED",
+            "prev": "e65f55a3edb604455e80c5a66d441473fc539f09c61caa3ca5d23100b415e6a5",
+            "seq": 7,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "3dd00249d0da4d7e91ecd267812a1bed94a8fa23178d40bd6a4b56240d0fc6b0",
+            "seq": 8,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "message": {
+                "authority": "7969f79a6af7547f5d89f5a7e63c9b85b0dd76729623c0062eeb9ab1b85960be",
+                "capsule": "council",
+                "claim": false,
+                "commitment": "e189edebf6c24b4efa7ec1f2ce9e20cd89668cd7f7dafec7039d4e99d22f61dd",
+                "contract": "C",
+                "contract_version": 1,
+                "id": "C-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "edf849950b3b6293722cbbe0f6094df657ce7e5253b17b1cfc9611583a90a2afcb593791caf6b63a2bd2c53e8212852b5858658e0c54a9d8e0abe6716e8adc01"
+            },
+            "kind": "SUBMITTED",
+            "prev": "c9e88fa59639cc7cf889b3f6d2cc44b7c3faa7fc0d1df5e1e9c92e07762e76c8",
+            "seq": 9,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "message": {
+                "authority": "7969f79a6af7547f5d89f5a7e63c9b85b0dd76729623c0062eeb9ab1b85960be",
+                "capsule": "council",
+                "claim": false,
+                "commitment": "e189edebf6c24b4efa7ec1f2ce9e20cd89668cd7f7dafec7039d4e99d22f61dd",
+                "contract": "C",
+                "contract_version": 1,
+                "id": "C-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "edf849950b3b6293722cbbe0f6094df657ce7e5253b17b1cfc9611583a90a2afcb593791caf6b63a2bd2c53e8212852b5858658e0c54a9d8e0abe6716e8adc01"
+            },
+            "kind": "ACCEPTED",
+            "prev": "e95d82b1924add713916fec1371f1b920c52586ab9a20ae8a5724a93558d4d8d",
+            "seq": 10,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "6fc24873b2b818acf88fb08e2cdac44bf904eda9d6a15cca6b41b2577353bbd4",
+            "seq": 11,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "message": {
+                "authority": "7969f79a6af7547f5d89f5a7e63c9b85b0dd76729623c0062eeb9ab1b85960be",
+                "capsule": "council",
+                "claim": true,
+                "commitment": "e189edebf6c24b4efa7ec1f2ce9e20cd89668cd7f7dafec7039d4e99d22f61dd",
+                "contract": "C",
+                "contract_version": 1,
+                "id": "C-opposite",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "67b55a3c7aa0eec73caa47e9a3ae913c7d1f9c197585c6129a9e676b4a203ddda942e3f4cc08c2cc9b016ed93477e235c230ce61d61cca0e9ac19b3039b5350e"
+            },
+            "kind": "SUBMITTED",
+            "prev": "dd7b13ec7cb5d1c377110dc17e66d10d77ecd946d9f7e0605eb2bb8878175d1c",
+            "seq": 12,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "message": {
+                "authority": "7969f79a6af7547f5d89f5a7e63c9b85b0dd76729623c0062eeb9ab1b85960be",
+                "capsule": "council",
+                "claim": true,
+                "commitment": "e189edebf6c24b4efa7ec1f2ce9e20cd89668cd7f7dafec7039d4e99d22f61dd",
+                "contract": "C",
+                "contract_version": 1,
+                "id": "C-opposite",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "67b55a3c7aa0eec73caa47e9a3ae913c7d1f9c197585c6129a9e676b4a203ddda942e3f4cc08c2cc9b016ed93477e235c230ce61d61cca0e9ac19b3039b5350e"
+            },
+            "kind": "ACCEPTED",
+            "prev": "40ff228e18f592bb51b799483eda2e99e6ffaa444af5bf2c27a1f09fdbfec756",
+            "seq": 13,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "e1c1c5ae330111a814b210a150d427622d368958309996b47a95ef30c806d81b",
+            "seq": 14,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "message": {
+                "authority": "4ce2d804cd8a35c7a66f808cc1daa0ef7ddb03125e147627f5c33469c2b3d66b",
+                "capsule": "council",
+                "claim": true,
+                "commitment": "e189edebf6c24b4efa7ec1f2ce9e20cd89668cd7f7dafec7039d4e99d22f61dd",
+                "contract": "B",
+                "contract_version": 1,
+                "id": "bad-signature",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+            },
+            "kind": "SUBMITTED",
+            "prev": "00fd277693ef1796efde691f37e1ef2fb4e576aa83ca9de034710c4275d69823",
+            "seq": 15,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "reason": "invalid signature",
+              "submission": "bad-signature"
+            },
+            "kind": "REJECTED",
+            "prev": "5570e51912e4e611ed92d8235d80d65ac4f2435facaa50a23dcc6c55ee996f95",
+            "seq": 16,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "grace": 5,
+              "results": {
+                "contracts": {
+                  "A": true,
+                  "B": true,
+                  "C": false
+                },
+                "satisfied": true
+              },
+              "snapshot": "fc5875d1ab54b95d57c56ab1051bddbcef7c4d346ef825b1f4f144db035f12a2"
+            },
+            "kind": "CANDIDATE",
+            "prev": "fc5875d1ab54b95d57c56ab1051bddbcef7c4d346ef825b1f4f144db035f12a2",
+            "seq": 17,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "25012ec828785287986a388deaca331043d97dd1d685153f4734e9c60866b24c",
+            "seq": 18,
+            "time": 5,
+            "v": 1
+          },
+          {
+            "capsule": "council",
+            "data": {
+              "candidate": 17,
+              "commitment": "e189edebf6c24b4efa7ec1f2ce9e20cd89668cd7f7dafec7039d4e99d22f61dd",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c",
+              "results": {
+                "contracts": {
+                  "A": true,
+                  "B": true,
+                  "C": false
+                },
+                "satisfied": true
+              },
+              "snapshot": "c6ef5b249e86e8a2c32e0a6a64d03509e228fec1cf41a2ec6c93c3d2f966e5ea"
+            },
+            "kind": "AUTHORISED",
+            "prev": "c6ef5b249e86e8a2c32e0a6a64d03509e228fec1cf41a2ec6c93c3d2f966e5ea",
+            "seq": 19,
+            "time": 5,
+            "v": 1
+          }
+        ],
+        "head": "a9527095a7c40a95def0e7c7fd7dbb36efe97415b5865bee3c11958d39a49826",
+        "healthy": true,
+        "now": 5,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [],
+              "end": 1000,
+              "id": "A",
+              "kind": "attestation",
+              "start": 0,
+              "version": 1
+            },
+            {
+              "authority": "4ce2d804cd8a35c7a66f808cc1daa0ef7ddb03125e147627f5c33469c2b3d66b",
+              "challenges": [],
+              "end": 1000,
+              "id": "B",
+              "kind": "attestation",
+              "start": 0,
+              "version": 1
+            },
+            {
+              "authority": "7969f79a6af7547f5d89f5a7e63c9b85b0dd76729623c0062eeb9ab1b85960be",
+              "challenges": [],
+              "end": 1000,
+              "id": "C",
+              "kind": "attestation",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": {
+            "args": [
+              "A",
+              "B",
+              "C"
+            ],
+            "k": 2,
+            "op": "THRESHOLD"
+          },
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    },
+    {
+      "expected": {
+        "authorised": false,
+        "eligible": false,
+        "ok": true,
+        "results": {
+          "contracts": {
+            "A": false,
+            "B": true,
+            "C": false
+          },
+          "satisfied": true
+        }
+      },
+      "name": "continuous-grace-gap",
+      "snapshot": {
+        "capsule": "gap",
+        "commitment": "35614e84d459ba0d1e552738c03685bdfedd2b6b41ed412c1742882dc6eeef79",
+        "events": [
+          {
+            "capsule": "gap",
+            "data": {
+              "commitment": "35614e84d459ba0d1e552738c03685bdfedd2b6b41ed412c1742882dc6eeef79",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "gap",
+                "commitment": "35614e84d459ba0d1e552738c03685bdfedd2b6b41ed412c1742882dc6eeef79",
+                "v": 1
+              },
+              "signature": "ba96f6259cc3b6e9aea2e48a6943efcbc675ead873ff9cf778fbef94661a4ed82444a6ea41db3c8effadb194b13df5c9af3679834af4a0da170f7d689d109602"
+            },
+            "kind": "ARMED",
+            "prev": "f4b1e32515aa2475f79fc47d819a481255d039d083ad598f8f2194af4b8fad50",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "contract": "B",
+              "contract_version": 1,
+              "deadline": 3,
+              "id": "one",
+              "open": 0
+            },
+            "kind": "CHALLENGE",
+            "prev": "02b7a25b37791ce91a2b75e45b6e00754d2a3149cc3067df98a669560154736d",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "gap",
+                "claim": true,
+                "commitment": "35614e84d459ba0d1e552738c03685bdfedd2b6b41ed412c1742882dc6eeef79",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 2
+              },
+              "signature": "eb7bf8c16a952454f444aa1fabf535f1c9c0e2307f408f227bb619dfa7d998d5ecf143727710052c28f8d077c8038e702fd32e59bcf4d7938be4b12a3f7e7800"
+            },
+            "kind": "SUBMITTED",
+            "prev": "ca51749fafc83577e3c2c9d724b4f9b7f7327c63d05b024c26f09cc307e30983",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "gap",
+                "claim": true,
+                "commitment": "35614e84d459ba0d1e552738c03685bdfedd2b6b41ed412c1742882dc6eeef79",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 2
+              },
+              "signature": "eb7bf8c16a952454f444aa1fabf535f1c9c0e2307f408f227bb619dfa7d998d5ecf143727710052c28f8d077c8038e702fd32e59bcf4d7938be4b12a3f7e7800"
+            },
+            "kind": "ACCEPTED",
+            "prev": "76889ffa1d4b4dc083ee5c393101cbcad1a373304259f579afeb668f0a6b2e90",
+            "seq": 5,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "cc4b84506f380845ca814231e19db76011fdbb9432c2e45b8f56d51ae8196d7c",
+            "seq": 6,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "grace": 5,
+              "results": {
+                "contracts": {
+                  "A": true,
+                  "B": false,
+                  "C": false
+                },
+                "satisfied": true
+              },
+              "snapshot": "db63d4b31a07998e63da957f14399f6d2b1c2ac1013c2289c9373506e1501869"
+            },
+            "kind": "CANDIDATE",
+            "prev": "db63d4b31a07998e63da957f14399f6d2b1c2ac1013c2289c9373506e1501869",
+            "seq": 7,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "6b59522644eff4a74c85488b486ec0c7d1b20c8ea21f6ecb5e62e2946fe64fdd",
+            "seq": 8,
+            "time": 5,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "reason": "intervening policy validity gap"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "4ea7bc6878324f3527929a53a115945c98e9b3b7cf72f89293dbf43cdf066c78",
+            "seq": 9,
+            "time": 5,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "grace": 5,
+              "results": {
+                "contracts": {
+                  "A": false,
+                  "B": true,
+                  "C": false
+                },
+                "satisfied": true
+              },
+              "snapshot": "a9b64f761f5a4b954d3c937181b4724eb9d2711f8cb7829b0d0103b01e5755cf"
+            },
+            "kind": "CANDIDATE",
+            "prev": "a9b64f761f5a4b954d3c937181b4724eb9d2711f8cb7829b0d0103b01e5755cf",
+            "seq": 10,
+            "time": 5,
+            "v": 1
+          }
+        ],
+        "head": "365f38e3599f3be936be0d4f66f47e4360d4a1570dfa3ddd9853f9122e5d60ec",
+        "healthy": true,
+        "now": 5,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [],
+              "end": 1000,
+              "id": "A",
+              "kind": "attestation",
+              "start": 0,
+              "version": 1
+            },
+            {
+              "authority": "4ce2d804cd8a35c7a66f808cc1daa0ef7ddb03125e147627f5c33469c2b3d66b",
+              "challenges": [
+                {
+                  "deadline": 3,
+                  "id": "one",
+                  "open": 0
+                }
+              ],
+              "end": 1000,
+              "id": "B",
+              "kind": "absence",
+              "start": 0,
+              "version": 1
+            },
+            {
+              "authority": "7969f79a6af7547f5d89f5a7e63c9b85b0dd76729623c0062eeb9ab1b85960be",
+              "challenges": [],
+              "end": 1000,
+              "id": "C",
+              "kind": "attestation",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": {
+            "args": [
+              "A",
+              "B",
+              "C"
+            ],
+            "op": "OR"
+          },
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    },
+    {
+      "expected": {
+        "authorised": true,
+        "eligible": true,
+        "ok": true,
+        "results": {
+          "contracts": {
+            "A": false,
+            "B": true,
+            "C": false
+          },
+          "satisfied": true
+        }
+      },
+      "name": "continuous-grace-restarted",
+      "snapshot": {
+        "capsule": "gap",
+        "commitment": "35614e84d459ba0d1e552738c03685bdfedd2b6b41ed412c1742882dc6eeef79",
+        "events": [
+          {
+            "capsule": "gap",
+            "data": {
+              "commitment": "35614e84d459ba0d1e552738c03685bdfedd2b6b41ed412c1742882dc6eeef79",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "gap",
+                "commitment": "35614e84d459ba0d1e552738c03685bdfedd2b6b41ed412c1742882dc6eeef79",
+                "v": 1
+              },
+              "signature": "ba96f6259cc3b6e9aea2e48a6943efcbc675ead873ff9cf778fbef94661a4ed82444a6ea41db3c8effadb194b13df5c9af3679834af4a0da170f7d689d109602"
+            },
+            "kind": "ARMED",
+            "prev": "f4b1e32515aa2475f79fc47d819a481255d039d083ad598f8f2194af4b8fad50",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "contract": "B",
+              "contract_version": 1,
+              "deadline": 3,
+              "id": "one",
+              "open": 0
+            },
+            "kind": "CHALLENGE",
+            "prev": "02b7a25b37791ce91a2b75e45b6e00754d2a3149cc3067df98a669560154736d",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "gap",
+                "claim": true,
+                "commitment": "35614e84d459ba0d1e552738c03685bdfedd2b6b41ed412c1742882dc6eeef79",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 2
+              },
+              "signature": "eb7bf8c16a952454f444aa1fabf535f1c9c0e2307f408f227bb619dfa7d998d5ecf143727710052c28f8d077c8038e702fd32e59bcf4d7938be4b12a3f7e7800"
+            },
+            "kind": "SUBMITTED",
+            "prev": "ca51749fafc83577e3c2c9d724b4f9b7f7327c63d05b024c26f09cc307e30983",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "gap",
+                "claim": true,
+                "commitment": "35614e84d459ba0d1e552738c03685bdfedd2b6b41ed412c1742882dc6eeef79",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 2
+              },
+              "signature": "eb7bf8c16a952454f444aa1fabf535f1c9c0e2307f408f227bb619dfa7d998d5ecf143727710052c28f8d077c8038e702fd32e59bcf4d7938be4b12a3f7e7800"
+            },
+            "kind": "ACCEPTED",
+            "prev": "76889ffa1d4b4dc083ee5c393101cbcad1a373304259f579afeb668f0a6b2e90",
+            "seq": 5,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "cc4b84506f380845ca814231e19db76011fdbb9432c2e45b8f56d51ae8196d7c",
+            "seq": 6,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "grace": 5,
+              "results": {
+                "contracts": {
+                  "A": true,
+                  "B": false,
+                  "C": false
+                },
+                "satisfied": true
+              },
+              "snapshot": "db63d4b31a07998e63da957f14399f6d2b1c2ac1013c2289c9373506e1501869"
+            },
+            "kind": "CANDIDATE",
+            "prev": "db63d4b31a07998e63da957f14399f6d2b1c2ac1013c2289c9373506e1501869",
+            "seq": 7,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "6b59522644eff4a74c85488b486ec0c7d1b20c8ea21f6ecb5e62e2946fe64fdd",
+            "seq": 8,
+            "time": 5,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "reason": "intervening policy validity gap"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "4ea7bc6878324f3527929a53a115945c98e9b3b7cf72f89293dbf43cdf066c78",
+            "seq": 9,
+            "time": 5,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "grace": 5,
+              "results": {
+                "contracts": {
+                  "A": false,
+                  "B": true,
+                  "C": false
+                },
+                "satisfied": true
+              },
+              "snapshot": "a9b64f761f5a4b954d3c937181b4724eb9d2711f8cb7829b0d0103b01e5755cf"
+            },
+            "kind": "CANDIDATE",
+            "prev": "a9b64f761f5a4b954d3c937181b4724eb9d2711f8cb7829b0d0103b01e5755cf",
+            "seq": 10,
+            "time": 5,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "365f38e3599f3be936be0d4f66f47e4360d4a1570dfa3ddd9853f9122e5d60ec",
+            "seq": 11,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "gap",
+            "data": {
+              "candidate": 10,
+              "commitment": "35614e84d459ba0d1e552738c03685bdfedd2b6b41ed412c1742882dc6eeef79",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c",
+              "results": {
+                "contracts": {
+                  "A": false,
+                  "B": true,
+                  "C": false
+                },
+                "satisfied": true
+              },
+              "snapshot": "d1c324f66e73663dabd5df91e81f844b7bda8358a4f37fa286a81b58b94d2b37"
+            },
+            "kind": "AUTHORISED",
+            "prev": "d1c324f66e73663dabd5df91e81f844b7bda8358a4f37fa286a81b58b94d2b37",
+            "seq": 12,
+            "time": 10,
+            "v": 1
+          }
+        ],
+        "head": "bb1c6975a43d9f38af106f3eaeb373a6e3846c5df8b40f2412e72909c3624031",
+        "healthy": true,
+        "now": 10,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [],
+              "end": 1000,
+              "id": "A",
+              "kind": "attestation",
+              "start": 0,
+              "version": 1
+            },
+            {
+              "authority": "4ce2d804cd8a35c7a66f808cc1daa0ef7ddb03125e147627f5c33469c2b3d66b",
+              "challenges": [
+                {
+                  "deadline": 3,
+                  "id": "one",
+                  "open": 0
+                }
+              ],
+              "end": 1000,
+              "id": "B",
+              "kind": "absence",
+              "start": 0,
+              "version": 1
+            },
+            {
+              "authority": "7969f79a6af7547f5d89f5a7e63c9b85b0dd76729623c0062eeb9ab1b85960be",
+              "challenges": [],
+              "end": 1000,
+              "id": "C",
+              "kind": "attestation",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": {
+            "args": [
+              "A",
+              "B",
+              "C"
+            ],
+            "op": "OR"
+          },
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "name": "reject-signature",
+      "snapshot": {
+        "capsule": "solo",
+        "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+        "events": [
+          {
+            "capsule": "solo",
+            "data": {
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "solo",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "v": 1
+              },
+              "signature": "fbe39e7a61ee5b3d9612e427fd96f22a11ad7718bb4f4954687c62be64b2a1887e03445cf3c9d5e6c64ca2006bb8aeb1983f1d40e5a5fe5fa5ec8f0dc7845e04"
+            },
+            "kind": "ARMED",
+            "prev": "f3ae334d4ab7e0bb08e825b118b192f8204ee7fe91e2bb441021c39e65c7759b",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 10,
+              "id": "one",
+              "open": 0
+            },
+            "kind": "CHALLENGE",
+            "prev": "0ad4ed7d118fa1f2a89c4e2ce090d286cd332ffc96f5cd0c9c09912b7b390d1c",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 20,
+              "id": "two",
+              "open": 11
+            },
+            "kind": "CHALLENGE",
+            "prev": "4332bff82a78489cc43f04cce221c66e225da63882a9cb29da563dab1ca7d137",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "7a0bb87fd36905f9b0cc58d5d00a2430801680fdafd958d0b68881c116aaacf5",
+            "seq": 5,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "SUBMITTED",
+            "prev": "b9355d84f7e928ffca04a46de0b91e797f8503bba82e8bea9b65882c4b5390fa",
+            "seq": 6,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+            },
+            "kind": "ACCEPTED",
+            "prev": "b227c1feee10d5231ff3e399b4df9d472d927d157772db4d8f2f5f7971013ebc",
+            "seq": 7,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "c23008e71f096b4cbb20a3293812974d793e8a74469c3d67000a3dfbfb888f54",
+            "seq": 8,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "e39d1398c440e421b47624a12c46605c4c25f2d1f44b149e40170fe18300ca3d",
+            "seq": 9,
+            "time": 21,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "grace": 5,
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "e796d6412059556fcefb49ef61f865b075ad2645ea2af4e1a2077527ed38d1d2"
+            },
+            "kind": "CANDIDATE",
+            "prev": "e796d6412059556fcefb49ef61f865b075ad2645ea2af4e1a2077527ed38d1d2",
+            "seq": 10,
+            "time": 21,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "142046220504e3062b6666895e24bd8100897315107783f0e7511b91af9f1a59",
+            "seq": 11,
+            "time": 26,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "candidate": 10,
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c",
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "efbb1b9b113acada382eb23ad014668dd3d4e6c7ea8e192c509d8336696b2c03"
+            },
+            "kind": "AUTHORISED",
+            "prev": "efbb1b9b113acada382eb23ad014668dd3d4e6c7ea8e192c509d8336696b2c03",
+            "seq": 12,
+            "time": 26,
+            "v": 1
+          }
+        ],
+        "head": "0359d63e1901e91bdf8cf4fd1719cb54c56aa0ff273fb2257318c9bbfd49d80d",
+        "healthy": true,
+        "now": 26,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [
+                {
+                  "deadline": 10,
+                  "id": "one",
+                  "open": 0
+                },
+                {
+                  "deadline": 20,
+                  "id": "two",
+                  "open": 11
+                }
+              ],
+              "end": 1000,
+              "id": "A",
+              "kind": "absence",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": "A",
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "name": "reject-domain",
+      "snapshot": {
+        "capsule": "solo",
+        "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+        "events": [
+          {
+            "capsule": "solo",
+            "data": {
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "solo",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "v": 1
+              },
+              "signature": "fbe39e7a61ee5b3d9612e427fd96f22a11ad7718bb4f4954687c62be64b2a1887e03445cf3c9d5e6c64ca2006bb8aeb1983f1d40e5a5fe5fa5ec8f0dc7845e04"
+            },
+            "kind": "ARMED",
+            "prev": "f3ae334d4ab7e0bb08e825b118b192f8204ee7fe91e2bb441021c39e65c7759b",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 10,
+              "id": "one",
+              "open": 0
+            },
+            "kind": "CHALLENGE",
+            "prev": "0ad4ed7d118fa1f2a89c4e2ce090d286cd332ffc96f5cd0c9c09912b7b390d1c",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 20,
+              "id": "two",
+              "open": 11
+            },
+            "kind": "CHALLENGE",
+            "prev": "4332bff82a78489cc43f04cce221c66e225da63882a9cb29da563dab1ca7d137",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "7a0bb87fd36905f9b0cc58d5d00a2430801680fdafd958d0b68881c116aaacf5",
+            "seq": 5,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "SUBMITTED",
+            "prev": "b9355d84f7e928ffca04a46de0b91e797f8503bba82e8bea9b65882c4b5390fa",
+            "seq": 6,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "another",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "ACCEPTED",
+            "prev": "b227c1feee10d5231ff3e399b4df9d472d927d157772db4d8f2f5f7971013ebc",
+            "seq": 7,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "c9558919fa2f29b9dadd2c89dd3b1b094238487d545a5a908d06f55eabdd8e56",
+            "seq": 8,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "94f7e035e62c817bd7f8c5a40e7032789f9f75978be0c0b985edf2674878dff9",
+            "seq": 9,
+            "time": 21,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "grace": 5,
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "e5dd453f1a0d12fab7ffd89fd6e337d114709dc6d9ceda0205009d480a073a8c"
+            },
+            "kind": "CANDIDATE",
+            "prev": "e5dd453f1a0d12fab7ffd89fd6e337d114709dc6d9ceda0205009d480a073a8c",
+            "seq": 10,
+            "time": 21,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "0e69bf9a9f3710dc162707412a025b906cf9eec0c1fc56b1efa1697b0e05214c",
+            "seq": 11,
+            "time": 26,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "candidate": 10,
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c",
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "eca18f312943d27ae6e576c4f6158e3493dc9ad8ad52e124adcd71d666204cf6"
+            },
+            "kind": "AUTHORISED",
+            "prev": "eca18f312943d27ae6e576c4f6158e3493dc9ad8ad52e124adcd71d666204cf6",
+            "seq": 12,
+            "time": 26,
+            "v": 1
+          }
+        ],
+        "head": "dbb3f3ede6cf6eac7bd4e86a2e87f68228625e24cd945a7fb1a70402b742e3a4",
+        "healthy": true,
+        "now": 26,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [
+                {
+                  "deadline": 10,
+                  "id": "one",
+                  "open": 0
+                },
+                {
+                  "deadline": 20,
+                  "id": "two",
+                  "open": 11
+                }
+              ],
+              "end": 1000,
+              "id": "A",
+              "kind": "absence",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": "A",
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "name": "reject-late-presence",
+      "snapshot": {
+        "capsule": "solo",
+        "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+        "events": [
+          {
+            "capsule": "solo",
+            "data": {
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "solo",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "v": 1
+              },
+              "signature": "fbe39e7a61ee5b3d9612e427fd96f22a11ad7718bb4f4954687c62be64b2a1887e03445cf3c9d5e6c64ca2006bb8aeb1983f1d40e5a5fe5fa5ec8f0dc7845e04"
+            },
+            "kind": "ARMED",
+            "prev": "f3ae334d4ab7e0bb08e825b118b192f8204ee7fe91e2bb441021c39e65c7759b",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 10,
+              "id": "one",
+              "open": 0
+            },
+            "kind": "CHALLENGE",
+            "prev": "0ad4ed7d118fa1f2a89c4e2ce090d286cd332ffc96f5cd0c9c09912b7b390d1c",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 20,
+              "id": "two",
+              "open": 11
+            },
+            "kind": "CHALLENGE",
+            "prev": "4332bff82a78489cc43f04cce221c66e225da63882a9cb29da563dab1ca7d137",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "7a0bb87fd36905f9b0cc58d5d00a2430801680fdafd958d0b68881c116aaacf5",
+            "seq": 5,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "SUBMITTED",
+            "prev": "b9355d84f7e928ffca04a46de0b91e797f8503bba82e8bea9b65882c4b5390fa",
+            "seq": 6,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "ACCEPTED",
+            "prev": "b227c1feee10d5231ff3e399b4df9d472d927d157772db4d8f2f5f7971013ebc",
+            "seq": 7,
+            "time": 11,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "6514997ffebbaa71c8af14bdb6841ff924950a5f7c4ba1683ffabef06f0bd621",
+            "seq": 8,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "5433b0352a9795fe77aa020841fb0a45b32bc29042c74f1b58d4bc3313ec2ce3",
+            "seq": 9,
+            "time": 21,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "grace": 5,
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "8958e1cbfe4b2c9c051e97859b47895479a4d2d6bc1a097b73ea97c7804703b5"
+            },
+            "kind": "CANDIDATE",
+            "prev": "8958e1cbfe4b2c9c051e97859b47895479a4d2d6bc1a097b73ea97c7804703b5",
+            "seq": 10,
+            "time": 21,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "0affeb2631f92f5960db594539ce2a25cb57880c3a3ba3f945620189b4ec26ce",
+            "seq": 11,
+            "time": 26,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "candidate": 10,
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c",
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "b932371b667b8f0298b43ed9a1f295751593782729ef97b0fc061ee769ae0b05"
+            },
+            "kind": "AUTHORISED",
+            "prev": "b932371b667b8f0298b43ed9a1f295751593782729ef97b0fc061ee769ae0b05",
+            "seq": 12,
+            "time": 26,
+            "v": 1
+          }
+        ],
+        "head": "47bbf8a50b537ba1df1cd0f6223bfd24b6270e3814dc1a21fdfe47578ed0eccc",
+        "healthy": true,
+        "now": 26,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [
+                {
+                  "deadline": 10,
+                  "id": "one",
+                  "open": 0
+                },
+                {
+                  "deadline": 20,
+                  "id": "two",
+                  "open": 11
+                }
+              ],
+              "end": 1000,
+              "id": "A",
+              "kind": "absence",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": "A",
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    },
+    {
+      "expected": {
+        "ok": false
+      },
+      "name": "reject-forged-authorisation",
+      "snapshot": {
+        "capsule": "solo",
+        "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+        "events": [
+          {
+            "capsule": "solo",
+            "data": {
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+            },
+            "kind": "CREATED",
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "action": "ARMED",
+                "capsule": "solo",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "v": 1
+              },
+              "signature": "fbe39e7a61ee5b3d9612e427fd96f22a11ad7718bb4f4954687c62be64b2a1887e03445cf3c9d5e6c64ca2006bb8aeb1983f1d40e5a5fe5fa5ec8f0dc7845e04"
+            },
+            "kind": "ARMED",
+            "prev": "f3ae334d4ab7e0bb08e825b118b192f8204ee7fe91e2bb441021c39e65c7759b",
+            "seq": 2,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 10,
+              "id": "one",
+              "open": 0
+            },
+            "kind": "CHALLENGE",
+            "prev": "0ad4ed7d118fa1f2a89c4e2ce090d286cd332ffc96f5cd0c9c09912b7b390d1c",
+            "seq": 3,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "contract": "A",
+              "contract_version": 1,
+              "deadline": 20,
+              "id": "two",
+              "open": 11
+            },
+            "kind": "CHALLENGE",
+            "prev": "4332bff82a78489cc43f04cce221c66e225da63882a9cb29da563dab1ca7d137",
+            "seq": 4,
+            "time": 0,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "7a0bb87fd36905f9b0cc58d5d00a2430801680fdafd958d0b68881c116aaacf5",
+            "seq": 5,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "SUBMITTED",
+            "prev": "b9355d84f7e928ffca04a46de0b91e797f8503bba82e8bea9b65882c4b5390fa",
+            "seq": 6,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "message": {
+                "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+                "capsule": "solo",
+                "challenge": "one",
+                "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+                "contract": "A",
+                "contract_version": 1,
+                "id": "A-proof",
+                "v": 1,
+                "valid_from": 0,
+                "valid_until": 100
+              },
+              "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+            },
+            "kind": "ACCEPTED",
+            "prev": "b227c1feee10d5231ff3e399b4df9d472d927d157772db4d8f2f5f7971013ebc",
+            "seq": 7,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "reason": "evidence accepted"
+            },
+            "kind": "CANDIDATE_RESET",
+            "prev": "ec3ec8baa65285d7ac21e7b9f6075d72ac0b7e2adde4155970e53fe29c929cf1",
+            "seq": 8,
+            "time": 10,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "3fb1dbe73c3401449f304f5610e74a4b42a27de1886e2ea571c286b8f8ab43a3",
+            "seq": 9,
+            "time": 21,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "grace": 5,
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "2df5bc9b0526cec368e8ebf867ad856d07ad2678c834b54e674d29b3c451454a"
+            },
+            "kind": "CANDIDATE",
+            "prev": "2df5bc9b0526cec368e8ebf867ad856d07ad2678c834b54e674d29b3c451454a",
+            "seq": 10,
+            "time": 21,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "healthy": true
+            },
+            "kind": "CLOCK",
+            "prev": "ed139a20be84636efbc76a500f8f01fbeac56bf6acc15c0445276a6ce5312574",
+            "seq": 11,
+            "time": 26,
+            "v": 1
+          },
+          {
+            "capsule": "solo",
+            "data": {
+              "candidate": 10,
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c",
+              "results": {
+                "contracts": {
+                  "A": true
+                },
+                "satisfied": true
+              },
+              "snapshot": "25f361b70db767d6820fb8afdfacd5d1c87b40dab57815bcb2014cfd56767bce"
+            },
+            "kind": "AUTHORISED",
+            "prev": "25f361b70db767d6820fb8afdfacd5d1c87b40dab57815bcb2014cfd56767bce",
+            "seq": 12,
+            "time": 21,
+            "v": 1
+          }
+        ],
+        "head": "4377fc4e733b8bc8b8a4e8d3fb0c2db06c8757c08441b5818ad3356b1d08bb92",
+        "healthy": true,
+        "now": 26,
+        "policy": {
+          "contracts": [
+            {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "challenges": [
+                {
+                  "deadline": 10,
+                  "id": "one",
+                  "open": 0
+                },
+                {
+                  "deadline": 20,
+                  "id": "two",
+                  "open": 11
+                }
+              ],
+              "end": 1000,
+              "id": "A",
+              "kind": "absence",
+              "start": 0,
+              "version": 1
+            }
+          ],
+          "destination": {
+            "consented": true,
+            "kind": "simulated",
+            "verified": true
+          },
+          "expression": "A",
+          "grace": 5,
+          "max_step": 60,
+          "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+          "version": 1
+        }
+      }
+    }
+  ],
+  "witness_bundle": {
+    "receipt": {
+      "capsule": "solo",
+      "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+      "count": 12,
+      "head": "d2c15c14dbee13bf4d19989a43143a79e42846fe732ae40820be945929ac12ab",
+      "healthy": true,
+      "manifest": "dd8dfa677f85cd580aafcd2982da09333fbccd45605f5f07d6642de8b30cef69",
+      "now": 26,
+      "v": 2
+    },
+    "signature": "ec4530f37a21dd0eaebb929170639b22785925eb006024015913c81274b1c9630b0b2b04ca96133a5b8ce407824fbe3f6615a9ae5f036305a0e8dbde83786a00",
+    "snapshot": {
+      "capsule": "solo",
+      "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+      "events": [
+        {
+          "capsule": "solo",
+          "data": {
+            "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+            "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c"
+          },
+          "kind": "CREATED",
+          "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+          "seq": 1,
+          "time": 0,
+          "v": 1
+        },
+        {
+          "capsule": "solo",
+          "data": {
+            "message": {
+              "action": "ARMED",
+              "capsule": "solo",
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "v": 1
+            },
+            "signature": "fbe39e7a61ee5b3d9612e427fd96f22a11ad7718bb4f4954687c62be64b2a1887e03445cf3c9d5e6c64ca2006bb8aeb1983f1d40e5a5fe5fa5ec8f0dc7845e04"
+          },
+          "kind": "ARMED",
+          "prev": "f3ae334d4ab7e0bb08e825b118b192f8204ee7fe91e2bb441021c39e65c7759b",
+          "seq": 2,
+          "time": 0,
+          "v": 1
+        },
+        {
+          "capsule": "solo",
+          "data": {
+            "contract": "A",
+            "contract_version": 1,
+            "deadline": 10,
+            "id": "one",
+            "open": 0
+          },
+          "kind": "CHALLENGE",
+          "prev": "0ad4ed7d118fa1f2a89c4e2ce090d286cd332ffc96f5cd0c9c09912b7b390d1c",
+          "seq": 3,
+          "time": 0,
+          "v": 1
+        },
+        {
+          "capsule": "solo",
+          "data": {
+            "contract": "A",
+            "contract_version": 1,
+            "deadline": 20,
+            "id": "two",
+            "open": 11
+          },
+          "kind": "CHALLENGE",
+          "prev": "4332bff82a78489cc43f04cce221c66e225da63882a9cb29da563dab1ca7d137",
+          "seq": 4,
+          "time": 0,
+          "v": 1
+        },
+        {
+          "capsule": "solo",
+          "data": {
+            "healthy": true
+          },
+          "kind": "CLOCK",
+          "prev": "7a0bb87fd36905f9b0cc58d5d00a2430801680fdafd958d0b68881c116aaacf5",
+          "seq": 5,
+          "time": 10,
+          "v": 1
+        },
+        {
+          "capsule": "solo",
+          "data": {
+            "message": {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "capsule": "solo",
+              "challenge": "one",
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "contract": "A",
+              "contract_version": 1,
+              "id": "A-proof",
+              "v": 1,
+              "valid_from": 0,
+              "valid_until": 100
+            },
+            "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+          },
+          "kind": "SUBMITTED",
+          "prev": "b9355d84f7e928ffca04a46de0b91e797f8503bba82e8bea9b65882c4b5390fa",
+          "seq": 6,
+          "time": 10,
+          "v": 1
+        },
+        {
+          "capsule": "solo",
+          "data": {
+            "message": {
+              "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+              "capsule": "solo",
+              "challenge": "one",
+              "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+              "contract": "A",
+              "contract_version": 1,
+              "id": "A-proof",
+              "v": 1,
+              "valid_from": 0,
+              "valid_until": 100
+            },
+            "signature": "b1d383149ba7522fe4a39256a1b6ceea3860ea376e25306755da8a6c5cffe64a164b82659198865d9db94a13bd778ac636f9ba0ec78b9bf656f78c100578c603"
+          },
+          "kind": "ACCEPTED",
+          "prev": "b227c1feee10d5231ff3e399b4df9d472d927d157772db4d8f2f5f7971013ebc",
+          "seq": 7,
+          "time": 10,
+          "v": 1
+        },
+        {
+          "capsule": "solo",
+          "data": {
+            "reason": "evidence accepted"
+          },
+          "kind": "CANDIDATE_RESET",
+          "prev": "ec3ec8baa65285d7ac21e7b9f6075d72ac0b7e2adde4155970e53fe29c929cf1",
+          "seq": 8,
+          "time": 10,
+          "v": 1
+        },
+        {
+          "capsule": "solo",
+          "data": {
+            "healthy": true
+          },
+          "kind": "CLOCK",
+          "prev": "3fb1dbe73c3401449f304f5610e74a4b42a27de1886e2ea571c286b8f8ab43a3",
+          "seq": 9,
+          "time": 21,
+          "v": 1
+        },
+        {
+          "capsule": "solo",
+          "data": {
+            "grace": 5,
+            "results": {
+              "contracts": {
+                "A": true
+              },
+              "satisfied": true
+            },
+            "snapshot": "2df5bc9b0526cec368e8ebf867ad856d07ad2678c834b54e674d29b3c451454a"
+          },
+          "kind": "CANDIDATE",
+          "prev": "2df5bc9b0526cec368e8ebf867ad856d07ad2678c834b54e674d29b3c451454a",
+          "seq": 10,
+          "time": 21,
+          "v": 1
+        },
+        {
+          "capsule": "solo",
+          "data": {
+            "healthy": true
+          },
+          "kind": "CLOCK",
+          "prev": "ed139a20be84636efbc76a500f8f01fbeac56bf6acc15c0445276a6ce5312574",
+          "seq": 11,
+          "time": 26,
+          "v": 1
+        },
+        {
+          "capsule": "solo",
+          "data": {
+            "candidate": 10,
+            "commitment": "13da3fc029fea3579c00eade15a2a8fe7ac133e252712d661ca43eadb3c5241a",
+            "payload": "de4720253c090fbf568f5bad45520c86555f01b05693c0f07a3e0006503d272c",
+            "results": {
+              "contracts": {
+                "A": true
+              },
+              "satisfied": true
+            },
+            "snapshot": "25f361b70db767d6820fb8afdfacd5d1c87b40dab57815bcb2014cfd56767bce"
+          },
+          "kind": "AUTHORISED",
+          "prev": "25f361b70db767d6820fb8afdfacd5d1c87b40dab57815bcb2014cfd56767bce",
+          "seq": 12,
+          "time": 26,
+          "v": 1
+        }
+      ],
+      "head": "d2c15c14dbee13bf4d19989a43143a79e42846fe732ae40820be945929ac12ab",
+      "healthy": true,
+      "now": 26,
+      "policy": {
+        "contracts": [
+          {
+            "authority": "89a02d6a68317241640521babb48c0bd5acef3b4ab9d3544ed4820e9a0620363",
+            "challenges": [
+              {
+                "deadline": 10,
+                "id": "one",
+                "open": 0
+              },
+              {
+                "deadline": 20,
+                "id": "two",
+                "open": 11
+              }
+            ],
+            "end": 1000,
+            "id": "A",
+            "kind": "absence",
+            "start": 0,
+            "version": 1
+          }
+        ],
+        "destination": {
+          "consented": true,
+          "kind": "simulated",
+          "verified": true
+        },
+        "expression": "A",
+        "grace": 5,
+        "max_step": 60,
+        "owner": "de3dadb4d850a806716adf77218e8b654770e312269106130d45cb4825c4b6bb",
+        "version": 1
+      }
+    }
+  }
+}
