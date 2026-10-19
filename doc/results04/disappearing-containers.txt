@@ -1,0 +1,6 @@
+ Container otherwise04-1792437676-58376-laravel-1  Stopping
+ Container otherwise04-1792437676-58376-laravel-1  Stopped
+ Container otherwise04-1792437676-58376-protocol-adapter-1  Stopping
+ Container otherwise04-1792437676-58376-product-db-1  Stopping
+ Container otherwise04-1792437676-58376-product-db-1  Stopped
+ Container otherwise04-1792437676-58376-protocol-adapter-1  Stopped

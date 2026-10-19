@@ -58,3 +58,8 @@ See [recorded attacks and six answers](doc/generation02/RESULTS.md). The next in
 The retained-witness experiment adds an evidence quorum distinct from cryptographic custody. The tested profile uses three witnesses, two receipt signers and three absence finalisers under a one-fault bound. Its safety argument uses honest quorum intersection plus irreversible local observation/finalisation fences. The original Byzantine quorum-system literature provides the general intersection foundation; this experiment does not claim consensus or novelty. [Malkhi and Reiter](https://malkhi.com/files/byzquorums-STOC1997.pdf).
 
 The important negative finding is practical: protecting presence with three witnesses can require unanimity for release and therefore surrender release availability. Increasing witness retention does not remove a malicious custody quorum's ability to reconstruct shares. See [0.3 research](doc/generation03/RESEARCH.md) and the [four-witness candidate for 0.4](doc/generation03/GENERATION_0_4.md), which remains proposed rather than implemented.
+
+
+## Generation 0.4 — explicit provider compatibility
+
+The injectable custody gate now advertises explicit operation, owner-disarm, certificate-validation, simulation and cryptographic-enforcement capabilities. Python/Node gates can be substituted; both retain the weak static-share material model. Conformance rejects a request for cryptographically enforced policy rather than silently selecting the lab provider. [Architecture and replacement requirements](doc/generation04/ARCHITECTURE.md) describe the future provider boundary; [the transport comparison](doc/generation04/UNREACHABLE_AUTHORITY.md) does not implement PorterNet.

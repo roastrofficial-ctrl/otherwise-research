@@ -90,3 +90,8 @@ All founding A–J and added K–T tests pass. These are finite hostile executio
 The experiment establishes composition and audited ordering, not the objective truth of an attestation or the meaning of a missing response. The failed-notification/unreachable-creator experiment authorises release after a missed obligation. That is a visible policy consequence, not a finding that the creator died or intended disclosure.
 
 We have built a system that interprets **agreed conditions over observed evidence**. It does not safely infer intent from silence. Whether silence should grant permission remains an explicit policy and custody decision. Generation 0.2 should first address real-time/outage authority and independent custody, as proposed in [doc/GENERATION_0_2.md](doc/GENERATION_0_2.md).
+
+
+## Generation 0.4 — Available Witness and First Human
+
+The bounded four-witness protocol, Laravel HTTP lifecycle, real HTTPS adapters, Docker network partition and disappearing-SaaS experiment are reproducible with `scripts/experiment04.sh`. See [results and explicit limits](doc/generation04/RESULTS.md), [raw evidence](doc/results04), and [the owner runbook](doc/generation04/RUNBOOK.md). A separate real wall/monotonic-clock lifecycle is retained in `doc/results04/realtime.txt`. This is not independent multi-host or WAN validation.

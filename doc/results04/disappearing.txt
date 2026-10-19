@@ -1,0 +1,14 @@
+laravel: unavailable (verified)
+product-db: unavailable (verified)
+protocol-adapter: unavailable (verified)
+{
+  "recovered_latest_presence": true,
+  "new_checkin_without_saas": true,
+  "owner_disarm_without_saas": true,
+  "disarmed_release_blocked": true,
+  "missed_release_live": true,
+  "simulated_delivery": true,
+  "administrative_bypass": false,
+  "required_capability": "independently exported owner seed + signed manifest + witness/custody addresses + encrypted payload",
+  "fault_injection": "clock advance only; never an ownership bypass"
+}

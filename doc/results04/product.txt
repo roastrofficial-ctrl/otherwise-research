@@ -1,0 +1,2 @@
+served frontend verifier: valid ack accepted, forgery rejected
+Laravel GET + CSRF POST create → arm → check-in → status; missed window → authorise → simulated delivery; separate disarm verified; recovery kits fsynced outside SaaS; database projection written.

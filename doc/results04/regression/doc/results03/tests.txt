@@ -1,0 +1,23 @@
+ Volume "otherwise03-1792436375-51212_retained-client-state"  Creating
+ Volume "otherwise03-1792436375-51212_retained-client-state"  Created
+test_00_majority_intersection_counterexample (test_retained.RetainedExperiments.test_00_majority_intersection_counterexample) ... ok
+test_A_lost_acknowledgement (test_retained.RetainedExperiments.test_A_lost_acknowledgement) ... ok
+test_B_forgotten_witness (test_retained.RetainedExperiments.test_B_forgotten_witness) ... ok
+test_C_fabricated_absence_one_malicious (test_retained.RetainedExperiments.test_C_fabricated_absence_one_malicious) ... ok
+test_D_equivocating_witness (test_retained.RetainedExperiments.test_D_equivocating_witness) ... ok
+test_E_partitioned_groups (test_retained.RetainedExperiments.test_E_partitioned_groups) ... ok
+test_F_late_witness_and_exact_boundary (test_retained.RetainedExperiments.test_F_late_witness_and_exact_boundary) ... ok
+test_G_silent_witness (test_retained.RetainedExperiments.test_G_silent_witness) ... ok
+test_H_stolen_identity_and_replay (test_retained.RetainedExperiments.test_H_stolen_identity_and_replay) ... ok
+test_I_custodians_retained_doubt_exceeded_fault_budget (test_retained.RetainedExperiments.test_I_custodians_retained_doubt_exceeded_fault_budget) ... ok
+test_J_solo_witness_and_disarm (test_retained.RetainedExperiments.test_J_solo_witness_and_disarm) ... ok
+test_K_council (test_retained.RetainedExperiments.test_K_council) ... ok
+test_L_hostile_recovery_actual_process_crashes (test_retained.RetainedExperiments.test_L_hostile_recovery_actual_process_crashes) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 3.780s
+
+OK
+COUNTEREXAMPLE: P={A,B}, A={B,C}, B equivocates: both naive 2/3 certificates verify. Revised profile rejects 2/2.
+BOUNDARY: two Byzantine witnesses can produce conflicting 2/3 presence and 3/3 absence; informed custodians veto.
+Solo: one human; verifiable/repeated check-ins, missed next challenge, grace, compact custody release, disarm.

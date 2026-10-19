@@ -1,0 +1,25 @@
+# Design only: conventional HTTPS versus PorterNet correspondence
+
+No PorterNet adapter, integration, package or service is implemented. No authoritative public PorterNet specification was available in this session. The right-hand column below is therefore a **proposed evaluation contract for correspondence**, not a statement of PorterNet's existing capabilities. A later comparison must first obtain its primary specification and identify actual endpoint, routing, durability and operator guarantees.
+
+| Question | Conventional HTTPS baseline | Correspondence candidate: evidence required |
+|---|---|---|
+| Message identity | Existing signed canonical protocol envelope; TLS authenticates the serving endpoint under configured trust | Same envelope and pinned signer identity; correspondence addressing must not redefine the protocol identity |
+| Channel protection | Certificate-verifying TLS protects the connection against eavesdropping/tampering under its endpoint/key assumptions | Specify encryption, endpoint authentication, forward secrecy, metadata visibility and key compromise handling; networkless is not an answer |
+| Availability | Reachable endpoint, routing/DNS and online server; partitions/timeouts can delay or censor | Measure relay/courier/spool dependence, offline queue availability, deletion/censorship and whether alternate delivery paths actually exist |
+| Deadline semantics | Receiver's healthy bounded clock signs observation time; send time and HTTP completion are insufficient | Receiver still needs timely committed observation; queued send-time evidence cannot retroactively satisfy a missed window |
+| Receipts | HTTP response is transport acknowledgement; a signed, committed witness receipt is protocol evidence | Distinguish handoff, transit, endpoint arrival, durable commit and retained-copy acknowledgements; only the latter protocol objects count |
+| Ordering/replay | At-least-once retries; scoped signatures, first-write locks and idempotent operation identities | Expect reordered, duplicated and delayed correspondence; preserve identical validation and locks |
+| Confidentiality of custody | TLS does not prevent a compromised custodian from releasing its share | Isolating the network does not prevent malicious operators, physical compromise, supply-chain compromise or captured keys |
+| Anonymity | IP, DNS, TLS and application metadata may identify users/operators | Enumerate sender/recipient, relay, timing, size, physical-route and administrative metadata; do not assume anonymity |
+| Cost | Hosts, certificates, DNS, patching, storage/fsync, monitoring, network egress, on-call response | Measure queues, storage, transport hardware/physical handling, routing, loss replacement, staff, recovery and serviceable deadline bounds |
+| Repair | Fresh target challenge + three authenticated pinned peer checkpoints + owner command | Must carry the same objects with an adequate return path before clocks/availability budgets expire |
+| Operational compromise | Endpoint, CA/trust-store, DNS, host, time source or application compromise | Endpoint/firmware, relay, physical custodian, time source and removable-media compromise; identify correlated failure domains |
+
+TLS's purpose and endpoint assumptions are specified in the [TLS 1.3 RFC](https://datatracker.ietf.org/doc/html/rfc8446); it does not define Otherwise durable receipts. The Python adapters use the platform's certificate-verifying SSL contexts, without a claim about the exact negotiated TLS version on every future deployment.
+
+The experiment should use identical signed manifest/evidence/certificate bytes, identical clock error ε, a fixed declared fault budget and separately measured delay distributions. Record enqueue, receiver commit, protocol receipt, three-holder retention and user-visible acknowledgement times; report p50/p95/p99, failure fraction, retry count, storage growth and cost per successful accepted check-in. A timeout is an unknown outcome on both transports. Compare online immediate-response and delayed-correspondence modes separately; do not call their availability or timing equivalent.
+
+Adversaries should drop, delay, reorder, duplicate, replay, modify, misroute and equivocate, compromise one witness, corrupt a relay, withhold retained receipts, roll back endpoint storage and skew clocks. Test delayed messages crossing a deadline; the receiver must reject late new observations even if they were dispatched earlier. Run the disappearing-SaaS sequence for each transport, including complete loss of the correspondence operator, and identify any hidden registration/address-book/decryption authority dependency.
+
+A meaningful result would identify which correlated online attack surfaces are reduced and which storage, routing, physical-access, metadata and recovery assumptions replace them. A smaller internet-facing surface is not immunity to compromise. Custody enforcement, witness signature safety and the truth of an attested fact remain independent questions. Otherwise must build, test, deploy and operate when PorterNet is absent; the current repository demonstrates precisely that baseline.

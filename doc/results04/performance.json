@@ -1,0 +1,15 @@
+{
+  "scope": "single Docker host; sequential fsync + direct witness/custody receipt distribution; no WAN estimate",
+  "all_four": {
+    "samples": 10,
+    "median_ms": 100.554,
+    "p95_nearest_rank_ms": 188.333,
+    "ack_with_holder_proofs_bytes_mean": 13518
+  },
+  "one_fast_refusal": {
+    "samples": 5,
+    "median_ms": 94.041,
+    "p95_nearest_rank_ms": 198.622,
+    "ack_with_holder_proofs_bytes_mean": 9151
+  }
+}

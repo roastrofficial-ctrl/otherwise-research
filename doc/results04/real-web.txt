@@ -1,0 +1,1 @@
+Current localhost Laravel build: real-clock create → arm → verified check-in → independent receipt discovery → owner disarm; no clock injection.

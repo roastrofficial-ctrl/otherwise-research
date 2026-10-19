@@ -1,3 +1,31 @@
+# OTHERWISE 0.4 — The Available Witness
+
+An independently operable conditional-custody protocol, with a local Laravel consumer prototype. All Capsules contain synthetic content and all delivery is simulated.
+
+```sh
+./scripts/lab04.sh up -d --build aw1 aw2 aw3 aw4 ak1 ak2 ak3 protocol-adapter product-db laravel
+```
+
+Open **http://localhost:8040**. Create, save the private recovery kit, arm, check in, inspect evidence, then disarm early—or miss the last window and simulate release. The default demo uses real wall/monotonic clocks. It is a laboratory, not production custody.
+
+The new static four-witness profile uses three signed observations and three signed closures, with durable locks, direct receipt retention and authenticated same-identity repair. Python and an independent Node evaluator verify portable certificates. The consumer database is disposable: the owner CLI operates directly against witnesses/custodians using an independently retained kit. Neither the protocol image nor CLI contains Laravel or PorterNet. Two conventional transport adapters and explicit custody capability checks have executable conformance tests.
+
+```sh
+./scripts/experiment04.sh
+```
+
+This isolated Docker experiment runs adversarial tests, actual HTTPS substitution, Laravel HTTP/CSRF, a network partition, witness process recovery, and **stops Laravel, PostgreSQL and the adapter** before exercising independent recovery/check-in/disarm/release. Stop the demo's Laravel container first if it occupies port 8040. Results are retained under [doc/results04](doc/results04).
+
+- [Runbook and standalone owner CLI](doc/generation04/RUNBOOK.md)
+- [Protocol, timing assumptions and recovery boundaries](doc/generation04/PROTOCOL.md)
+- [Architecture and custody/transport interfaces](doc/generation04/ARCHITECTURE.md)
+- [Results and limitations](doc/generation04/RESULTS.md)
+- [HTTPS versus correspondence: design only](doc/generation04/UNREACHABLE_AUTHORITY.md)
+
+A malicious static-share custody quorum can still decrypt early. Four containers on one host do not establish independent administrative or clock trust. The prototype passes owner keys through a local trusted adapter; use synthetic data only. Committee-wide restart, identity replacement and production key recovery are outside this profile.
+
+---
+
 # Otherwise — Generation 0.3: The Retained Witness
 
 Conditional custody governed by independently evidenced obligations. One human can use one absence contract; advanced Council policies compose several independently signed contracts. Technical witnesses and custodians do not become additional human trustees.

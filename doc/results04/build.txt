@@ -1,0 +1,292 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [aw4 internal] load build definition from Dockerfile.protocol04
+#1 transferring dockerfile: 625B done
+#1 DONE 0.0s
+
+#2 [protocol-adapter internal] load build definition from Dockerfile.protocol04
+#2 transferring dockerfile: 625B done
+#2 DONE 0.0s
+
+#3 [ak2 internal] load build definition from Dockerfile.protocol04
+#3 transferring dockerfile: 625B done
+#3 DONE 0.0s
+
+#4 [aw3 internal] load build definition from Dockerfile.protocol04
+#4 transferring dockerfile: 625B done
+#4 DONE 0.0s
+
+#5 [ak3 internal] load build definition from Dockerfile.protocol04
+#5 transferring dockerfile: 625B done
+#5 DONE 0.0s
+
+#6 [cli internal] load build definition from Dockerfile.protocol04
+#6 transferring dockerfile: 625B done
+#6 DONE 0.0s
+
+#7 [aw1 internal] load build definition from Dockerfile.protocol04
+#7 transferring dockerfile: 625B done
+#7 DONE 0.0s
+
+#8 [aw2 internal] load build definition from Dockerfile.protocol04
+#8 transferring dockerfile: 625B done
+#8 DONE 0.0s
+
+#9 [ak1 internal] load build definition from Dockerfile.protocol04
+#9 transferring dockerfile: 625B done
+#9 DONE 0.0s
+
+#10 [protocol-adapter internal] load metadata for docker.io/library/node:22-bookworm-slim
+#10 DONE 0.2s
+
+#11 [aw2 internal] load metadata for docker.io/library/python:3.12-slim
+#11 DONE 0.2s
+
+#12 [ak2 internal] load .dockerignore
+#12 transferring context: 193B done
+#12 DONE 0.0s
+
+#13 [protocol-adapter internal] load .dockerignore
+#13 transferring context: 193B done
+#13 DONE 0.0s
+
+#14 [ak1 internal] load .dockerignore
+#14 transferring context: 193B done
+#14 DONE 0.0s
+
+#15 [aw3 verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+#15 DONE 0.0s
+
+#16 [aw3 stage-1  1/12] FROM docker.io/library/python:3.12-slim@sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1
+#16 DONE 0.0s
+
+#17 [aw2 internal] load .dockerignore
+#17 transferring context: 193B done
+#17 DONE 0.0s
+
+#18 [aw1 internal] load .dockerignore
+#18 transferring context: 193B done
+#18 DONE 0.0s
+
+#19 [aw4 internal] load .dockerignore
+#19 transferring context: 193B done
+#19 DONE 0.0s
+
+#20 [ak3 internal] load .dockerignore
+#20 transferring context: 193B done
+#20 DONE 0.0s
+
+#21 [cli internal] load .dockerignore
+#21 transferring context: 193B done
+#21 DONE 0.0s
+
+#22 [aw3 internal] load .dockerignore
+#22 transferring context: 193B done
+#22 DONE 0.0s
+
+#23 [ak1 internal] load build context
+#23 transferring context: 31.78kB done
+#23 DONE 0.0s
+
+#24 [ak2 internal] load build context
+#24 transferring context: 31.78kB 0.0s done
+#24 DONE 0.0s
+
+#25 [protocol-adapter internal] load build context
+#25 transferring context: 31.78kB 0.0s done
+#25 DONE 0.0s
+
+#26 [aw1 internal] load build context
+#26 transferring context: 31.78kB done
+#26 DONE 0.0s
+
+#27 [aw2 internal] load build context
+#27 transferring context: 31.78kB done
+#27 DONE 0.0s
+
+#28 [ak3 internal] load build context
+#28 transferring context: 31.78kB done
+#28 DONE 0.0s
+
+#29 [aw4 internal] load build context
+#29 transferring context: 31.78kB done
+#29 DONE 0.0s
+
+#30 [cli internal] load build context
+#30 transferring context: 31.78kB done
+#30 DONE 0.0s
+
+#31 [ak1 stage-1  6/12] COPY Engine Engine
+#31 CACHED
+
+#32 [ak1 stage-1  5/12] RUN pip install --no-cache-dir -r requirements.txt
+#32 CACHED
+
+#33 [ak1 stage-1  3/12] WORKDIR /otherwise
+#33 CACHED
+
+#34 [ak1 stage-1  2/12] COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+#34 CACHED
+
+#35 [ak1 stage-1  4/12] COPY requirements.txt .
+#35 CACHED
+
+#36 [cli stage-1  7/12] COPY Bounded Bounded
+#36 CACHED
+
+#37 [aw3 internal] load build context
+#37 transferring context: 31.78kB done
+#37 DONE 0.0s
+
+#38 [cli stage-1  8/12] COPY Available Available
+#38 DONE 0.0s
+
+#36 [aw3 stage-1  7/12] COPY Bounded Bounded
+#36 CACHED
+
+#39 [aw1 stage-1  9/12] COPY Verifier Verifier
+#39 DONE 0.0s
+
+#40 [ak1 stage-1 10/12] COPY tests04 tests04
+#40 DONE 0.0s
+
+#41 [aw3 stage-1 11/12] COPY scripts/conformance04.py scripts/conformance04.py
+#41 DONE 0.0s
+
+#42 [aw3 stage-1 12/12] COPY Protocol/vectors/generation04.json Protocol/vectors/generation04.json
+#42 DONE 0.0s
+
+#43 [protocol-adapter] exporting to image
+#43 exporting layers 0.0s done
+#43 writing image sha256:4aeda9f8580cce4e3b7250704ecf4426a81fe1eb2c3c8b2ea1f621756a1430d7 done
+#43 naming to docker.io/library/otherwise04-1792437676-58376-protocol-adapter done
+#43 DONE 0.0s
+
+#44 [cli] exporting to image
+#44 exporting layers 0.0s done
+#44 writing image sha256:df75906cef73c22cee46f42c6095f3c0ceeed2283b3547df69ac4ffb1ee557e8 done
+#44 naming to docker.io/library/otherwise04-1792437676-58376-cli done
+#44 DONE 0.0s
+
+#45 [aw2] exporting to image
+#45 exporting layers 0.0s done
+#45 writing image sha256:6aec5fd443a6a54e57aca80b5adcad3cff6ef43ff31ed0e74565158876b0f4e6 done
+#45 naming to docker.io/library/otherwise04-1792437676-58376-aw2 done
+#45 DONE 0.0s
+
+#46 [ak2] exporting to image
+#46 exporting layers 0.0s done
+#46 writing image sha256:1bd4527d92407eaf4e1c3e2a7ba6592b7b4b315ce1c427cc29b4341b54b9bffc done
+#46 naming to docker.io/library/otherwise04-1792437676-58376-ak2 0.0s done
+#46 DONE 0.0s
+
+#47 [aw4] exporting to image
+#47 exporting layers 0.0s done
+#47 writing image sha256:3d1ae10fa5389034a1693c56c2928ad6ac8bf1dbc3b8dc5172d4a9acc21ca6ca done
+#47 naming to docker.io/library/otherwise04-1792437676-58376-aw4 0.0s done
+#47 DONE 0.1s
+
+#48 [ak3] exporting to image
+#48 exporting layers 0.0s done
+#48 writing image sha256:3e5bba824b6d1ded194573bf79a16745487168d5b437990d5a7fd1304bd5e5da done
+#48 naming to docker.io/library/otherwise04-1792437676-58376-ak3 0.0s done
+#48 DONE 0.1s
+
+#49 [aw3] exporting to image
+#49 exporting layers 0.0s done
+#49 writing image sha256:fb7abcf9cb388bf8787821f99f23c8890e5a1a4d8d6e44c85683f12a13d416f9 done
+#49 naming to docker.io/library/otherwise04-1792437676-58376-aw3 0.0s done
+#49 DONE 0.1s
+
+#50 [ak1] exporting to image
+#50 exporting layers 0.0s done
+#50 writing image sha256:f541bb17685d0ebaa3f23fc6e491e7ac92e13d5b542078e5fd1812c51e208d5f done
+#50 naming to docker.io/library/otherwise04-1792437676-58376-ak1 0.0s done
+#50 DONE 0.1s
+
+#51 [aw1] exporting to image
+#51 exporting layers 0.0s done
+#51 writing image sha256:38fe3b2c2e4f8bbf6236b42e22a660a676500a35e3271d82746c82d9b9de84e1 done
+#51 naming to docker.io/library/otherwise04-1792437676-58376-aw1 0.0s done
+#51 DONE 0.1s
+
+#52 [aw4] resolving provenance for metadata file
+#52 DONE 0.0s
+
+#53 [ak1] resolving provenance for metadata file
+#53 DONE 0.0s
+
+#54 [protocol-adapter] resolving provenance for metadata file
+#54 DONE 0.1s
+
+#55 [aw3] resolving provenance for metadata file
+#55 DONE 0.0s
+
+#56 [ak3] resolving provenance for metadata file
+#56 DONE 0.0s
+
+#57 [cli] resolving provenance for metadata file
+#57 DONE 0.0s
+
+#58 [ak2] resolving provenance for metadata file
+#58 DONE 0.0s
+
+#59 [aw2] resolving provenance for metadata file
+#59 DONE 0.0s
+
+#60 [aw1] resolving provenance for metadata file
+#60 DONE 0.0s
+
+#61 [laravel internal] load build definition from Dockerfile
+#61 transferring dockerfile: 689B done
+#61 DONE 0.0s
+
+#62 [laravel internal] load metadata for docker.io/library/php:8.4-cli-bookworm
+#62 DONE 0.3s
+
+#63 [laravel internal] load metadata for docker.io/library/composer:2
+#63 DONE 0.4s
+
+#64 [laravel internal] load .dockerignore
+#64 transferring context: 93B done
+#64 DONE 0.0s
+
+#65 [laravel stage-0 1/8] FROM docker.io/library/php:8.4-cli-bookworm@sha256:836ac6c672d1372a47c8fd61b625015bd07760f493fb2eaab2087636498a2b4b
+#65 DONE 0.0s
+
+#66 [laravel] FROM docker.io/library/composer:2@sha256:af98f42dfff7c68ba8d53c2164fd9fde1087b7d449514baa38c418b1f6bc4bac
+#66 DONE 0.0s
+
+#67 [laravel internal] load build context
+#67 transferring context: 905B done
+#67 DONE 0.0s
+
+#68 [laravel stage-0 5/8] COPY composer.json composer.lock* ./
+#68 CACHED
+
+#69 [laravel stage-0 7/8] COPY . .
+#69 CACHED
+
+#70 [laravel stage-0 3/8] COPY --from=composer:2 /usr/bin/composer /usr/local/bin/composer
+#70 CACHED
+
+#71 [laravel stage-0 2/8] RUN apt-get update && apt-get install -y --no-install-recommends libpq-dev libonig-dev libxml2-dev unzip git && docker-php-ext-install pdo_pgsql mbstring dom && rm -rf /var/lib/apt/lists/*
+#71 CACHED
+
+#72 [laravel stage-0 4/8] WORKDIR /app
+#72 CACHED
+
+#73 [laravel stage-0 6/8] RUN composer install --no-dev --prefer-dist --no-interaction --no-scripts --no-progress
+#73 CACHED
+
+#74 [laravel stage-0 8/8] RUN mkdir -p bootstrap/cache storage/framework/cache storage/framework/sessions storage/framework/views storage/logs && chmod -R 700 storage
+#74 CACHED
+
+#75 [laravel] exporting to image
+#75 exporting layers done
+#75 writing image sha256:ccfb912182e5551564f908dba7a8d73a606b0d40d50f48af7cde856caf3b4fdf done
+#75 naming to docker.io/library/otherwise04-1792437676-58376-laravel done
+#75 DONE 0.0s
+
+#76 [laravel] resolving provenance for metadata file
+#76 DONE 0.0s

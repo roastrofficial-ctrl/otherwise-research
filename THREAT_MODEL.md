@@ -92,3 +92,8 @@ A complete local database rollback is tested, with retained peer receipts exposi
 The suite's clocks are explicit controlled integer sources; inherited 0.2 actual-clock/fault tests are rerun. Clock validity is an assumption for timing claims, not proof of UTC. A real-mode restart with uncertain clock cannot mint new finalisations. Observation outages and a creator's inability to reach witnesses can still leave no accepted certificate; neither outcome proves death. Finite closed slots, first-observation fencing and unanimous finalisation restrict this profile; dynamic evidence amendment, witness rotation, automatic quarantine repair and production clock recovery require future specifications.
 
 Availability is deliberately asymmetric. Two available honest witnesses can retain a check-in while a third is offline. No new release certificate can form while any required witness is silent, maliciously withholding or quarantined. A fast HTTP refusal in the measured workload is not a network-timeout guarantee. The client currently contacts witnesses sequentially and may wait for its configured request timeout.
+
+
+## Generation 0.4 — scoped fault tolerance and separability
+
+The four-witness certificate model assumes at most one faulty witness for a static epoch, healthy bounded clocks and preserved/repaired durable locks. It does not protect against a malicious custody quorum, compromised owner kit/SaaS origin, common Docker-host compromise, arbitrary UTC failure or cumulative theft of old signer keys. Three-member partitions can progress; two-member partitions cannot. Restarted witnesses require authenticated recovery. See [the full protocol boundaries](doc/generation04/PROTOCOL.md) and [the consumer trust boundary](doc/generation04/ARCHITECTURE.md).

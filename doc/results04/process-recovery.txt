@@ -1,0 +1,7 @@
+Capsule armed before witness process stop.
+ Container otherwise04-1792437676-58376-aw4-1  Stopping
+ Container otherwise04-1792437676-58376-aw4-1  Stopped
+Check-in accepted with one Docker witness process stopped.
+ Container otherwise04-1792437676-58376-aw4-1  Starting
+ Container otherwise04-1792437676-58376-aw4-1  Started
+Restarted witness required owner-authenticated three-peer repair; accepted presence survived and vetoed absence.

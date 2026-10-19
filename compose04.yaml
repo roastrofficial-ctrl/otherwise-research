@@ -1,0 +1,90 @@
+x-node: &node
+  build: {context: ., dockerfile: Dockerfile.protocol04}
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  tmpfs: [/tmp]
+  networks: [protocol]
+  environment: &env
+    CLOCK_MODE: ${OTHERWISE_04_CLOCK_MODE:-real}
+    OTHERWISE_LAB_HTTP: '1'
+    LAB_FAULTS: '1'
+    BOOTSTRAP_TOKEN: ${OTHERWISE_04_FAULT_TOKEN:?Set the private laboratory fault token}
+services:
+  aw1:
+    <<: *node
+    command: [python, -m, Available.service]
+    environment: {<<: *env, ROLE: witness, INDEX: '1'}
+    volumes: [aw1:/state]
+  aw2:
+    <<: *node
+    command: [python, -m, Available.service]
+    environment: {<<: *env, ROLE: witness, INDEX: '2'}
+    volumes: [aw2:/state]
+  aw3:
+    <<: *node
+    command: [python, -m, Available.service]
+    environment: {<<: *env, ROLE: witness, INDEX: '3'}
+    volumes: [aw3:/state]
+  aw4:
+    <<: *node
+    command: [python, -m, Available.service]
+    environment: {<<: *env, ROLE: witness, INDEX: '4'}
+    volumes: [aw4:/state]
+  ak1:
+    <<: *node
+    command: [python, -m, Available.service]
+    environment: {<<: *env, ROLE: custodian, INDEX: '1'}
+    volumes: [ak1:/state]
+  ak2:
+    <<: *node
+    command: [python, -m, Available.service]
+    environment: {<<: *env, ROLE: custodian, INDEX: '2'}
+    volumes: [ak2:/state]
+  ak3:
+    <<: *node
+    command: [python, -m, Available.service]
+    environment: {<<: *env, ROLE: custodian, INDEX: '3'}
+    volumes: [ak3:/state]
+  protocol-adapter:
+    <<: *node
+    command: [python, -m, Available.adapter]
+    environment: &clientenv
+      OTHERWISE_LAB_HTTP: '1'
+      WITNESSES: http://aw1:8080,http://aw2:8080,http://aw3:8080,http://aw4:8080
+      CUSTODIANS: http://ak1:8080,http://ak2:8080,http://ak3:8080
+  cli:
+    <<: *node
+    environment: {<<: *clientenv, OTHERWISE_04_FAULT_TOKEN: '${OTHERWISE_04_FAULT_TOKEN}'}
+    volumes: [recovery:/recovery]
+    command: [python, -m, unittest, discover, -s, tests04, -v]
+  product-db:
+    image: postgres:17-bookworm
+    environment:
+      POSTGRES_DB: otherwise
+      POSTGRES_USER: otherwise
+      POSTGRES_PASSWORD: ${OTHERWISE_04_DB_PASSWORD:?Set lab database password}
+    volumes: [product-db:/var/lib/postgresql/data]
+    networks: [product]
+  laravel:
+    build: Consumer
+    environment:
+      APP_KEY: ${OTHERWISE_04_APP_KEY:?Set Laravel application key}
+      DB_PASSWORD: ${OTHERWISE_04_DB_PASSWORD}
+    ports: ['127.0.0.1:8040:8000']
+    networks: [browser, product, protocol]
+    depends_on: [product-db, protocol-adapter]
+networks:
+  browser: {}
+  protocol: {internal: true}
+  product: {internal: true}
+volumes:
+  aw1:
+  aw2:
+  aw3:
+  aw4:
+  ak1:
+  ak2:
+  ak3:
+  recovery:
+  product-db:

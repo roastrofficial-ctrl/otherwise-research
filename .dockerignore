@@ -6,3 +6,9 @@ __pycache__
 doc/results
 doc/results02
 doc/results03
+.env
+.env*
+Consumer/vendor
+recovery-export
+*.recovery.json
+doc/results04

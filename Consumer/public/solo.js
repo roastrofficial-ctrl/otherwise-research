@@ -1,0 +1,37 @@
+let kit=JSON.parse(localStorage.getItem('otherwise-kit')||'null'),saved=false,certificate=null;
+const el=id=>document.getElementById(id);
+function canonical(x){if(x===null||typeof x==='boolean')return JSON.stringify(x);if(typeof x==='number'){if(!Number.isSafeInteger(x))throw Error('Invalid number');return String(x)}if(typeof x==='string'){if(!/^[\x00-\x7f]*$/.test(x))throw Error('Noncanonical text');return JSON.stringify(x).replace(/\x7f/g,'\\u007f')}if(Array.isArray(x))return '['+x.map(canonical).join(',')+']';return '{'+Object.keys(x).sort().map(k=>canonical(k)+':'+canonical(x[k])).join(',')+'}'}
+const bytes=s=>Uint8Array.from(s.match(/../g)||[],c=>parseInt(c,16));
+async function hash(x){return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(canonical(x))))).map(b=>b.toString(16).padStart(2,'0')).join('')}
+async function signature(key,s){const k=await crypto.subtle.importKey('raw',bytes(key),{name:'Ed25519'},false,['verify']);if(!await crypto.subtle.verify('Ed25519',k,bytes(s.signature),new TextEncoder().encode(canonical(s.message))))throw Error('Invalid authoritative signature')}
+async function verifyAck(a,requireHolders=false){
+ if(requireHolders&&!Array.isArray(a.holders))throw Error('Missing durable retention receipts');
+ const m=a.manifest.message;await signature(m.policy.owner,a.manifest);if(canonical(a.manifest)!==canonical(kit.manifest))throw Error('Wrong Capsule');
+ if(m.v!==4||canonical(m.quorum)!==canonical({presence:3,absence:3,faults:1})||await hash(m.policy)!==m.commitment)throw Error('Unsupported profile');
+ const mh=await hash(m),op=await hash({v:4,capsule:m.capsule,epoch:m.epoch,manifest:mh,commitment:m.commitment,payload:m.payload,...m.operation});
+ const ids=new Set();let pd=null;
+ for(const r of a.receipts){const x=r.message;await signature(m.witnesses[String(x.witness)],r);if(ids.has(x.witness))throw Error('Duplicate signer');ids.add(x.witness);
+ const p=x.proof.message,c=m.policy.contracts.find(c=>c.id===p.contract),s=m.slots.find(s=>s.contract===p.contract&&s.challenge===p.challenge);
+ if(!c||!s)throw Error('Unknown contract');await signature(c.authority,x.proof);
+ if(x.v!==4||x.kind!=='OBSERVATION'||x.manifest!==mh||x.capsule!==m.capsule||x.operation!==op||x.contract!==s.contract||x.challenge!==s.challenge||x.not_before!==s.deadline+1+m.policy.grace||p.v!==4||p.manifest!==mh||p.capsule!==m.capsule||p.authority!==c.authority||p.contract_version!==c.version||p.value!==true||x.value!=='PRESENT'||!(s.open<=x.lower&&x.lower<=x.upper&&x.upper<=s.deadline&&c.start<=p.valid_from&&p.valid_from<=x.lower&&x.upper<p.valid_until&&p.valid_until<=c.end))throw Error('Invalid scope or validity');
+ const h=await hash(x.proof);if(pd&&pd!==h)throw Error('Mixed proofs');pd=h;
+ if(a.holders){const holders=new Set();for(const retained of a.holders.filter(z=>z.message.digest===undefined?false:true)){const hmsg=retained.message;if(hmsg.digest!==await hash(r))continue;const key=Object.values(m.witnesses).find(k=>k===hmsg.holder);if(!key||hmsg.kind!=='RETAINED'||hmsg.v!==4||hmsg.manifest!==mh||hmsg.capsule!==m.capsule)throw Error('Bad retention');await signature(key,retained);holders.add(key)}if(holders.size<3)throw Error('Insufficient durable receipt distribution')}
+ }
+ if(ids.size<3)throw Error('Insufficient authoritative observations');return true;
+}
+async function verifyFence(kind,rs){const m=kit.manifest.message;await signature(m.policy.owner,kit.manifest);const ids=new Set(),mh=await hash(m);for(const r of rs){const x=r.message;if(x.kind!==kind||x.v!==4||x.manifest!==mh||x.capsule!==m.capsule||ids.has(x.witness))throw Error('Invalid fence');await signature(m.witnesses[String(x.witness)],r);await signature(m.policy.owner,x.command);if(x.command.message.action!==kind||x.command.message.manifest!==mh)throw Error('Invalid owner command');ids.add(x.witness)}if(ids.size<3)throw Error('Insufficient fence quorum')}
+function render(){const m=kit?.manifest.message;el('arm').disabled=!kit||!saved;el('checkin').disabled=!kit?.arm?.length||!!kit?.disarm?.length;el('disarm').disabled=el('checkin').disabled;el('schedule').textContent=m?m.slots.map(s=>`Check-in ${s.challenge} · ${new Date(s.open*1000).toLocaleString()} to ${new Date(s.deadline*1000).toLocaleTimeString()}`).join(' · '):'';}
+async function act(action){const buttons=[...document.querySelectorAll('button')];buttons.forEach(b=>b.disabled=true);el('notice').textContent='Waiting for authoritative evidence…';
+ try{if(action!=='create'&&!kit)throw Error('Create or restore a Capsule first');if(action==='simulate'&&!certificate)throw Error('Evaluate an authorised release first');
+ const r=await fetch('/protocol/'+action,{method:'POST',headers:{'Content-Type':'application/json','X-CSRF-TOKEN':document.querySelector('meta[name=csrf-token]').content},body:JSON.stringify({kit,seconds:Number(el('seconds').value),rounds:Number(el('rounds').value),certificate})});const b=await r.json();if(!r.ok)throw Error(b.error||'Protocol outcome uncertain. Refresh or retry.');kit=b.kit;
+ if(action==='arm')await verifyFence('ARM',kit.arm);if(action==='disarm')await verifyFence('DISARM',kit.disarm);
+ if(action==='checkin')await verifyAck(kit.acknowledgements.at(-1),true);if(action==='status'){if(b.result.state==='ARMED')await verifyFence('ARM',kit.arm);if(b.result.state==='DISARMED')await verifyFence('DISARM',kit.disarm);if(b.result.latest)await verifyAck(b.result.latest);}
+ // Cache before presenting success. A failed browser write is an uncertain UI outcome.
+ localStorage.setItem('otherwise-kit',JSON.stringify(kit));
+ if(action==='create'){saved=false;certificate=null;}if(action==='evaluate')certificate=b.result.certificate||null;
+ const labels={ARMED:'Capsule armed',DISARMED:'Capsule disarmed',WAITING:'Waiting for closure',PROTECTED:'Release is not authorised',AUTHORISED:'Release authorised',DRAFT:'Practice Capsule created',UNKNOWN:'Status not confirmed'};el('state').textContent=labels[b.result.state]|| (action==='checkin'?`Check-in ${b.result.challenge} confirmed`:action==='simulate'?'Delivery simulated':'Capsule updated');
+ el('notice').textContent=action==='checkin'?'Your check-in has verified witness receipts and independently retained copies. Save an updated recovery kit.':action==='create'?'Your synthetic Capsule is encrypted. Save the recovery kit before arming.':b.result.reason||'Verified protocol response received.';
+ if(kit.acknowledgements.length)el('ack').textContent=kit.acknowledgements.length+' accepted check-in(s)';el('history').textContent=JSON.stringify(b.result.history||b.result,null,2);
+ }catch(e){el('notice').textContent='Not confirmed: '+e.message;}finally{buttons.forEach(b=>b.disabled=false);render()}}
+function download(){if(!kit)return;const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(kit,null,2)],{type:'application/json'}));a.download=kit.manifest.message.capsule+'-recovery.json';a.click();URL.revokeObjectURL(a.href);saved=true;render()}
+el('restore').onchange=async e=>{try{const next=JSON.parse(await e.target.files[0].text());await signature(next.manifest.message.policy.owner,next.manifest);kit=next;saved=true;localStorage.setItem('otherwise-kit',JSON.stringify(kit));render();await act('status')}catch(e){el('notice').textContent=e.message}};render();if(kit)el('notice').textContent='A local recovery kit is available. Refresh status to verify current evidence.';

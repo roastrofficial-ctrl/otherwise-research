@@ -5,3 +5,10 @@ __pycache__/
 *.db-journal
 *.key
 .env
+Consumer/vendor/
+Consumer/bootstrap/cache/*
+Consumer/storage/logs/*
+Consumer/storage/framework/views/*
+*.recovery.json
+.env04
+recovery-export/

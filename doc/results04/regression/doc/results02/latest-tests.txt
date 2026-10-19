@@ -1,0 +1,29 @@
+test_M_real_clock_and_faults (test_bounded.ClockAndDurability.test_M_real_clock_and_faults) ... ok
+test_N_process_crashes_at_payload_and_database_boundaries (test_bounded.ClockAndDurability.test_N_process_crashes_at_payload_and_database_boundaries) ... ok
+test_O_real_observation_pause_and_recovery (test_bounded.ClockAndDurability.test_O_real_observation_pause_and_recovery) ... ok
+test_P_clock_interval_and_restored_state (test_bounded.ClockAndDurability.test_P_clock_interval_and_restored_state) ... ok
+test_Q_recovery_signatures_bind_current_head (test_bounded.ClockAndDurability.test_Q_recovery_signatures_bind_current_head) ... ok
+test_A_compromised_operator (test_bounded.CustodyExperiments.test_A_compromised_operator) ... ok
+test_B_forged_release (test_bounded.CustodyExperiments.test_B_forged_release) ... ok
+test_C_replayed_authorisation (test_bounded.CustodyExperiments.test_C_replayed_authorisation) ... ok
+test_D_missing_custodian (test_bounded.CustodyExperiments.test_D_missing_custodian) ... ok
+test_E_colluding_custodians_bypass_policy (test_bounded.CustodyExperiments.test_E_colluding_custodians_bypass_policy) ... ok
+test_F_rewritten_history (test_bounded.CustodyExperiments.test_F_rewritten_history) ... ok
+test_G_solo_witness_lifecycle (test_bounded.CustodyExperiments.test_G_solo_witness_lifecycle) ... ok
+test_H_council_policy_and_custody_are_distinct (test_bounded.CustodyExperiments.test_H_council_policy_and_custody_are_distinct) ... ok
+test_I_emergency_disarm_and_irrevocability (test_bounded.CustodyExperiments.test_I_emergency_disarm_and_irrevocability) ... ok
+test_J_broken_authority_and_compromised_witness (test_bounded.CustodyExperiments.test_J_broken_authority_and_compromised_witness) ... ok
+test_K_lost_witness_ack_and_incomplete_provisioning (test_bounded.CustodyExperiments.test_K_lost_witness_ack_and_incomplete_provisioning) ... ok
+test_L_enrollment_ack_loss (test_bounded.CustodyExperiments.test_L_enrollment_ack_loss) ... ok
+test_M_recovery_isolation_at_witness (test_bounded.CustodyExperiments.test_M_recovery_isolation_at_witness) ... ok
+test_N_prepared_authorisation_is_not_external_permission (test_bounded.CustodyExperiments.test_N_prepared_authorisation_is_not_external_permission) ... ok
+test_O_custodians_retain_pre_release_history (test_bounded.CustodyExperiments.test_O_custodians_retain_pre_release_history) ... ok
+test_P_grace_starts_at_latest_possible_observation (test_bounded.CustodyExperiments.test_P_grace_starts_at_latest_possible_observation) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 3.502s
+
+OK
+OBSERVED LIMIT: two compromised custodians decrypt before authorisation.
+Solo: check-in, missed obligation, grace, release, disarm and owner recovery completed; no second human.
+OBSERVED LIMIT: compromised operator + previously trusted witness can fabricate a complete absence history unseen by custodians.
