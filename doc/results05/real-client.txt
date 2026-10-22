@@ -1,0 +1,13 @@
+{
+  "real_clocks": true,
+  "verified_provider_TLS": true,
+  "clock_injection": false,
+  "local_encryption_and_vault": true,
+  "arm": true,
+  "verified_checkin": true,
+  "fresh_independent_status": true,
+  "owner_disarm": true,
+  "public_only_laravel_projection": true,
+  "missed_checkin_simulated_release": true,
+  "saas_received_creator_secret": false
+}

@@ -1,0 +1,7 @@
+{
+  "creator_passphrase_in_saas": false,
+  "owner_volume_mounted_in_saas": false,
+  "docker_socket_in_saas": false,
+  "private_tls_keys_in_saas": false,
+  "local_docker_host_still_trusted": true
+}

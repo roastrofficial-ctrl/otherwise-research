@@ -1,0 +1,60 @@
+{
+  "all_three_available": {
+    "acceptance_latency": {
+      "median_ms": 10.704,
+      "p95_ms": 15.832,
+      "samples": 20
+    },
+    "acknowledgement_bytes_mean": 4911,
+    "aggregate_logical_storage_growth_per_capsule_bytes": 5253,
+    "aggregate_retained_anchor_bytes_mean": 10251,
+    "client_certificate_cache_commits_per_checkin": 1,
+    "clock_file_checkpoints_per_checkin": 3,
+    "logical_observation_commits_per_checkin": 3,
+    "optional_post_acceptance_gossip_latency": {
+      "median_ms": 16.465,
+      "p95_ms": 24.458,
+      "samples": 20
+    },
+    "receipt_bytes_mean": 1139
+  },
+  "compact_release_certificate_bytes": 3423,
+  "comparison_limit": "Different proof shapes and workload histories; CPU and encoded bytes only. No Gen0.2 network-latency comparison claimed; no physical fsync count inferred.",
+  "custody_http_python_plus_node_process_verification": {
+    "median_ms": 24.912,
+    "p95_ms": 51.002,
+    "samples": 10
+  },
+  "environment": "Docker internal HTTP network; SQLite synchronous=FULL; controlled integer service clocks; sequential synthetic workload",
+  "generation02_fixed_history_bytes": 4350,
+  "generation02_fixed_history_python_verification": {
+    "median_ms": 0.267,
+    "p95_ms": 0.313,
+    "samples": 100
+  },
+  "one_unavailable": {
+    "acceptance_latency": {
+      "median_ms": 9.551,
+      "p95_ms": 13.148,
+      "samples": 10
+    },
+    "acknowledgement_bytes_mean": 3771,
+    "aggregate_logical_storage_growth_per_capsule_bytes": 3502,
+    "aggregate_retained_anchor_bytes_mean": 6834,
+    "client_certificate_cache_commits_per_checkin": 1,
+    "clock_file_checkpoints_per_checkin": 2,
+    "logical_observation_commits_per_checkin": 2,
+    "optional_post_acceptance_gossip_latency": {
+      "median_ms": 17.395,
+      "p95_ms": 32.535,
+      "samples": 10
+    },
+    "receipt_bytes_mean": 1139
+  },
+  "python_compact_release_verification": {
+    "median_ms": 0.629,
+    "p95_ms": 0.705,
+    "samples": 100
+  },
+  "restart_and_receipt_recovery_ms": 1317.291
+}

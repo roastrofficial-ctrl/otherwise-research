@@ -12,3 +12,11 @@ Consumer/storage/framework/views/*
 *.recovery.json
 .env04
 recovery-export/
+.env05
+*.ovault
+*.ovault.lock
+Consumer05/vendor/
+Consumer05/bootstrap/cache/*
+Consumer05/storage/framework/views/*
+Consumer05/storage/logs/*
+.tls05/

@@ -97,3 +97,8 @@ Availability is deliberately asymmetric. Two available honest witnesses can reta
 ## Generation 0.4 — scoped fault tolerance and separability
 
 The four-witness certificate model assumes at most one faulty witness for a static epoch, healthy bounded clocks and preserved/repaired durable locks. It does not protect against a malicious custody quorum, compromised owner kit/SaaS origin, common Docker-host compromise, arbitrary UTC failure or cumulative theft of old signer keys. Three-member partitions can progress; two-member partitions cannot. Restarted witnesses require authenticated recovery. See [the full protocol boundaries](doc/generation04/PROTOCOL.md) and [the consumer trust boundary](doc/generation04/ARCHITECTURE.md).
+
+
+## Generation 0.5 — malicious SaaS is an explicit adversary
+
+Laravel, its backend/database/deployment and every SaaS response may be adversarial. Newly generated owner secrets remain on an independently trusted creator device. This does not protect against malicious client installation, stolen unlocked devices, already exposed keys, arbitrary censorship or a malicious custody quorum. [Attack results](doc/generation05/RESULTS.md) classify prevented, detectable, recoverable and successful cases separately.

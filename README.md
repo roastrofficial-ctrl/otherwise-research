@@ -1,3 +1,29 @@
+# OTHERWISE 0.5 — The Untrusted Operator
+
+An independently installed creator client now owns key generation, signing, encryption and an encrypted portable recovery capability. The separate Laravel consumer receives only public protocol material. Its page is explicitly untrusted; no operator-delivered browser code is claimed safe for private-key handling.
+
+```sh
+./scripts/lab05.sh up -d --build aw1 aw2 aw3 aw4 ak1 ak2 ak3 hostile product-db laravel
+```
+
+Open **http://localhost:8050** for the public operator view. Use the [trusted-client runbook](doc/generation05/RUNBOOK.md) for local create/arm/check-in/fresh status/disarm/recovery. Independently authenticate the client build and provider configuration before relying on this model.
+
+```sh
+./scripts/experiment05.sh
+```
+
+The hostile SaaS tries forgery, false success, substitution, censorship, stale responses and malicious code delivery. Tests retain successful attacks: executing untrusted client code, using previously exposed/stolen keys, censorship past deadline, and colluding static-share custodians. The integrated driver stops Laravel/backend/database, restores an older device backup, recovers newer presence, rotates a Capsule and repeats operation through a witness restart.
+
+- [Security and client-distribution roots](doc/generation05/SECURITY.md)
+- [Observed attack classifications and evidence](doc/generation05/RESULTS.md)
+- [Recovery, cloning and explicit retirement](doc/generation05/RECOVERY.md)
+- [Custody alternatives and unresolved trust](doc/generation05/CUSTODY.md)
+- [Separation and deployment boundaries](doc/generation05/ARCHITECTURE.md)
+
+Synthetic content and simulated disclosure only. This is not production-secure, a trustless-custody system, a censorship guarantee or a secure automatic client-update scheme. PorterNet remains unimplemented and unnecessary. Earlier implementations and counterexamples are preserved below and in their original directories.
+
+---
+
 # OTHERWISE 0.4 — The Available Witness
 
 An independently operable conditional-custody protocol, with a local Laravel consumer prototype. All Capsules contain synthetic content and all delivery is simulated.

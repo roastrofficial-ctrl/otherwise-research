@@ -63,3 +63,8 @@ The important negative finding is practical: protecting presence with three witn
 ## Generation 0.4 — explicit provider compatibility
 
 The injectable custody gate now advertises explicit operation, owner-disarm, certificate-validation, simulation and cryptographic-enforcement capabilities. Python/Node gates can be substituted; both retain the weak static-share material model. Conformance rejects a request for cryptographically enforced policy rather than silently selecting the lab provider. [Architecture and replacement requirements](doc/generation04/ARCHITECTURE.md) describe the future provider boundary; [the transport comparison](doc/generation04/UNREACHABLE_AUTHORITY.md) does not implement PorterNet.
+
+
+## Generation 0.5 — custody remains a separate trust boundary
+
+The early static-quorum reconstruction attack remains successful. [Concrete alternatives](doc/generation05/CUSTODY.md) compare administrative separation, witness-gated threshold/MPC release, hardware enforcement, future-beacon timelocks and stronger research assumptions. None is falsely advertised as implemented cryptographic enforcement.

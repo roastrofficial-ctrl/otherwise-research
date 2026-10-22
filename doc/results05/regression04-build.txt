@@ -1,0 +1,218 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [cli internal] load build definition from Dockerfile.protocol04
+#1 transferring dockerfile: 625B done
+#1 DONE 0.0s
+
+#2 [aw1 internal] load build definition from Dockerfile.protocol04
+#2 transferring dockerfile: 625B done
+#2 DONE 0.0s
+
+#3 [aw3 internal] load build definition from Dockerfile.protocol04
+#3 transferring dockerfile: 625B done
+#3 DONE 0.0s
+
+#4 [aw2 internal] load build definition from Dockerfile.protocol04
+#4 transferring dockerfile: 625B done
+#4 DONE 0.0s
+
+#5 [ak3 internal] load build definition from Dockerfile.protocol04
+#5 transferring dockerfile: 625B 0.0s done
+#5 DONE 0.0s
+
+#6 [ak1 internal] load build definition from Dockerfile.protocol04
+#6 transferring dockerfile: 625B 0.0s done
+#6 DONE 0.0s
+
+#7 [ak2 internal] load build definition from Dockerfile.protocol04
+#7 transferring dockerfile: 625B 0.0s done
+#7 DONE 0.0s
+
+#8 [aw4 internal] load build definition from Dockerfile.protocol04
+#8 transferring dockerfile: 625B 0.0s done
+#8 DONE 0.0s
+
+#9 [aw4 internal] load metadata for docker.io/library/node:22-bookworm-slim
+#9 DONE 0.6s
+
+#10 [aw3 internal] load metadata for docker.io/library/python:3.12-slim
+#10 DONE 0.5s
+
+#11 [aw4 internal] load .dockerignore
+#11 transferring context: 272B done
+#11 DONE 0.0s
+
+#12 [aw1 internal] load .dockerignore
+#12 transferring context: 272B done
+#12 DONE 0.0s
+
+#13 [ak1 internal] load .dockerignore
+#13 transferring context: 272B done
+#13 DONE 0.0s
+
+#14 [cli internal] load .dockerignore
+#14 transferring context: 272B done
+#14 DONE 0.0s
+
+#15 [ak2 verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+#15 DONE 0.0s
+
+#16 [ak2 stage-1  1/12] FROM docker.io/library/python:3.12-slim@sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1
+#16 DONE 0.0s
+
+#17 [aw2 internal] load .dockerignore
+#17 transferring context: 272B done
+#17 DONE 0.0s
+
+#18 [ak3 internal] load .dockerignore
+#18 transferring context: 272B done
+#18 DONE 0.0s
+
+#19 [aw3 internal] load .dockerignore
+#19 transferring context: 272B done
+#19 DONE 0.0s
+
+#20 [ak2 internal] load .dockerignore
+#20 transferring context: 272B done
+#20 DONE 0.0s
+
+#21 [ak2 internal] load build context
+#21 transferring context: 34.92kB 0.0s done
+#21 DONE 0.1s
+
+#22 [aw1 internal] load build context
+#22 transferring context: 34.92kB 0.0s done
+#22 DONE 0.1s
+
+#23 [aw4 internal] load build context
+#23 transferring context: 34.92kB 0.0s done
+#23 DONE 0.1s
+
+#24 [aw3 internal] load build context
+#24 transferring context: 34.92kB 0.0s done
+#24 DONE 0.1s
+
+#25 [ak1 internal] load build context
+#25 transferring context: 34.92kB 0.0s done
+#25 DONE 0.1s
+
+#26 [aw2 internal] load build context
+#26 transferring context: 34.92kB 0.0s done
+#26 DONE 0.1s
+
+#27 [ak3 internal] load build context
+#27 transferring context: 34.92kB 0.0s done
+#27 DONE 0.1s
+
+#28 [cli internal] load build context
+#28 transferring context: 34.92kB 0.0s done
+#28 DONE 0.1s
+
+#29 [aw4 stage-1  8/12] COPY Available Available
+#29 CACHED
+
+#30 [aw4 stage-1  9/12] COPY Verifier Verifier
+#30 DONE 0.0s
+
+#31 [aw1 stage-1  3/12] WORKDIR /otherwise
+#31 CACHED
+
+#32 [aw1 stage-1  6/12] COPY Engine Engine
+#32 CACHED
+
+#33 [aw1 stage-1  4/12] COPY requirements.txt .
+#33 CACHED
+
+#34 [aw1 stage-1  7/12] COPY Bounded Bounded
+#34 CACHED
+
+#35 [aw1 stage-1  5/12] RUN pip install --no-cache-dir -r requirements.txt
+#35 CACHED
+
+#36 [aw1 stage-1  2/12] COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+#36 CACHED
+
+#29 [ak2 stage-1  8/12] COPY Available Available
+#29 CACHED
+
+#37 [aw1 stage-1 10/12] COPY tests04 tests04
+#37 DONE 0.0s
+
+#38 [ak3 stage-1 11/12] COPY scripts/conformance04.py scripts/conformance04.py
+#38 DONE 0.0s
+
+#39 [aw2 stage-1 12/12] COPY Protocol/vectors/generation04.json Protocol/vectors/generation04.json
+#39 DONE 0.0s
+
+#40 [aw3] exporting to image
+#40 exporting layers 0.0s done
+#40 writing image sha256:16d10980ec6de264cf3158ad44b7a0f8be705d12e4388acf94cdb36143ef5a4b 0.1s done
+#40 naming to docker.io/library/otherwise05-regression04-1792443145-67374-aw3
+#40 naming to docker.io/library/otherwise05-regression04-1792443145-67374-aw3 0.0s done
+#40 DONE 0.2s
+
+#41 [ak1] exporting to image
+#41 exporting layers 0.0s done
+#41 writing image sha256:1a0b336ba158ee720da9d801d92b403d4a8f7871cb1266f0e6e0c49d4c4786ac 0.1s done
+#41 naming to docker.io/library/otherwise05-regression04-1792443145-67374-ak1 done
+#41 DONE 0.1s
+
+#42 [aw2] exporting to image
+#42 exporting layers 0.0s done
+#42 writing image sha256:44ca6f7030620b1ec43cfe3aa668bfce609a28c28d7091183c4d8c88ab11254a 0.1s done
+#42 naming to docker.io/library/otherwise05-regression04-1792443145-67374-aw2 done
+#42 DONE 0.1s
+
+#43 [aw1] exporting to image
+#43 exporting layers 0.0s done
+#43 writing image sha256:e5be63d311923572d68faecfefa493b9aee6d8c7edb0e379133e81f84d4d076d 0.1s done
+#43 naming to docker.io/library/otherwise05-regression04-1792443145-67374-aw1 done
+#43 DONE 0.1s
+
+#44 [aw4] exporting to image
+#44 exporting layers 0.0s done
+#44 writing image sha256:0ea521bb84a47ff5c2f3854bea0e8140b42a19e5b588b74c8dc47ad32ef4f1d7 0.1s done
+#44 naming to docker.io/library/otherwise05-regression04-1792443145-67374-aw4 0.0s done
+#44 DONE 0.1s
+
+#45 [cli] exporting to image
+#45 exporting layers 0.0s done
+#45 writing image sha256:a9b52198b194d9b7eb8859fab640a70738e8dea58202b712be0cc0f262aa3165 0.1s done
+#45 naming to docker.io/library/otherwise05-regression04-1792443145-67374-cli 0.0s done
+#45 DONE 0.1s
+
+#46 [ak2] exporting to image
+#46 exporting layers 0.0s done
+#46 writing image sha256:6eb9f8a5466555e0a314893866091054a96fc5306599eb6a449408eaf37c575c 0.1s done
+#46 naming to docker.io/library/otherwise05-regression04-1792443145-67374-ak2 0.0s done
+#46 DONE 0.1s
+
+#47 [ak3] exporting to image
+#47 exporting layers 0.0s done
+#47 writing image sha256:11c52f1313515c3a51422fbd4a897d99a3aebf812c0d87d06c14b3df559faf78 0.1s done
+#47 naming to docker.io/library/otherwise05-regression04-1792443145-67374-ak3 0.0s done
+#47 DONE 0.1s
+
+#48 [aw2] resolving provenance for metadata file
+#48 DONE 0.4s
+
+#49 [aw4] resolving provenance for metadata file
+#49 DONE 0.4s
+
+#50 [cli] resolving provenance for metadata file
+#50 DONE 0.4s
+
+#51 [aw3] resolving provenance for metadata file
+#51 DONE 0.0s
+
+#52 [ak1] resolving provenance for metadata file
+#52 DONE 0.4s
+
+#53 [aw1] resolving provenance for metadata file
+#53 DONE 0.4s
+
+#54 [ak3] resolving provenance for metadata file
+#54 DONE 0.4s
+
+#55 [ak2] resolving provenance for metadata file
+#55 DONE 0.4s

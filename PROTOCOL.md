@@ -290,3 +290,8 @@ An owner-signed DISARM binds Capsule, manifest and operation. A witness records 
 ## Generation 0.4 — separately versioned available-witness profile
 
 The new wire-version-4 profile is specified in [doc/generation04/PROTOCOL.md](doc/generation04/PROTOCOL.md). Its static four-member committee, immutable manifest, three-receipt durable acknowledgement, same-identity repair, quorum disarm and fixed-operation custody certificates do not change the older profiles above. The finite-batch snapshot and timing/repair availability limitations are explicit.
+
+
+## Generation 0.5 — trusted creator and fresh observation
+
+The existing wire-v4 lifecycle remains unchanged. `Untrusted` adds version-5 challenge-bound signed INSPECT envelopes, a locally encrypted owner capability and direct independently pinned provider paths. [Specification and assumptions](doc/generation05/SECURITY.md) distinguish historical evidence from fresh reads, idempotent replay from cross-domain forgery, and authenticated assertion from objective fact.

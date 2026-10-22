@@ -1,0 +1,17 @@
+test_O_real_observation_pause_and_recovery (test_bounded.ClockAndDurability.test_O_real_observation_pause_and_recovery) ... ERROR
+
+======================================================================
+ERROR: test_O_real_observation_pause_and_recovery (test_bounded.ClockAndDurability.test_O_real_observation_pause_and_recovery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests02/test_bounded.py", line 285, in test_O_real_observation_pause_and_recovery
+    state.publish(e.export(cid))
+  File "/otherwise/Bounded/service.py", line 130, in publish
+    if record['blocked'] and s['healthy']: raise ValueError('witness uncertainty requires recovery')
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: witness uncertainty requires recovery
+
+----------------------------------------------------------------------
+Ran 1 test in 0.090s
+
+FAILED (errors=1)

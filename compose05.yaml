@@ -1,0 +1,96 @@
+x-node: &node
+  build: {context: ., dockerfile: Dockerfile.protocol05}
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  tmpfs: [/tmp]
+  networks: [protocol]
+  environment: &env
+    CLOCK_MODE: ${OTHERWISE_05_CLOCK_MODE:-real}
+    OTHERWISE_LAB_HTTP: '1'
+    LAB_FAULTS: '1'
+    BOOTSTRAP_TOKEN: ${OTHERWISE_05_FAULT_TOKEN:?Set the private laboratory fault token}
+    TLS_CERT: /tls/server.pem
+    TLS_KEY: /tls/server.key
+services:
+  aw1:
+    <<: *node
+    command: [python, -m, Untrusted.service]
+    environment: {<<: *env, ROLE: witness, INDEX: '1'}
+    volumes: [aw1:/state, ./.tls05/aw1.pem:/tls/server.pem:ro, ./.tls05/aw1.key:/tls/server.key:ro]
+  aw2:
+    <<: *node
+    command: [python, -m, Untrusted.service]
+    environment: {<<: *env, ROLE: witness, INDEX: '2'}
+    volumes: [aw2:/state, ./.tls05/aw2.pem:/tls/server.pem:ro, ./.tls05/aw2.key:/tls/server.key:ro]
+  aw3:
+    <<: *node
+    command: [python, -m, Untrusted.service]
+    environment: {<<: *env, ROLE: witness, INDEX: '3'}
+    volumes: [aw3:/state, ./.tls05/aw3.pem:/tls/server.pem:ro, ./.tls05/aw3.key:/tls/server.key:ro]
+  aw4:
+    <<: *node
+    command: [python, -m, Untrusted.service]
+    environment: {<<: *env, ROLE: witness, INDEX: '4'}
+    volumes: [aw4:/state, ./.tls05/aw4.pem:/tls/server.pem:ro, ./.tls05/aw4.key:/tls/server.key:ro]
+  ak1:
+    <<: *node
+    command: [python, -m, Untrusted.service]
+    environment: {<<: *env, ROLE: custodian, INDEX: '1'}
+    volumes: [ak1:/state, ./.tls05/ak1.pem:/tls/server.pem:ro, ./.tls05/ak1.key:/tls/server.key:ro]
+  ak2:
+    <<: *node
+    command: [python, -m, Untrusted.service]
+    environment: {<<: *env, ROLE: custodian, INDEX: '2'}
+    volumes: [ak2:/state, ./.tls05/ak2.pem:/tls/server.pem:ro, ./.tls05/ak2.key:/tls/server.key:ro]
+  ak3:
+    <<: *node
+    command: [python, -m, Untrusted.service]
+    environment: {<<: *env, ROLE: custodian, INDEX: '3'}
+    volumes: [ak3:/state, ./.tls05/ak3.pem:/tls/server.pem:ro, ./.tls05/ak3.key:/tls/server.key:ro]
+  hostile:
+    <<: *node
+    command: [python, -m, Untrusted.hostile]
+    volumes: [saas:/saas, ./.tls05/ca.pem:/tls/ca.pem:ro]
+    environment: &clientenv
+      SSL_CERT_FILE: /tls/ca.pem
+      OTHERWISE_LAB_HTTP: '1'
+      WITNESSES: https://aw1:8080,https://aw2:8080,https://aw3:8080,https://aw4:8080
+      CUSTODIANS: https://ak1:8080,https://ak2:8080,https://ak3:8080
+      HOSTILE_TOKEN: ${OTHERWISE_05_HOSTILE_TOKEN:?Set hostile lab token}
+  cli:
+    <<: *node
+    environment: {<<: *clientenv, OTHERWISE_05_FAULT_TOKEN: '${OTHERWISE_05_FAULT_TOKEN}', OTHERWISE_CREATOR_PASSPHRASE: '${OTHERWISE_05_CREATOR_PASSPHRASE:?Set local owner passphrase}'}
+    volumes: [recovery:/recovery, ./.tls05/ca.pem:/tls/ca.pem:ro]
+    command: [python, -m, unittest, discover, -s, tests05, -v]
+  product-db:
+    image: postgres:17-bookworm
+    environment:
+      POSTGRES_DB: otherwise
+      POSTGRES_USER: otherwise
+      POSTGRES_PASSWORD: ${OTHERWISE_05_DB_PASSWORD:?Set lab database password}
+    volumes: [product-db:/var/lib/postgresql/data]
+    networks: [product]
+  laravel:
+    build: Consumer05
+    environment:
+      APP_KEY: ${OTHERWISE_05_APP_KEY:?Set Laravel application key}
+      DB_PASSWORD: ${OTHERWISE_05_DB_PASSWORD}
+    ports: ['127.0.0.1:8050:8000']
+    networks: [browser, product, protocol]
+    depends_on: [product-db, hostile]
+networks:
+  browser: {}
+  protocol: {internal: true}
+  product: {internal: true}
+volumes:
+  saas:
+  aw1:
+  aw2:
+  aw3:
+  aw4:
+  ak1:
+  ak2:
+  ak3:
+  recovery:
+  product-db:

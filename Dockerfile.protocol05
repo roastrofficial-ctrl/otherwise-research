@@ -1,0 +1,20 @@
+FROM node:22-bookworm-slim AS verifier
+FROM python:3.12-slim
+COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+WORKDIR /otherwise
+COPY requirements.txt .
+COPY Dockerfile.protocol05 Dockerfile.protocol05
+RUN pip install --no-cache-dir -r requirements.txt
+COPY Engine Engine
+COPY Bounded Bounded
+COPY Available Available
+COPY Untrusted Untrusted
+COPY Verifier Verifier
+COPY tests05 tests05
+COPY scripts/conformance04.py scripts/conformance04.py
+COPY scripts/conformance05.py scripts/conformance05.py
+COPY Protocol/vectors/generation04.json Protocol/vectors/generation04.json
+COPY Protocol/vectors/generation05.json Protocol/vectors/generation05.json
+COPY Protocol/client05-build.json Protocol/client05-build.json
+ENV PYTHONPATH=/otherwise PYTHONDONTWRITEBYTECODE=1
+CMD ["python","-m","unittest","discover","-s","tests05","-p","test_*.py","-v"]

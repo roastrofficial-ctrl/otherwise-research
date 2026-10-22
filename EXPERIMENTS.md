@@ -95,3 +95,8 @@ We have built a system that interprets **agreed conditions over observed evidenc
 ## Generation 0.4 — Available Witness and First Human
 
 The bounded four-witness protocol, Laravel HTTP lifecycle, real HTTPS adapters, Docker network partition and disappearing-SaaS experiment are reproducible with `scripts/experiment04.sh`. See [results and explicit limits](doc/generation04/RESULTS.md), [raw evidence](doc/results04), and [the owner runbook](doc/generation04/RUNBOOK.md). A separate real wall/monotonic-clock lifecycle is retained in `doc/results04/realtime.txt`. This is not independent multi-host or WAN validation.
+
+
+## Generation 0.5 — The Hostile SaaS
+
+The [retained classification ledger](doc/results05/attacks.json), [integrated outage/device/restart sequence](doc/results05/hostile-lifecycle.txt), conformance and measured overhead distinguish actual outcomes. In particular, censorship can produce policy-authorised absence despite an attempted check-in; malicious executed client code and colluding custody still win. All content is synthetic and delivery is simulated.

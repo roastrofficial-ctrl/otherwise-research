@@ -1,0 +1,1347 @@
+[
+  [
+    "fresh",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 1,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "simulated",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 3,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "02594848685faf329b441e4f57ffe5cd13c80464aefdb44fde80b4c794a1c7dc17514e3a1516cfdabf3e0ed754d0b0548bece29513ba8968219a9b29eef8ce0f"
+      },
+      "snapshot": {
+        "message": {
+          "v": 5,
+          "kind": "INSPECT",
+          "capsule": "fixed-available",
+          "manifest": "0f7af5445a798dc950452b6349de689937ffa3a8cd6f82705302c87cb0859542",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": [],
+          "clock": {
+            "lower": 5,
+            "upper": 5,
+            "healthy": true,
+            "reason": "fixture"
+          }
+        },
+        "signature": "a3835ff1ae8a8ebfe57cde1f3108a8234eeb911dacabaf669e16c82487e2eb281bd09778b00331cce1a5e3bc7468e86758b2bfde2e777726ed999f0b04e3820b"
+      },
+      "nonce": "abababababababababababababababababababababababababababababababab",
+      "index": 1
+    }
+  ],
+  [
+    "stale",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 1,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "simulated",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 3,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "02594848685faf329b441e4f57ffe5cd13c80464aefdb44fde80b4c794a1c7dc17514e3a1516cfdabf3e0ed754d0b0548bece29513ba8968219a9b29eef8ce0f"
+      },
+      "snapshot": {
+        "message": {
+          "v": 5,
+          "kind": "INSPECT",
+          "capsule": "fixed-available",
+          "manifest": "0f7af5445a798dc950452b6349de689937ffa3a8cd6f82705302c87cb0859542",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": [],
+          "clock": {
+            "lower": 5,
+            "upper": 5,
+            "healthy": true,
+            "reason": "fixture"
+          }
+        },
+        "signature": "a3835ff1ae8a8ebfe57cde1f3108a8234eeb911dacabaf669e16c82487e2eb281bd09778b00331cce1a5e3bc7468e86758b2bfde2e777726ed999f0b04e3820b"
+      },
+      "nonce": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+      "index": 1
+    }
+  ],
+  [
+    "scope",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 1,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "simulated",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 3,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "02594848685faf329b441e4f57ffe5cd13c80464aefdb44fde80b4c794a1c7dc17514e3a1516cfdabf3e0ed754d0b0548bece29513ba8968219a9b29eef8ce0f"
+      },
+      "snapshot": {
+        "message": {
+          "v": 5,
+          "kind": "INSPECT",
+          "capsule": "other",
+          "manifest": "0f7af5445a798dc950452b6349de689937ffa3a8cd6f82705302c87cb0859542",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": [],
+          "clock": {
+            "lower": 5,
+            "upper": 5,
+            "healthy": true,
+            "reason": "fixture"
+          }
+        },
+        "signature": "c8b01a71a18f6371a9d493b8cbca79a4d142844ef822e927598c6719bc871694acd8f8ad52d5dcdd035ed4a8a0b4b9d39e80fb53f6d6d3d8120b6133c6800700"
+      },
+      "nonce": "abababababababababababababababababababababababababababababababab",
+      "index": 1
+    }
+  ],
+  [
+    "source",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 1,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "simulated",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 3,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "02594848685faf329b441e4f57ffe5cd13c80464aefdb44fde80b4c794a1c7dc17514e3a1516cfdabf3e0ed754d0b0548bece29513ba8968219a9b29eef8ce0f"
+      },
+      "snapshot": {
+        "message": {
+          "v": 5,
+          "kind": "INSPECT",
+          "capsule": "fixed-available",
+          "manifest": "0f7af5445a798dc950452b6349de689937ffa3a8cd6f82705302c87cb0859542",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": [],
+          "clock": {
+            "lower": 5,
+            "upper": 5,
+            "healthy": true,
+            "reason": "fixture"
+          }
+        },
+        "signature": "a3835ff1ae8a8ebfe57cde1f3108a8234eeb911dacabaf669e16c82487e2eb281bd09778b00331cce1a5e3bc7468e86758b2bfde2e777726ed999f0b04e3820b"
+      },
+      "nonce": "abababababababababababababababababababababababababababababababab",
+      "index": 2
+    }
+  ],
+  [
+    "signature",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 1,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "simulated",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 3,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "02594848685faf329b441e4f57ffe5cd13c80464aefdb44fde80b4c794a1c7dc17514e3a1516cfdabf3e0ed754d0b0548bece29513ba8968219a9b29eef8ce0f"
+      },
+      "snapshot": {
+        "message": {
+          "v": 5,
+          "kind": "INSPECT",
+          "capsule": "fixed-available",
+          "manifest": "0f7af5445a798dc950452b6349de689937ffa3a8cd6f82705302c87cb0859542",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": [],
+          "clock": {
+            "lower": 5,
+            "upper": 5,
+            "healthy": true,
+            "reason": "fixture"
+          }
+        },
+        "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "nonce": "abababababababababababababababababababababababababababababababab",
+      "index": 1
+    }
+  ],
+  [
+    "clock",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 1,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "simulated",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 3,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "02594848685faf329b441e4f57ffe5cd13c80464aefdb44fde80b4c794a1c7dc17514e3a1516cfdabf3e0ed754d0b0548bece29513ba8968219a9b29eef8ce0f"
+      },
+      "snapshot": {
+        "message": {
+          "v": 5,
+          "kind": "INSPECT",
+          "capsule": "fixed-available",
+          "manifest": "0f7af5445a798dc950452b6349de689937ffa3a8cd6f82705302c87cb0859542",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": [],
+          "clock": {
+            "lower": 5,
+            "upper": 0,
+            "healthy": true,
+            "reason": "fixture"
+          }
+        },
+        "signature": "69cf474a8cb2a2a3ce900d437a4913c77e61bf5ce3b9c5761c0ab58d3474ec255168040e4f8d70bd0f0145a94bc68a39d76c6e32c2968f7284c4f568db14a006"
+      },
+      "nonce": "abababababababababababababababababababababababababababababababab",
+      "index": 1
+    }
+  ],
+  [
+    "extension",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 1,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "simulated",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 3,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "02594848685faf329b441e4f57ffe5cd13c80464aefdb44fde80b4c794a1c7dc17514e3a1516cfdabf3e0ed754d0b0548bece29513ba8968219a9b29eef8ce0f"
+      },
+      "snapshot": {
+        "message": {
+          "v": 5,
+          "kind": "INSPECT",
+          "capsule": "fixed-available",
+          "manifest": "0f7af5445a798dc950452b6349de689937ffa3a8cd6f82705302c87cb0859542",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": [],
+          "clock": {
+            "lower": 5,
+            "upper": 5,
+            "healthy": true,
+            "reason": "fixture"
+          },
+          "extra": "ignored?"
+        },
+        "signature": "5a85b8e4316f11da4e56d6504901e5740084574ff4f8fbf430a8b4b1a7e5348da7738508800c4c98e88cb2fabf2cc7bd9a9c7414d1a122269f072d7260b79501"
+      },
+      "nonce": "abababababababababababababababababababababababababababababababab",
+      "index": 1
+    }
+  ],
+  [
+    "version",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 1,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "simulated",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 3,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "02594848685faf329b441e4f57ffe5cd13c80464aefdb44fde80b4c794a1c7dc17514e3a1516cfdabf3e0ed754d0b0548bece29513ba8968219a9b29eef8ce0f"
+      },
+      "snapshot": {
+        "message": {
+          "v": 4,
+          "kind": "INSPECT",
+          "capsule": "fixed-available",
+          "manifest": "0f7af5445a798dc950452b6349de689937ffa3a8cd6f82705302c87cb0859542",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": [],
+          "clock": {
+            "lower": 5,
+            "upper": 5,
+            "healthy": true,
+            "reason": "fixture"
+          }
+        },
+        "signature": "4813d7ec139fb078078a2d6a8d1b6dbd2090f469aff31b7a663bf50e5e1320d152d33c3c4ebd7570cb14be30a225180679938aa45c1da68470c49beb6f2bb106"
+      },
+      "nonce": "abababababababababababababababababababababababababababababababab",
+      "index": 1
+    }
+  ],
+  [
+    "boolean-time",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 1,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "simulated",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 3,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "02594848685faf329b441e4f57ffe5cd13c80464aefdb44fde80b4c794a1c7dc17514e3a1516cfdabf3e0ed754d0b0548bece29513ba8968219a9b29eef8ce0f"
+      },
+      "snapshot": {
+        "message": {
+          "v": 5,
+          "kind": "INSPECT",
+          "capsule": "fixed-available",
+          "manifest": "0f7af5445a798dc950452b6349de689937ffa3a8cd6f82705302c87cb0859542",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": [],
+          "clock": {
+            "lower": true,
+            "upper": 5,
+            "healthy": true,
+            "reason": "fixture"
+          }
+        },
+        "signature": "af31a43de58ca643f35f62613fba267504a9ae16cf27507e90448bf7105634b46487122c8d008cde9e1138d33a3467bf3757033dcef1eb46472d4aeef6c68708"
+      },
+      "nonce": "abababababababababababababababababababababababababababababababab",
+      "index": 1
+    }
+  ],
+  [
+    "unhealthy",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 1,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "simulated",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 3,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "02594848685faf329b441e4f57ffe5cd13c80464aefdb44fde80b4c794a1c7dc17514e3a1516cfdabf3e0ed754d0b0548bece29513ba8968219a9b29eef8ce0f"
+      },
+      "snapshot": {
+        "message": {
+          "v": 5,
+          "kind": "INSPECT",
+          "capsule": "fixed-available",
+          "manifest": "0f7af5445a798dc950452b6349de689937ffa3a8cd6f82705302c87cb0859542",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": [],
+          "clock": {
+            "lower": 5,
+            "upper": 5,
+            "healthy": false,
+            "reason": "fixture"
+          }
+        },
+        "signature": "44f72072171ef6331c691745002767988f0ef1ce3837c6786a6a76ba68069f45b913c1e680d3116810ff396346cb00c43fe4ae635214b2a3e06bbf616f82a107"
+      },
+      "nonce": "abababababababababababababababababababababababababababababababab",
+      "index": 1
+    }
+  ],
+  [
+    "missing-records",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 1,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "simulated",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 3,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "02594848685faf329b441e4f57ffe5cd13c80464aefdb44fde80b4c794a1c7dc17514e3a1516cfdabf3e0ed754d0b0548bece29513ba8968219a9b29eef8ce0f"
+      },
+      "snapshot": {
+        "message": {
+          "v": 5,
+          "kind": "INSPECT",
+          "capsule": "fixed-available",
+          "manifest": "0f7af5445a798dc950452b6349de689937ffa3a8cd6f82705302c87cb0859542",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": null,
+          "clock": {
+            "lower": 5,
+            "upper": 5,
+            "healthy": true,
+            "reason": "fixture"
+          }
+        },
+        "signature": "abfea471624dd846a18c1f98ce35bbb33795bc6eff2be3dc942ceb91d33e61aa71d089d7c7a3f5a17c945598e443839ef23e6baeb9e77cb2b9379b474031ef0e"
+      },
+      "nonce": "abababababababababababababababababababababababababababababababab",
+      "index": 1
+    }
+  ],
+  [
+    "manifest-quorum",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 1,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "simulated",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 2,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "959d2aa846f069923e2012708663d1840b412440071a426a840544d0601465e9afb0478cd410ce7ad768029aaef876ccbaeb4a3df3118a5031c7570f2101c808"
+      },
+      "snapshot": {
+        "message": {
+          "v": 5,
+          "kind": "INSPECT",
+          "capsule": "fixed-available",
+          "manifest": "28205a9c8fbe8908099c074ab94674a082620465915b582451fd6cd7815fc881",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": [],
+          "clock": {
+            "lower": 5,
+            "upper": 5,
+            "healthy": true,
+            "reason": "fixture"
+          }
+        },
+        "signature": "ff864de95b97146a3770adaa1899a159e60cc1267329fb037a4f6a130b2ed3664d4e81a6b0ee986266dc69965e6f88f6228aba9ca1c66f66d252088050bb1205"
+      },
+      "nonce": "abababababababababababababababababababababababababababababababab",
+      "index": 1
+    }
+  ],
+  [
+    "manifest-destination",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 1,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "public",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 3,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "9df76ce13dab503f460a200c9af32c48884980bed26b8c1d7e5051dcdd058559c0652f8fcdbfbe02bd73bf04577a0948e05fe14c21b4d66558e6a31000503f07"
+      },
+      "snapshot": {
+        "message": {
+          "v": 5,
+          "kind": "INSPECT",
+          "capsule": "fixed-available",
+          "manifest": "bd6080d887c8015b7c69b9c0e02cf75d9348f5ebea206f7186c112300aa07eb3",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": [],
+          "clock": {
+            "lower": 5,
+            "upper": 5,
+            "healthy": true,
+            "reason": "fixture"
+          }
+        },
+        "signature": "3fb1f1cb01d0a44a4ae05f53cdf3aa2a98ab3f4b4c50722fe995c9bc33e482328ac403c61f8eda6036e4e5d23a9af019ef927a54fbe01f30e5e45f4b97f60e0c"
+      },
+      "nonce": "abababababababababababababababababababababababababababababababab",
+      "index": 1
+    }
+  ],
+  [
+    "manifest-epoch",
+    {
+      "manifest": {
+        "message": {
+          "v": 4,
+          "capsule": "fixed-available",
+          "epoch": 2,
+          "policy": {
+            "version": 1,
+            "owner": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+            "contracts": [
+              {
+                "id": "A",
+                "version": 1,
+                "kind": "absence",
+                "authority": "cae799935080116911021b52b6f498562493d2e1b87b0f2d6378c797d340b06f",
+                "start": 0,
+                "end": 1000,
+                "challenges": [
+                  {
+                    "id": "one",
+                    "open": 0,
+                    "deadline": 10
+                  }
+                ]
+              }
+            ],
+            "expression": "A",
+            "grace": 5,
+            "max_step": 60,
+            "destination": {
+              "kind": "simulated",
+              "verified": true,
+              "consented": true
+            }
+          },
+          "commitment": "2b51a950be1441c52597c3878db310ce68bd2cfe7dfd13e6f1cd803dfbf8c1ff",
+          "payload": "abababababababababababababababababababababababababababababababab",
+          "witnesses": {
+            "1": "ce5e233d4b13a18cf017f98ada7deceab74d107f14a5b86836a147aff3875319",
+            "2": "23cc3b8e6c730df7c049d229eb03e70d44780d6b7c071cdacd05937c2234063e",
+            "3": "3ad81001657f3cfee13915f9755e145e0eac5f30af4b635a2515ffd8f93b4d56",
+            "4": "9555c7fa4f315ebd82634a6324e91a55faa621d57d0caea6a595224e1f5a3fde"
+          },
+          "custody": {
+            "k": 2,
+            "n": 3,
+            "keys": {
+              "1": "97043abde7e2a58d5ffa7bd283d8f9be70e77e9fa2b60b29cedf9e1d25413a42",
+              "2": "f32dc3072002f3358afab14c93dd620b72cbe05794cbaa7886385d374d782ed2",
+              "3": "10c872b76395c7d0a69e9e989107a66a4bd3d0daf39c890253778b1444236424"
+            }
+          },
+          "quorum": {
+            "presence": 3,
+            "absence": 3,
+            "faults": 1
+          },
+          "slots": [
+            {
+              "contract": "A",
+              "challenge": "one",
+              "open": 0,
+              "deadline": 10
+            }
+          ],
+          "operation": {
+            "attempt": "release-1",
+            "kind": "reconstruct-aes-128-gcm"
+          }
+        },
+        "signature": "beb4c0a6d602548e457dbf0f3e754e672c75e5977e3625a73f654d67684792fa603832dae0d63f6ffbf6d93653ea64c640fb364f15ffed23cd6347a9d015fc02"
+      },
+      "snapshot": {
+        "message": {
+          "v": 5,
+          "kind": "INSPECT",
+          "capsule": "fixed-available",
+          "manifest": "b3e1e19bad45c1223413b18c94a3cccfbac74694bdaa9697c63eeb74c2355819",
+          "nonce": "abababababababababababababababababababababababababababababababab",
+          "witness": 1,
+          "records": [],
+          "clock": {
+            "lower": 5,
+            "upper": 5,
+            "healthy": true,
+            "reason": "fixture"
+          }
+        },
+        "signature": "cd88615d3e8f6f10a3ba86c33d1c7372e8df3933e94a522797a432eb13355ffad09818030acaa6b7e755eecdaf0b8845e54c401bc6e86b6f135ac6ad2b10ff00"
+      },
+      "nonce": "abababababababababababababababababababababababababababababababab",
+      "index": 1
+    }
+  ]
+]

@@ -1,0 +1,5 @@
+Fixed witness vectors: 22
+Additional reordered proof objects: 26
+Python / JavaScript disagreements: 0
+Unsafe 2/2 Byzantine intersection counterexample retained; production profile rejected.
+Conformance OK

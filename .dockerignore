@@ -12,3 +12,10 @@ Consumer/vendor
 recovery-export
 *.recovery.json
 doc/results04
+Consumer05/vendor
+*.ovault
+*.ovault.lock
+doc/results05
+**/__pycache__
+**/*.pyc
+.tls05

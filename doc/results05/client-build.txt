@@ -1,0 +1,1 @@
+{"verified": true, "source_manifest_sha256": "3a27af0a5ab7c96be6121607df71bf7e8957779d575d08a4fd8346b68b38a995", "trust_requirement": "expected digest and verification toolchain must be obtained independently of SaaS"}

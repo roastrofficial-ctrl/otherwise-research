@@ -88,3 +88,8 @@ The safety invariant is conditional: accepted presence cannot coexist with an ab
 ## Generation 0.4 — independence is executable
 
 Run `./scripts/experiment04.sh`. The standalone image excludes Consumer/PHP/Composer and tests its import graph. Tests cover one-member refusal, two-member failure, retained acknowledgement recovery, whole-DB rollback repair, fresh-checkpoint replay rejection, scope/expiry/duplicate/reordering, independent Council contracts, owner disarm versus competing release workers, explicit custody capability rejection and adapter substitution over real certificate-verifying HTTPS. The external driver stops the actual SaaS/database/adapter containers, isolates a witness network, and restarts a witness process. Fixed version-4 signed objects are checked by Python and Node using `scripts/conformance04.py`; old counterexamples remain in earlier suites.
+
+
+## Generation 0.5 — hostile operator, preserved success cases
+
+Run `scripts/experiment05.sh`: hostile actual Laravel/courier responses, independent encrypted-vault CLI, fresh signed status, copied/stolen capability attacks, custody reconstruction, interrupted rotation, offline device restoration and real process restart. Fourteen fixed version-5 envelope cases are checked by Python and Node in addition to the unchanged wire-v4 certificate corpus. `Protocol/client05-build.json` is an independently authenticated source-manifest input, not self-authenticating software.
