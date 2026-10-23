@@ -1,0 +1,8 @@
+Solo Witness: AUTHORISED -> two independent custody responses -> synthetic recipient -> RELEASED
+Policy contract count: 1 Custody threshold: 2 of 3 Audit facts: 13
+Witnessed decision: 50b45ac38aa062ee1769f6344f44967a1f35251419f2c60aaeef366bab835dd3
+Operator key files: 0
+Council: AUTHORISED -> two independent custody responses -> synthetic recipient -> RELEASED
+Policy contract count: 3 Custody threshold: 2 of 3 Audit facts: 15
+Witnessed decision: 72a54d7cb51d096a21abc7b3b54c6c5fb65b0b363059f8478a4d69fc19c8f35c
+Operator key files: 0

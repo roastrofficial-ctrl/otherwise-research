@@ -1,0 +1,30 @@
+ Volume "otherwise05-regression04-1792692252-3643_recovery"  Creating
+ Volume "otherwise05-regression04-1792692252-3643_recovery"  Created
+test_01_solo_cli_full_lifecycle_without_saas (test_available.AvailableExperiments.test_01_solo_cli_full_lifecycle_without_saas) ... ok
+test_02_one_withholder_presence_and_absence_live (test_available.AvailableExperiments.test_02_one_withholder_presence_and_absence_live) ... ok
+test_03_two_faults_fail_closed (test_available.AvailableExperiments.test_03_two_faults_fail_closed) ... ok
+test_04_retained_checkin_lost_reply_expiry_and_repair (test_available.AvailableExperiments.test_04_retained_checkin_lost_reply_expiry_and_repair) ... ok
+test_05_equivocation_quorum_intersection (test_available.AvailableExperiments.test_05_equivocation_quorum_intersection) ... ok
+test_06_duplicate_reordered_and_scope (test_available.AvailableExperiments.test_06_duplicate_reordered_and_scope) ... ok
+test_07_disarm_release_race_and_workers (test_available.AvailableExperiments.test_07_disarm_release_race_and_workers) ... ok
+test_08_transports_same_protocol_bytes_and_authorisation (test_available.AvailableExperiments.test_08_transports_same_protocol_bytes_and_authorisation) ... ok
+test_09_custody_capability_compatibility (test_available.AvailableExperiments.test_09_custody_capability_compatibility) ... ok
+test_10_immutable_policy_owner_and_authority_revocation (test_available.AvailableExperiments.test_10_immutable_policy_owner_and_authority_revocation) ... ok
+test_11_council_independent_facts_and_two_evaluators (test_available.AvailableExperiments.test_11_council_independent_facts_and_two_evaluators) ... ok
+test_12_clock_uncertainty_stale_submission_and_partial_close (test_available.AvailableExperiments.test_12_clock_uncertainty_stale_submission_and_partial_close) ... ok
+test_13_repair_freshness_and_partial_state_transfer (test_available.AvailableExperiments.test_13_repair_freshness_and_partial_state_transfer) ... ok
+test_14_attestation_expiry_changes_snapshot_result (test_available.AvailableExperiments.test_14_attestation_expiry_changes_snapshot_result) ... ok
+test_15_deadline_inclusive_with_one_late_witness (test_available.AvailableExperiments.test_15_deadline_inclusive_with_one_late_witness) ... ok
+test_16_untrusted_status_is_discovery_not_authority (test_available.AvailableExperiments.test_16_untrusted_status_is_discovery_not_authority) ... ok
+test_17_byzantine_future_final_cannot_close_honest_nodes_early (test_available.AvailableExperiments.test_17_byzantine_future_final_cannot_close_honest_nodes_early) ... ok
+test_18_contradictory_c_does_not_own_a_threshold_policy (test_available.AvailableExperiments.test_18_contradictory_c_does_not_own_a_threshold_policy) ... ok
+test_19_malformed_peer_replies_cannot_poison_honest_quorum (test_available.AvailableExperiments.test_19_malformed_peer_replies_cannot_poison_honest_quorum) ... ok
+test_20_eight_present_slots_do_not_expand_equivalent_quorums (test_available.AvailableExperiments.test_20_eight_present_slots_do_not_expand_equivalent_quorums) ... ok
+test_custody_gate_substitution_obeys_same_requirements (test_boundaries.Separability.test_custody_gate_substitution_obeys_same_requirements) ... ok
+test_protocol_image_and_import_graph_exclude_saas (test_boundaries.Separability.test_protocol_image_and_import_graph_exclude_saas) ... ok
+test_two_actual_https_transports_keep_signed_message_and_decision (test_boundaries.Separability.test_two_actual_https_transports_keep_signed_message_and_decision) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 11.389s
+
+OK

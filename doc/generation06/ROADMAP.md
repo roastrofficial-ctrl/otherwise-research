@@ -1,0 +1,14 @@
+# After the honest custodian
+
+| Boundary | Required next work | Evidence needed before a stronger claim |
+|---|---|---|
+| Protocol | Specify a versioned custody envelope and operation suite independently of the wire4 legacy operation label; formalise snapshot cuts, authorisation persistence, disarm liveness and fork handling | Independent implementation/conformance corpus and schedule/model analysis, including Byzantine withholding and partitions |
+| Trusted client | Reviewed release installation, authenticated updates and pins, separate recipient device, safer enrollment journals, recovery UX and explicit rotation | Compromised-client/supply-chain tests, durable creation failure recovery, key-loss and stolen-device exercises |
+| Custody | Select valid partials without allowing one malformed response to poison a batch; parallelise witness reads with explicit deadlines; integrate a reviewed threshold encryption implementation; DKG, qualified membership, malicious-share handling, proactive refresh, backup and migration protocols | External crypto review; actual multi-host/operator tests; adaptive compromise and refresh security; preservation of successful threshold-collusion counterexample where applicable |
+| Stronger enforcement research | State which indispensable capability the malicious threshold cannot obtain before authorisation; compare cross-group trust and concrete hardware policies | A threat model naming administrator, firmware, clock, attestation and anti-rollback powers, plus reproducible bypass attempts. MPC or a signature alone is insufficient |
+| Deployment | Separate organisations, independent trust roots, authenticated channels, monitoring, bounded clocks, disaster recovery, long-term algorithm migration and funding | Geographic fault/latency results, operational responsibility and succession plans; local Docker medians are insufficient |
+| Consumer SaaS | Continue consuming signed protocol projections and report uncertainty accurately | Full lifecycle remains operable with application and database stopped; no private signing/decryption capability in product |
+
+For decades-long obligations, neither a pinned container image nor permanent static shares are a maintenance plan. Operators must fund retention and repair, replace failed hardware and organisations, migrate weakening algorithms, retire old backups and explain what retained ciphertext/issued capabilities can still reveal. Rotation cannot make previously copied secrets unknown. Post-quantum confidentiality, mobile malware, secure deletion and economic longevity remain unresolved; no new generation number changes those facts.
+
+PorterNet remains optional design research outside this implementation. Transport and custody replacement must state differing availability/durability assumptions, rather than claim universal equivalence.

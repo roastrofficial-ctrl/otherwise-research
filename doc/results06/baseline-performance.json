@@ -1,0 +1,87 @@
+{
+  "provider": "0.5 static Shamir",
+  "scope": "same Docker host, sequential TLS, synthetic 38-byte payload, 2 check-in windows, one accepted check-in then one missed; no WAN extrapolation",
+  "samples_per_lifecycle": 8,
+  "measurements": {
+    "draft_discovery_and_aes_encrypt": {
+      "n": 8,
+      "median_ms": 22.798,
+      "observed_max_ms": 43.507
+    },
+    "arm_with_retention": {
+      "n": 8,
+      "median_ms": 178.435,
+      "observed_max_ms": 362.702
+    },
+    "total_create_provision_arm": {
+      "n": 8,
+      "median_ms": 200.949,
+      "observed_max_ms": 387.134
+    },
+    "checkin_with_retention": {
+      "n": 8,
+      "median_ms": 149.406,
+      "observed_max_ms": 293.272
+    },
+    "fresh_owner_inspection": {
+      "n": 8,
+      "median_ms": 149.913,
+      "observed_max_ms": 189.617
+    },
+    "encrypted_backup_open": {
+      "n": 8,
+      "median_ms": 60.476,
+      "observed_max_ms": 70.86
+    },
+    "recover_fresh_state": {
+      "n": 8,
+      "median_ms": 146.741,
+      "observed_max_ms": 224.025
+    },
+    "authorisation_with_witness_finalisation": {
+      "n": 8,
+      "median_ms": 51.34,
+      "observed_max_ms": 77.784
+    },
+    "two_partial_requests": {
+      "n": 8,
+      "median_ms": 62.569,
+      "observed_max_ms": 96.664
+    },
+    "recipient_verify_combine_disclose": {
+      "n": 8,
+      "median_ms": 2.382,
+      "observed_max_ms": 2.513
+    },
+    "one_unavailable_release": {
+      "n": 8,
+      "median_ms": 65.705,
+      "observed_max_ms": 79.53
+    },
+    "pure_static_share_setup": {
+      "n": 40,
+      "median_ms": 0.012,
+      "observed_max_ms": 0.04
+    },
+    "pure_payload_encrypt_and_custody_wrap": {
+      "n": 40,
+      "median_ms": 0.004,
+      "observed_max_ms": 0.022
+    }
+  },
+  "wire_last_sample": {
+    "one_four_witness_scan_json_bytes": 40244,
+    "new_release_scan_count": 0,
+    "two_requests_json_bytes": 14490,
+    "two_responses_json_bytes": 1164,
+    "ciphertext_bytes": 66,
+    "encrypted_backup_bytes": 29553,
+    "note": "JSON bytes exclude HTTP/TLS framing; new partial requests additionally perform 8 fresh witness inspection round trips, plus head agreement queries"
+  },
+  "storage_last_sample": {
+    "private_material_logical_bytes": 162,
+    "complete_service_db_bytes": null
+  },
+  "storage_note": "Logical JSON/scalar bytes only; allocated DB/WAL bytes are not measured or equated with logical content. v6 public key is reusable; each row currently duplicates it.",
+  "failure_note": "one unavailable custodian measured; crash, rollback and 2-down semantics are conformance experiments, not latency distributions"
+}

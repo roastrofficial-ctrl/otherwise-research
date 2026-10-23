@@ -93,3 +93,7 @@ Run `./scripts/experiment04.sh`. The standalone image excludes Consumer/PHP/Comp
 ## Generation 0.5 — hostile operator, preserved success cases
 
 Run `scripts/experiment05.sh`: hostile actual Laravel/courier responses, independent encrypted-vault CLI, fresh signed status, copied/stolen capability attacks, custody reconstruction, interrupted rotation, offline device restoration and real process restart. Fourteen fixed version-5 envelope cases are checked by Python and Node in addition to the unchanged wire-v4 certificate corpus. `Protocol/client05-build.json` is an independently authenticated source-manifest input, not self-authenticating software.
+
+## Generation 0.6
+
+`./scripts/experiment06.sh` exercises the optional reference custody adapter, public-key/proof negatives, actual TLS, durable process crashes, rollback, competing workers and standalone encrypted-vault CLI. `python3 scripts/regression06.py` reruns all existing generations without overwriting their retained outputs. [Evidence and limitations](doc/generation06/RESULTS.md); [raw results](doc/results06/). New group arithmetic is cross-checked with OpenSSL; this is not an independently implemented or audited full cryptosystem.

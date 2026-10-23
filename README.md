@@ -1,3 +1,11 @@
+# Otherwise 0.6 — The Honest Custodian
+
+A synthetic threshold-decryption research harness now sits alongside the preserved 0.1–0.5 implementations. Honest release avoids reconstructing the reusable custody private scalar; a malicious 2-of-3 threshold still decrypts early. No cryptographic policy-enforcement claim is made.
+
+Read the [0.6 research and results](doc/generation06/README.md), [trust boundaries](doc/generation06/SECURITY.md) and [Docker runbook](doc/generation06/RUNBOOK.md). Run `./scripts/experiment06.sh` for the new experiments and `python3 scripts/regression06.py` for all earlier generations. Synthetic content and simulated disclosure only.
+
+---
+
 # OTHERWISE 0.5 — The Untrusted Operator
 
 An independently installed creator client now owns key generation, signing, encryption and an encrypted portable recovery capability. The separate Laravel consumer receives only public protocol material. Its page is explicitly untrusted; no operator-delivered browser code is claimed safe for private-key handling.

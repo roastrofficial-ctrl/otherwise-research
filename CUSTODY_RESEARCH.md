@@ -68,3 +68,7 @@ The injectable custody gate now advertises explicit operation, owner-disarm, cer
 ## Generation 0.5 — custody remains a separate trust boundary
 
 The early static-quorum reconstruction attack remains successful. [Concrete alternatives](doc/generation05/CUSTODY.md) compare administrative separation, witness-gated threshold/MPC release, hardware enforcement, future-beacon timelocks and stronger research assumptions. None is falsely advertised as implemented cryptographic enforcement.
+
+## Generation 0.6 — reference threshold-DH experiment
+
+[Research decision and primary references](doc/generation06/DECISION.md) compare threshold partial decryption, DKG/dealer setup, verifiable shares, hardware, timelocks and MPC. The selected P-256 reference harness is deliberately unreviewed. It demonstrates no private-scalar reconstruction on honest release and successful early decryption by a malicious threshold. [Scoped impossibility argument](doc/generation06/SECURITY.md) identifies the missing indispensable capability rather than claiming all conditional cryptography is impossible.

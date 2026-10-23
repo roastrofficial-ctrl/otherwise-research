@@ -1,0 +1,8 @@
+{
+  "ServerVersion": "27.2.0",
+  "OperatingSystem": "Docker Desktop",
+  "Architecture": "aarch64",
+  "NCPU": 12,
+  "MemTotal": 8219254784,
+  "Driver": "overlay2"
+}

@@ -1,0 +1,35 @@
+# Overlay on compose05: only protocol services start. No SaaS or product database.
+services:
+  aw1:
+    build: {dockerfile: Dockerfile.protocol06}
+  aw2:
+    build: {dockerfile: Dockerfile.protocol06}
+  aw3:
+    build: {dockerfile: Dockerfile.protocol06}
+  aw4:
+    build: {dockerfile: Dockerfile.protocol06}
+  ak1:
+    build: {dockerfile: Dockerfile.protocol06}
+    command: [python, -m, Honest.service]
+    restart: on-failure
+    environment: {SSL_CERT_FILE: /tls/ca.pem, WITNESSES: 'https://aw1:8080,https://aw2:8080,https://aw3:8080,https://aw4:8080'}
+    volumes: [./.tls05/ca.pem:/tls/ca.pem:ro]
+  ak2:
+    build: {dockerfile: Dockerfile.protocol06}
+    command: [python, -m, Honest.service]
+    restart: on-failure
+    environment: {SSL_CERT_FILE: /tls/ca.pem, WITNESSES: 'https://aw1:8080,https://aw2:8080,https://aw3:8080,https://aw4:8080'}
+    volumes: [./.tls05/ca.pem:/tls/ca.pem:ro]
+  ak3:
+    build: {dockerfile: Dockerfile.protocol06}
+    command: [python, -m, Honest.service]
+    restart: on-failure
+    environment: {SSL_CERT_FILE: /tls/ca.pem, WITNESSES: 'https://aw1:8080,https://aw2:8080,https://aw3:8080,https://aw4:8080'}
+    volumes: [./.tls05/ca.pem:/tls/ca.pem:ro]
+  cli:
+    build: {dockerfile: Dockerfile.protocol06}
+    command: [python, -m, unittest, discover, -s, tests06, -v]
+networks:
+  protocol:
+    ipam:
+      config: [{subnet: '${OTHERWISE_06_SUBNET:-10.206.6.0/24}'}]

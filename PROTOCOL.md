@@ -295,3 +295,7 @@ The new wire-version-4 profile is specified in [doc/generation04/PROTOCOL.md](do
 ## Generation 0.5 — trusted creator and fresh observation
 
 The existing wire-v4 lifecycle remains unchanged. `Untrusted` adds version-5 challenge-bound signed INSPECT envelopes, a locally encrypted owner capability and direct independently pinned provider paths. [Specification and assumptions](doc/generation05/SECURITY.md) distinguish historical evidence from fresh reads, idempotent replay from cross-domain forgery, and authenticated assertion from objective fact.
+
+## Experimental custody profile 0.6
+
+The [Honest module](Honest/) adds an owner-signed v6 custody sidecar binding the existing immutable wire4 manifest to a reference threshold-DH key generation, ciphertext-specific wrap and single synthetic recipient. Witness messages, policy expressions and release authorisation retain wire4 meaning. `/enroll`, `/head` and `/partial` are an explicit experimental adapter, not a silent replacement of static `/release`. Partials bind the sidecar, Capsule, manifest version/hash, ciphertext, recipient, authorisation and fresh evidence-set head; they are signed and encrypted to the committed recipient. [Precise semantics and failure boundaries](doc/generation06/SECURITY.md).

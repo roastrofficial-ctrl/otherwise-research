@@ -100,3 +100,7 @@ The bounded four-witness protocol, Laravel HTTP lifecycle, real HTTPS adapters, 
 ## Generation 0.5 — The Hostile SaaS
 
 The [retained classification ledger](doc/results05/attacks.json), [integrated outage/device/restart sequence](doc/results05/hostile-lifecycle.txt), conformance and measured overhead distinguish actual outcomes. In particular, censorship can produce policy-authorised absence despite an attempted check-in; malicious executed client code and colluding custody still win. All content is synthetic and delivery is simulated.
+
+## Generation 0.6 — The Honest Custodian
+
+The [research harness](doc/generation06/README.md) compares static-share reconstruction with verifiable partial-point decryption. `./scripts/experiment06.sh` retains both honest release and malicious threshold early decryption, plus actual process crash/rollback, substitution, stale witness state, disarm and independent CLI experiments. `./scripts/performance06.sh` runs fresh candidate/baseline workloads sequentially. `python3 scripts/regression06.py` preserves all prior attacks and redirects new regression evidence into `doc/results06`. No real delivery or production secrets.

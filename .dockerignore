@@ -19,3 +19,5 @@ doc/results05
 **/__pycache__
 **/*.pyc
 .tls05
+
+doc/results06

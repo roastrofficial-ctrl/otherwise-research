@@ -1,0 +1,5 @@
+{
+  "freshness_vectors": 14,
+  "disagreements": 0,
+  "scope": "fresh signed envelopes; wire-v4 receipt/release semantics separately verified"
+}

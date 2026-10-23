@@ -1,0 +1,23 @@
+ Volume "otherwise05-1792692407-4491_recovery"  Creating
+ Volume "otherwise05-1792692407-4491_recovery"  Created
+test_01_cli_complete_lifecycle_secrets_stay_local (test_operator.HostileOperator.test_01_cli_complete_lifecycle_secrets_stay_local) ... ok
+test_02_substitution_ciphertext_contract_recipient (test_operator.HostileOperator.test_02_substitution_ciphertext_contract_recipient) ... ok
+test_03_forge_checkin_disarm_and_false_success (test_operator.HostileOperator.test_03_forge_checkin_disarm_and_false_success) ... ok
+test_04_censorship_and_alternative_path (test_operator.HostileOperator.test_04_censorship_and_alternative_path) ... ok
+test_05_replay_authorisation_and_stale_state (test_operator.HostileOperator.test_05_replay_authorisation_and_stale_state) ... ok
+test_06_premature_and_withheld_legitimate_release (test_operator.HostileOperator.test_06_premature_and_withheld_legitimate_release) ... ok
+test_07_malicious_client_delivery_success_is_retained (test_operator.HostileOperator.test_07_malicious_client_delivery_success_is_retained) ... ok
+test_08_device_loss_backup_replacement_and_rotation (test_operator.HostileOperator.test_08_device_loss_backup_replacement_and_rotation) ... ok
+test_09_custody_quorum_early_decryption_stays_successful (test_operator.HostileOperator.test_09_custody_quorum_early_decryption_stays_successful) ... ok
+test_10_transports_projection_and_runtime_separability (test_operator.HostileOperator.test_10_transports_projection_and_runtime_separability) ... ok
+test_11_one_unavailable_witness_with_trusted_client (test_operator.HostileOperator.test_11_one_unavailable_witness_with_trusted_client) ... ok
+test_12_rotation_failure_keeps_new_owner_capability (test_operator.HostileOperator.test_12_rotation_failure_keeps_new_owner_capability) ... ok
+test_13_tampered_vault_never_yields_creator_authority (test_operator.HostileOperator.test_13_tampered_vault_never_yields_creator_authority) ... ok
+test_14_censored_presence_can_cause_policy_authorised_disclosure (test_operator.HostileOperator.test_14_censored_presence_can_cause_policy_authorised_disclosure) ... ok
+test_15_installed_build_manifest_and_independent_hash (test_operator.HostileOperator.test_15_installed_build_manifest_and_independent_hash) ... ok
+test_16_provider_tls_verification_is_required (test_operator.HostileOperator.test_16_provider_tls_verification_is_required) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 12.811s
+
+OK

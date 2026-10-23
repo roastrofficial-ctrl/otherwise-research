@@ -102,3 +102,7 @@ The four-witness certificate model assumes at most one faulty witness for a stat
 ## Generation 0.5 — malicious SaaS is an explicit adversary
 
 Laravel, its backend/database/deployment and every SaaS response may be adversarial. Newly generated owner secrets remain on an independently trusted creator device. This does not protect against malicious client installation, stolen unlocked devices, already exposed keys, arbitrary censorship or a malicious custody quorum. [Attack results](doc/generation05/RESULTS.md) classify prevented, detectable, recoverable and successful cases separately.
+
+## Generation 0.6 — honest threshold decryption is not threshold-resistant policy
+
+The opt-in [reference custody harness](doc/generation06/SECURITY.md) returns recipient-encrypted, verifiable partial decryptions. Honest release combines points rather than the reusable private scalar. Two extracted custodians still decrypt before authorisation without scalar reconstruction. Trusted-dealer/client compromise also remains successful. Fresh signed witness reads and durable responses constrain honest services; they do not make policy checks cryptographically unavoidable. [Guarantee matrix](doc/generation06/RESULTS.md).
