@@ -24,3 +24,32 @@ Consumer05/storage/logs/*
 .tls07
 
 .tls08
+
+# Local configuration and generated custody material (including future labs).
+.env*
+!.env.example
+!.env.*.example
+!.env.sample
+!.env.*.sample
+.tls*/
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.seed
+*.secret
+*.ovault*
+
+# Database snapshots and auxiliary files can contain custody capabilities.
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.db-wal
+*.db-shm
+*.db.bak
+*.sqlite.bak
+*.sqlite3.bak

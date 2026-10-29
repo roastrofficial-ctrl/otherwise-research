@@ -192,10 +192,18 @@ A promise may remain authentic while its keys, witnesses, administrators or reci
 
 ---
 
+## Licence
+
+Copyright 2026 Levi Godolphin. Original Otherwise code and project documentation are licensed under the [Apache License 2.0](LICENSE); see [NOTICE](NOTICE). Third-party dependencies and referenced works retain their own licences and notices.
+
+## Security reporting
+
+Please read [SECURITY.md](SECURITY.md) before reporting a new vulnerability. Use private reporting for undisclosed security findings or exposed operational material; documented synthetic attacks remain part of the public research record.
+
 ### Research ethos
 
 **The human owns the questions. The agent proposes answers. Reality gets the final vote.**
 
 Successful attacks are findings, not embarrassing tests to delete. Historical failures stay reproducible. Assumptions are part of the result. A negative experiment is useful when it tells us which promise we cannot honestly make.
 
-*Otherwise is ongoing independent engineering research. Contributions, critique, reproducibility reports and adversarial counterexamples are welcome once the public repository's contribution and disclosure policies are established.*
+*Otherwise is ongoing independent engineering research. Critique, reproducibility reports and documented synthetic counterexamples are welcome. Please follow [SECURITY.md](SECURITY.md) for new security findings or exposed operational material.*
