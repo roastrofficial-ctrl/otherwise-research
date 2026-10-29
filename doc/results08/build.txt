@@ -1,0 +1,122 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [cli internal] load build definition from Dockerfile.protocol08
+#1 transferring dockerfile: 1.01kB done
+#1 DONE 0.1s
+
+#2 [recipient internal] load build definition from Dockerfile.protocol08
+#2 transferring dockerfile: 1.01kB done
+#2 DONE 0.1s
+
+#3 [cli internal] load metadata for docker.io/library/node:22-bookworm-slim
+#3 DONE 0.5s
+
+#4 [recipient internal] load metadata for docker.io/library/python:3.12-slim
+#4 DONE 0.5s
+
+#5 [cli internal] load .dockerignore
+#5 transferring context: 338B done
+#5 DONE 0.0s
+
+#6 [recipient internal] load .dockerignore
+#6 transferring context: 338B done
+#6 DONE 0.0s
+
+#7 [cli verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#7 DONE 0.0s
+
+#8 [cli stage-1  1/22] FROM docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159
+#8 DONE 0.0s
+
+#9 [cli internal] load build context
+#9 transferring context: 35.08kB 0.0s done
+#9 DONE 0.1s
+
+#10 [recipient internal] load build context
+#10 transferring context: 35.08kB 0.0s done
+#10 DONE 0.1s
+
+#11 [recipient stage-1 14/22] COPY tests07 tests07
+#11 CACHED
+
+#12 [recipient stage-1 15/22] COPY LastWord LastWord
+#12 DONE 0.1s
+
+#13 [cli stage-1  9/22] COPY Untrusted Untrusted
+#13 CACHED
+
+#14 [cli stage-1 11/22] COPY Verifier Verifier
+#14 CACHED
+
+#15 [cli stage-1 13/22] COPY Missing Missing
+#15 CACHED
+
+#16 [cli stage-1  6/22] COPY Engine Engine
+#16 CACHED
+
+#17 [cli stage-1  5/22] RUN pip install --no-cache-dir -r requirements.txt
+#17 CACHED
+
+#18 [cli stage-1  4/22] COPY requirements.txt .
+#18 CACHED
+
+#19 [cli stage-1  8/22] COPY Available Available
+#19 CACHED
+
+#20 [cli stage-1 10/22] COPY Honest Honest
+#20 CACHED
+
+#21 [cli stage-1  2/22] COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+#21 CACHED
+
+#22 [cli stage-1  3/22] WORKDIR /otherwise
+#22 CACHED
+
+#23 [cli stage-1 12/22] COPY tests06 tests06
+#23 CACHED
+
+#24 [cli stage-1  7/22] COPY Bounded Bounded
+#24 CACHED
+
+#11 [cli stage-1 14/22] COPY tests07 tests07
+#11 CACHED
+
+#25 [cli stage-1 16/22] COPY tests08 tests08
+#25 DONE 0.0s
+
+#26 [cli stage-1 17/22] COPY scripts/conformance08.py scripts/conformance08.py
+#26 DONE 0.0s
+
+#27 [cli stage-1 18/22] COPY Protocol/vectors/generation08.json Protocol/vectors/generation08.json
+#27 DONE 0.0s
+
+#28 [recipient stage-1 19/22] COPY scripts/conformance07.py scripts/conformance07.py
+#28 DONE 0.2s
+
+#29 [recipient stage-1 20/22] COPY Protocol/vectors/generation07.json Protocol/vectors/generation07.json
+#29 DONE 0.0s
+
+#30 [cli stage-1 21/22] COPY scripts/conformance04.py scripts/conformance04.py
+#30 DONE 0.0s
+
+#31 [recipient stage-1 22/22] COPY Protocol/vectors/generation04.json Protocol/vectors/generation04.json
+#31 DONE 0.0s
+
+#32 [recipient] exporting to image
+#32 exporting layers 0.0s done
+#32 writing image sha256:379e58bd53e3b51b6b70b209ab658c693613aac1f05c0feb442526e73e5c6d4f 0.0s done
+#32 naming to docker.io/library/otherwise08-1793302788-75039-recipient
+#32 naming to docker.io/library/otherwise08-1793302788-75039-recipient done
+#32 DONE 0.1s
+
+#33 [cli] exporting to image
+#33 exporting layers 0.0s done
+#33 writing image sha256:cb0c5869fef35bfc76104d7ed0adbf48e0ec68f79022368e884c7e099a0d4634 0.0s done
+#33 naming to docker.io/library/otherwise08-1793302788-75039-cli done
+#33 DONE 0.1s
+
+#34 [recipient] resolving provenance for metadata file
+#34 DONE 0.0s
+
+#35 [cli] resolving provenance for metadata file
+#35 DONE 0.0s

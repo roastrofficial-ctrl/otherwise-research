@@ -1,0 +1,55 @@
+{
+  "profile": "0.7",
+  "scope": "same eight primary two-window workloads and eight fresh disarms; local Docker/controlled clocks",
+  "samples": {
+    "checkin": {
+      "n": 8,
+      "median_ms": 40.018,
+      "observed_max_ms": 46.843
+    },
+    "policy_satisfaction_and_implicit07_authorisation": {
+      "n": 8,
+      "median_ms": 76.471,
+      "observed_max_ms": 89.83
+    },
+    "crypto_collection": {
+      "n": 8,
+      "median_ms": 531.299,
+      "observed_max_ms": 561.396
+    },
+    "recipient_verification_disclosure": {
+      "n": 8,
+      "median_ms": 225.098,
+      "observed_max_ms": 301.478
+    },
+    "decision_recovery": {
+      "n": 8,
+      "median_ms": 63.807,
+      "observed_max_ms": 70.686
+    },
+    "disarm": {
+      "n": 8,
+      "median_ms": 34.709,
+      "observed_max_ms": 42.06
+    },
+    "local_finality_verification": {
+      "n": 100,
+      "median_ms": 1.366,
+      "observed_max_ms": 1.614
+    },
+    "restart_authenticated_recovery": {
+      "n": 3,
+      "median_ms": 39.695,
+      "observed_max_ms": 41.093
+    },
+    "partition_heal_to_terminal": {
+      "n": 3,
+      "median_ms": 31.548,
+      "observed_max_ms": 32.381
+    }
+  },
+  "release_commitment_stage": "not implemented independently in0.7; its complete window proof is treated as irreversible",
+  "package_bytes": 16329,
+  "finality_bytes": 7009,
+  "verification_difference": "0.7 recipient fetches live evidence; 0.8 portable terminal package verifies offline"
+}

@@ -1,0 +1,75 @@
+{
+  "profile": "0.8",
+  "scope": "single Docker host, real TLS/SQLite operations, controlled witness clocks; n8 lifecycle and n100 local finality verification",
+  "samples": {
+    "checkin": {
+      "n": 8,
+      "median_ms": 35.498,
+      "observed_max_ms": 36.455
+    },
+    "policy_satisfaction": {
+      "n": 8,
+      "median_ms": 69.636,
+      "observed_max_ms": 76.813
+    },
+    "release_authorisation_and_commitment": {
+      "n": 8,
+      "median_ms": 248.795,
+      "observed_max_ms": 254.105
+    },
+    "crypto_collection": {
+      "n": 8,
+      "median_ms": 415.1,
+      "observed_max_ms": 420.686
+    },
+    "recipient_verification_disclosure": {
+      "n": 8,
+      "median_ms": 77.786,
+      "observed_max_ms": 78.835
+    },
+    "decision_recovery": {
+      "n": 8,
+      "median_ms": 29.8,
+      "observed_max_ms": 30.331
+    },
+    "disarm": {
+      "n": 8,
+      "median_ms": 108.902,
+      "observed_max_ms": 113.429
+    },
+    "local_finality_verification": {
+      "n": 100,
+      "median_ms": 5.404,
+      "observed_max_ms": 6.503
+    },
+    "restart_authenticated_recovery": {
+      "n": 3,
+      "median_ms": 88.559,
+      "observed_max_ms": 112.88
+    },
+    "partition_heal_to_terminal": {
+      "n": 3,
+      "median_ms": 61.66,
+      "observed_max_ms": 62.188
+    }
+  },
+  "consensus_sqlite_row_writes_per_release": [
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13
+  ],
+  "durability_scope": "row updates measured across four witness log connections; normal path expected13, not an OS fsync count; each holder separately persists retained decision and partial response",
+  "network": {
+    "registry_bytes": 4923,
+    "terminal_certificate_bytes": 14604,
+    "portable_package_bytes": 35342,
+    "note": "JSON only; excludes HTTP/TLS framing; healthy coordination sends4 proposal/status peers, prepare4, commit4, notify4 plus view-change messages when required"
+  },
+  "client_maxrss_kib": 43552,
+  "cpu_seconds": 11.682957
+}

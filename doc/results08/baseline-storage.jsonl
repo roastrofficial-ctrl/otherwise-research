@@ -1,0 +1,10 @@
+{"domain": "witness", "index": "1", "files": {"available.db": 249856}, "capsules": 19}
+{"domain": "witness", "index": "2", "files": {"available.db": 249856}, "capsules": 19}
+{"domain": "witness", "index": "3", "files": {"available.db": 249856}, "capsules": 19}
+{"domain": "witness", "index": "4", "files": {"available.db": 249856}, "capsules": 19}
+{"domain": "custody", "index": "1", "files": {"custody06.db": 159744}, "capsules": 19}
+{"domain": "custody", "index": "2", "files": {"custody06.db": 159744}, "capsules": 19}
+{"domain": "custody", "index": "3", "files": {"custody06.db": 159744}, "capsules": 19}
+{"domain": "authority", "index": "1", "files": {"custody06.db": 159744}, "capsules": 19}
+{"domain": "authority", "index": "2", "files": {"custody06.db": 159744}, "capsules": 19}
+{"domain": "authority", "index": "3", "files": {"custody06.db": 159744}, "capsules": 19}

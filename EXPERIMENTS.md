@@ -108,3 +108,7 @@ The [research harness](doc/generation06/README.md) compares static-share reconst
 ## Generation 0.7 — The Missing Piece
 
 The [two-domain research harness](doc/generation07/README.md) tests custody-only and authority-only extraction, successful combined collusion, signed invalid arithmetic, independent recipient verification, malformed/delayed/oversized replies, real process crashes, independent journal recovery and correlated provisioning/admin failures. An inherited early-window finalisation attack against cancellation is retained. Run `./scripts/experiment07.sh`, `python3 scripts/regression07.py`, then `./scripts/performance07.sh` for sequential fresh-cluster comparison with 0.6. Synthetic content only.
+
+## Generation 0.8 — The Last Word
+
+[Research and reproduction](doc/generation08/README.md) cover corrected historical-window cancellation, explicit terminal ordering, Byzantine proposals/view changes, partitions, durable vote/decision crashes, authenticated recovery, creator-independent work and a network-disabled recipient. Original U/V and combined-quorum attacks remain preserved. Run `./scripts/experiment08.sh`, `python3 scripts/regression08.py`, then `./scripts/performance08.sh` for sequential fresh-cluster comparison. No real disclosure or PorterNet.

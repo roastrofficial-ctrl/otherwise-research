@@ -303,3 +303,7 @@ The [Honest module](Honest/) adds an owner-signed v6 custody sidecar binding the
 ## Experimental profile 0.7
 
 [Versioned semantics](doc/generation07/PROTOCOL-0.7.md) define a v7 owner-signed two-domain custody sidecar, fully scoped authenticated/DLEQ partials, a named finality-certificate head, recipient AEAD/plaintext verification and separately signed encrypted-operation retention. Wire4 lifecycle evidence is preserved; old armed Capsules are not silently upgraded. `/enroll07`, `/partial07`, `/retain07` and `/inspect07` are explicit profile interfaces. A separate recipient client verifies from independently pinned expected content and fresh evidence without an owner signing seed or SaaS truth.
+
+## Experimental profile0.8
+
+The [v8 state machine and certificate format](doc/generation08/PROTOCOL-0.8.md) add an immutable registry, prepare/commit/view-change log, creator-independent authenticated recovery and terminal-certificate-bound split-custody contributions. Wire4 observation/window rules and v7 encryption contexts retain their original interpretation. Old disarm/journal/partial routes cannot substitute for v8 finality; membership is frozen and old Capsules are not silently migrated. Portable packages verify offline against separately pinned recipient state.

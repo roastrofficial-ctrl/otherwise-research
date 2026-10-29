@@ -1,0 +1,8 @@
+Encrypted backup precedes accepted presence; current creator vault deleted. No SaaS or database exists in this deployment.
+ Container otherwise07-1793301444-70562-aw4-1  Stopping
+ Container otherwise07-1793301444-70562-aw4-1  Stopped
+With aw4 process stopped: old backup recovered later accepted presence, new checkin accepted, durable disarm verified.
+With one witness permanently absent for this operation, valid 3/4 evidence and 2/3 in each capability domain completed disclosure.
+ Container otherwise07-1793301444-70562-aw4-1  Starting
+ Container otherwise07-1793301444-70562-aw4-1  Started
+Actual witness restart: existing owner-authorised peer repair preserved disarm and presence. Journal repair is separately limited: original wire4 checkpoint does not transfer v7 operation journals; three surviving holders retain them.

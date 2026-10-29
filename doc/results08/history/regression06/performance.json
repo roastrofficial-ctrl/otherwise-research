@@ -1,0 +1,98 @@
+{
+  "provider": "0.6 reference threshold DH",
+  "scope": "same Docker host, sequential TLS, synthetic 38-byte payload, 2 check-in windows, one accepted check-in then one missed; no WAN extrapolation",
+  "samples_per_lifecycle": 8,
+  "measurements": {
+    "draft_discovery_and_aes_encrypt": {
+      "n": 8,
+      "median_ms": 27.413,
+      "observed_max_ms": 54.605
+    },
+    "custody_provision_wrap_enroll": {
+      "n": 8,
+      "median_ms": 49.743,
+      "observed_max_ms": 78.094
+    },
+    "arm_with_retention": {
+      "n": 8,
+      "median_ms": 205.8,
+      "observed_max_ms": 425.325
+    },
+    "total_create_provision_arm": {
+      "n": 8,
+      "median_ms": 276.039,
+      "observed_max_ms": 545.743
+    },
+    "checkin_with_retention": {
+      "n": 8,
+      "median_ms": 235.368,
+      "observed_max_ms": 273.969
+    },
+    "fresh_owner_inspection": {
+      "n": 8,
+      "median_ms": 159.65,
+      "observed_max_ms": 177.732
+    },
+    "encrypted_backup_open": {
+      "n": 8,
+      "median_ms": 60.262,
+      "observed_max_ms": 64.101
+    },
+    "recover_fresh_state": {
+      "n": 8,
+      "median_ms": 148.834,
+      "observed_max_ms": 218.587
+    },
+    "authorisation_with_witness_finalisation": {
+      "n": 8,
+      "median_ms": 57.843,
+      "observed_max_ms": 95.069
+    },
+    "fresh_custody_snapshot_agreement": {
+      "n": 8,
+      "median_ms": 165.441,
+      "observed_max_ms": 203.471
+    },
+    "two_partial_requests": {
+      "n": 8,
+      "median_ms": 210.239,
+      "observed_max_ms": 232.946
+    },
+    "recipient_verify_combine_disclose": {
+      "n": 8,
+      "median_ms": 19.915,
+      "observed_max_ms": 40.63
+    },
+    "one_unavailable_release": {
+      "n": 8,
+      "median_ms": 211.045,
+      "observed_max_ms": 244.624
+    },
+    "pure_dealer_setup": {
+      "n": 40,
+      "median_ms": 1.021,
+      "observed_max_ms": 1.093
+    },
+    "pure_payload_encrypt_and_custody_wrap": {
+      "n": 40,
+      "median_ms": 3.647,
+      "observed_max_ms": 3.813
+    }
+  },
+  "wire_last_sample": {
+    "one_four_witness_scan_json_bytes": 40244,
+    "new_release_scan_count": 5,
+    "two_requests_json_bytes": 20522,
+    "two_responses_json_bytes": 3816,
+    "ciphertext_bytes": 66,
+    "encrypted_backup_bytes": 34979,
+    "note": "JSON bytes exclude HTTP/TLS framing; new partial requests additionally perform 8 fresh witness inspection round trips, plus head agreement queries"
+  },
+  "storage_last_sample": {
+    "private_material_logical_bytes": 192,
+    "complete_capsule_rows_logical_bytes": 20777,
+    "complete_service_db_bytes": null
+  },
+  "storage_note": "Logical JSON/scalar bytes only; allocated DB/WAL bytes are not measured or equated with logical content. v6 public key is reusable; each row currently duplicates it.",
+  "failure_note": "one unavailable custodian measured; crash, rollback and 2-down semantics are conformance experiments, not latency distributions"
+}

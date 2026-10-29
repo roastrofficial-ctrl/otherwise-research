@@ -1,0 +1,390 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [aa2 internal] load build definition from Dockerfile.protocol07
+#1 transferring dockerfile: 835B done
+#1 DONE 0.0s
+
+#2 [aw4 internal] load build definition from Dockerfile.protocol07
+#2 transferring dockerfile: 835B done
+#2 DONE 0.0s
+
+#3 [aw3 internal] load build definition from Dockerfile.protocol07
+#3 transferring dockerfile: 835B done
+#3 DONE 0.0s
+
+#4 [aa1 internal] load build definition from Dockerfile.protocol07
+#4 transferring dockerfile: 835B done
+#4 DONE 0.0s
+
+#5 [ak1 internal] load build definition from Dockerfile.protocol07
+#5 transferring dockerfile: 835B done
+#5 DONE 0.0s
+
+#6 [ak2 internal] load build definition from Dockerfile.protocol07
+#6 transferring dockerfile: 835B done
+#6 DONE 0.0s
+
+#7 [aw1 internal] load build definition from Dockerfile.protocol07
+#7 transferring dockerfile: 835B done
+#7 DONE 0.0s
+
+#8 [ak3 internal] load build definition from Dockerfile.protocol07
+#8 transferring dockerfile: 835B done
+#8 DONE 0.0s
+
+#9 [aa3 internal] load build definition from Dockerfile.protocol07
+#9 transferring dockerfile: 835B done
+#9 DONE 0.0s
+
+#10 [aw2 internal] load build definition from Dockerfile.protocol07
+#10 transferring dockerfile: 835B done
+#10 DONE 0.0s
+
+#11 [aa1 internal] load metadata for docker.io/library/node:22-bookworm-slim
+#11 DONE 0.2s
+
+#12 [aw2 internal] load metadata for docker.io/library/python:3.12-slim
+#12 DONE 0.3s
+
+#13 [aa3 internal] load .dockerignore
+#13 transferring context: 338B done
+#13 DONE 0.0s
+
+#14 [aa1 internal] load .dockerignore
+#14 transferring context: 338B done
+#14 DONE 0.0s
+
+#15 [aw4 internal] load .dockerignore
+#15 transferring context: 338B done
+#15 DONE 0.0s
+
+#16 [aw3 internal] load .dockerignore
+#16 transferring context: 338B done
+#16 DONE 0.0s
+
+#17 [ak1 internal] load .dockerignore
+#17 transferring context: 338B done
+#17 DONE 0.0s
+
+#18 [ak3 internal] load .dockerignore
+#18 transferring context: 338B done
+#18 DONE 0.0s
+
+#19 [ak2 internal] load .dockerignore
+#19 transferring context: 338B done
+#19 DONE 0.0s
+
+#20 [aw1 verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#20 DONE 0.0s
+
+#21 [aw1 stage-1  1/18] FROM docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159
+#21 DONE 0.0s
+
+#22 [aa2 internal] load .dockerignore
+#22 transferring context: 338B done
+#22 DONE 0.0s
+
+#23 [aw2 internal] load .dockerignore
+#23 transferring context: 338B done
+#23 DONE 0.0s
+
+#24 [aw1 internal] load .dockerignore
+#24 transferring context: 338B done
+#24 DONE 0.0s
+
+#25 [aa3 internal] load build context
+#25 transferring context: 2.74kB done
+#25 DONE 0.0s
+
+#26 [aw3 internal] load build context
+#26 transferring context: 155.62kB 0.0s done
+#26 DONE 0.0s
+
+#27 [aa1 internal] load build context
+#27 transferring context: 155.62kB 0.0s done
+#27 DONE 0.0s
+
+#28 [ak2 internal] load build context
+#28 transferring context: 155.62kB 0.0s done
+#28 DONE 0.0s
+
+#29 [aw4 internal] load build context
+#29 transferring context: 155.62kB 0.0s done
+#29 DONE 0.0s
+
+#30 [ak3 internal] load build context
+#30 transferring context: 155.62kB 0.0s done
+#30 DONE 0.0s
+
+#31 [ak1 internal] load build context
+#31 transferring context: 155.62kB 0.0s done
+#31 DONE 0.0s
+
+#32 [aa3 stage-1  5/18] RUN pip install --no-cache-dir -r requirements.txt
+#32 CACHED
+
+#33 [aa3 stage-1  7/18] COPY Bounded Bounded
+#33 CACHED
+
+#34 [aa3 stage-1 10/18] COPY Honest Honest
+#34 CACHED
+
+#35 [aa3 stage-1 15/18] COPY scripts/conformance07.py scripts/conformance07.py
+#35 CACHED
+
+#36 [aa3 stage-1 17/18] COPY scripts/conformance04.py scripts/conformance04.py
+#36 CACHED
+
+#37 [aa3 stage-1  4/18] COPY requirements.txt .
+#37 CACHED
+
+#38 [aa3 stage-1  2/18] COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+#38 CACHED
+
+#39 [aa3 stage-1  3/18] WORKDIR /otherwise
+#39 CACHED
+
+#40 [aa3 stage-1 13/18] COPY Missing Missing
+#40 CACHED
+
+#41 [aa3 stage-1 12/18] COPY tests06 tests06
+#41 CACHED
+
+#42 [aa3 stage-1 16/18] COPY Protocol/vectors/generation07.json Protocol/vectors/generation07.json
+#42 CACHED
+
+#43 [aa3 stage-1 14/18] COPY tests07 tests07
+#43 CACHED
+
+#44 [aa3 stage-1  8/18] COPY Available Available
+#44 CACHED
+
+#45 [aa3 stage-1  9/18] COPY Untrusted Untrusted
+#45 CACHED
+
+#46 [aa3 stage-1 11/18] COPY Verifier Verifier
+#46 CACHED
+
+#47 [aa3 stage-1  6/18] COPY Engine Engine
+#47 CACHED
+
+#48 [aa3 stage-1 18/18] COPY Protocol/vectors/generation04.json Protocol/vectors/generation04.json
+#48 CACHED
+
+#49 [aa3] exporting to image
+#49 exporting layers done
+#49 writing image sha256:4fbb8c9ebe468fe27b9966d044f5da59d9e392f8c929a171f1c093155b0889f6 done
+#49 naming to docker.io/library/otherwise07-1793301444-70562-aa3 done
+#49 DONE 0.0s
+
+#50 [aw2 internal] load build context
+#50 transferring context: 155.62kB done
+#50 DONE 0.0s
+
+#51 [aa2 internal] load build context
+#51 transferring context: 2.74kB done
+#51 DONE 0.0s
+
+#52 [aw1 internal] load build context
+#52 transferring context: 2.74kB done
+#52 DONE 0.0s
+
+#53 [aa3] resolving provenance for metadata file
+#53 DONE 0.0s
+
+#54 [ak2 stage-1 18/18] COPY Protocol/vectors/generation04.json Protocol/vectors/generation04.json
+#54 CACHED
+
+#55 [ak3 stage-1 14/18] COPY tests07 tests07
+#55 CACHED
+
+#56 [ak3 stage-1 16/18] COPY Protocol/vectors/generation07.json Protocol/vectors/generation07.json
+#56 CACHED
+
+#39 [ak3 stage-1  3/18] WORKDIR /otherwise
+#39 CACHED
+
+#57 [ak3 stage-1  6/18] COPY Engine Engine
+#57 CACHED
+
+#58 [ak3 stage-1 13/18] COPY Missing Missing
+#58 CACHED
+
+#59 [ak3 stage-1  8/18] COPY Available Available
+#59 CACHED
+
+#38 [ak3 stage-1  2/18] COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+#38 CACHED
+
+#60 [ak3 stage-1  7/18] COPY Bounded Bounded
+#60 CACHED
+
+#61 [ak3 stage-1  9/18] COPY Untrusted Untrusted
+#61 CACHED
+
+#62 [ak3 stage-1 12/18] COPY tests06 tests06
+#62 CACHED
+
+#63 [ak3 stage-1  4/18] COPY requirements.txt .
+#63 CACHED
+
+#64 [ak3 stage-1  5/18] RUN pip install --no-cache-dir -r requirements.txt
+#64 CACHED
+
+#65 [ak3 stage-1 10/18] COPY Honest Honest
+#65 CACHED
+
+#66 [ak3 stage-1 15/18] COPY scripts/conformance07.py scripts/conformance07.py
+#66 CACHED
+
+#67 [ak3 stage-1 17/18] COPY scripts/conformance04.py scripts/conformance04.py
+#67 CACHED
+
+#68 [ak3 stage-1 11/18] COPY Verifier Verifier
+#68 CACHED
+
+#54 [aw1 stage-1 18/18] COPY Protocol/vectors/generation04.json Protocol/vectors/generation04.json
+#54 CACHED
+
+#69 [ak3] exporting to image
+#69 exporting layers done
+#69 writing image sha256:cbf08238793a7a84a70390112413be4761073f5a2bacb84995f7d6a7ff3d8cf3 0.0s done
+#69 naming to docker.io/library/otherwise07-1793301444-70562-ak3 done
+#69 DONE 0.1s
+
+#70 [aw3] exporting to image
+#70 exporting layers done
+#70 writing image sha256:51a734d79e4a65ec1dad2e9b5c2de700d2f24917d442d935162357337300f0e0 0.0s done
+#70 naming to docker.io/library/otherwise07-1793301444-70562-aw3 done
+#70 DONE 0.1s
+
+#71 [aa1] exporting to image
+#71 exporting layers done
+#71 writing image sha256:316f5619084857f79a4af5f7ef3075eba644898073c4238aabde5a44b4004220 0.0s done
+#71 naming to docker.io/library/otherwise07-1793301444-70562-aa1 done
+#71 DONE 0.1s
+
+#72 [aw4] exporting to image
+#72 exporting layers done
+#72 writing image sha256:be6e0198eb064b7455c6de28b5796682ccb7f25ef131febe9a0ba701afd0a8ba 0.0s done
+#72 naming to docker.io/library/otherwise07-1793301444-70562-aw4 0.0s done
+#72 DONE 0.1s
+
+#73 [ak2] exporting to image
+#73 exporting layers done
+#73 writing image sha256:7432824a8716967d048079aba1a41b91b8c66c9e3482867e2fda672262db5450 0.0s done
+#73 naming to docker.io/library/otherwise07-1793301444-70562-ak2 0.0s done
+#73 DONE 0.1s
+
+#74 [ak1] exporting to image
+#74 exporting layers done
+#74 writing image sha256:58197430c17d35f6a1b8e4caa31c2fc775654f28c16c342f14a6ac9dce5ac07a 0.0s done
+#74 naming to docker.io/library/otherwise07-1793301444-70562-ak1 0.0s done
+#74 DONE 0.1s
+
+#75 [aa2] exporting to image
+#75 exporting layers done
+#75 writing image sha256:4eee1081bf09d59f202b236cbee530319ec62a4c343493e00e29e0fbf73d8e6a 0.0s done
+#75 naming to docker.io/library/otherwise07-1793301444-70562-aa2 0.0s done
+#75 DONE 0.1s
+
+#76 [aw2] exporting to image
+#76 exporting layers done
+#76 writing image sha256:37c7af3156c17fba40544f5f30be7e3c689fcf1d3217c4492b9687864cec0c58 0.0s done
+#76 naming to docker.io/library/otherwise07-1793301444-70562-aw2 0.0s done
+#76 DONE 0.1s
+
+#77 [aw1] exporting to image
+#77 exporting layers done
+#77 writing image sha256:2880037303f6b7ae36ea2674fbb7e73e3b3bb6944dbc8d7d63cac8cfcb77d0fa 0.0s done
+#77 naming to docker.io/library/otherwise07-1793301444-70562-aw1 0.0s done
+#77 DONE 0.1s
+
+#78 [ak3] resolving provenance for metadata file
+#78 DONE 0.0s
+
+#79 [aw1] resolving provenance for metadata file
+#79 DONE 0.0s
+
+#80 [aw2] resolving provenance for metadata file
+#80 DONE 0.0s
+
+#81 [aa1] resolving provenance for metadata file
+#81 DONE 0.0s
+
+#82 [aa2] resolving provenance for metadata file
+#82 DONE 0.0s
+
+#83 [ak1] resolving provenance for metadata file
+#83 DONE 0.0s
+
+#84 [aw4] resolving provenance for metadata file
+#84 DONE 0.0s
+
+#85 [aw3] resolving provenance for metadata file
+#85 DONE 0.0s
+
+#86 [ak2] resolving provenance for metadata file
+#86 DONE 0.0s
+ Network otherwise07-1793301444-70562_protocol  Creating
+ Network otherwise07-1793301444-70562_protocol  Created
+ Volume "otherwise07-1793301444-70562_ak3"  Creating
+ Volume "otherwise07-1793301444-70562_ak3"  Created
+ Volume "otherwise07-1793301444-70562_aa1"  Creating
+ Volume "otherwise07-1793301444-70562_aa1"  Created
+ Volume "otherwise07-1793301444-70562_aw3"  Creating
+ Volume "otherwise07-1793301444-70562_aw3"  Created
+ Volume "otherwise07-1793301444-70562_ak1"  Creating
+ Volume "otherwise07-1793301444-70562_ak1"  Created
+ Volume "otherwise07-1793301444-70562_aw1"  Creating
+ Volume "otherwise07-1793301444-70562_aw1"  Created
+ Volume "otherwise07-1793301444-70562_aa2"  Creating
+ Volume "otherwise07-1793301444-70562_aa2"  Created
+ Volume "otherwise07-1793301444-70562_ak2"  Creating
+ Volume "otherwise07-1793301444-70562_ak2"  Created
+ Volume "otherwise07-1793301444-70562_aw4"  Creating
+ Volume "otherwise07-1793301444-70562_aw4"  Created
+ Volume "otherwise07-1793301444-70562_aa3"  Creating
+ Volume "otherwise07-1793301444-70562_aa3"  Created
+ Volume "otherwise07-1793301444-70562_aw2"  Creating
+ Volume "otherwise07-1793301444-70562_aw2"  Created
+ Container otherwise07-1793301444-70562-aw2-1  Creating
+ Container otherwise07-1793301444-70562-aw4-1  Creating
+ Container otherwise07-1793301444-70562-ak2-1  Creating
+ Container otherwise07-1793301444-70562-ak3-1  Creating
+ Container otherwise07-1793301444-70562-aa2-1  Creating
+ Container otherwise07-1793301444-70562-aa3-1  Creating
+ Container otherwise07-1793301444-70562-aa1-1  Creating
+ Container otherwise07-1793301444-70562-ak1-1  Creating
+ Container otherwise07-1793301444-70562-aw1-1  Creating
+ Container otherwise07-1793301444-70562-aw3-1  Creating
+ Container otherwise07-1793301444-70562-ak1-1  Created
+ Container otherwise07-1793301444-70562-ak3-1  Created
+ Container otherwise07-1793301444-70562-ak2-1  Created
+ Container otherwise07-1793301444-70562-aw1-1  Created
+ Container otherwise07-1793301444-70562-aa2-1  Created
+ Container otherwise07-1793301444-70562-aa3-1  Created
+ Container otherwise07-1793301444-70562-aa1-1  Created
+ Container otherwise07-1793301444-70562-aw2-1  Created
+ Container otherwise07-1793301444-70562-aw3-1  Created
+ Container otherwise07-1793301444-70562-aw4-1  Created
+ Container otherwise07-1793301444-70562-aw4-1  Starting
+ Container otherwise07-1793301444-70562-aw1-1  Starting
+ Container otherwise07-1793301444-70562-aw2-1  Starting
+ Container otherwise07-1793301444-70562-aa3-1  Starting
+ Container otherwise07-1793301444-70562-aw3-1  Starting
+ Container otherwise07-1793301444-70562-aa2-1  Starting
+ Container otherwise07-1793301444-70562-ak2-1  Starting
+ Container otherwise07-1793301444-70562-ak3-1  Starting
+ Container otherwise07-1793301444-70562-ak1-1  Starting
+ Container otherwise07-1793301444-70562-aa1-1  Starting
+ Container otherwise07-1793301444-70562-aw2-1  Started
+ Container otherwise07-1793301444-70562-aw1-1  Started
+ Container otherwise07-1793301444-70562-ak2-1  Started
+ Container otherwise07-1793301444-70562-ak3-1  Started
+ Container otherwise07-1793301444-70562-aa2-1  Started
+ Container otherwise07-1793301444-70562-aa1-1  Started
+ Container otherwise07-1793301444-70562-aa3-1  Started
+ Container otherwise07-1793301444-70562-ak1-1  Started
+ Container otherwise07-1793301444-70562-aw4-1  Started
+ Container otherwise07-1793301444-70562-aw3-1  Started

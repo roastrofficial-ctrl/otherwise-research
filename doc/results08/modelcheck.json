@@ -1,0 +1,50 @@
+{
+  "method": "finite exhaustive abstraction",
+  "views": 2,
+  "values": 2,
+  "replicas": 4,
+  "byzantine_positions": 4,
+  "transitions_checked": 58880,
+  "conflicting_commits": 0,
+  "unsafe_variant_counterexample": {
+    "byzantine": 0,
+    "view0_prepares": {
+      "1": null,
+      "2": "RELEASE",
+      "3": "RELEASE"
+    },
+    "prepared_delivered": {
+      "1": null,
+      "2": "RELEASE",
+      "3": "RELEASE"
+    },
+    "old_commit": [
+      "RELEASE"
+    ],
+    "view_change_members": [
+      0,
+      1,
+      2
+    ],
+    "highest_prepared": [
+      "RELEASE"
+    ],
+    "broken_new_commit": "DISARM"
+  },
+  "assumptions": [
+    "unforgeable signatures",
+    "honest per-view no-double-vote",
+    "COMMIT requires persisted prepared proof",
+    "view-change carries known prepared proof",
+    "no old-view voting after advance"
+  ],
+  "not_modelled": [
+    "crypto/canonical encoding",
+    "implementation refinement",
+    "FS/clock/network timers",
+    "arbitrary views",
+    "membership change",
+    "global rollback",
+    "full liveness"
+  ]
+}

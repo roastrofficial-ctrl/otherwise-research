@@ -110,3 +110,7 @@ The opt-in [reference custody harness](doc/generation06/SECURITY.md) returns rec
 ## Generation 0.7 — two indispensable capability domains
 
 The [explicit model](doc/generation07/THREAT-MODEL-0.7.md) splits the per-Capsule AES key into two necessary components, threshold-wrapped under separate domain keys. Full compromise of either domain alone is insufficient under secure-independent-creation and honest missing-domain assumptions. Combined-domain collusion, malicious/correlated setup and shared host administration still decrypt early. [The retained early-finalisation cancellation limit](doc/generation07/PROTOCOL-0.7.md) prevents any claim of universal cancellation until release. This is an unreviewed synthetic research harness.
+
+## Generation 0.8 — terminal ordering
+
+[The Last Word](doc/generation08/SECURITY-0.8.md) separates evidence/window finality from a single ordered DISARM/RELEASE commitment. A restricted signed PBFT-style protocol preserves prepared proofs across view changes; quorum arithmetic alone is not its safety argument. Historical V is corrected in the new profile, while U/combined-secret disclosure remain successful. ModelA authorisation and commitment coincide; pending cancellation is uncertainty, and a commitment is not proof of plaintext delivery.

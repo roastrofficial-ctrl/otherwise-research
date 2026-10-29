@@ -1,0 +1,7 @@
+{
+  "terminal_vectors": 21,
+  "positive": 6,
+  "negative": 15,
+  "Python_Node_disagreements": 0,
+  "scope": "finality signature/guard checking; not a proof of distributed safety"
+}

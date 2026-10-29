@@ -1,0 +1,85 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [cli internal] load build definition from Dockerfile.protocol07
+#1 transferring dockerfile: 835B done
+#1 DONE 0.0s
+
+#2 [cli internal] load metadata for docker.io/library/node:22-bookworm-slim
+#2 DONE 0.3s
+
+#3 [cli internal] load metadata for docker.io/library/python:3.12-slim
+#3 DONE 0.3s
+
+#4 [cli internal] load .dockerignore
+#4 transferring context: 338B done
+#4 DONE 0.0s
+
+#5 [cli verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#5 DONE 0.0s
+
+#6 [cli stage-1  1/18] FROM docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159
+#6 DONE 0.0s
+
+#7 [cli internal] load build context
+#7 transferring context: 2.74kB 0.0s done
+#7 DONE 0.0s
+
+#8 [cli stage-1 11/18] COPY Verifier Verifier
+#8 CACHED
+
+#9 [cli stage-1 12/18] COPY tests06 tests06
+#9 CACHED
+
+#10 [cli stage-1  2/18] COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+#10 CACHED
+
+#11 [cli stage-1  7/18] COPY Bounded Bounded
+#11 CACHED
+
+#12 [cli stage-1  3/18] WORKDIR /otherwise
+#12 CACHED
+
+#13 [cli stage-1 17/18] COPY scripts/conformance04.py scripts/conformance04.py
+#13 CACHED
+
+#14 [cli stage-1 13/18] COPY Missing Missing
+#14 CACHED
+
+#15 [cli stage-1  4/18] COPY requirements.txt .
+#15 CACHED
+
+#16 [cli stage-1  6/18] COPY Engine Engine
+#16 CACHED
+
+#17 [cli stage-1  8/18] COPY Available Available
+#17 CACHED
+
+#18 [cli stage-1  5/18] RUN pip install --no-cache-dir -r requirements.txt
+#18 CACHED
+
+#19 [cli stage-1 14/18] COPY tests07 tests07
+#19 CACHED
+
+#20 [cli stage-1 15/18] COPY scripts/conformance07.py scripts/conformance07.py
+#20 CACHED
+
+#21 [cli stage-1  9/18] COPY Untrusted Untrusted
+#21 CACHED
+
+#22 [cli stage-1 16/18] COPY Protocol/vectors/generation07.json Protocol/vectors/generation07.json
+#22 CACHED
+
+#23 [cli stage-1 10/18] COPY Honest Honest
+#23 CACHED
+
+#24 [cli stage-1 18/18] COPY Protocol/vectors/generation04.json Protocol/vectors/generation04.json
+#24 CACHED
+
+#25 [cli] exporting to image
+#25 exporting layers done
+#25 writing image sha256:7a3e490bd66aa5d9ba49175f36160f7b5d14e455a915166b6bab561c8b26ab4d done
+#25 naming to docker.io/library/otherwise07-1793301444-70562-cli done
+#25 DONE 0.0s
+
+#26 [cli] resolving provenance for metadata file
+#26 DONE 0.1s

@@ -1,0 +1,208 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [cli internal] load build definition from Dockerfile.protocol07
+#1 transferring dockerfile: 835B done
+#1 DONE 0.0s
+
+#2 [cli internal] load metadata for docker.io/library/node:22-bookworm-slim
+#2 ...
+
+#3 [cli internal] load metadata for docker.io/library/python:3.12-slim
+#3 DONE 2.4s
+
+#2 [cli internal] load metadata for docker.io/library/node:22-bookworm-slim
+#2 DONE 2.4s
+
+#4 [cli internal] load .dockerignore
+#4 transferring context: 316B done
+#4 DONE 0.0s
+
+#5 [cli internal] load build context
+#5 transferring context: 155.62kB 0.0s done
+#5 DONE 0.0s
+
+#6 [cli verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#6 resolve docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da done
+#6 sha256:9a422d62743ffb1e6eb282549f4eae7ab89f7b926db1f136f4cba8be60e4ecbc 1.93kB / 1.93kB done
+#6 sha256:69f266c3ec9d93ce85b5643431560e9eedefb54f252730c84453239c2e68f071 6.79kB / 6.79kB done
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 0B / 28.14MB 0.1s
+#6 sha256:8c0bdc66dfeb4c7283e40f1f46a1662ee123f3e458fa5c623a3e2a1004965aef 0B / 3.31kB 0.1s
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 0B / 50.02MB 0.1s
+#6 sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da 5.22kB / 5.22kB done
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 2.10MB / 28.14MB 1.0s
+#6 sha256:8c0bdc66dfeb4c7283e40f1f46a1662ee123f3e458fa5c623a3e2a1004965aef 3.31kB / 3.31kB 1.5s done
+#6 sha256:983c66c071395f3f0a95f10bb5f6207e7f2847cc45f0b2561e1157ab9eaed872 0B / 1.71MB 1.5s
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 4.19MB / 28.14MB 2.3s
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 3.15MB / 50.02MB 4.5s
+#6 sha256:983c66c071395f3f0a95f10bb5f6207e7f2847cc45f0b2561e1157ab9eaed872 1.05MB / 1.71MB 4.7s
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 7.34MB / 28.14MB 5.5s
+#6 sha256:983c66c071395f3f0a95f10bb5f6207e7f2847cc45f0b2561e1157ab9eaed872 1.71MB / 1.71MB 6.0s done
+#6 sha256:467306870dd09052af75210e4783437fa9d2e718b28c3ebe4fe1db92cf96f3d0 0B / 446B 6.1s
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 9.44MB / 28.14MB 6.3s
+#6 sha256:467306870dd09052af75210e4783437fa9d2e718b28c3ebe4fe1db92cf96f3d0 446B / 446B 6.9s done
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 11.53MB / 28.14MB 7.7s
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 6.29MB / 50.02MB 8.4s
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 13.63MB / 28.14MB 9.0s
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 9.44MB / 50.02MB 10.1s
+#6 ...
+
+#7 [cli stage-1  1/18] FROM docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159
+#7 resolve docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159 done
+#7 sha256:ff710677e697054c516f12c53c92166f1aef075f21b2a593f4c615e522112b4e 5.68kB / 5.68kB done
+#7 sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159 10.37kB / 10.37kB done
+#7 sha256:b224e2fe306f9d303251ada22961635e5b52a69c0414a0050611be31c59f5f5b 1.75kB / 1.75kB done
+#7 sha256:2b70e040f7d132c8d366ee0223462552686510fb372ea5a83822973c30f19e36 1.05MB / 30.21MB 10.0s
+#7 ...
+
+#6 [cli verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 15.73MB / 28.14MB 11.0s
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 17.83MB / 28.14MB 13.5s
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 12.58MB / 50.02MB 13.6s
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 19.92MB / 28.14MB 15.7s
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 22.02MB / 28.14MB 18.1s
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 15.73MB / 50.02MB 18.1s
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 24.12MB / 28.14MB 20.0s
+#6 ...
+
+#7 [cli stage-1  1/18] FROM docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159
+#7 sha256:2b70e040f7d132c8d366ee0223462552686510fb372ea5a83822973c30f19e36 9.44MB / 30.21MB 20.3s
+#7 ...
+
+#6 [cli verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 18.87MB / 50.02MB 20.6s
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 28.14MB / 28.14MB 21.4s
+#6 sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 28.14MB / 28.14MB 21.4s done
+#6 extracting sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 0.1s
+#6 extracting sha256:f791e47cf52abf7b364878f2141547e3781072e437f599f6632849d88fca8ca4 1.6s done
+#6 extracting sha256:8c0bdc66dfeb4c7283e40f1f46a1662ee123f3e458fa5c623a3e2a1004965aef done
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 22.02MB / 50.02MB 24.1s
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 25.17MB / 50.02MB 25.0s
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 28.31MB / 50.02MB 28.5s
+#6 ...
+
+#7 [cli stage-1  1/18] FROM docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159
+#7 sha256:2b70e040f7d132c8d366ee0223462552686510fb372ea5a83822973c30f19e36 18.87MB / 30.21MB 28.9s
+#7 sha256:0922d1fc1a5f7baa280015c744bb0be989e6e146a9181c04d2971e1273416844 1.27MB / 1.27MB 26.9s done
+#7 sha256:b41621e272b0b306c196fabab6f5e0132d1c13f3c929bfb63455191fa509e311 0B / 12.06MB 28.9s
+#7 sha256:b41621e272b0b306c196fabab6f5e0132d1c13f3c929bfb63455191fa509e311 1.05MB / 12.06MB 29.0s
+#7 ...
+
+#6 [cli verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 29.36MB / 50.02MB 33.5s
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 32.51MB / 50.02MB 34.6s
+#6 ...
+
+#7 [cli stage-1  1/18] FROM docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159
+#7 sha256:2b70e040f7d132c8d366ee0223462552686510fb372ea5a83822973c30f19e36 27.26MB / 30.21MB 36.6s
+#7 sha256:b41621e272b0b306c196fabab6f5e0132d1c13f3c929bfb63455191fa509e311 6.29MB / 12.06MB 36.6s
+#7 sha256:2b70e040f7d132c8d366ee0223462552686510fb372ea5a83822973c30f19e36 29.34MB / 30.21MB 37.2s
+#7 sha256:b41621e272b0b306c196fabab6f5e0132d1c13f3c929bfb63455191fa509e311 7.34MB / 12.06MB 37.4s
+#7 sha256:2b70e040f7d132c8d366ee0223462552686510fb372ea5a83822973c30f19e36 30.21MB / 30.21MB 39.0s done
+#7 extracting sha256:2b70e040f7d132c8d366ee0223462552686510fb372ea5a83822973c30f19e36 0.1s
+#7 sha256:64074ecd150a3526f7ef1af3128b9186744abfb9dc3d1c3e87c11c1ea880cbd0 0B / 251B 39.1s
+#7 sha256:b41621e272b0b306c196fabab6f5e0132d1c13f3c929bfb63455191fa509e311 8.39MB / 12.06MB 39.3s
+#7 sha256:b41621e272b0b306c196fabab6f5e0132d1c13f3c929bfb63455191fa509e311 9.44MB / 12.06MB 40.0s
+#7 sha256:b41621e272b0b306c196fabab6f5e0132d1c13f3c929bfb63455191fa509e311 10.49MB / 12.06MB 40.1s
+#7 sha256:64074ecd150a3526f7ef1af3128b9186744abfb9dc3d1c3e87c11c1ea880cbd0 251B / 251B 40.1s
+#7 sha256:64074ecd150a3526f7ef1af3128b9186744abfb9dc3d1c3e87c11c1ea880cbd0 251B / 251B 40.3s done
+#7 sha256:b41621e272b0b306c196fabab6f5e0132d1c13f3c929bfb63455191fa509e311 11.53MB / 12.06MB 40.5s
+#7 sha256:b41621e272b0b306c196fabab6f5e0132d1c13f3c929bfb63455191fa509e311 12.06MB / 12.06MB 40.8s done
+#7 extracting sha256:2b70e040f7d132c8d366ee0223462552686510fb372ea5a83822973c30f19e36 1.7s done
+#7 extracting sha256:0922d1fc1a5f7baa280015c744bb0be989e6e146a9181c04d2971e1273416844
+#7 extracting sha256:0922d1fc1a5f7baa280015c744bb0be989e6e146a9181c04d2971e1273416844 0.0s done
+#7 extracting sha256:b41621e272b0b306c196fabab6f5e0132d1c13f3c929bfb63455191fa509e311 0.1s
+#7 extracting sha256:b41621e272b0b306c196fabab6f5e0132d1c13f3c929bfb63455191fa509e311 0.5s done
+#7 extracting sha256:64074ecd150a3526f7ef1af3128b9186744abfb9dc3d1c3e87c11c1ea880cbd0 done
+#7 DONE 41.5s
+
+#6 [cli verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 44.04MB / 50.02MB 41.5s
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 47.19MB / 50.02MB 42.7s
+#6 sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 50.02MB / 50.02MB 43.8s done
+#6 extracting sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 0.1s
+#6 extracting sha256:49e63a7271991470b0a9849dc0d952b2ca1c9f534475f4839c46af8807661ff3 1.2s done
+#6 extracting sha256:983c66c071395f3f0a95f10bb5f6207e7f2847cc45f0b2561e1157ab9eaed872
+#6 extracting sha256:983c66c071395f3f0a95f10bb5f6207e7f2847cc45f0b2561e1157ab9eaed872 0.0s done
+#6 extracting sha256:467306870dd09052af75210e4783437fa9d2e718b28c3ebe4fe1db92cf96f3d0 done
+#6 DONE 45.2s
+
+#8 [cli stage-1  2/18] COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+#8 DONE 0.5s
+
+#9 [cli stage-1  3/18] WORKDIR /otherwise
+#9 DONE 0.0s
+
+#10 [cli stage-1  4/18] COPY requirements.txt .
+#10 DONE 0.0s
+
+#11 [cli stage-1  5/18] RUN pip install --no-cache-dir -r requirements.txt
+#11 1.731 Collecting cryptography==46.0.3 (from -r requirements.txt (line 1))
+#11 1.936   Downloading cryptography-46.0.3-cp311-abi3-manylinux_2_34_aarch64.whl.metadata (5.7 kB)
+#11 2.192 Collecting pycryptodome==3.23.0 (from -r requirements.txt (line 2))
+#11 2.248   Downloading pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+#11 2.535 Collecting cffi>=2.0.0 (from cryptography==46.0.3->-r requirements.txt (line 1))
+#11 2.578   Downloading cffi-2.1.1-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (2.5 kB)
+#11 2.624 Collecting pycparser (from cffi>=2.0.0->cryptography==46.0.3->-r requirements.txt (line 1))
+#11 2.662   Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+#11 2.718 Downloading cryptography-46.0.3-cp311-abi3-manylinux_2_34_aarch64.whl (4.3 MB)
+#11 4.080    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 3.3 MB/s eta 0:00:00
+#11 4.125 Downloading pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.2 MB)
+#11 4.768    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 3.4 MB/s eta 0:00:00
+#11 4.816 Downloading cffi-2.1.1-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (222 kB)
+#11 4.963 Downloading pycparser-3.12-py3-none-any.whl (62 kB)
+#11 5.025 Installing collected packages: pycryptodome, pycparser, cffi, cryptography
+#11 5.499 Successfully installed cffi-2.1.1 cryptography-46.0.3 pycparser-3.12 pycryptodome-3.23.0
+#11 5.499 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#11 5.680 
+#11 5.680 [notice] A new release of pip is available: 25.0.1 -> 26.2.2
+#11 5.680 [notice] To update, run: pip install --upgrade pip
+#11 DONE 5.8s
+
+#12 [cli stage-1  6/18] COPY Engine Engine
+#12 DONE 0.0s
+
+#13 [cli stage-1  7/18] COPY Bounded Bounded
+#13 DONE 0.0s
+
+#14 [cli stage-1  8/18] COPY Available Available
+#14 DONE 0.0s
+
+#15 [cli stage-1  9/18] COPY Untrusted Untrusted
+#15 DONE 0.0s
+
+#16 [cli stage-1 10/18] COPY Honest Honest
+#16 DONE 0.0s
+
+#17 [cli stage-1 11/18] COPY Verifier Verifier
+#17 DONE 0.0s
+
+#18 [cli stage-1 12/18] COPY tests06 tests06
+#18 DONE 0.0s
+
+#19 [cli stage-1 13/18] COPY Missing Missing
+#19 DONE 0.0s
+
+#20 [cli stage-1 14/18] COPY tests07 tests07
+#20 DONE 0.0s
+
+#21 [cli stage-1 15/18] COPY scripts/conformance07.py scripts/conformance07.py
+#21 DONE 0.0s
+
+#22 [cli stage-1 16/18] COPY Protocol/vectors/generation07.json Protocol/vectors/generation07.json
+#22 DONE 0.0s
+
+#23 [cli stage-1 17/18] COPY scripts/conformance04.py scripts/conformance04.py
+#23 DONE 0.0s
+
+#24 [cli stage-1 18/18] COPY Protocol/vectors/generation04.json Protocol/vectors/generation04.json
+#24 DONE 0.0s
+
+#25 [cli] exporting to image
+#25 exporting layers
+#25 exporting layers 0.2s done
+#25 writing image sha256:4a37dee06a44d70a303b91caff76bcb23ac7978e8bf3e7962d339eb3822928a1 done
+#25 naming to docker.io/library/otherwise07-1793299141-64548-cli done
+#25 DONE 0.2s
+
+#26 [cli] resolving provenance for metadata file
+#26 DONE 0.1s

@@ -1,0 +1,35 @@
+ Volume "otherwise07-1793301444-70562_recovery"  Creating
+ Volume "otherwise07-1793301444-70562_recovery"  Created
+test_A_entire_custody_domain (test_missing.MissingPiece.test_A_entire_custody_domain) ... ok
+test_B_entire_authority_domain (test_missing.MissingPiece.test_B_entire_authority_domain) ... ok
+test_C_combined_collusion (test_missing.MissingPiece.test_C_combined_collusion) ... ok
+test_D_honest_release (test_missing.MissingPiece.test_D_honest_release) ... ok
+test_E_forged_decision (test_missing.MissingPiece.test_E_forged_decision) ... ok
+test_F_valid_arithmetic_invalid_authority (test_missing.MissingPiece.test_F_valid_arithmetic_invalid_authority) ... ok
+test_G_substitution (test_missing.MissingPiece.test_G_substitution) ... ok
+test_H_disarm_finality (test_missing.MissingPiece.test_H_disarm_finality) ... ok
+test_I_provisioning_exposure (test_missing.MissingPiece.test_I_provisioning_exposure) ... ok
+test_J_rotation_and_replacement (test_missing.MissingPiece.test_J_rotation_and_replacement) ... ok
+test_K_correlated_compromise (test_missing.MissingPiece.test_K_correlated_compromise) ... ok
+test_L_independent_recipient (test_missing.MissingPiece.test_L_independent_recipient) ... ok
+test_M_byzantine_collection (test_missing.MissingPiece.test_M_byzantine_collection) ... /usr/local/lib/python3.12/threading.py:299: ResourceWarning: unclosed <ssl.SSLSocket [closed] fd=3, family=2, type=1, proto=6>
+  def __enter__(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/local/lib/python3.12/threading.py:299: ResourceWarning: unclosed <ssl.SSLSocket [closed] fd=7, family=2, type=1, proto=6>
+  def __enter__(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_N_reorder_duplicate_and_deadline (test_missing.MissingPiece.test_N_reorder_duplicate_and_deadline) ... ok
+test_O_independent_journal_after_device_and_db_rollback (test_missing.MissingPiece.test_O_independent_journal_after_device_and_db_rollback) ... ok
+test_P_two_losses_and_recovery (test_missing.MissingPiece.test_P_two_losses_and_recovery) ... ok
+test_Q_holder_actual_crash (test_missing.MissingPiece.test_Q_holder_actual_crash) ... ok
+test_R_capability_negotiation_and_separation (test_missing.MissingPiece.test_R_capability_negotiation_and_separation) ... ok
+test_S_actual_standalone_creator_cli (test_missing.MissingPiece.test_S_actual_standalone_creator_cli) ... ok
+test_T_actual_independent_recipient_cli (test_missing.MissingPiece.test_T_actual_independent_recipient_cli) ... ok
+test_U_correlated_dealer_keys (test_missing.MissingPiece.test_U_correlated_dealer_keys) ... ok
+test_V_early_slot_closure_can_block_disarm (test_missing.MissingPiece.test_V_early_slot_closure_can_block_disarm) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 29.687s
+
+OK

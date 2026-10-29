@@ -1,0 +1,300 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [custodian2 internal] load build definition from Dockerfile
+#1 transferring dockerfile: 382B done
+#1 DONE 0.0s
+
+#2 [operator internal] load build definition from Dockerfile
+#2 transferring dockerfile: 382B done
+#2 DONE 0.0s
+
+#3 [demo internal] load build definition from Dockerfile
+#3 transferring dockerfile: 382B done
+#3 DONE 0.0s
+
+#4 [custodian1 internal] load build definition from Dockerfile
+#4 transferring dockerfile: 382B done
+#4 DONE 0.0s
+
+#5 [witness internal] load build definition from Dockerfile
+#5 transferring dockerfile: 382B done
+#5 DONE 0.0s
+
+#6 [bounded-tests internal] load build definition from Dockerfile
+#6 transferring dockerfile: 382B done
+#6 DONE 0.0s
+
+#7 [custodian3 internal] load build definition from Dockerfile
+#7 transferring dockerfile: 382B done
+#7 DONE 0.0s
+
+#8 [experiment internal] load build definition from Dockerfile
+#8 transferring dockerfile: 382B done
+#8 DONE 0.0s
+
+#9 [experiment internal] load metadata for docker.io/library/python:3.12-slim
+#9 DONE 0.6s
+
+#10 [custodian1 internal] load metadata for docker.io/library/node:22-bookworm-slim
+#10 DONE 0.6s
+
+#11 [experiment internal] load .dockerignore
+#11 transferring context: 338B done
+#11 DONE 0.0s
+
+#12 [demo internal] load .dockerignore
+#12 transferring context: 338B done
+#12 DONE 0.0s
+
+#13 [witness internal] load .dockerignore
+#13 transferring context: 338B done
+#13 DONE 0.0s
+
+#14 [bounded-tests internal] load .dockerignore
+#14 transferring context: 338B done
+#14 DONE 0.0s
+
+#15 [custodian2 internal] load .dockerignore
+#15 transferring context: 338B done
+#15 DONE 0.0s
+
+#16 [custodian1 verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#16 DONE 0.0s
+
+#17 [custodian1 stage-1 1/6] FROM docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159
+#17 DONE 0.0s
+
+#18 [operator internal] load .dockerignore
+#18 transferring context: 338B done
+#18 DONE 0.0s
+
+#19 [custodian3 internal] load .dockerignore
+#19 transferring context: 338B done
+#19 DONE 0.0s
+
+#20 [custodian1 internal] load .dockerignore
+#20 transferring context: 338B done
+#20 DONE 0.0s
+
+#21 [experiment internal] load build context
+#21 transferring context: 1.52MB 0.3s done
+#21 DONE 0.4s
+
+#22 [custodian1 internal] load build context
+#22 transferring context: 1.52MB 0.3s done
+#22 DONE 0.4s
+
+#23 [witness internal] load build context
+#23 transferring context: 1.52MB 0.3s done
+#23 DONE 0.4s
+
+#24 [bounded-tests internal] load build context
+#24 transferring context: 1.52MB 0.3s done
+#24 DONE 0.4s
+
+#25 [custodian2 internal] load build context
+#25 transferring context: 1.52MB 0.3s done
+#25 DONE 0.4s
+
+#26 [custodian3 internal] load build context
+#26 transferring context: 1.52MB 0.3s done
+#26 DONE 0.4s
+
+#27 [demo internal] load build context
+#27 transferring context: 1.52MB 0.3s done
+#27 DONE 0.4s
+
+#28 [operator internal] load build context
+#28 transferring context: 1.52MB 0.3s done
+#28 DONE 0.4s
+
+#29 [experiment stage-1 4/6] COPY requirements.txt .
+#29 CACHED
+
+#30 [experiment stage-1 2/6] COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+#30 CACHED
+
+#31 [experiment stage-1 3/6] WORKDIR /otherwise
+#31 CACHED
+
+#32 [demo stage-1 5/6] RUN pip install --no-cache-dir -r requirements.txt
+#32 CACHED
+
+#33 [operator stage-1 6/6] COPY . .
+#33 DONE 0.1s
+
+#34 [custodian3] exporting to image
+#34 exporting layers 0.0s done
+#34 writing image sha256:3b4eb67fed435237b54122df43a081fe8df266a8dba593a9cf9879183e4bbcdf 0.0s done
+#34 naming to docker.io/library/otherwise02-1793301077-68262-custodian3 done
+#34 DONE 0.0s
+
+#35 [demo] exporting to image
+#35 exporting layers 0.0s done
+#35 writing image sha256:b9f90ebdc91044b06a7b1aabe26d7e8cebe8a0827a4484e0dde40eec553f0ccd 0.0s done
+#35 naming to docker.io/library/otherwise02-1793301077-68262-demo done
+#35 DONE 0.1s
+
+#36 [experiment] exporting to image
+#36 exporting layers 0.0s done
+#36 writing image sha256:aa50c3313a164e18e0a43e8d4bba852da4f585f50175dd6da769893f72c97074 0.0s done
+#36 naming to docker.io/library/otherwise02-1793301077-68262-experiment 0.0s done
+#36 DONE 0.1s
+
+#37 [custodian2] exporting to image
+#37 exporting layers 0.0s done
+#37 writing image sha256:e3828036a92ffee4bec8c7c61f56f5e7899a11f402a19aeba41640aa7e202706 0.0s done
+#37 naming to docker.io/library/otherwise02-1793301077-68262-custodian2 0.0s done
+#37 DONE 0.1s
+
+#38 [operator] exporting to image
+#38 exporting layers 0.0s done
+#38 writing image sha256:102a8f1bd73e78ea1bc5a389e62bf7c85ecb1cdfcc2eb1a7d153b972ef36dc6f 0.0s done
+#38 naming to docker.io/library/otherwise02-1793301077-68262-operator 0.0s done
+#38 DONE 0.1s
+
+#39 [witness] exporting to image
+#39 exporting layers 0.0s done
+#39 writing image sha256:378a4c7ead0af6ad1e221a4e0cd8725f4406db26e09180e23884eac1253f2317 0.0s done
+#39 naming to docker.io/library/otherwise02-1793301077-68262-witness 0.0s done
+#39 DONE 0.1s
+
+#40 [custodian1] exporting to image
+#40 exporting layers 0.0s done
+#40 writing image sha256:838b89111d8ec81faf41158bd0d4b3be14ba77868ad0c4750d14002dc46d2e34 0.0s done
+#40 naming to docker.io/library/otherwise02-1793301077-68262-custodian1 0.0s done
+#40 DONE 0.1s
+
+#41 [bounded-tests] exporting to image
+#41 exporting layers 0.0s done
+#41 writing image sha256:02ca7bb972c81962e93b067c24bed0e6033c3767b324d81c77bd60adf738960a 0.0s done
+#41 naming to docker.io/library/otherwise02-1793301077-68262-bounded-tests 0.0s done
+#41 DONE 0.1s
+
+#42 [demo] resolving provenance for metadata file
+#42 DONE 0.1s
+
+#43 [custodian2] resolving provenance for metadata file
+#43 DONE 0.0s
+
+#44 [bounded-tests] resolving provenance for metadata file
+#44 DONE 0.1s
+
+#45 [operator] resolving provenance for metadata file
+#45 DONE 0.0s
+
+#46 [witness] resolving provenance for metadata file
+#46 DONE 0.1s
+
+#47 [custodian3] resolving provenance for metadata file
+#47 DONE 0.1s
+
+#48 [experiment] resolving provenance for metadata file
+#48 DONE 0.0s
+
+#49 [custodian1] resolving provenance for metadata file
+#49 DONE 0.0s
+test_A_last_second_witness (test_experiments.Experiments.test_A_last_second_witness) ... ok
+test_B_competing_executors (test_experiments.Experiments.test_B_competing_executors) ... ok
+test_C_forgotten_receipt (test_experiments.Experiments.test_C_forgotten_receipt) ... ok
+test_D_dead_scheduler (test_experiments.Experiments.test_D_dead_scheduler) ... ok
+test_E_double_release (test_experiments.Experiments.test_E_double_release) ... ok
+test_F_emergency_disarm (test_experiments.Experiments.test_F_emergency_disarm) ... ok
+test_G_broken_clock (test_experiments.Experiments.test_G_broken_clock) ... ok
+test_H_corrupted_history (test_experiments.Experiments.test_H_corrupted_history) ... ok
+test_I_unreachable_creator (test_experiments.Experiments.test_I_unreachable_creator) ... ok
+test_J_independent_interpretation (test_experiments.Experiments.test_J_independent_interpretation) ... ok
+test_K_two_of_three_reordered_duplicates_contradictions (test_experiments.Experiments.test_K_two_of_three_reordered_duplicates_contradictions) ... ok
+test_L_revocation_expiry_stale_and_scope (test_experiments.Experiments.test_L_revocation_expiry_stale_and_scope) ... ok
+test_M_policy_immutability_and_expression_validation (test_experiments.Experiments.test_M_policy_immutability_and_expression_validation) ... ok
+test_N_authenticated_encryption (test_experiments.Experiments.test_N_authenticated_encryption) ... ok
+test_O_grace_cannot_bridge_truth_gap (test_experiments.Experiments.test_O_grace_cannot_bridge_truth_gap) ... ok
+test_P_deadline_concurrent_presence (test_experiments.Experiments.test_P_deadline_concurrent_presence) ... ok
+test_Q_same_authority_scoped_to_multiple_contracts (test_experiments.Experiments.test_Q_same_authority_scoped_to_multiple_contracts) ... ok
+test_R_recovery_does_not_clear_other_owners_latch (test_experiments.Experiments.test_R_recovery_does_not_clear_other_owners_latch) ... ok
+test_S_composed_contract_adversarial_matrix (test_experiments.Experiments.test_S_composed_contract_adversarial_matrix) ... ok
+test_T_evidence_domain_and_schema_separation (test_experiments.Experiments.test_T_evidence_domain_and_schema_separation) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 9.580s
+
+OK
+ Network otherwise02-1793301077-68262_custody  Creating
+ Network otherwise02-1793301077-68262_custody  Created
+ Volume "otherwise02-1793301077-68262_custodian3-state"  Creating
+ Volume "otherwise02-1793301077-68262_custodian3-state"  Created
+ Volume "otherwise02-1793301077-68262_custodian1-state"  Creating
+ Volume "otherwise02-1793301077-68262_custodian1-state"  Created
+ Volume "otherwise02-1793301077-68262_custodian2-state"  Creating
+ Volume "otherwise02-1793301077-68262_custodian2-state"  Created
+ Volume "otherwise02-1793301077-68262_witness-state"  Creating
+ Volume "otherwise02-1793301077-68262_witness-state"  Created
+ Volume "otherwise02-1793301077-68262_operator-state"  Creating
+ Volume "otherwise02-1793301077-68262_operator-state"  Created
+ Container otherwise02-1793301077-68262-custodian1-1  Creating
+ Container otherwise02-1793301077-68262-custodian3-1  Creating
+ Container otherwise02-1793301077-68262-operator-1  Creating
+ Container otherwise02-1793301077-68262-custodian2-1  Creating
+ Container otherwise02-1793301077-68262-witness-1  Creating
+ Container otherwise02-1793301077-68262-witness-1  Created
+ Container otherwise02-1793301077-68262-custodian3-1  Created
+ Container otherwise02-1793301077-68262-operator-1  Created
+ Container otherwise02-1793301077-68262-custodian2-1  Created
+ Container otherwise02-1793301077-68262-custodian1-1  Created
+ Container otherwise02-1793301077-68262-witness-1  Starting
+ Container otherwise02-1793301077-68262-operator-1  Starting
+ Container otherwise02-1793301077-68262-custodian1-1  Starting
+ Container otherwise02-1793301077-68262-custodian3-1  Starting
+ Container otherwise02-1793301077-68262-custodian2-1  Starting
+ Container otherwise02-1793301077-68262-custodian1-1  Started
+ Container otherwise02-1793301077-68262-witness-1  Started
+ Container otherwise02-1793301077-68262-custodian3-1  Started
+ Container otherwise02-1793301077-68262-custodian2-1  Started
+ Container otherwise02-1793301077-68262-operator-1  Started
+test_M_real_clock_and_faults (test_bounded.ClockAndDurability.test_M_real_clock_and_faults) ... ok
+test_N_process_crashes_at_payload_and_database_boundaries (test_bounded.ClockAndDurability.test_N_process_crashes_at_payload_and_database_boundaries) ... ok
+test_O_real_observation_pause_and_recovery (test_bounded.ClockAndDurability.test_O_real_observation_pause_and_recovery) ... ok
+test_P_clock_interval_and_restored_state (test_bounded.ClockAndDurability.test_P_clock_interval_and_restored_state) ... ok
+test_Q_recovery_signatures_bind_current_head (test_bounded.ClockAndDurability.test_Q_recovery_signatures_bind_current_head) ... ok
+test_A_compromised_operator (test_bounded.CustodyExperiments.test_A_compromised_operator) ... ok
+test_B_forged_release (test_bounded.CustodyExperiments.test_B_forged_release) ... ok
+test_C_replayed_authorisation (test_bounded.CustodyExperiments.test_C_replayed_authorisation) ... ok
+test_D_missing_custodian (test_bounded.CustodyExperiments.test_D_missing_custodian) ... ok
+test_E_colluding_custodians_bypass_policy (test_bounded.CustodyExperiments.test_E_colluding_custodians_bypass_policy) ... ok
+test_F_rewritten_history (test_bounded.CustodyExperiments.test_F_rewritten_history) ... ok
+test_G_solo_witness_lifecycle (test_bounded.CustodyExperiments.test_G_solo_witness_lifecycle) ... ok
+test_H_council_policy_and_custody_are_distinct (test_bounded.CustodyExperiments.test_H_council_policy_and_custody_are_distinct) ... ok
+test_I_emergency_disarm_and_irrevocability (test_bounded.CustodyExperiments.test_I_emergency_disarm_and_irrevocability) ... ok
+test_J_broken_authority_and_compromised_witness (test_bounded.CustodyExperiments.test_J_broken_authority_and_compromised_witness) ... ok
+test_K_lost_witness_ack_and_incomplete_provisioning (test_bounded.CustodyExperiments.test_K_lost_witness_ack_and_incomplete_provisioning) ... ok
+test_L_enrollment_ack_loss (test_bounded.CustodyExperiments.test_L_enrollment_ack_loss) ... ok
+test_M_recovery_isolation_at_witness (test_bounded.CustodyExperiments.test_M_recovery_isolation_at_witness) ... ok
+test_N_prepared_authorisation_is_not_external_permission (test_bounded.CustodyExperiments.test_N_prepared_authorisation_is_not_external_permission) ... ok
+test_O_custodians_retain_pre_release_history (test_bounded.CustodyExperiments.test_O_custodians_retain_pre_release_history) ... ok
+test_P_grace_starts_at_latest_possible_observation (test_bounded.CustodyExperiments.test_P_grace_starts_at_latest_possible_observation) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 3.904s
+
+OK
+OBSERVED LIMIT: two compromised custodians decrypt before authorisation.
+Solo: check-in, missed obligation, grace, release, disarm and owner recovery completed; no second human.
+OBSERVED LIMIT: compromised operator + previously trusted witness can fabricate a complete absence history unseen by custodians.
+Fixed signed vectors: 14
+Generated nested/adversarial snapshots: 180
+Python / JavaScript disagreements: 0
+Duplicate-key parser rejection: both implementations
+Conformance OK
+Solo Witness: AUTHORISED -> two independent custody responses -> synthetic recipient -> RELEASED
+Policy contract count: 1 Custody threshold: 2 of 3 Audit facts: 13
+Witnessed decision: e49e0378b2849f48e45d73d400e61f3af684b5c9a72b4c7282fbc00b2e6ec10b
+Operator key files: 0
+Council: AUTHORISED -> two independent custody responses -> synthetic recipient -> RELEASED
+Policy contract count: 3 Custody threshold: 2 of 3 Audit facts: 15
+Witnessed decision: 0cfedc35b977e43590b03d71ab97154dac94740ce4295f3fdeaa0172c82ca94a
+Operator key files: 0
+3.12.16 (main, Oct 28 2026, 02:07:05) [GCC 14.2.0]
+SQLite 3.46.1
+cryptography 46.0.3
+PyCryptodome 3.23.0
+v22.23.4

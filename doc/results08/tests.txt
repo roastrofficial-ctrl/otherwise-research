@@ -1,0 +1,26 @@
+ Volume "otherwise08-1793302788-75039_recovery"  Creating
+ Volume "otherwise08-1793302788-75039_recovery"  Created
+test_A_historical_window_final_disarm_succeeds (test_finality.FinalityLab.test_A_historical_window_final_disarm_succeeds) ... ok
+test_B_before_commitment (test_finality.FinalityLab.test_B_before_commitment) ... ok
+test_C_after_commitment (test_finality.FinalityLab.test_C_after_commitment) ... ok
+test_D_opposite_delivery_orders (test_finality.FinalityLab.test_D_opposite_delivery_orders) ... ok
+test_E_partition_then_view_change (test_finality.FinalityLab.test_E_partition_then_view_change) ... ok
+test_F_pending_lock_not_a_cancellation_ack (test_finality.FinalityLab.test_F_pending_lock_not_a_cancellation_ack) ... ok
+test_G_delayed_presence (test_finality.FinalityLab.test_G_delayed_presence) ... ok
+test_H_forged_saas_and_direct_path (test_finality.FinalityLab.test_H_forged_saas_and_direct_path) ... ok
+test_I_J_actual_restart_and_membership (test_finality.FinalityLab.test_I_J_actual_restart_and_membership) ... ok
+test_K_L_split_and_combined (test_finality.FinalityLab.test_K_L_split_and_combined) ... ok
+test_M_N_creator_gone_offline_recipient (test_finality.FinalityLab.test_M_N_creator_gone_offline_recipient) ... ok
+test_O_rollback_and_conflicting_proofs (test_finality.FinalityLab.test_O_rollback_and_conflicting_proofs) ... ok
+test_P_malformed_crypto_quorums (test_finality.FinalityLab.test_P_malformed_crypto_quorums) ... ok
+test_Q_provisioning_related_entropy_and_commitments (test_finality.FinalityLab.test_Q_provisioning_related_entropy_and_commitments) ... ok
+test_R_vote_fsync_crashes (test_finality.FinalityLab.test_R_vote_fsync_crashes) ... ok
+test_S_stale_status_and_creator_cli (test_finality.FinalityLab.test_S_stale_status_and_creator_cli) ... ok
+test_T_byzantine_view_change_does_not_poison_quorum (test_finality.FinalityLab.test_T_byzantine_view_change_does_not_poison_quorum) ... ok
+test_U_committed_release_survives_all_witness_routes_lost (test_finality.FinalityLab.test_U_committed_release_survives_all_witness_routes_lost) ... ok
+test_V_no_policy_only_or_cross_commitment_release (test_finality.FinalityLab.test_V_no_policy_only_or_cross_commitment_release) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 15.976s
+
+OK

@@ -1,0 +1,108 @@
+x-node: &node
+  build: {context: ., dockerfile: Dockerfile.protocol08}
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  tmpfs: [/tmp]
+  networks: [protocol]
+  restart: on-failure
+  environment: &env
+    CLOCK_MODE: test
+    LAB_FAULTS: '1'
+    BOOTSTRAP_TOKEN: ${OTHERWISE_05_FAULT_TOKEN:?bootstrap lab05 first}
+    SSL_CERT_FILE: /tls/ca.pem
+    TLS_CERT: /tls/server.pem
+    TLS_KEY: /tls/server.key
+    WITNESSES: https://aw1:8080,https://aw2:8080,https://aw3:8080,https://aw4:8080
+services:
+  aw1:
+    <<: *node
+    command: [python, -m, LastWord.witness]
+    environment: {<<: *env, INDEX: '1', ROLE: witness, DOMAIN: witness}
+    volumes: [aw1:/state, ./.tls08/aw1.pem:/tls/server.pem:ro, ./.tls08/aw1.key:/tls/server.key:ro, ./.tls08/ca.pem:/tls/ca.pem:ro]
+  aw2:
+    <<: *node
+    command: [python, -m, LastWord.witness]
+    environment: {<<: *env, INDEX: '2', ROLE: witness, DOMAIN: witness}
+    volumes: [aw2:/state, ./.tls08/aw2.pem:/tls/server.pem:ro, ./.tls08/aw2.key:/tls/server.key:ro, ./.tls08/ca.pem:/tls/ca.pem:ro]
+  aw3:
+    <<: *node
+    command: [python, -m, LastWord.witness]
+    environment: {<<: *env, INDEX: '3', ROLE: witness, DOMAIN: witness}
+    volumes: [aw3:/state, ./.tls08/aw3.pem:/tls/server.pem:ro, ./.tls08/aw3.key:/tls/server.key:ro, ./.tls08/ca.pem:/tls/ca.pem:ro]
+  aw4:
+    <<: *node
+    command: [python, -m, LastWord.witness]
+    environment: {<<: *env, INDEX: '4', ROLE: witness, DOMAIN: witness}
+    volumes: [aw4:/state, ./.tls08/aw4.pem:/tls/server.pem:ro, ./.tls08/aw4.key:/tls/server.key:ro, ./.tls08/ca.pem:/tls/ca.pem:ro]
+  ak1:
+    <<: *node
+    command: [python, -m, LastWord.service]
+    environment: {<<: *env, INDEX: '1', ROLE: custody, DOMAIN: custody}
+    volumes: [ak1:/state, ./.tls08/ak1.pem:/tls/server.pem:ro, ./.tls08/ak1.key:/tls/server.key:ro, ./.tls08/ca.pem:/tls/ca.pem:ro]
+  ak2:
+    <<: *node
+    command: [python, -m, LastWord.service]
+    environment: {<<: *env, INDEX: '2', ROLE: custody, DOMAIN: custody}
+    volumes: [ak2:/state, ./.tls08/ak2.pem:/tls/server.pem:ro, ./.tls08/ak2.key:/tls/server.key:ro, ./.tls08/ca.pem:/tls/ca.pem:ro]
+  ak3:
+    <<: *node
+    command: [python, -m, LastWord.service]
+    environment: {<<: *env, INDEX: '3', ROLE: custody, DOMAIN: custody}
+    volumes: [ak3:/state, ./.tls08/ak3.pem:/tls/server.pem:ro, ./.tls08/ak3.key:/tls/server.key:ro, ./.tls08/ca.pem:/tls/ca.pem:ro]
+  aa1:
+    <<: *node
+    command: [python, -m, LastWord.service]
+    environment: {<<: *env, INDEX: '1', ROLE: authority, DOMAIN: authority}
+    volumes: [aa1:/state, ./.tls08/aa1.pem:/tls/server.pem:ro, ./.tls08/aa1.key:/tls/server.key:ro, ./.tls08/ca.pem:/tls/ca.pem:ro]
+  aa2:
+    <<: *node
+    command: [python, -m, LastWord.service]
+    environment: {<<: *env, INDEX: '2', ROLE: authority, DOMAIN: authority}
+    volumes: [aa2:/state, ./.tls08/aa2.pem:/tls/server.pem:ro, ./.tls08/aa2.key:/tls/server.key:ro, ./.tls08/ca.pem:/tls/ca.pem:ro]
+  aa3:
+    <<: *node
+    command: [python, -m, LastWord.service]
+    environment: {<<: *env, INDEX: '3', ROLE: authority, DOMAIN: authority}
+    volumes: [aa3:/state, ./.tls08/aa3.pem:/tls/server.pem:ro, ./.tls08/aa3.key:/tls/server.key:ro, ./.tls08/ca.pem:/tls/ca.pem:ro]
+  cli:
+    <<: *node
+    restart: 'no'
+    environment:
+      SSL_CERT_FILE: /tls/ca.pem
+      WITNESSES: https://aw1:8080,https://aw2:8080,https://aw3:8080,https://aw4:8080
+      CUSTODIANS: https://ak1:8080,https://ak2:8080,https://ak3:8080
+      AUTHORITIES: https://aa1:8080,https://aa2:8080,https://aa3:8080
+      OTHERWISE_05_FAULT_TOKEN: ${OTHERWISE_05_FAULT_TOKEN}
+      OTHERWISE_CREATOR_PASSPHRASE: ${OTHERWISE_05_CREATOR_PASSPHRASE}
+    volumes: [recovery:/recovery, ./.tls08/ca.pem:/tls/ca.pem:ro]
+    command: [python, -m, unittest, discover, -s, tests08, -v]
+  recipient:
+    build: {context: ., dockerfile: Dockerfile.protocol08}
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: [/tmp]
+    environment:
+      OTHERWISE_CREATOR_PASSPHRASE: ${OTHERWISE_05_CREATOR_PASSPHRASE}
+    volumes: [recovery:/recovery:ro]
+    command: [python, -m, LastWord.recipient, --vault, /recovery/recipient08.ovault, --package, /recovery/portable08.json]
+
+networks:
+  protocol:
+    internal: true
+    ipam:
+      config: [{subnet: '${OTHERWISE_08_SUBNET:-10.208.8.0/24}'}]
+volumes:
+  aw1:
+  aw2:
+  aw3:
+  aw4:
+  ak1:
+  ak2:
+  ak3:
+  aa1:
+  aa2:
+  aa3:
+  recovery:

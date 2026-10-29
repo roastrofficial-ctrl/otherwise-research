@@ -76,3 +76,7 @@ The early static-quorum reconstruction attack remains successful. [Concrete alte
 ## Generation 0.7 — the missing capability
 
 [Research comparison and primary literature](doc/generation07/RESEARCH-0.7.md) cover separate versus witness-held capability, layered encryption, split keys, MPC, proofs, ABE/FE and witness encryption. The selected reference composition requires independently wrapped XOR components from both domains. A signature/proof alone is not a missing secret. [The executive examination](doc/generation07/EXECUTIVE-0.7.md) distinguishes one-domain protection, combined collusion and trusted-dealer/administrative independence. No time-dependent release primitive or PorterNet integration is introduced.
+
+## Generation 0.8 — finality is permission, not a secret
+
+[Model comparison and primary references](doc/generation08/RESEARCH-0.8.md) select authoritative consensus authorisation as the irreversible boundary. [Retained attacks](doc/generation08/FINALITY-LAB-0.8.md) show that combined domains or correlated provisioning still decrypt without any such certificate. Honest holders require v8 terminal finality; cryptographically missing independent capability remains a separate assumption from software policy enforcement.

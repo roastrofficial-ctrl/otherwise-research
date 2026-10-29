@@ -1,0 +1,362 @@
+ Volume "otherwise08-1793299931-65787_recovery"  Creating
+ Volume "otherwise08-1793299931-65787_recovery"  Created
+test_A_historical_window_final_disarm_succeeds (test_finality.FinalityLab.test_A_historical_window_final_disarm_succeeds) ... ok
+test_B_before_commitment (test_finality.FinalityLab.test_B_before_commitment) ... ERROR
+test_C_after_commitment (test_finality.FinalityLab.test_C_after_commitment) ... ERROR
+test_D_opposite_delivery_orders (test_finality.FinalityLab.test_D_opposite_delivery_orders) ... ERROR
+test_E_partition_then_view_change (test_finality.FinalityLab.test_E_partition_then_view_change) ... ERROR
+test_F_pending_lock_not_a_cancellation_ack (test_finality.FinalityLab.test_F_pending_lock_not_a_cancellation_ack) ... ERROR
+test_G_delayed_presence (test_finality.FinalityLab.test_G_delayed_presence) ... ERROR
+test_H_forged_saas_and_direct_path (test_finality.FinalityLab.test_H_forged_saas_and_direct_path) ... ERROR
+test_I_J_actual_restart_and_membership (test_finality.FinalityLab.test_I_J_actual_restart_and_membership) ... ERROR
+test_K_L_split_and_combined (test_finality.FinalityLab.test_K_L_split_and_combined) ... ERROR
+test_M_N_creator_gone_offline_recipient (test_finality.FinalityLab.test_M_N_creator_gone_offline_recipient) ... ERROR
+test_O_rollback_and_conflicting_proofs (test_finality.FinalityLab.test_O_rollback_and_conflicting_proofs) ... FAIL
+test_P_malformed_crypto_quorums (test_finality.FinalityLab.test_P_malformed_crypto_quorums) ... ERROR
+
+======================================================================
+ERROR: test_B_before_commitment (test_finality.FinalityLab.test_B_before_commitment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests08/test_finality.py", line 39, in test_B_before_commitment
+    lab=self.lab(k,td);fin=lab.round(d);self.assertEqual(finality(k['custody08'],fin)['kind'],'DISARM');self.assertIsNone(lab.round(r));record_case('B: disarm ordered before release','Prevented',{'release_policy_proof':ev,'terminal':None},lab.trace,{'finality':fin,'release_allowed':False})
+                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/otherwise/tests08/test_finality.py", line 16, in record_case
+    atomic_json('/recovery/finality08.json',LEDGER)
+  File "/otherwise/Bounded/wire.py", line 26, in atomic_json
+    f.write(canonical(value)); f.flush(); os.fsync(f.fileno())
+            ^^^^^^^^^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 22, in canonical
+    check(value)
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 21, in check
+    else: raise ValueError('unsupported wire type')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: unsupported wire type
+
+======================================================================
+ERROR: test_C_after_commitment (test_finality.FinalityLab.test_C_after_commitment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests08/test_finality.py", line 44, in test_C_after_commitment
+    record_case('C: disarm after release commitment','Successful',{'registry':k['custody08']},[{'event':'release consensus'},{'event':'late owner disarm rejected'},{'event':'cryptographic disclosure'}],{'finality':fin,'package':package})
+  File "/otherwise/tests08/test_finality.py", line 16, in record_case
+    atomic_json('/recovery/finality08.json',LEDGER)
+  File "/otherwise/Bounded/wire.py", line 26, in atomic_json
+    f.write(canonical(value)); f.flush(); os.fsync(f.fileno())
+            ^^^^^^^^^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 22, in canonical
+    check(value)
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 21, in check
+    else: raise ValueError('unsupported wire type')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: unsupported wire type
+
+======================================================================
+ERROR: test_D_opposite_delivery_orders (test_finality.FinalityLab.test_D_opposite_delivery_orders)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests08/test_finality.py", line 54, in test_D_opposite_delivery_orders
+    record_case('D: opposite delivery / equivocation','Prevented',{'registry':k['custody08'],'byzantine':1},lab.trace,{'only_compatible_finality':fin,'new_view_preserves':digest(r)})
+  File "/otherwise/tests08/test_finality.py", line 16, in record_case
+    atomic_json('/recovery/finality08.json',LEDGER)
+  File "/otherwise/Bounded/wire.py", line 26, in atomic_json
+    f.write(canonical(value)); f.flush(); os.fsync(f.fileno())
+            ^^^^^^^^^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 22, in canonical
+    check(value)
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 21, in check
+    else: raise ValueError('unsupported wire type')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: unsupported wire type
+
+======================================================================
+ERROR: test_E_partition_then_view_change (test_finality.FinalityLab.test_E_partition_then_view_change)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests08/test_finality.py", line 61, in test_E_partition_then_view_change
+    self.assertIsNone(lab.event(3,'prepare',pr));record_case('E: 2/2 partition and healing','Recoverable',{'partition':[[1,2],[3,4]],'registry':k['custody08']},lab.trace,{'during_partition':'NO_DECISION','after_heal':fin})
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/otherwise/tests08/test_finality.py", line 16, in record_case
+    atomic_json('/recovery/finality08.json',LEDGER)
+  File "/otherwise/Bounded/wire.py", line 26, in atomic_json
+    f.write(canonical(value)); f.flush(); os.fsync(f.fileno())
+            ^^^^^^^^^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 22, in canonical
+    check(value)
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 21, in check
+    else: raise ValueError('unsupported wire type')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: unsupported wire type
+
+======================================================================
+ERROR: test_F_pending_lock_not_a_cancellation_ack (test_finality.FinalityLab.test_F_pending_lock_not_a_cancellation_ack)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests08/test_finality.py", line 68, in test_F_pending_lock_not_a_cancellation_ack
+    self.assertEqual(finality(k['custody08'],fin)['kind'],'RELEASE');record_case('F: pending prepared locks constrain cancellation','Detected',{'registry':k['custody08'],'certificate_known_to_creator':False},lab.trace,{'outcome':fin,'meaning':'a submitted disarm before certificate delivery is not guaranteed to win; Model A, not last-packet priority'})
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/otherwise/tests08/test_finality.py", line 16, in record_case
+    atomic_json('/recovery/finality08.json',LEDGER)
+  File "/otherwise/Bounded/wire.py", line 26, in atomic_json
+    f.write(canonical(value)); f.flush(); os.fsync(f.fileno())
+            ^^^^^^^^^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 22, in canonical
+    check(value)
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 21, in check
+    else: raise ValueError('unsupported wire type')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: unsupported wire type
+
+======================================================================
+ERROR: test_G_delayed_presence (test_finality.FinalityLab.test_G_delayed_presence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests08/test_finality.py", line 74, in test_G_delayed_presence
+    record_case('G: delayed accepted vs locally created presence','Recoverable',{'accepted_manifest':k['manifest'],'local_only_manifest':never['manifest']},[{'event':'three durable observations before cutoff, copied later','receipts':receipts},{'event':'separate proof never submitted','proof':local}],{'accepted_prevents_policy':True,'never_submitted_does_not':True})
+  File "/otherwise/tests08/test_finality.py", line 16, in record_case
+    atomic_json('/recovery/finality08.json',LEDGER)
+  File "/otherwise/Bounded/wire.py", line 26, in atomic_json
+    f.write(canonical(value)); f.flush(); os.fsync(f.fileno())
+            ^^^^^^^^^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 22, in canonical
+    check(value)
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 21, in check
+    else: raise ValueError('unsupported wire type')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: unsupported wire type
+
+======================================================================
+ERROR: test_H_forged_saas_and_direct_path (test_finality.FinalityLab.test_H_forged_saas_and_direct_path)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests08/test_finality.py", line 80, in test_H_forged_saas_and_direct_path
+    record_case('H: SaaS censorship / false acknowledgement','Recoverable',{'registry':k['custody08'],'operator_has':'public data only'},[{'event':'drop signed disarm; fabricate success','reply':stale},{'event':'independent direct submission'}],{'direct_result':result,'censorship':'not prevented; direct path required','stale_nonce':'fresh signed status challenge required'})
+  File "/otherwise/tests08/test_finality.py", line 16, in record_case
+    atomic_json('/recovery/finality08.json',LEDGER)
+  File "/otherwise/Bounded/wire.py", line 26, in atomic_json
+    f.write(canonical(value)); f.flush(); os.fsync(f.fileno())
+            ^^^^^^^^^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 22, in canonical
+    check(value)
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 21, in check
+    else: raise ValueError('unsupported wire type')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: unsupported wire type
+
+======================================================================
+ERROR: test_I_J_actual_restart_and_membership (test_finality.FinalityLab.test_I_J_actual_restart_and_membership)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests08/test_finality.py", line 89, in test_I_J_actual_restart_and_membership
+    record_case('I/J: durable crash recovery and frozen membership','Recoverable',{'registry':k['custody08'],'fin':fin},[{'event':'actual process exit after terminal commit'},{'event':'fresh three-peer recovery without owner signature'},{'event':'attempt epoch2 during pending/committed instance'}],{'recovered':repaired,'replacement':'rejected; no unsafe hot-swap'})
+  File "/otherwise/tests08/test_finality.py", line 16, in record_case
+    atomic_json('/recovery/finality08.json',LEDGER)
+  File "/otherwise/Bounded/wire.py", line 26, in atomic_json
+    f.write(canonical(value)); f.flush(); os.fsync(f.fileno())
+            ^^^^^^^^^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 22, in canonical
+    check(value)
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 21, in check
+    else: raise ValueError('unsupported wire type')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: unsupported wire type
+
+======================================================================
+ERROR: test_K_L_split_and_combined (test_finality.FinalityLab.test_K_L_split_and_combined)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests08/test_finality.py", line 101, in test_K_L_split_and_combined
+    record_case('K/L: custody-only vs combined collusion','Successful',{'registry':k['custody08'],'policy_satisfied':False},[{'event':'extract all custody secrets: recover A only'},{'event':'extract authority threshold: recover B and bypass ordering'}],{'custody_alone':'insufficient','combined_plaintext':plain.hex(),'finality_certificate':None})
+  File "/otherwise/tests08/test_finality.py", line 16, in record_case
+    atomic_json('/recovery/finality08.json',LEDGER)
+  File "/otherwise/Bounded/wire.py", line 26, in atomic_json
+    f.write(canonical(value)); f.flush(); os.fsync(f.fileno())
+            ^^^^^^^^^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 22, in canonical
+    check(value)
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 21, in check
+    else: raise ValueError('unsupported wire type')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: unsupported wire type
+
+======================================================================
+ERROR: test_M_N_creator_gone_offline_recipient (test_finality.FinalityLab.test_M_N_creator_gone_offline_recipient)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests08/test_finality.py", line 113, in test_M_N_creator_gone_offline_recipient
+    record_case('M/N: creator absent and returns after disclosure','Recoverable',{'registry':k['custody08'],'worker_secrets':'no creator or recipient secret'},[{'event':'policy evidence and terminal consensus relayed by independent worker'},{'event':'recipient verifies portable package offline'},{'event':'late disarm cannot undo plaintext'}],{'finality':fin,'package':package,'plaintext':out['plaintext'],'revocation':'cannot erase knowledge'})
+  File "/otherwise/tests08/test_finality.py", line 16, in record_case
+    atomic_json('/recovery/finality08.json',LEDGER)
+  File "/otherwise/Bounded/wire.py", line 26, in atomic_json
+    f.write(canonical(value)); f.flush(); os.fsync(f.fileno())
+            ^^^^^^^^^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 22, in canonical
+    check(value)
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 21, in check
+    else: raise ValueError('unsupported wire type')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: unsupported wire type
+
+======================================================================
+ERROR: test_P_malformed_crypto_quorums (test_finality.FinalityLab.test_P_malformed_crypto_quorums)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests08/test_finality.py", line 127, in test_P_malformed_crypto_quorums
+    record_case('P: correctly signed invalid partial minority','Recoverable',{'registry':k['custody08']},[{'event':'one holder in each domain signs an encrypted invalid proof'}],out)
+  File "/otherwise/tests08/test_finality.py", line 16, in record_case
+    atomic_json('/recovery/finality08.json',LEDGER)
+  File "/otherwise/Bounded/wire.py", line 26, in atomic_json
+    f.write(canonical(value)); f.flush(); os.fsync(f.fileno())
+            ^^^^^^^^^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 22, in canonical
+    check(value)
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 16, in check
+    for v in x: check(v)
+                ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 20, in check
+    check(k); check(v)
+              ^^^^^^^^
+  File "/otherwise/Engine/protocol.py", line 21, in check
+    else: raise ValueError('unsupported wire type')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: unsupported wire type
+
+======================================================================
+FAIL: test_O_rollback_and_conflicting_proofs (test_finality.FinalityLab.test_O_rollback_and_conflicting_proofs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests08/test_finality.py", line 118, in test_O_rollback_and_conflicting_proofs
+    self.assertIsNotNone(lab.recover(4,[1,2,3]));self.assertEqual(lab.nodes[4].s['terminal']['value'],r);self.assertIsNone(lab.round(d,1,changes=[]))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None
+
+----------------------------------------------------------------------
+Ran 13 tests in 9.682s
+
+FAILED (failures=1, errors=11)

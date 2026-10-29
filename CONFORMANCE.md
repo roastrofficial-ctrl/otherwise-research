@@ -101,3 +101,7 @@ Run `scripts/experiment05.sh`: hostile actual Laravel/courier responses, indepen
 ## Generation 0.7
 
 `./scripts/experiment07.sh` runs 22 new attack/recovery/client methods and actual stopped-witness recovery. The [new public corpus](Protocol/vectors/generation07.json) contains 23 signed proof/context objects and strict-parser negatives, independently evaluated by Python and `Missing/verifier.mjs`. The verifier stays outside legacy source inventories. `python3 scripts/regression07.py` reruns all 109 methods from 0.1–0.6 and their successful attacks without changing old result directories or expected source fingerprints. [Evidence and limitations](doc/generation07/ATTACK-LAB-0.7.md).
+
+## Generation 0.8
+
+`./scripts/experiment08.sh` runs the new finality/race/creator/recipient tests; `python3 scripts/regression08.py` retains and reruns Generations 0.1–0.7. The new [fixed corpus](Protocol/vectors/generation08.json) has21 finality objects (6positive/15negative), independently checked by Python and `LastWord/verifier.mjs`. The finite two-view model checks58,880 transitions and retains a broken-view-change fork; this is not a refinement proof or full liveness proof. [Exact evidence](doc/generation08/FINALITY-LAB-0.8.md).

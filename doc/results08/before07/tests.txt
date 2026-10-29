@@ -1,0 +1,9 @@
+ Volume "otherwise07-1793299141-64548_recovery"  Creating
+ Volume "otherwise07-1793299141-64548_recovery"  Created
+test_V_early_slot_closure_can_block_disarm (test_missing.MissingPiece.test_V_early_slot_closure_can_block_disarm) ... ok
+test_U_correlated_dealer_keys (test_missing.MissingPiece.test_U_correlated_dealer_keys) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.446s
+
+OK

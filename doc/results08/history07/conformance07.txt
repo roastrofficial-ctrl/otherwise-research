@@ -1,0 +1,8 @@
+{
+  "signed_proof_vectors": 23,
+  "valid": 6,
+  "negative": 17,
+  "parser_negatives": 3,
+  "Python_Node_disagreements": 0,
+  "scope": "individual signed arithmetic/context; full lifecycle policy checked separately"
+}

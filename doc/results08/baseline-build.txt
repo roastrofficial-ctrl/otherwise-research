@@ -1,0 +1,403 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [aa2 internal] load build definition from Dockerfile.protocol07
+#1 transferring dockerfile: 835B done
+#1 DONE 0.0s
+
+#2 [aa2 internal] load metadata for docker.io/library/node:22-bookworm-slim
+#2 ...
+
+#3 [ak1 internal] load build definition from Dockerfile.protocol07
+#3 transferring dockerfile: 835B done
+#3 DONE 0.0s
+
+#4 [ak2 internal] load build definition from Dockerfile.protocol07
+#4 transferring dockerfile: 835B done
+#4 DONE 0.0s
+
+#5 [aa1 internal] load build definition from Dockerfile.protocol07
+#5 transferring dockerfile: 835B done
+#5 DONE 0.0s
+
+#2 [aa1 internal] load metadata for docker.io/library/node:22-bookworm-slim
+#2 ...
+
+#6 [aw4 internal] load build definition from Dockerfile.protocol07
+#6 transferring dockerfile: 835B done
+#6 DONE 0.0s
+
+#7 [ak3 internal] load build definition from Dockerfile.protocol07
+#7 transferring dockerfile: 835B done
+#7 DONE 0.0s
+
+#8 [cli internal] load build definition from Dockerfile.protocol08
+#8 transferring dockerfile: 1.01kB done
+#8 DONE 0.0s
+
+#9 [aa3 internal] load build definition from Dockerfile.protocol07
+#9 transferring dockerfile: 835B done
+#9 DONE 0.0s
+
+#10 [aw3 internal] load build definition from Dockerfile.protocol07
+#10 transferring dockerfile: 835B done
+#10 DONE 0.0s
+
+#2 [aw3 internal] load metadata for docker.io/library/node:22-bookworm-slim
+#2 ...
+
+#11 [aw2 internal] load build definition from Dockerfile.protocol07
+#11 transferring dockerfile: 835B 0.0s done
+#11 DONE 0.1s
+
+#12 [aw1 internal] load build definition from Dockerfile.protocol07
+#12 transferring dockerfile: 835B done
+#12 DONE 0.0s
+
+#13 [aa1 internal] load .dockerignore
+#13 transferring context: 338B done
+#13 DONE 0.0s
+
+#14 [ak2 internal] load .dockerignore
+#14 transferring context: 338B done
+#14 DONE 0.0s
+
+#15 [aa2 internal] load .dockerignore
+#15 transferring context: 338B done
+#15 DONE 0.0s
+
+#16 [ak1 internal] load .dockerignore
+#16 transferring context: 338B done
+#16 DONE 0.0s
+
+#17 [aw2 verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#17 DONE 0.0s
+
+#18 [aw2 stage-1  1/18] FROM docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159
+#18 DONE 0.0s
+
+#19 [cli internal] load .dockerignore
+#19 transferring context: 338B done
+#19 DONE 0.0s
+
+#20 [aw2 internal] load .dockerignore
+#20 transferring context: 338B done
+#20 DONE 0.0s
+
+#21 [ak3 internal] load .dockerignore
+#21 transferring context: 338B done
+#21 DONE 0.0s
+
+#22 [aw3 internal] load .dockerignore
+#22 transferring context: 338B done
+#22 DONE 0.0s
+
+#23 [ak1 internal] load build context
+#23 DONE 0.0s
+
+#24 [aw4 internal] load .dockerignore
+#24 transferring context: 338B done
+#24 DONE 0.0s
+
+#25 [cli internal] load build context
+#25 DONE 0.0s
+
+#2 [aw1 internal] load metadata for docker.io/library/node:22-bookworm-slim
+#2 ...
+
+#17 [aa3 verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#17 DONE 0.0s
+
+#18 [aa3 stage-1  1/18] FROM docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159
+#18 DONE 0.0s
+
+#26 [aa2 internal] load build context
+#26 transferring context: 2.74kB 0.0s done
+#26 DONE 0.0s
+
+#27 [aa1 internal] load build context
+#27 transferring context: 2.74kB done
+#27 DONE 0.0s
+
+#23 [ak1 internal] load build context
+#23 transferring context: 2.74kB 0.0s done
+#23 DONE 0.0s
+
+#28 [aa3 internal] load .dockerignore
+#28 transferring context: 338B 0.0s done
+#28 DONE 0.1s
+
+#29 [ak2 internal] load build context
+#29 transferring context: 2.74kB done
+#29 DONE 0.0s
+
+#30 [aw3 internal] load build context
+#30 transferring context: 2.74kB done
+#30 DONE 0.0s
+
+#31 [aw4 internal] load build context
+#31 transferring context: 2.74kB done
+#31 DONE 0.0s
+
+#32 [aw2 internal] load build context
+#32 transferring context: 2.74kB done
+#32 DONE 0.1s
+
+#33 [ak3 internal] load build context
+#33 transferring context: 2.74kB done
+#33 DONE 0.1s
+
+#25 [cli internal] load build context
+#25 transferring context: 3.53kB done
+#25 DONE 0.1s
+
+#34 [aw1 internal] load metadata for docker.io/library/python:3.12-slim
+#34 ...
+
+#35 [aa1 stage-1 17/18] COPY scripts/conformance04.py scripts/conformance04.py
+#35 CACHED
+
+#36 [aa1 stage-1  3/18] WORKDIR /otherwise
+#36 CACHED
+
+#37 [aa1 stage-1 11/18] COPY Verifier Verifier
+#37 CACHED
+
+#38 [aa1 stage-1  7/18] COPY Bounded Bounded
+#38 CACHED
+
+#39 [aa1 stage-1  9/18] COPY Untrusted Untrusted
+#39 CACHED
+
+#40 [aa1 stage-1  4/18] COPY requirements.txt .
+#40 CACHED
+
+#41 [aa1 stage-1  6/18] COPY Engine Engine
+#41 CACHED
+
+#42 [aa1 stage-1 14/18] COPY tests07 tests07
+#42 CACHED
+
+#43 [aa1 stage-1  8/18] COPY Available Available
+#43 CACHED
+
+#44 [aa1 stage-1  5/18] RUN pip install --no-cache-dir -r requirements.txt
+#44 CACHED
+
+#45 [aa1 stage-1  2/18] COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+#45 CACHED
+
+#46 [aa1 stage-1 13/18] COPY Missing Missing
+#46 CACHED
+
+#47 [aa1 stage-1 16/18] COPY Protocol/vectors/generation07.json Protocol/vectors/generation07.json
+#47 CACHED
+
+#48 [aa1 stage-1 10/18] COPY Honest Honest
+#48 CACHED
+
+#49 [aa1 stage-1 15/18] COPY scripts/conformance07.py scripts/conformance07.py
+#49 CACHED
+
+#50 [aa1 stage-1 12/18] COPY tests06 tests06
+#50 CACHED
+
+#51 [aa1 stage-1 18/18] COPY Protocol/vectors/generation04.json Protocol/vectors/generation04.json
+#51 CACHED
+
+#51 [aa3 stage-1 18/18] COPY Protocol/vectors/generation04.json Protocol/vectors/generation04.json
+#51 CACHED
+
+#52 [cli stage-1 20/22] COPY Protocol/vectors/generation07.json Protocol/vectors/generation07.json
+#52 CACHED
+
+#53 [cli stage-1  5/22] RUN pip install --no-cache-dir -r requirements.txt
+#53 CACHED
+
+#54 [cli stage-1  7/22] COPY Bounded Bounded
+#54 CACHED
+
+#55 [cli stage-1 14/22] COPY tests07 tests07
+#55 CACHED
+
+#56 [cli stage-1 10/22] COPY Honest Honest
+#56 CACHED
+
+#57 [cli stage-1 13/22] COPY Missing Missing
+#57 CACHED
+
+#45 [cli stage-1  2/18] COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+#45 CACHED
+
+#58 [cli stage-1 11/22] COPY Verifier Verifier
+#58 CACHED
+
+#59 [cli stage-1  6/22] COPY Engine Engine
+#59 CACHED
+
+#60 [cli stage-1 17/22] COPY scripts/conformance08.py scripts/conformance08.py
+#60 CACHED
+
+#61 [cli stage-1  4/22] COPY requirements.txt .
+#61 CACHED
+
+#62 [cli stage-1 15/22] COPY LastWord LastWord
+#62 CACHED
+
+#63 [cli stage-1 16/22] COPY tests08 tests08
+#63 CACHED
+
+#64 [cli stage-1 12/22] COPY tests06 tests06
+#64 CACHED
+
+#65 [cli stage-1  9/22] COPY Untrusted Untrusted
+#65 CACHED
+
+#66 [cli stage-1 21/22] COPY scripts/conformance04.py scripts/conformance04.py
+#66 CACHED
+
+#36 [cli stage-1  3/18] WORKDIR /otherwise
+#36 CACHED
+
+#67 [cli stage-1  8/22] COPY Available Available
+#67 CACHED
+
+#68 [cli stage-1 18/22] COPY Protocol/vectors/generation08.json Protocol/vectors/generation08.json
+#68 CACHED
+
+#69 [cli stage-1 19/22] COPY scripts/conformance07.py scripts/conformance07.py
+#69 CACHED
+
+#70 [cli stage-1 22/22] COPY Protocol/vectors/generation04.json Protocol/vectors/generation04.json
+#70 CACHED
+
+#71 [aa3 internal] load build context
+#71 transferring context: 2.74kB done
+#71 DONE 0.0s
+
+#72 [aa1] exporting to image
+#72 exporting layers done
+#72 writing image sha256:ee6983f3f3391ea120cef6bed8e1aba85a1a4a4260ef93f6ea308fc4e9cb6531 done
+#72 naming to docker.io/library/otherwise08-baseline-1793302567-74036-aa1 0.0s done
+#72 DONE 0.0s
+
+#73 [aw2] exporting to image
+#73 exporting layers done
+#73 writing image sha256:c4be47586df11435eba9df206548756bc0c18517734bc0cc3a0ea6d796736c5b done
+#73 naming to docker.io/library/otherwise08-baseline-1793302567-74036-aw2 0.0s done
+#73 DONE 0.1s
+
+#74 [cli] exporting to image
+#74 exporting layers done
+#74 writing image sha256:b1cb5e5d7336638fd72bd543da73c66eadbf697f14d5c3421a8f99004480d0d7 0.0s done
+#74 naming to docker.io/library/otherwise08-baseline-1793302567-74036-cli 0.0s done
+#74 DONE 0.1s
+
+#17 [aw1 verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#17 DONE 0.0s
+
+#18 [aw1 stage-1  1/18] FROM docker.io/library/python:3.12-slim@sha256:aa943ce411423c7582288f18707ff66eddcbaeb510502d747a72aeb34f30d159
+#18 DONE 0.0s
+
+#51 [aw1 stage-1 18/18] COPY Protocol/vectors/generation04.json Protocol/vectors/generation04.json
+#51 CACHED
+
+#75 [aa2] exporting to image
+#75 exporting layers done
+#75 writing image sha256:a3f67250a924160d512eba00b5e97bd114729f800c03ce8b04667cd3853bc8a4 done
+#75 naming to docker.io/library/otherwise08-baseline-1793302567-74036-aa2 0.0s done
+#75 DONE 0.1s
+
+#76 [ak1] exporting to image
+#76 exporting layers done
+#76 writing image sha256:27864cedf9af857e9185dddc39d2764cc8c717ce0f7f465176c5bd8a7cf56909 done
+#76 naming to docker.io/library/otherwise08-baseline-1793302567-74036-ak1 0.0s done
+#76 DONE 0.1s
+
+#77 [aw3] exporting to image
+#77 exporting layers done
+#77 writing image sha256:f00062ea4f9051d91a2a20930d11354307899eb4510f56c949895947e6615b77 done
+#77 naming to docker.io/library/otherwise08-baseline-1793302567-74036-aw3 0.0s done
+#77 DONE 0.1s
+
+#78 [aw4] exporting to image
+#78 exporting layers done
+#78 writing image sha256:5d3bad6104da8c5d0afb99ccec132aa0b17710ab6f1fb0d199ab16e227729642 done
+#78 naming to docker.io/library/otherwise08-baseline-1793302567-74036-aw4 0.0s done
+#78 DONE 0.1s
+
+#34 [aw1 internal] load metadata for docker.io/library/python:3.12-slim
+#34 DONE 0.9s
+
+#2 [aw1 internal] load metadata for docker.io/library/node:22-bookworm-slim
+#2 DONE 0.9s
+
+#79 [aw1 internal] load .dockerignore
+#79 transferring context: 338B done
+#79 DONE 0.0s
+
+#80 [aw1 internal] load build context
+#80 transferring context: 2.74kB done
+#80 DONE 0.0s
+
+#81 [aa3] exporting to image
+#81 exporting layers done
+#81 writing image sha256:64117de14530498a3e64969535db1f9929024a896bdbb6d07db13e65b501fc4a
+#81 ...
+
+#82 [aw3] resolving provenance for metadata file
+#82 DONE 0.2s
+
+#83 [aa2] resolving provenance for metadata file
+#83 DONE 0.2s
+
+#84 [ak1] resolving provenance for metadata file
+#84 DONE 0.2s
+
+#85 [aw2] resolving provenance for metadata file
+#85 DONE 0.2s
+
+#86 [cli] resolving provenance for metadata file
+#86 DONE 0.2s
+
+#87 [aa1] resolving provenance for metadata file
+#87 DONE 0.2s
+
+#88 [aw4] resolving provenance for metadata file
+#88 DONE 0.2s
+
+#89 [ak3] exporting to image
+#89 exporting layers done
+#89 writing image sha256:0e1acd60e0059fc0a4627a273fe94ac72311584a202e91b7e2a2c018a58972be 0.5s done
+#89 naming to docker.io/library/otherwise08-baseline-1793302567-74036-ak3 done
+#89 DONE 0.5s
+
+#90 [ak3] resolving provenance for metadata file
+#90 DONE 0.0s
+
+#91 [aw1] exporting to image
+#91 exporting layers done
+#91 writing image sha256:e4ecceaea8178b4189919640ad632b68cf96079cc5dc4ff494b89a6b5e28f5e6
+#91 writing image sha256:e4ecceaea8178b4189919640ad632b68cf96079cc5dc4ff494b89a6b5e28f5e6 0.5s done
+#91 naming to docker.io/library/otherwise08-baseline-1793302567-74036-aw1
+#91 naming to docker.io/library/otherwise08-baseline-1793302567-74036-aw1 done
+#91 DONE 0.5s
+
+#81 [aa3] exporting to image
+#81 writing image sha256:64117de14530498a3e64969535db1f9929024a896bdbb6d07db13e65b501fc4a 0.5s done
+#81 naming to docker.io/library/otherwise08-baseline-1793302567-74036-aa3 done
+#81 DONE 0.6s
+
+#92 [ak2] exporting to image
+#92 exporting layers done
+#92 writing image sha256:3880f754b72ab928a9113d9f595cda453ddcf691c4e82d7287e5685ceef00cec 0.7s done
+#92 naming to docker.io/library/otherwise08-baseline-1793302567-74036-ak2 done
+#92 DONE 0.7s
+
+#93 [ak2] resolving provenance for metadata file
+#93 DONE 0.1s
+
+#94 [aw1] resolving provenance for metadata file
+#94 DONE 0.1s
+
+#95 [aa3] resolving provenance for metadata file
+#95 DONE 0.0s

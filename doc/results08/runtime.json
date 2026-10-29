@@ -1,0 +1,11 @@
+{
+  "python": "3.12.16 (main, Oct 28 2026, 02:07:05) [GCC 14.2.0]",
+  "node": "v22.23.4",
+  "pycryptodome": "3.23.0",
+  "cryptography": "46.0.3",
+  "sqlite": "3.46.1",
+  "platform": "Linux-6.10.4-linuxkit-aarch64-with-glibc2.41",
+  "machine": "aarch64",
+  "visible_cpus": 12,
+  "cpuinfo": "processor\t: 0\nBogoMIPS\t: 48.00\nFeatures\t: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm ssbs sb paca pacg dcpodp flagm2 frint\nCPU implementer\t: 0x61\nCPU architecture: 8\nCPU variant\t: 0x0\nCPU part\t: 0x000\nCPU revision\t: 0"
+}
