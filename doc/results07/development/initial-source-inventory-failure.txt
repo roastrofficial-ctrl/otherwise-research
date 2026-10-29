@@ -1,0 +1,33 @@
+ Volume "otherwise05-1792789394-43580_recovery"  Creating
+ Volume "otherwise05-1792789394-43580_recovery"  Created
+test_01_cli_complete_lifecycle_secrets_stay_local (test_operator.HostileOperator.test_01_cli_complete_lifecycle_secrets_stay_local) ... ok
+test_02_substitution_ciphertext_contract_recipient (test_operator.HostileOperator.test_02_substitution_ciphertext_contract_recipient) ... ok
+test_03_forge_checkin_disarm_and_false_success (test_operator.HostileOperator.test_03_forge_checkin_disarm_and_false_success) ... ok
+test_04_censorship_and_alternative_path (test_operator.HostileOperator.test_04_censorship_and_alternative_path) ... ok
+test_05_replay_authorisation_and_stale_state (test_operator.HostileOperator.test_05_replay_authorisation_and_stale_state) ... ok
+test_06_premature_and_withheld_legitimate_release (test_operator.HostileOperator.test_06_premature_and_withheld_legitimate_release) ... ok
+test_07_malicious_client_delivery_success_is_retained (test_operator.HostileOperator.test_07_malicious_client_delivery_success_is_retained) ... ok
+test_08_device_loss_backup_replacement_and_rotation (test_operator.HostileOperator.test_08_device_loss_backup_replacement_and_rotation) ... ok
+test_09_custody_quorum_early_decryption_stays_successful (test_operator.HostileOperator.test_09_custody_quorum_early_decryption_stays_successful) ... ok
+test_10_transports_projection_and_runtime_separability (test_operator.HostileOperator.test_10_transports_projection_and_runtime_separability) ... ok
+test_11_one_unavailable_witness_with_trusted_client (test_operator.HostileOperator.test_11_one_unavailable_witness_with_trusted_client) ... ok
+test_12_rotation_failure_keeps_new_owner_capability (test_operator.HostileOperator.test_12_rotation_failure_keeps_new_owner_capability) ... ok
+test_13_tampered_vault_never_yields_creator_authority (test_operator.HostileOperator.test_13_tampered_vault_never_yields_creator_authority) ... ok
+test_14_censored_presence_can_cause_policy_authorised_disclosure (test_operator.HostileOperator.test_14_censored_presence_can_cause_policy_authorised_disclosure) ... ok
+test_15_installed_build_manifest_and_independent_hash (test_operator.HostileOperator.test_15_installed_build_manifest_and_independent_hash) ... FAIL
+test_16_provider_tls_verification_is_required (test_operator.HostileOperator.test_16_provider_tls_verification_is_required) ... ok
+
+======================================================================
+FAIL: test_15_installed_build_manifest_and_independent_hash (test_operator.HostileOperator.test_15_installed_build_manifest_and_independent_hash)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/otherwise/tests05/test_operator.py", line 158, in test_15_installed_build_manifest_and_independent_hash
+    bundle=strict_json(Path('Protocol/client05-build.json').read_bytes());expected=digest(bundle);self.assertEqual(bundle,{'v':5,'files':files()})
+                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'v':[3056 chars]fier/retained.mjs': 'da8abd95a6317114289c7b73b[871 chars]43'}} != {'v':[3056 chars]fier/missing.mjs': '3ec9408ccd16b41ccf2134d3ad[963 chars]43'}}
+Diff is 4640 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 16 tests in 13.122s
+
+FAILED (failures=1)

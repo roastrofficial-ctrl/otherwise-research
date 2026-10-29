@@ -1,0 +1,355 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [demo internal] load build definition from Dockerfile
+#1 transferring dockerfile: 382B done
+#1 DONE 0.0s
+
+#2 [rw1 internal] load build definition from Dockerfile
+#2 transferring dockerfile: 382B done
+#2 DONE 0.0s
+
+#3 [rk1 internal] load build definition from Dockerfile
+#3 transferring dockerfile: 382B done
+#3 DONE 0.0s
+
+#4 [rw3 internal] load build definition from Dockerfile
+#4 transferring dockerfile: 382B done
+#4 DONE 0.0s
+
+#5 [experiment internal] load build definition from Dockerfile
+#5 transferring dockerfile: 382B done
+#5 DONE 0.0s
+
+#6 [retained-tests internal] load build definition from Dockerfile
+#6 transferring dockerfile: 382B done
+#6 DONE 0.0s
+
+#7 [rw2 internal] load build definition from Dockerfile
+#7 transferring dockerfile: 382B done
+#7 DONE 0.0s
+
+#8 [rk3 internal] load build definition from Dockerfile
+#8 transferring dockerfile: 382B done
+#8 DONE 0.0s
+
+#9 [rk2 internal] load build definition from Dockerfile
+#9 transferring dockerfile: 382B done
+#9 DONE 0.0s
+
+#10 [rk2 internal] load metadata for docker.io/library/python:3.12-slim
+#10 DONE 0.3s
+
+#11 [demo internal] load metadata for docker.io/library/node:22-bookworm-slim
+#11 DONE 0.3s
+
+#12 [demo internal] load .dockerignore
+#12 transferring context: 316B done
+#12 DONE 0.0s
+
+#13 [rw3 internal] load .dockerignore
+#13 transferring context: 316B done
+#13 DONE 0.0s
+
+#14 [rk3 internal] load .dockerignore
+#14 transferring context: 316B done
+#14 DONE 0.0s
+
+#15 [experiment internal] load .dockerignore
+#15 transferring context: 316B done
+#15 DONE 0.0s
+
+#16 [rk1 verifier 1/1] FROM docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d
+#16 DONE 0.0s
+
+#17 [rk2 internal] load .dockerignore
+#17 transferring context: 316B done
+#17 DONE 0.0s
+
+#18 [rw2 internal] load .dockerignore
+#18 transferring context: 316B done
+#18 DONE 0.0s
+
+#19 [rk1 stage-1 1/6] FROM docker.io/library/python:3.12-slim@sha256:a0f57064cbdcd6285fa45f51237ab0b35ea8ebaed06a1f5973e89e19dfb86704
+#19 resolve docker.io/library/python:3.12-slim@sha256:a0f57064cbdcd6285fa45f51237ab0b35ea8ebaed06a1f5973e89e19dfb86704 0.0s done
+#19 DONE 0.0s
+
+#20 [rw1 internal] load .dockerignore
+#20 transferring context: 316B done
+#20 DONE 0.0s
+
+#21 [retained-tests internal] load .dockerignore
+#21 transferring context: 316B 0.0s done
+#21 DONE 0.0s
+
+#22 [rk3 internal] load build context
+#22 transferring context: 10.34kB 0.0s done
+#22 DONE 0.0s
+
+#23 [rw2 internal] load build context
+#23 transferring context: 10.34kB done
+#23 DONE 0.0s
+
+#24 [experiment internal] load build context
+#24 transferring context: 10.34kB 0.0s done
+#24 DONE 0.0s
+
+#25 [rw3 internal] load build context
+#25 transferring context: 10.34kB 0.0s done
+#25 DONE 0.0s
+
+#26 [demo internal] load build context
+#26 transferring context: 10.34kB done
+#26 DONE 0.0s
+
+#27 [rk1 internal] load .dockerignore
+#27 transferring context: 316B done
+#27 DONE 0.1s
+
+#28 [rw2 stage-1 2/6] COPY --from=verifier /usr/local/bin/node /usr/local/bin/node
+#28 CACHED
+
+#29 [rw2 stage-1 3/6] WORKDIR /otherwise
+#29 CACHED
+
+#30 [rw2 stage-1 5/6] RUN pip install --no-cache-dir -r requirements.txt
+#30 CACHED
+
+#31 [rw2 stage-1 4/6] COPY requirements.txt .
+#31 CACHED
+
+#32 [rw2 stage-1 6/6] COPY . .
+#32 CACHED
+
+#33 [rk3] exporting to image
+#33 exporting layers done
+#33 writing image sha256:514ae4c0345d6859b927c5ece5ed55638256e7726457f10267573a6a8a5601b2 done
+#33 naming to docker.io/library/otherwise03-1792789342-42882-rk3
+#33 naming to docker.io/library/otherwise03-1792789342-42882-rk3 0.0s done
+#33 DONE 0.1s
+
+#32 [retained-tests stage-1 6/6] COPY . .
+#32 CACHED
+
+#34 [rk2 internal] load build context
+#34 transferring context: 10.34kB 0.0s done
+#34 DONE 0.1s
+
+#35 [retained-tests internal] load build context
+#35 transferring context: 10.34kB done
+#35 DONE 0.0s
+
+#36 [rw1 internal] load build context
+#36 transferring context: 10.34kB done
+#36 DONE 0.0s
+
+#37 [rw2] exporting to image
+#37 exporting layers done
+#37 writing image sha256:bc8d2677364b56e8469f2a5f43a32b7d27df49aac93d09fe3ac5fcfaea405af9 done
+#37 naming to docker.io/library/otherwise03-1792789342-42882-rw2 0.0s done
+#37 DONE 0.1s
+
+#38 [rw3] exporting to image
+#38 exporting layers done
+#38 writing image sha256:1267c25bff4b2366edf301da91a3c971afc5b13a77f0f5711d6835bf6b582cac 0.0s done
+#38 naming to docker.io/library/otherwise03-1792789342-42882-rw3 0.0s done
+#38 DONE 0.1s
+
+#39 [experiment] exporting to image
+#39 exporting layers done
+#39 writing image sha256:1e21be086a1dfee18a84394baaa0fcc239b05741065bc06466029b52373eac23 0.0s done
+#39 naming to docker.io/library/otherwise03-1792789342-42882-experiment 0.0s done
+#39 DONE 0.1s
+
+#40 [rk2] exporting to image
+#40 exporting layers done
+#40 writing image sha256:5503887e9d51470713ed0cdaa977a5e00e45211068faf072c28da0be6d3e524d
+#40 ...
+
+#32 [rk1 stage-1 6/6] COPY . .
+#32 CACHED
+
+#41 [rk1 internal] load build context
+#41 transferring context: 1.42MB 0.2s done
+#41 DONE 0.2s
+
+#42 [experiment] resolving provenance for metadata file
+#42 DONE 0.0s
+
+#43 [rw2] resolving provenance for metadata file
+#43 DONE 0.0s
+
+#44 [rk3] resolving provenance for metadata file
+#44 DONE 0.0s
+
+#45 [rw3] resolving provenance for metadata file
+#45 DONE 0.0s
+
+#46 [demo] exporting to image
+#46 exporting layers done
+#46 writing image sha256:913a0495637fd391614ea55f21e00d5ad1a1f238f6b7ab5c5c2203ee80a9ead8 0.3s done
+#46 naming to docker.io/library/otherwise03-1792789342-42882-demo done
+#46 DONE 0.3s
+
+#47 [retained-tests] exporting to image
+#47 exporting layers done
+#47 writing image sha256:cf8eb746b8d25ef2d76eb64e6e7694c2215977b08ed17eda5397db1035f2f0af 0.2s done
+#47 naming to docker.io/library/otherwise03-1792789342-42882-retained-tests done
+#47 DONE 0.2s
+
+#48 [rw1] exporting to image
+#48 exporting layers done
+#48 writing image sha256:c4e0b3e8fcedd844da1ce2a670c32c0c45a3071b0c46c892bf40edc6ef3b223c 0.2s done
+#48 naming to docker.io/library/otherwise03-1792789342-42882-rw1 done
+#48 DONE 0.3s
+
+#40 [rk2] exporting to image
+#40 writing image sha256:5503887e9d51470713ed0cdaa977a5e00e45211068faf072c28da0be6d3e524d 0.2s done
+#40 naming to docker.io/library/otherwise03-1792789342-42882-rk2 0.0s done
+#40 DONE 0.3s
+
+#49 [rk1] exporting to image
+#49 exporting layers done
+#49 writing image sha256:c6b97b2ce29fc5ff638c248d0f8386060e336d7a9ef452adacaf4eb2bd96f079 0.1s done
+#49 naming to docker.io/library/otherwise03-1792789342-42882-rk1 0.0s done
+#49 DONE 0.2s
+
+#50 [rw1] resolving provenance for metadata file
+#50 DONE 0.0s
+
+#51 [demo] resolving provenance for metadata file
+#51 DONE 0.0s
+
+#52 [retained-tests] resolving provenance for metadata file
+#52 DONE 0.0s
+
+#53 [rk2] resolving provenance for metadata file
+#53 DONE 0.0s
+
+#54 [rk1] resolving provenance for metadata file
+#54 DONE 0.0s
+ Network otherwise03-1792789342-42882_custody  Creating
+ Network otherwise03-1792789342-42882_custody  Created
+ Volume "otherwise03-1792789342-42882_rk2-state"  Creating
+ Volume "otherwise03-1792789342-42882_rk2-state"  Created
+ Volume "otherwise03-1792789342-42882_rw2-state"  Creating
+ Volume "otherwise03-1792789342-42882_rw2-state"  Created
+ Volume "otherwise03-1792789342-42882_rk3-state"  Creating
+ Volume "otherwise03-1792789342-42882_rk3-state"  Created
+ Volume "otherwise03-1792789342-42882_rk1-state"  Creating
+ Volume "otherwise03-1792789342-42882_rk1-state"  Created
+ Volume "otherwise03-1792789342-42882_rw3-state"  Creating
+ Volume "otherwise03-1792789342-42882_rw3-state"  Created
+ Volume "otherwise03-1792789342-42882_rw1-state"  Creating
+ Volume "otherwise03-1792789342-42882_rw1-state"  Created
+ Container otherwise03-1792789342-42882-rw2-1  Creating
+ Container otherwise03-1792789342-42882-rk1-1  Creating
+ Container otherwise03-1792789342-42882-rw1-1  Creating
+ Container otherwise03-1792789342-42882-rk2-1  Creating
+ Container otherwise03-1792789342-42882-rw3-1  Creating
+ Container otherwise03-1792789342-42882-rk3-1  Creating
+ Container otherwise03-1792789342-42882-rk1-1  Created
+ Container otherwise03-1792789342-42882-rk3-1  Created
+ Container otherwise03-1792789342-42882-rk2-1  Created
+ Container otherwise03-1792789342-42882-rw2-1  Created
+ Container otherwise03-1792789342-42882-rw1-1  Created
+ Container otherwise03-1792789342-42882-rw3-1  Created
+ Container otherwise03-1792789342-42882-rw3-1  Starting
+ Container otherwise03-1792789342-42882-rk1-1  Starting
+ Container otherwise03-1792789342-42882-rk3-1  Starting
+ Container otherwise03-1792789342-42882-rw2-1  Starting
+ Container otherwise03-1792789342-42882-rw1-1  Starting
+ Container otherwise03-1792789342-42882-rk2-1  Starting
+ Container otherwise03-1792789342-42882-rw1-1  Started
+ Container otherwise03-1792789342-42882-rk2-1  Started
+ Container otherwise03-1792789342-42882-rk1-1  Started
+ Container otherwise03-1792789342-42882-rk3-1  Started
+ Container otherwise03-1792789342-42882-rw3-1  Started
+ Container otherwise03-1792789342-42882-rw2-1  Started
+ Volume "otherwise03-1792789342-42882_retained-client-state"  Creating
+ Volume "otherwise03-1792789342-42882_retained-client-state"  Created
+test_00_majority_intersection_counterexample (test_retained.RetainedExperiments.test_00_majority_intersection_counterexample) ... ok
+test_A_lost_acknowledgement (test_retained.RetainedExperiments.test_A_lost_acknowledgement) ... ok
+test_B_forgotten_witness (test_retained.RetainedExperiments.test_B_forgotten_witness) ... ok
+test_C_fabricated_absence_one_malicious (test_retained.RetainedExperiments.test_C_fabricated_absence_one_malicious) ... ok
+test_D_equivocating_witness (test_retained.RetainedExperiments.test_D_equivocating_witness) ... ok
+test_E_partitioned_groups (test_retained.RetainedExperiments.test_E_partitioned_groups) ... ok
+test_F_late_witness_and_exact_boundary (test_retained.RetainedExperiments.test_F_late_witness_and_exact_boundary) ... ok
+test_G_silent_witness (test_retained.RetainedExperiments.test_G_silent_witness) ... ok
+test_H_stolen_identity_and_replay (test_retained.RetainedExperiments.test_H_stolen_identity_and_replay) ... ok
+test_I_custodians_retained_doubt_exceeded_fault_budget (test_retained.RetainedExperiments.test_I_custodians_retained_doubt_exceeded_fault_budget) ... ok
+test_J_solo_witness_and_disarm (test_retained.RetainedExperiments.test_J_solo_witness_and_disarm) ... ok
+test_K_council (test_retained.RetainedExperiments.test_K_council) ... ok
+test_L_hostile_recovery_actual_process_crashes (test_retained.RetainedExperiments.test_L_hostile_recovery_actual_process_crashes) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 3.644s
+
+OK
+COUNTEREXAMPLE: P={A,B}, A={B,C}, B equivocates: both naive 2/3 certificates verify. Revised profile rejects 2/2.
+BOUNDARY: two Byzantine witnesses can produce conflicting 2/3 presence and 3/3 absence; informed custodians veto.
+Solo: one human; verifiable/repeated check-ins, missed next challenge, grace, compact custody release, disarm.
+Fixed witness vectors: 22
+Additional reordered proof objects: 26
+Python / JavaScript disagreements: 0
+Unsafe 2/2 Byzantine intersection counterexample retained; production profile rejected.
+Conformance OK
+{
+  "all_three_available": {
+    "acceptance_latency": {
+      "median_ms": 21.642,
+      "p95_ms": 74.595,
+      "samples": 20
+    },
+    "acknowledgement_bytes_mean": 4911,
+    "aggregate_logical_storage_growth_per_capsule_bytes": 5253,
+    "aggregate_retained_anchor_bytes_mean": 10251,
+    "client_certificate_cache_commits_per_checkin": 1,
+    "clock_file_checkpoints_per_checkin": 3,
+    "logical_observation_commits_per_checkin": 3,
+    "optional_post_acceptance_gossip_latency": {
+      "median_ms": 33.57,
+      "p95_ms": 106.434,
+      "samples": 20
+    },
+    "receipt_bytes_mean": 1139
+  },
+  "compact_release_certificate_bytes": 3423,
+  "comparison_limit": "Different proof shapes and workload histories; CPU and encoded bytes only. No Gen0.2 network-latency comparison claimed; no physical fsync count inferred.",
+  "custody_http_python_plus_node_process_verification": {
+    "median_ms": 27.199,
+    "p95_ms": 127.534,
+    "samples": 10
+  },
+  "environment": "Docker internal HTTP network; SQLite synchronous=FULL; controlled integer service clocks; sequential synthetic workload",
+  "generation02_fixed_history_bytes": 4350,
+  "generation02_fixed_history_python_verification": {
+    "median_ms": 0.263,
+    "p95_ms": 0.301,
+    "samples": 100
+  },
+  "one_unavailable": {
+    "acceptance_latency": {
+      "median_ms": 16.282,
+      "p95_ms": 35.922,
+      "samples": 10
+    },
+    "acknowledgement_bytes_mean": 3771,
+    "aggregate_logical_storage_growth_per_capsule_bytes": 3502,
+    "aggregate_retained_anchor_bytes_mean": 6834,
+    "client_certificate_cache_commits_per_checkin": 1,
+    "clock_file_checkpoints_per_checkin": 2,
+    "logical_observation_commits_per_checkin": 2,
+    "optional_post_acceptance_gossip_latency": {
+      "median_ms": 21.817,
+      "p95_ms": 40.492,
+      "samples": 10
+    },
+    "receipt_bytes_mean": 1139
+  },
+  "python_compact_release_verification": {
+    "median_ms": 0.708,
+    "p95_ms": 0.908,
+    "samples": 100
+  },
+  "restart_and_receipt_recovery_ms": 1321.065
+}

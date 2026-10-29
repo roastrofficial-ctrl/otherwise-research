@@ -299,3 +299,7 @@ The existing wire-v4 lifecycle remains unchanged. `Untrusted` adds version-5 cha
 ## Experimental custody profile 0.6
 
 The [Honest module](Honest/) adds an owner-signed v6 custody sidecar binding the existing immutable wire4 manifest to a reference threshold-DH key generation, ciphertext-specific wrap and single synthetic recipient. Witness messages, policy expressions and release authorisation retain wire4 meaning. `/enroll`, `/head` and `/partial` are an explicit experimental adapter, not a silent replacement of static `/release`. Partials bind the sidecar, Capsule, manifest version/hash, ciphertext, recipient, authorisation and fresh evidence-set head; they are signed and encrypted to the committed recipient. [Precise semantics and failure boundaries](doc/generation06/SECURITY.md).
+
+## Experimental profile 0.7
+
+[Versioned semantics](doc/generation07/PROTOCOL-0.7.md) define a v7 owner-signed two-domain custody sidecar, fully scoped authenticated/DLEQ partials, a named finality-certificate head, recipient AEAD/plaintext verification and separately signed encrypted-operation retention. Wire4 lifecycle evidence is preserved; old armed Capsules are not silently upgraded. `/enroll07`, `/partial07`, `/retain07` and `/inspect07` are explicit profile interfaces. A separate recipient client verifies from independently pinned expected content and fresh evidence without an owner signing seed or SaaS truth.

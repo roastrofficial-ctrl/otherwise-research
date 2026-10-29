@@ -72,3 +72,7 @@ The early static-quorum reconstruction attack remains successful. [Concrete alte
 ## Generation 0.6 — reference threshold-DH experiment
 
 [Research decision and primary references](doc/generation06/DECISION.md) compare threshold partial decryption, DKG/dealer setup, verifiable shares, hardware, timelocks and MPC. The selected P-256 reference harness is deliberately unreviewed. It demonstrates no private-scalar reconstruction on honest release and successful early decryption by a malicious threshold. [Scoped impossibility argument](doc/generation06/SECURITY.md) identifies the missing indispensable capability rather than claiming all conditional cryptography is impossible.
+
+## Generation 0.7 — the missing capability
+
+[Research comparison and primary literature](doc/generation07/RESEARCH-0.7.md) cover separate versus witness-held capability, layered encryption, split keys, MPC, proofs, ABE/FE and witness encryption. The selected reference composition requires independently wrapped XOR components from both domains. A signature/proof alone is not a missing secret. [The executive examination](doc/generation07/EXECUTIVE-0.7.md) distinguishes one-domain protection, combined collusion and trusted-dealer/administrative independence. No time-dependent release primitive or PorterNet integration is introduced.

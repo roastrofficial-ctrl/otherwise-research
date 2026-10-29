@@ -1,0 +1,1366 @@
+[
+  {
+    "name": "custody1",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "664bbbdce301ae1bf677427c8ce37587d1e177b9ef320cc61efea14f9352746bf0e2989911d5b8c72b245d39f932aa93e1089bac1958c8f3a15efa73ebbeee0c"
+      }
+    },
+    "expected": {
+      "ok": true,
+      "canonical_sha256": "9a73558cb2640d7087491647dfc854655db791fac0db1f37c5c540f88399e431"
+    }
+  },
+  {
+    "name": "custody2",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 2,
+          "partial": {
+            "index": 2,
+            "D": "04428d3bd52f72a7d1652f28951ef634d2eed4d8d5720a797c9b5470ccb6b3700b2df074e6104efd9cb2a8439231784657571fe31837b406b7d9b1502a4441c0d1",
+            "A": "04290f62a9c8e8a46f6df708652fbfa6907d3a4953cee1ff346e62f9138019f6500680a26284aa581e8aa06bee2ad8108a0bd2a5f604b7815dc0e5c33eb7418673",
+            "B": "049bf0c41989484283a939a5c1ec67ae53c133d1cd12216e7f0559908f86298d3d3e7452b1d234f44f4134705861f99f937f5899e54a7f5b2ebdb89caa8a283aab",
+            "z": "0a67b65e837df343e0fd92bc5ee31092392a0024b6846c0a2d2cc541b5852b68"
+          }
+        },
+        "signature": "8ca50b04bbf9ea3b54b3bd18928582866473a3d11a314a9df463855fd9292309896045a9c557e1949c802481a22a56233a407d962196e4723f9f905124c12b0e"
+      }
+    },
+    "expected": {
+      "ok": true,
+      "canonical_sha256": "41c861df1e340d28757a74bd37966ee04d8be9d8a5f8f3d2afdee63ca9420c48"
+    }
+  },
+  {
+    "name": "custody3",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 3,
+          "partial": {
+            "index": 3,
+            "D": "046b70a7d1face4f3c868268ae50134a7eb0b674db4891eaa162de9d16c1c8ff6582e42240fa5579f207eb608ee89ffc19543e84f4984807b0729ba8cfa9498f12",
+            "A": "043105835a000e9c90229879c820e1bd8c928e9329719155c5acaec9fe0a2dd337368a248a4e8df573613fa47752545751371b27bba026bfeceb36df961db42b96",
+            "B": "04b01385986f0e240c53c6a641693ff689a7ce712855a5af2945f033239b4311e601a4001d84c2bd9620f88095b4677c528b0e90b2d05d28ae9c01a2059f8b2e0b",
+            "z": "23b785b6177d497703428f1d00c869f2bb83220ff166055907afda8fa0bd0287"
+          }
+        },
+        "signature": "89c6b81372d1294fdfb0dfa3ef330e30d146f6a34d0d2e9a0d93645d5c9c35ca93fd0a0a2b0c14cf21eaa29facf9135f5cd77655d25393b782c43d54299aa208"
+      }
+    },
+    "expected": {
+      "ok": true,
+      "canonical_sha256": "30981569f0c7cdd3e00d24f6551ffa8ef80d42c05747be753fb8a858de4699b1"
+    }
+  },
+  {
+    "name": "authority1",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "authority",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "authority",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "041167a19e70482c731e3bb65262526a465abc9586037951621e7996a08210b05662c4d0878a1b5530593dd3f888033c80ff73351b2d5762c0a351813067c1e515",
+            "B": "0477c21de0fdd28a3b27b7124b6f7ce293eb586c5b02a919183ebcb896dbe839079ef7ad9290d51b1108f4999a42cd8969ee0da3a4f2cc479a5e5130c370204527",
+            "z": "ec385e847d4aac158876948dba395729fda26c057a469eeb6458e177536de8f2"
+          }
+        },
+        "signature": "1f4f8faeeea0f6ad664e218705dbe81be6b3516ad9d93c779d1dbc481ea8b0661b43618366761901ba8a2fb6acfaee8d88f41f260b61d3c762c4cd1e0e94b007"
+      }
+    },
+    "expected": {
+      "ok": true,
+      "canonical_sha256": "5753a1f8245e87537f803edc259f245cdae87c8c71e218dadb8b0c1174af8fbf"
+    }
+  },
+  {
+    "name": "authority2",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "authority",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "authority",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 2,
+          "partial": {
+            "index": 2,
+            "D": "04428d3bd52f72a7d1652f28951ef634d2eed4d8d5720a797c9b5470ccb6b3700b2df074e6104efd9cb2a8439231784657571fe31837b406b7d9b1502a4441c0d1",
+            "A": "04274cd36ee7256d8f67facd78c82bb9be359a240780146fd07ebde9ca56cac21e400b1d53e57383c059e19cde409f4e24f9a76183d5b9d621baa520185f8b2863",
+            "B": "047e4a1d8d97e68bc095ec315cf8d6bcb968ee133d927cd82183ecf61e9f08196a2159e89817777198d187ae79250dd05a1e6de910d8bab6d9c76dba9155f3687a",
+            "z": "f33943935093793e901047b7faa53d033be7e31682bc7420ef0f2852a5002801"
+          }
+        },
+        "signature": "cda7d93737d004fb70e3076d596dd579d30713f82ead62170ea2c9da7437fa1ef4d457d4b1b0aa2d43cc87fa1567af83417f89939c35c8fca43c3fbf83a40900"
+      }
+    },
+    "expected": {
+      "ok": true,
+      "canonical_sha256": "6cdd6090e0c83e7ea2fecc4cf319458f6f2d691f497250d4b370097db19f7550"
+    }
+  },
+  {
+    "name": "authority3",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "authority",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "authority",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 3,
+          "partial": {
+            "index": 3,
+            "D": "046b70a7d1face4f3c868268ae50134a7eb0b674db4891eaa162de9d16c1c8ff6582e42240fa5579f207eb608ee89ffc19543e84f4984807b0729ba8cfa9498f12",
+            "A": "047f9996747ac2cb72fd8fadd4f3a3c95711816a0d6b6db98e367d3250040360b6e876d99ef999b3796f08dfd9c1723d9c0bd788ad0ee9c6aecb2fe7b083170ec5",
+            "B": "0460d03f3eda9d4bf0604d226540e73336cc2649d58755ebae5cb05bc60bb9a02cc96f797c06a331a17a2f594b5cfcb723e8eb765df83f352f8f00b39de240dc4d",
+            "z": "635076b1800590c8c318a6aa7b70312cccd60113d998b84985fdc74fca3fc23e"
+          }
+        },
+        "signature": "da01424d78efbbe8bb08d6649e8d9b03d4c704a2734cc8762b194e3a4653e7323efea394148b9eae10e097acbbe4090e658ef187f3660219604f0c83ef845b01"
+      }
+    },
+    "expected": {
+      "ok": true,
+      "canonical_sha256": "269d328eb6206f6e9e9e50e07543b5808dba1f73a8b1a44d998edd289aa0785e"
+    }
+  },
+  {
+    "name": "reject-D",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04cfc746589e4a140785b3bf94c7269ad1b17ad259fbe717c276ae0b0e749833af9ee25d020b5be979be4f9367e271322ce8a1006aef0e41f611e7bb1930978ef8",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "39c2a87e4427322618069b6dd08a197fab8b18d56cae2110adc73cdcbbcace27205f37ea19be043bf3bc125163bc7276dcb3459a82c6729bf075d43495ac9604"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-A",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "04cfc746589e4a140785b3bf94c7269ad1b17ad259fbe717c276ae0b0e749833af9ee25d020b5be979be4f9367e271322ce8a1006aef0e41f611e7bb1930978ef8",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "8ee258dc6985eee397d08f6d2ae30dd4c6ff242d6f7fda3e5ad13f8146282694294975474298e34f255d6c18669457b77f384dc17049b74fd32b1cc50ef93d0c"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-B",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "04cfc746589e4a140785b3bf94c7269ad1b17ad259fbe717c276ae0b0e749833af9ee25d020b5be979be4f9367e271322ce8a1006aef0e41f611e7bb1930978ef8",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "cb2d20de8187c1bfca2b118a5165277f124a812683767250db536fe6a5848453543b722a6ad6abebe8d750fcca3d8b6879b2ccace60a7293dc4cb05be491b008"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-z",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        "signature": "cf2df72a3322207cc1108866e01a6d83763e66d97633143a70a373325ad7196eb9ffd45012f16658fdd8be442b562fc761af98f176d74c3e2358827045e9cc09"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-index",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": true,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "6489a4b1b90686706198d8cdbf7fbb53b76cfc9985979ce0ce549e8ad8a2a3e440aac733b59d10c60b4e0448c0d3b848d2e36bb1f7227b5a013cacd15ff52901"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-context",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 6,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 6,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "192bf5acfedf703c607f915f10794ba8051fe17cf51fb05d31079cf91a522b4c9835a2af1b2fb5cde7faafb272f3f8438274718d9af5ddb81512b8736acfc809"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-signature",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-recipient",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "substituted",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "substituted",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "7411d11eca3664f06d7e5e2ddc588d8eff1da94b01027cbaa78352ddef8222044ae82158367e4c450c0449a39eaabed9ec284527d16e654ae60d5ec5d83ada04"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-policy_version",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": "substituted",
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": "substituted",
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "9eec4e88325e90a0b0375d0bff867d062cffcff5cc309a1c7eb8fabf2501445480649bcd9dbb96bcce707977ed5f1ecb9734b8024fba2b38c80bbc9c96345c07"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-evidence_head",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "substituted",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "substituted",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "06389dd8b0f931d67b76bf7e4ec1cf580b08e0cf08a97c1279c3eda3693861f0257e79f02716efeeefffe6c3ed6a31f45891cc99c84f4f9519af77b6fceff307"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-key_epoch",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": "substituted",
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": "substituted",
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "f988dde8b8bc219423e00b908be2624aae8052747d955ed4f9bb14d2ba52f6d6a32bdee651659c289092941ad499796d49d49fc42db2fa6d82b5517540274905"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-suite",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "substituted",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "substituted",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "ba9555128dfa44a2d3716b0a0ed067b6a31497cc0916e63a51065a31c83a7d5269ece2cd15d6f9a613a32f8b1157b709eaae3b63228b4b089b07ec9075713d09"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-domain",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "substituted",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "substituted",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "8db7b10ef9ef6ea9d7b70664b61e7e943114c0a6358936c8368957fac2996c9f5dd6eb9c77c0bb5ca14a19bc2d2abbb185edf457e74145f887221768ce1cac04"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-committee",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "substituted"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "substituted"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "ab1ae409e0815eb44c842adf51a6661b319e76ae8df9e23b2e89b9b6fa2aefc8116be6996bd05c4a230202f60e0ebdf244b4d5d39cf6148afb4929488e337701"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-R",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "046e4b20574af29f6aaa5d897cf601dc0a9fae27b0bff2a1da8b49bb9d9260e96961d496eea86c4f2646d7eaad0896b1d23e937c54efd04659c0ac3c58afa16213",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "664bbbdce301ae1bf677427c8ce37587d1e177b9ef320cc61efea14f9352746bf0e2989911d5b8c72b245d39f932aa93e1089bac1958c8f3a15efa73ebbeee0c"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-key",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155"
+          }
+        },
+        "signature": "664bbbdce301ae1bf677427c8ce37587d1e177b9ef320cc61efea14f9352746bf0e2989911d5b8c72b245d39f932aa93e1089bac1958c8f3a15efa73ebbeee0c"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  },
+  {
+    "name": "reject-extension",
+    "input": {
+      "key": {
+        "v": 6,
+        "scheme": "reference-p256-threshold-dh",
+        "k": 2,
+        "n": 3,
+        "X": "0447776904c0f1cc3a9c0984b66f75301a5fa68678f0d64af8ba1abce34738a73eaa005ee6b5b957286231856577648e8381b2804428d5733f32f787ff71f1fcdc",
+        "Y": {
+          "1": "04b1bb852cfea701fc42caaa1a5b5eb6a5174e94f87c4d3b0612b46293eb5925f81d337dc66c7874cb46047d206fd1e6cd2075978e09ef174f783ea1f98bde3cb0",
+          "2": "048d435a0fdd81431f3e1cd4eed443240561a043cd71bbd4fc6cd5ed29e021934bbcd8433681b32c85532912cb2a67107608f9ce9475feeb9b968f1ceceaa1d1ac",
+          "3": "0467f56908a1d219d8e02a719cd247386d4b334e33eae9088054202671ce1ba90e3c412b7741d487db94fbee9db369d11e9a70306dd9c2ef718123475d737e8900"
+        }
+      },
+      "R": "04986ae2506f1ff104d04230861d8f4b498f4bc4c6d009b30f7544dc129b82d28d003cccc0a6460e0ae328a4d97d3c7b61d86fc6289c189f2525110c441bb07e97",
+      "expected_context": {
+        "v": 7,
+        "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+        "domain": "custody",
+        "capsule": "PUBLIC-FIXTURE-07",
+        "recipient": "abababababababababababababababababababababababababababababababab",
+        "policy_version": 1,
+        "key_epoch": 1,
+        "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+        "release_attempt": "release-1",
+        "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+      },
+      "expected_signer": "50ed2cdbcb4fa468ffdd819c362a5d4ea6ec691bf4af9826172b483dca970f6d",
+      "contribution": {
+        "message": {
+          "context": {
+            "v": 7,
+            "suite": "otherwise07-xor2-threshold-dh-p256-hkdf-sha256-aesgcm-x25519",
+            "domain": "custody",
+            "capsule": "PUBLIC-FIXTURE-07",
+            "recipient": "abababababababababababababababababababababababababababababababab",
+            "policy_version": 1,
+            "key_epoch": 1,
+            "evidence_head": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+            "release_attempt": "release-1",
+            "committee": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+          },
+          "index": 1,
+          "partial": {
+            "index": 1,
+            "D": "04a196fc9a301e68619b7a6a7f3bb597d8d71ac18d2afd0b3d85b2f0336e400649bee337b1a6e5e9bab14eb2b1490d81acf07ecc773f9caff38ee8fced87ef0f91",
+            "A": "0417d0b8288b6471d18bf1457173041b80f53e729ba45561387ec533b0d99ee4672264801296854e39ebc895db8e379701cff8a5f3a373226078712565fcae71dc",
+            "B": "0480306d9c57c9ac70d20e17a2bbd0bcc4212fed765848461021ca410ddb19225b412e0a60dd4c772b3f7c77b0fb08de62816bbde8e5c8e4f8325356a3b8b1039e",
+            "z": "f445b5012a27f6fbbb6cb60ebf40eadfa73ff6c269ca079cdf919c7b5c762155",
+            "extension": true
+          }
+        },
+        "signature": "b8ffcb556f0edb5f32df11b2457a52d9d0efc3d1b3888254396cc0aaf990e4a0e054eb5e47fb11dd19353333be1cf34e5c5c1871f5aa2db7f1947205ec723c0c"
+      }
+    },
+    "expected": {
+      "ok": false
+    }
+  }
+]

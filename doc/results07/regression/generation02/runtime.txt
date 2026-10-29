@@ -1,0 +1,5 @@
+3.12.15 (main, Oct 21 2026, 01:13:23) [GCC 14.2.0]
+SQLite 3.46.1
+cryptography 46.0.3
+PyCryptodome 3.23.0
+v22.23.4

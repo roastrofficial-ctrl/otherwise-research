@@ -1,0 +1,23 @@
+ Volume "otherwise06-1792789670-45269_recovery"  Creating
+ Volume "otherwise06-1792789670-45269_recovery"  Created
+test_01_single_compromise (test_custody.Custody.test_01_single_compromise) ... ok
+test_02_threshold_collusion_early (test_custody.Custody.test_02_threshold_collusion_early) ... ok
+test_03_honest_release_recipient_only (test_custody.Custody.test_03_honest_release_recipient_only) ... ok
+test_04_forged_saas_decision (test_custody.Custody.test_04_forged_saas_decision) ... ok
+test_05_stale_head_and_replay (test_custody.Custody.test_05_stale_head_and_replay) ... ok
+test_06_changed_capsule_and_proof (test_custody.Custody.test_06_changed_capsule_and_proof) ... ok
+test_07_disarm_boundary (test_custody.Custody.test_07_disarm_boundary) ... ok
+test_08_unavailable_restore (test_custody.Custody.test_08_unavailable_restore) ... ok
+test_09_actual_process_crashes_and_rollback (test_custody.Custody.test_09_actual_process_crashes_and_rollback) ... ok
+test_10_compromised_provisioning (test_custody.Custody.test_10_compromised_provisioning) ... ok
+test_11_independent_recovery_and_compatibility (test_custody.Custody.test_11_independent_recovery_and_compatibility) ... ok
+test_12_competing_workers (test_custody.Custody.test_12_competing_workers) ... ok
+test_13_lost_anchors_boundary (test_custody.Custody.test_13_lost_anchors_boundary) ... ok
+test_14_reference_algebra_and_invalid_encodings (test_custody.Custody.test_14_reference_algebra_and_invalid_encodings) ... ok
+test_15_snapshot_rollback_and_contradiction (test_custody.Custody.test_15_snapshot_rollback_and_contradiction) ... ok
+test_16_standalone_cli_lifecycle (test_custody.Custody.test_16_standalone_cli_lifecycle) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 19.514s
+
+OK

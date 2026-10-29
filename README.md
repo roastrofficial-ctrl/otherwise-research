@@ -1,3 +1,11 @@
+# Otherwise 0.7 — The Missing Piece
+
+A research harness now requires cryptographically indispensable components from **both** custody and an independent authorisation domain. Entire one-domain compromise is insufficient under secure independent setup; combined-domain collusion, compromised provisioning and shared administration still win. The prototype also excludes malformed replies independently and uses parallel witness collection.
+
+Read the [0.7 executive examination](doc/generation07/EXECUTIVE-0.7.md), [research and threat model](doc/generation07/README.md), and [attack lab/runbook](doc/generation07/ATTACK-LAB-0.7.md). The inherited early-finalisation cancellation limit remains an executable counterexample. This is unreviewed cryptographic research using synthetic data, not production security.
+
+---
+
 # Otherwise 0.6 — The Honest Custodian
 
 A synthetic threshold-decryption research harness now sits alongside the preserved 0.1–0.5 implementations. Honest release avoids reconstructing the reusable custody private scalar; a malicious 2-of-3 threshold still decrypts early. No cryptographic policy-enforcement claim is made.

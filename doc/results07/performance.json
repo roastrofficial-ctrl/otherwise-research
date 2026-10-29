@@ -1,0 +1,129 @@
+{
+  "provider": "0.7",
+  "environment": "one local Docker host; TLS; sequential independent fresh clusters; eight Capsules, two windows, one checkin then one miss",
+  "samples": {
+    "draft_discovery_encrypt": {
+      "n": 8,
+      "median_ms": 4.89,
+      "observed_max_ms": 17.542
+    },
+    "wrap_and_distribute": {
+      "n": 8,
+      "median_ms": 110.801,
+      "observed_max_ms": 217.135
+    },
+    "arm": {
+      "n": 8,
+      "median_ms": 57.119,
+      "observed_max_ms": 76.549
+    },
+    "total_create_arm": {
+      "n": 8,
+      "median_ms": 181.405,
+      "observed_max_ms": 293.197
+    },
+    "checkin": {
+      "n": 8,
+      "median_ms": 48.214,
+      "observed_max_ms": 94.361
+    },
+    "fresh_inspection": {
+      "n": 8,
+      "median_ms": 44.109,
+      "observed_max_ms": 56.814
+    },
+    "backup_open": {
+      "n": 8,
+      "median_ms": 59.157,
+      "observed_max_ms": 222.952
+    },
+    "fresh_recovery": {
+      "n": 8,
+      "median_ms": 43.907,
+      "observed_max_ms": 169.633
+    },
+    "authorise": {
+      "n": 8,
+      "median_ms": 90.662,
+      "observed_max_ms": 205.697
+    },
+    "contribution_collection": {
+      "n": 8,
+      "median_ms": 492.685,
+      "observed_max_ms": 811.201
+    },
+    "recipient_verification_disclose": {
+      "n": 8,
+      "median_ms": 183.601,
+      "observed_max_ms": 310.179
+    },
+    "journal_retention": {
+      "n": 8,
+      "median_ms": 195.694,
+      "observed_max_ms": 356.828
+    },
+    "journal_recovery": {
+      "n": 8,
+      "median_ms": 237.292,
+      "observed_max_ms": 247.72
+    },
+    "full_honest_disclose": {
+      "n": 8,
+      "median_ms": 917.05,
+      "observed_max_ms": 1182.966
+    },
+    "single_contribution_verify": {
+      "n": 16,
+      "median_ms": 24.703,
+      "observed_max_ms": 26.24
+    },
+    "one_unavailable_per_domain_disclose": {
+      "n": 8,
+      "median_ms": 829.684,
+      "observed_max_ms": 861.854
+    },
+    "one_malicious_per_domain_disclose": {
+      "n": 8,
+      "median_ms": 935.579,
+      "observed_max_ms": 1100.6
+    },
+    "retire_and_fresh_capsule_rotation": {
+      "n": 8,
+      "median_ms": 203.342,
+      "observed_max_ms": 234.689
+    },
+    "pure_key_generation": {
+      "n": 40,
+      "median_ms": 2.392,
+      "observed_max_ms": 3.366
+    },
+    "pure_partial_generation": {
+      "n": 40,
+      "median_ms": 4.952,
+      "observed_max_ms": 6.797
+    },
+    "pure_partial_verification": {
+      "n": 40,
+      "median_ms": 5.076,
+      "observed_max_ms": 6.812
+    },
+    "pure_wrap": {
+      "n": 40,
+      "median_ms": 8.194,
+      "observed_max_ms": 12.59
+    }
+  },
+  "wire_last_sample": {
+    "contribution_response_json": 9256,
+    "sidecar_json": 4329,
+    "payload_ciphertext_bytes": 82,
+    "backup_bytes": 38979,
+    "journal_bundle_json": 54764,
+    "note": "four selected replies of six requested; fresh snapshots and replication additional; TLS/HTTP framing excluded"
+  },
+  "client_cpu_seconds": 35.744,
+  "separate_single_partial_tracemalloc_peak_bytes": 4121,
+  "client_maxrss_linux_kib": 77908,
+  "resource_scope": "CPU/maxrss cover client process only; Python heap probe is one separate partial, outside latency measurements; cgroup holder stats captured by orchestrator; no p95/p99 from n=8",
+  "rotation": "eight measured retirement + fresh Capsule/key operations; total24 Capsule rows per provider; no in-place refresh because unsupported"
+}

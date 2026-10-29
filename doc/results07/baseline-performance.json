@@ -1,0 +1,112 @@
+{
+  "provider": "0.6",
+  "environment": "one local Docker host; TLS; sequential independent fresh clusters; eight Capsules, two windows, one checkin then one miss",
+  "samples": {
+    "draft_discovery_encrypt": {
+      "n": 8,
+      "median_ms": 22.793,
+      "observed_max_ms": 58.196
+    },
+    "wrap_and_distribute": {
+      "n": 8,
+      "median_ms": 38.093,
+      "observed_max_ms": 81.419
+    },
+    "arm": {
+      "n": 8,
+      "median_ms": 163.496,
+      "observed_max_ms": 183.596
+    },
+    "total_create_arm": {
+      "n": 8,
+      "median_ms": 225.198,
+      "observed_max_ms": 323.232
+    },
+    "checkin": {
+      "n": 8,
+      "median_ms": 172.693,
+      "observed_max_ms": 395.172
+    },
+    "fresh_inspection": {
+      "n": 8,
+      "median_ms": 150.578,
+      "observed_max_ms": 325.643
+    },
+    "backup_open": {
+      "n": 8,
+      "median_ms": 59.801,
+      "observed_max_ms": 65.46
+    },
+    "fresh_recovery": {
+      "n": 8,
+      "median_ms": 143.938,
+      "observed_max_ms": 235.279
+    },
+    "authorise": {
+      "n": 8,
+      "median_ms": 60.649,
+      "observed_max_ms": 97.223
+    },
+    "head_agreement": {
+      "n": 8,
+      "median_ms": 138.797,
+      "observed_max_ms": 409.787
+    },
+    "contribution_collection": {
+      "n": 8,
+      "median_ms": 159.891,
+      "observed_max_ms": 190.606
+    },
+    "recipient_verification_disclose": {
+      "n": 8,
+      "median_ms": 19.031,
+      "observed_max_ms": 46.306
+    },
+    "full_honest_disclose": {
+      "n": 8,
+      "median_ms": 389.664,
+      "observed_max_ms": 650.838
+    },
+    "one_unavailable_per_domain_disclose": {
+      "n": 8,
+      "median_ms": 271.624,
+      "observed_max_ms": 461.695
+    },
+    "retire_and_fresh_capsule_rotation": {
+      "n": 8,
+      "median_ms": 385.592,
+      "observed_max_ms": 648.955
+    },
+    "pure_key_generation": {
+      "n": 40,
+      "median_ms": 1.144,
+      "observed_max_ms": 1.907
+    },
+    "pure_partial_generation": {
+      "n": 40,
+      "median_ms": 4.817,
+      "observed_max_ms": 8.13
+    },
+    "pure_partial_verification": {
+      "n": 40,
+      "median_ms": 4.932,
+      "observed_max_ms": 6.929
+    },
+    "pure_wrap": {
+      "n": 40,
+      "median_ms": 3.992,
+      "observed_max_ms": 6.556
+    }
+  },
+  "wire_last_sample": {
+    "contribution_request_json": 20522,
+    "contribution_response_json": 3816,
+    "payload_ciphertext_bytes": 66,
+    "backup_bytes": 34979
+  },
+  "client_cpu_seconds": 5.428,
+  "separate_single_partial_tracemalloc_peak_bytes": 4121,
+  "client_maxrss_linux_kib": 73148,
+  "resource_scope": "CPU/maxrss cover client process only; Python heap probe is one separate partial, outside latency measurements; cgroup holder stats captured by orchestrator; no p95/p99 from n=8",
+  "rotation": "eight measured retirement + fresh Capsule/key operations; total24 Capsule rows per provider; no in-place refresh because unsupported"
+}

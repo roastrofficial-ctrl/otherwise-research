@@ -97,3 +97,7 @@ Run `scripts/experiment05.sh`: hostile actual Laravel/courier responses, indepen
 ## Generation 0.6
 
 `./scripts/experiment06.sh` exercises the optional reference custody adapter, public-key/proof negatives, actual TLS, durable process crashes, rollback, competing workers and standalone encrypted-vault CLI. `python3 scripts/regression06.py` reruns all existing generations without overwriting their retained outputs. [Evidence and limitations](doc/generation06/RESULTS.md); [raw results](doc/results06/). New group arithmetic is cross-checked with OpenSSL; this is not an independently implemented or audited full cryptosystem.
+
+## Generation 0.7
+
+`./scripts/experiment07.sh` runs 22 new attack/recovery/client methods and actual stopped-witness recovery. The [new public corpus](Protocol/vectors/generation07.json) contains 23 signed proof/context objects and strict-parser negatives, independently evaluated by Python and `Missing/verifier.mjs`. The verifier stays outside legacy source inventories. `python3 scripts/regression07.py` reruns all 109 methods from 0.1–0.6 and their successful attacks without changing old result directories or expected source fingerprints. [Evidence and limitations](doc/generation07/ATTACK-LAB-0.7.md).

@@ -104,3 +104,7 @@ The [retained classification ledger](doc/results05/attacks.json), [integrated ou
 ## Generation 0.6 — The Honest Custodian
 
 The [research harness](doc/generation06/README.md) compares static-share reconstruction with verifiable partial-point decryption. `./scripts/experiment06.sh` retains both honest release and malicious threshold early decryption, plus actual process crash/rollback, substitution, stale witness state, disarm and independent CLI experiments. `./scripts/performance06.sh` runs fresh candidate/baseline workloads sequentially. `python3 scripts/regression06.py` preserves all prior attacks and redirects new regression evidence into `doc/results06`. No real delivery or production secrets.
+
+## Generation 0.7 — The Missing Piece
+
+The [two-domain research harness](doc/generation07/README.md) tests custody-only and authority-only extraction, successful combined collusion, signed invalid arithmetic, independent recipient verification, malformed/delayed/oversized replies, real process crashes, independent journal recovery and correlated provisioning/admin failures. An inherited early-window finalisation attack against cancellation is retained. Run `./scripts/experiment07.sh`, `python3 scripts/regression07.py`, then `./scripts/performance07.sh` for sequential fresh-cluster comparison with 0.6. Synthetic content only.

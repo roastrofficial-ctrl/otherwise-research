@@ -1,0 +1,10 @@
+{
+  "objects": 66,
+  "independent_evaluators": [
+    "Python",
+    "Node"
+  ],
+  "disagreements": 0,
+  "negative_cases": 15,
+  "quorum_permutations": 48
+}

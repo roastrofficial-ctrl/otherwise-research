@@ -1,0 +1,48 @@
+{
+  "scope": "one Docker host; synthetic data; not WAN or production latency",
+  "scrypt_parameters": {
+    "n": 32768,
+    "r": 8,
+    "p": 1,
+    "memory_bytes_approx": 33554432
+  },
+  "vault_seal": {
+    "samples": 10,
+    "median_ms": 60.783,
+    "max_sample_ms": 201.206
+  },
+  "vault_open": {
+    "samples": 10,
+    "median_ms": 59.446,
+    "max_sample_ms": 135.978
+  },
+  "ed25519_sign": {
+    "samples": 200,
+    "median_ms": 0.025,
+    "max_sample_ms": 0.184
+  },
+  "ed25519_verify": {
+    "samples": 200,
+    "median_ms": 0.075,
+    "max_sample_ms": 0.163
+  },
+  "checkin_with_direct_retention": {
+    "samples": 5,
+    "median_ms": 187.449,
+    "max_sample_ms": 217.583
+  },
+  "fresh_status_with_node_verification": {
+    "samples": 5,
+    "median_ms": 167.013,
+    "max_sample_ms": 211.512
+  },
+  "encrypted_vault_bytes": 29485,
+  "public_projection_bytes": 11195,
+  "creator_local_plaintext_capability_bytes": 14645,
+  "witness_logical_state_bytes": {
+    "https://aw1:8080": 9411,
+    "https://aw2:8080": 9411,
+    "https://aw3:8080": 9411,
+    "https://aw4:8080": 9411
+  }
+}

@@ -106,3 +106,7 @@ Laravel, its backend/database/deployment and every SaaS response may be adversar
 ## Generation 0.6 — honest threshold decryption is not threshold-resistant policy
 
 The opt-in [reference custody harness](doc/generation06/SECURITY.md) returns recipient-encrypted, verifiable partial decryptions. Honest release combines points rather than the reusable private scalar. Two extracted custodians still decrypt before authorisation without scalar reconstruction. Trusted-dealer/client compromise also remains successful. Fresh signed witness reads and durable responses constrain honest services; they do not make policy checks cryptographically unavoidable. [Guarantee matrix](doc/generation06/RESULTS.md).
+
+## Generation 0.7 — two indispensable capability domains
+
+The [explicit model](doc/generation07/THREAT-MODEL-0.7.md) splits the per-Capsule AES key into two necessary components, threshold-wrapped under separate domain keys. Full compromise of either domain alone is insufficient under secure-independent-creation and honest missing-domain assumptions. Combined-domain collusion, malicious/correlated setup and shared host administration still decrypt early. [The retained early-finalisation cancellation limit](doc/generation07/PROTOCOL-0.7.md) prevents any claim of universal cancellation until release. This is an unreviewed synthetic research harness.

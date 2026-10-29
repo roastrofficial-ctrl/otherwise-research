@@ -1,0 +1,18 @@
+Hostile SaaS false-success rejected; independent create/encrypt/commit/arm/check-in/fresh verification passed. Offline encrypted backup predates presence acknowledgement.
+ Container otherwise05-1792789587-44636-laravel-1  Stopping
+ Container otherwise05-1792789587-44636-laravel-1  Stopped
+ Container otherwise05-1792789587-44636-product-db-1  Stopping
+ Container otherwise05-1792789587-44636-hostile-1  Stopping
+ Container otherwise05-1792789587-44636-product-db-1  Stopped
+ Container otherwise05-1792789587-44636-hostile-1  Stopped
+laravel: unavailable (verified)
+hostile: unavailable (verified)
+product-db: unavailable (verified)
+After SaaS/database/backend loss + device vault deletion: offline restore, fresh presence recovery, new check-in, disarm and fresh-Capsule/key rotation passed; no operator recovery capability used.
+ Container otherwise05-1792789587-44636-aw4-1  Stopping
+ Container otherwise05-1792789587-44636-aw4-1  Stopped
+Replacement client accepted and verified presence with one actual witness process stopped.
+ Container otherwise05-1792789587-44636-aw4-1  Starting
+ Container otherwise05-1792789587-44636-aw4-1  Started
+After actual witness restart: owner-authorised peer repair + fresh signed status retained presence.
+Independent missed-window evaluation and synthetic disclosure passed with SaaS still stopped.

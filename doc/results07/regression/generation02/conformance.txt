@@ -1,0 +1,5 @@
+Fixed signed vectors: 14
+Generated nested/adversarial snapshots: 180
+Python / JavaScript disagreements: 0
+Duplicate-key parser rejection: both implementations
+Conformance OK
