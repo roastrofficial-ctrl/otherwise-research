@@ -53,3 +53,5 @@ Consumer05/storage/logs/*
 *.db.bak
 *.sqlite.bak
 *.sqlite3.bak
+
+Otherwise-protocol
